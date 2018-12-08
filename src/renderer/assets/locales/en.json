@@ -26,7 +26,7 @@
         "trash": "Click on the 'Trash' icon",
         "enter": "Enter your password.",
         "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets."
-    },    
+    },
     "WalletManager": {
         "used": "The name or the wallet has already been used.",
         "both": "You must supply both a name and the public key for the wallet.",
@@ -130,13 +130,9 @@
         "password": "Blocktopus Password"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
-        "bonus": "Bonus",
-        "soon": "Coming Soon"
+        "getvtx": "GetVtx",
+        "native_chain_address": "Native Chain Address",
+        "available_for": "Address Available Until"
     },
     "ChangeVertoPassword": {
         "current": "Current Verto Password",
@@ -196,11 +192,6 @@
     },
     "BeginGetVtx": {
         "header": "Checking Wallet Status"
-    },
-    "GetVtx": {
-        "getvtx": "GetVtx",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
     },
     "Countdown": {
         "time_remaining": "Time Remaining",
