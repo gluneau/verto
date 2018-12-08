@@ -8,7 +8,7 @@
         "login": "Connexion",
         "create": "Créez un mot de passe Verto",
         "subtitle_message": "Verto est votre passerelle à Volentix. Avec Verto, vous pouvez acheter le jeton natif VTX de l’écosystème Volentix.",
-        "join_message": "Nous sommes heureux de vous compter parmi nous." 
+        "join_message": "Nous sommes heureux de vous compter parmi nous."
     },
     "CreateVertoPassword": {
         "vertopassword": "Mot de passe Verto",
@@ -121,20 +121,18 @@
         "logout": "Déconnexion",
         "telegram": "Telegram",
         "sendmail": "Envoyer un courriel",
-        "language": "Langage"
+        "language": "Langage",
+        "help": "Help",
+        "optionsdd": " Options"
     },
     "AssociateView": {
         "username": "Nom d'utilisateur Blocktopus",
         "password": "Mot de passe Blocktopus"
     },
     "GetVtx": {
-        "vtxsold": "VTX vendu",
-        "round": "Tour Bonus",
-        "amount": "Montant Bonus",
-        "current": "Prix VTX actuel",
-        "additional": "Bonus supplémentaires",
-        "bonus": "Bonus",
-        "soon": "Bientôt disponible"
+        "getvtx": "GetVtx",
+        "native_chain_address": "Native Chain Address",
+        "available_for": "Address Available Until"
     },
     "ChangeVertoPassword": {
         "current": "Mot de passe Verto actuel",
@@ -162,5 +160,42 @@
         "storeloc": "Le stockez sur le lecteur local de votre ordinateur.",
         "emailit": "L'Envoyez par courriel.",
         "cloud": "Le stocker sur le nuage."
+    },
+    "RequestNativeChainAddress": {
+        "header": "Request Address",
+        "button": "Allocate Address",
+        "err_noAddressAvailable": "No address available for that chain. Please try again.",
+        "err_pendingTransactionsExist": "Pending transactions exist",
+        "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
+        "first_p": "The following two rules apply:",
+        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
+        "third_p": "2. You are only able to request one native chain address per hour.",
+        "access": "I understand and agree",
+        "select_currency": "Select A Native Chain",
+        "time_remaining": "Available In"
+    },
+    "NotWhitelisted": {
+        "header": "Not Whitelisted",
+        "first_p": "Before you are able to Get VTX, you must complete the following:",
+        "first_p_first_point": "1. KYC with one of our trusted partners.",
+        "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
+        "subheader_1": "Already Signed Up For KYC",
+        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
+        "link_associate": "Associate This Verto Address Now.",
+        "second_subheader": "Need To KYC",
+        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
+        "link_kyc": "Begin KYC Process Now."
+    },
+    "KycAlreadyAssociated": {
+        "header": "KYC Already Allocated",
+        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+    },
+    "BeginGetVtx": {
+        "header": "Checking Wallet Status"
+    },
+    "Countdown": {
+        "time_remaining": "Time Remaining",
+        "mins": "Minutes",
+        "seconds": "seconds"
     }
 }
