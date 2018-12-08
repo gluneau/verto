@@ -13,11 +13,11 @@
     "CreateVertoPassword": {
         "vertopassword": "Mot de passe Verto",
         "confirm": "Confirmer le mot de passe Verto",
-        "mustmatch": "Les mots de passe doivent correspondre",
+        "mustmatch": "Les mots de passe doivent correspondre.",
         "fillall": "Veuillez remplir tous les champs ci-dessus",
         "save": "Enregistrer",
         "addwallet": "Ajouter un portefeuille",
-        "onlysupport": "Pour le moment, Verto ne prend en charge que la possibilité d'ajouter des clés publiques. Pour ajouter un portefeuille, indiquez simplement un nom, l'adresse du portefeuille et le mot de passe Verto pour l'ajouter",
+        "onlysupport": "Pour le moment, Verto ne prend en charge que la possibilité d'ajouter des clés publiques. Pour ajouter un portefeuille, indiquez simplement un nom, l'adresse du portefeuille et le mot de passe Verto pour l'ajouter.",
         "createwallet": "Créer un portefeuille",
         "createkey": "Créez des paires de clés publique / privée pour un nouveau portefeuille. Notez que <b>UNIQUEMENT</b> la clé publique est stockée dans Verto. Vous êtes responsable de la gestion de votre propre clé privée, de son stockage et sa sécurité.",
         "wallets": "Portefeuilles",
@@ -140,7 +140,7 @@
         "confirm": "Confirmer le nouveau mot de passe Verto",
         "required": "Tous les champs sont obligatoires.",
         "change": "Changer le mot de passe Verto",
-        "recommended": "il est recommandé de sauvegarder d'abord la configuration actuelle de Verto avant de changer le mot de passe. Vous pouvez sauvegarder Verto ",
+        "recommended": "Il est recommandé de sauvegarder d'abord la configuration actuelle de Verto avant de changer le mot de passe. Vous pouvez sauvegarder Verto ",
         "here": "ici",
         "access": "Une fois la modification du mot de passe pour accéder à Verto sélectionnée, la configuration sera cryptée à l'aide du nouveau mot de passe. Vous voudrez peut-être "
     },
@@ -148,7 +148,7 @@
         "folder": "Sélectionner le dossier",
         "backup": "Sauvegarde",
         "simple": "Un outil simple pour sauvegarder votre portefeuille afin de le restaurer ou de l'ouvrir sur un autre appareil. Simplement",
-        "directory": "sélectionnez un répertoire dans lequel sauvegarder le portefeuille.",
+        "directory": "Sélectionnez un répertoire dans lequel sauvegarder le portefeuille.",
         "willbackup": "Verto sauvegardera le portefeuille avec le nom 'verto' + la date + '.config'",
         "select": "Sélectionnez 'Sauvegarde du portefeuille'"
     },
@@ -158,7 +158,7 @@
         "confirm": "Confirmer le mot de passe du portefeuille",
         "storeext": "Stockez-le sur un lecteur externe, un portefeuille ou une clé USB.",
         "storeloc": "Le stockez sur le lecteur local de votre ordinateur.",
-        "emailit": "L'Envoyez par courriel.",
+        "emailit": "L'envoyez par courriel.",
         "cloud": "Le stocker sur le nuage."
     },
     "RequestNativeChainAddress": {
