@@ -136,7 +136,10 @@
         "current": "Current VTX Price",
         "additional": "Additional Bonuses",
         "bonus": "Bonus",
-        "soon": "Coming Soon"
+        "soon": "Coming Soon",
+        "getvtx": "GetVtx",
+        "native_chain_address": "Native Chain Address",
+        "available_for": "Address Available Until"
     },
     "ChangeVertoPassword": {
         "current": "Current Verto Password",
@@ -196,11 +199,6 @@
     },
     "BeginGetVtx": {
         "header": "Checking Wallet Status"
-    },
-    "GetVtx": {
-        "getvtx": "GetVtx",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
     },
     "Countdown": {
         "time_remaining": "Time Remaining",
