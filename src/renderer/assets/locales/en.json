@@ -130,6 +130,13 @@
         "password": "Blocktopus Password"
     },
     "GetVtx": {
+        "vtxsold": "VTX Sold",
+        "round": "Bonus Round",
+        "amount": "Bonus Amount",
+        "current": "Current VTX Price",
+        "additional": "Additional Bonuses",
+        "bonus": "Bonus",
+        "soon": "Coming Soon",
         "getvtx": "GetVtx",
         "native_chain_address": "Native Chain Address",
         "available_for": "Address Available Until"
