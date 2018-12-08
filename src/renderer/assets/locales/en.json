@@ -160,7 +160,7 @@
         "file": "Choose file",
         "choose": "Choose Wallet Password",
         "confirm": "Confirm Wallet password",
-        "storeext": "Store on an external drive, wallet, or usb key.",
+        "storeext": "Store on an external drive, wallet, or USB key.",
         "storeloc": "Store it on your computers local drive.",
         "emailit": "Email it.",
         "cloud": "Store on the cloud."
