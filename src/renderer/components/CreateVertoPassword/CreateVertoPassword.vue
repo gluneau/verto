@@ -11,7 +11,7 @@
         <br>
         <div class="field create-password">
           <div class="control">
-            <div class="is-size-5  important">
+            <div class="is-size-5  important-red">
               <b>{{ $t('CreateVertoPassword.important') }}:</b> 
             </div>
             <div class="has-text-white">
@@ -93,9 +93,6 @@ export default {
 </script>
 
 <style scoped>
-.important-red {
-  color: red;
-}
 .create-password {
   max-width: 35rem;
   margin: 0 auto;

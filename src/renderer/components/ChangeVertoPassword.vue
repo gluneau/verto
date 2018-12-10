@@ -37,7 +37,7 @@
         </div>
         <div class="level is-mobile m-t-md">
           <div class="has-text-dark level-left">
-            <a  @click="$router.push({ path: 'settings' })" class="button m-t-md green is-centered has-text-white">
+            <a  @click="$router.push({ path: 'main' })" class="button m-t-md green is-centered has-text-white">
               <p class="is-size-6">
                 {{ $t('WalletManager.cancel') }}
               </p>
