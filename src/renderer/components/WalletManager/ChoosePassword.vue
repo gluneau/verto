@@ -152,7 +152,10 @@ export default {
           const key = {name: this.keyname, key: this.publicKey, defaultKey: defaultKey};
           config.keys.push(key);
           // write the file.
-          fs.writeFileSync(savePath, sjcl.encrypt(this.userPassword, {name: this.keyname, publickey: this.publicKey, privatekey: this.privateKey}));
+          const walletInfo = JSON.stringify({name: this.keyname, publickey: this.publicKey, privatekey: this.privateKey})
+          console.log(walletInfo)
+          console.log("Password: " + this.userPassword)
+          fs.writeFileSync(savePath, sjcl.encrypt(this.userPassword, walletInfo), 'utf-8');
           // Write the config file.
           fs.writeFileSync(filePath, sjcl.encrypt(this.walletpassword, JSON.stringify(config)), 'utf-8');
           this.$store.dispatch("setCurrentWallet", key);
