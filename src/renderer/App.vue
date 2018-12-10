@@ -154,6 +154,8 @@ html {
   background-color: $dark-light-green;
 }
 
+::-webkit-scrollbar { display: none; }
+
 $sizeUnit: rem;
 $marginKey: 'm';
 $paddingKey: 'p';
