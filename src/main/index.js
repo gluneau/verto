@@ -31,8 +31,8 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    width: 480,
-    height: 850,
+    // width: 480,
+    // height: 850,
     useContentSize: true,
     resizable: true,
     // titleBarStyle: 'hidden',
@@ -43,6 +43,7 @@ function createWindow() {
     vibrancy: "appearance-based",
     webPreferences: { webSecurity: false }
   })
+  mainWindow.maximize();
   mainWindow.loadURL(winURL)
   mainWindow.on('closed', () => {
     mainWindow = null
