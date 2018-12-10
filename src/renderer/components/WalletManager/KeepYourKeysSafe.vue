@@ -2,11 +2,11 @@
   <section>
     <div class="hero-body has-background-darkgreen has-text-white has-blur-background">
       <div class="has-text-centered">
-        <div class="has-text-centered is-size-1 has-text-white">{{ $t('KeepYourKeysSafe.keepsafe') }}</div>
+        <div class="has-text-centered is-size-1">{{ $t('KeepYourKeysSafe.keepsafe') }}</div>
         <br>
         <img src="~@/assets/img/saveKeys.png">
       </div>
-      <div class="container font-gibson body-text">
+      <div class="container font-gibson body-text has-text-white">
         <p class="m-t-sm">
           {{ $t('KeepYourKeysSafe.before') }}
         </p>
@@ -32,19 +32,27 @@
         <br>
         <div class="p-l-sm">
           <b-checkbox v-model="checkedQuiz" native-value="first" @change.native="enableButtons">
-            {{ $t('SaveYourKeys.agree') }}
+            <p class="has-text-white">
+              {{ $t('SaveYourKeys.agree') }}
+            </p>
           </b-checkbox>
           <br>
           <b-checkbox v-model="checkedQuiz" native-value="second" @change.native="enableButtons">
-            {{ $t('SaveYourKeys.responsible') }}
+            <p class="has-text-white">
+              {{ $t('SaveYourKeys.responsible') }}
+            </p>
           </b-checkbox>
           <br>
           <b-checkbox v-model="checkedQuiz" native-value="third" @change.native="enableButtons">
-            {{ $t('SaveYourKeys.access') }}
+            <p class="has-text-white">
+              {{ $t('SaveYourKeys.access') }}
+            </p>
           </b-checkbox>
           <br>
           <b-checkbox v-model="checkedQuiz" native-value="fourth" @change.native="enableButtons">
-            {{ $t('SaveYourKeys.wifi') }}
+            <p class="has-text-white">
+              {{ $t('SaveYourKeys.wifi') }}
+            </p>
           </b-checkbox>
         </div>
         <br>
