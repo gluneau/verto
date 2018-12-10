@@ -8,7 +8,7 @@
           {{ $t('DisplayKey.header') }}
           </div>
           <img src="~@/assets/img/written.jpeg">
-      </div>
+      </div> 
       <br>
       <div class="container font-gibson has-text-centered">
         <a @click="showPrivate = !showPrivate">

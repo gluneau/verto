@@ -1,125 +1,77 @@
 <template>
   <section>
-  <div class="hero is-fullheight is-paddingless has-blur-background">
-    <div class="hero-head p-t-sm p-l-lg container">
-     <div class="header has-text-centered  is-size-1  has-text-white has-text-centered">
-        {{ $t('ChoosePassword.header') }}
+    <div class="hero is-fullheight is-paddingless has-blur-background">
+      <div class="hero-head p-t-sm p-l-lg container">
+      <div class="header has-text-centered  is-size-1  has-text-white has-text-centered">
+          {{ $t('ChoosePassword.header') }}
+        </div>
+        <div class="max-width">
+          <div class="field">
+            <div class="is-size-5  important-red">
+              <b>{{ $t('CreateVertoPassword.important') }}:</b> 
+            </div>
+            <div class="has-text-white">
+              Your keys cannot be recovered by Volentix or any of its partners if you loose them. 
+            </div>
+            <div class="has-text-white">
+              Please make sure you have saved or copied and stored your keys propperly.
+            </div>
+            <div class="control">
+              <input v-model="keyname" class="input is-medium m-t-md" type="text" :placeholder="$t('DisplayKey.walletname')">
+
+              <div v-if="nokeyname">
+                <p class="has-text-danger m-t-md has-text-centered">
+                  {{ $t('DisplayKey.mustname') }}
+                </p>
+              </div>
+
+              <div v-if="keyalreadyused">
+                <p class="has-text-danger m-t-md has-text-centered">
+                  {{ $t('DisplayKey.already') }}
+                </p>
+              </div>
+              <input v-model="userPassword" :class="{ 'is-danger' : notMatchingPass }" class="input is-medium m-t-md" type="password" :placeholder="$t('ChoosePassword.choose')">
+              <input v-model="checkPassword" :class="{ 'is-danger' : notMatchingPass }" class="input m-t-md is-medium" type="password" :placeholder="$t('ChoosePassword.confirm')">
+              
+              <div v-if="notMatchingPass">
+                <p class="has-text-danger m-t-md has-text-centered">
+                  {{ $t('CreateVertoPassword.mustmatch') }}
+                </p>
+              </div>
+
+              <div v-if="fillAllFields">
+                <p class="has-text-danger m-t-md has-text-centered">
+                  {{ $t('CreateVertoPassword.fillall') }}
+                </p>
+              </div>
+              <hr style="height:1px; border:none; color:#f4f4f4; background-color:#f4f4f4;">
+              <input v-model="walletpassword" class="input is-medium m-t-md" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')">
+              <div v-if="incorrectPassword">
+                <p class="has-text-danger m-t-md has-text-centered">
+                  {{ $t('Welcome.incorrect') }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <b-checkbox native-value="write" v-model="isEnabled" class="has-text-white">
+            {{ $t('DisplayKey.understand') }}
+          </b-checkbox>
+          <div class="level is-mobile m-t-md">
+            <div class="has-text-dark level-left">
+              <a  @click="$router.push({ path: 'walletmanager' })" class="button is-primary m-t-md green is-centered has-text-white">
+                <p class="is-size-6">
+                  {{ $t('WalletManager.cancel') }}
+                </p>
+              </a>
+            </div>
+            <div class="has-text-dark level-right">
+              <a :disabled="!isEnabled" class="button is-primary m-t-md is-size-5 green is-pulled-right" @click="encrypt">
+                <p class="p-l-sm p-r-sm is-size-7 font-gibson-semibold second">{{ $t('ChoosePassword.save') }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
-        <div class="field">
-          <div class="control">
-            <div v-if="nokeyname">
-              <p class="has-text-danger m-t-md">
-                {{ $t('DisplayKey.mustname') }}
-              </p>
-            </div>
-            <div v-if="keyalreadyused">
-              <p class="has-text-danger m-t-md">
-                {{ $t('DisplayKey.already') }}
-              </p>
-            </div>
-            <div v-if="notMatchingPass">
-              <p class="has-text-danger m-t-md">
-                {{ $t('CreateVertoPassword.mustmatch') }}
-              </p>
-            </div>
-            <div v-if="fillAllFields">
-              <p class="has-text-danger m-t-md">
-                {{ $t('CreateVertoPassword.fillall') }}
-              </p>
-            </div>
-            <input v-model="keyname" class="input is-medium m-t-md" type="text" :placeholder="$t('DisplayKey.walletname')">
-
-            <input v-model="userPassword" :class="{ 'is-danger' : notMatchingPass }" class="input is-medium m-t-md" type="password" :placeholder="$t('ChoosePassword.choose')">
-            <input v-model="checkPassword" :class="{ 'is-danger' : notMatchingPass }" class="input m-t-md is-medium" type="password" :placeholder="$t('ChoosePassword.confirm')">
-            <div v-if="incorrectPassword">
-              <p class="has-text-danger m-t-md">
-                {{ $t('Welcome.incorrect') }}
-              </p>
-            </div>
-            <input v-model="walletpassword" class="input is-medium m-t-md" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')">
-          </div>
-        </div>
-        <div v-if="fillAllFields">
-          <p class="has-text-danger m-t-md">
-            {{ $t('CreateVertoPassword.fillall') }}
-          </p>
-        </div>
-
-        <b-checkbox native-value="write" v-model="isEnabled" class="has-text-white">
-          {{ $t('DisplayKey.understand') }}
-        </b-checkbox>
-        <div class="level is-mobile m-t-md">
-          <div class="has-text-dark level-left">
-            <a  @click="$router.push({ path: 'walletmanager' })" class="button is-primary m-t-md green is-centered has-text-white">
-              <p class="is-size-6">
-                {{ $t('WalletManager.cancel') }}
-              </p>
-            </a>
-          </div>
-          <div class="has-text-dark level-right">
-            <a :disabled="!isEnabled" class="button is-primary m-t-md is-size-5 green is-pulled-right" @click="encrypt">
-              <p class="p-l-sm p-r-sm is-size-7 font-gibson-semibold second">{{ $t('ChoosePassword.save') }}</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <b-modal :active.sync="isInstructionsActive">
-        <div class="card">
-          <div class="card-content">
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('DisplayKey.recommended') }}
-              </slot>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  * {{ $t('ChoosePassword.storeext') }}
-                </li>
-              </ul>
-            </div>
-            <br>
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('DisplayKey.once') }}
-              </slot>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  * {{ $t('DisplayKey.look') }}
-                </li>
-                <li>
-                  * {{ $t('DisplayKey.provisions') }}
-                </li>
-              </ul>
-            </div>
-            <br>
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('DisplayKey.donot') }}
-              </slot>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  * {{ $t('ChoosePassword.storeloc') }}
-                </li>
-                <li>
-                  * {{ $t('DisplayKey.share') }}
-                </li>
-                <li>
-                  * {{ $t('ChoosePassword.emailit') }}
-                </li>
-                <li>
-                  * {{ $t('ChoosePassword.cloud') }}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </b-modal>
     </div>
   </section>
 </template>
@@ -199,7 +151,9 @@ export default {
           }
           const key = {name: this.keyname, key: this.publicKey, defaultKey: defaultKey};
           config.keys.push(key);
-          fs.writeFileSync(savePath, sjcl.encrypt(this.walletpassword, this.privateKey));
+          // write the file.
+          fs.writeFileSync(savePath, sjcl.encrypt(this.userPassword, {name: this.keyname, publickey: this.publicKey, privatekey: this.privateKey}));
+          // Write the config file.
           fs.writeFileSync(filePath, sjcl.encrypt(this.walletpassword, JSON.stringify(config)), 'utf-8');
           this.$store.dispatch("setCurrentWallet", key);
           this.$store.dispatch("setKeys", config.keys);

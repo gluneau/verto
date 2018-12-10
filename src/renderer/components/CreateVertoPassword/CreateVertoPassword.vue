@@ -2,92 +2,47 @@
   <section>
   <div class="hero is-fullheight is-paddingless has-blur-background">
     <div class="hero-head p-t-sm p-l-lg">
-      <div class="p-t-xl">
-        <div class="is-pulled-left is-vcentered is-flex m-t-md">
-          <router-link to="/keepyourkeyssafe">
-            <font-awesome-icon icon="arrow-left" class="fa-sm has-text-white m-l-sm"/>
-          </router-link>
-        </div>
-        <img src="~@/assets/img/verto-logo-white.png" class="logo m-l-md p-t-sm p-l-sm p-r-sm">
-      </div>
-      <a @click="isInstructionsActive = true">
-        <font-awesome-icon icon="question-circle" class="fa-lg has-text-grey-light  is-pulled-right m-r-sm"/>
-      </a>
+      <div class="has-text-centered">
+        <div class="has-text-centered is-size-1 has-text-white">
+          {{ $t('CreateVertoPassword.header') }}
+          </div>
+      </div> 
+     
         <br>
-        <br>
-        <div class="field">
+        <div class="field create-password">
           <div class="control">
+            <div class="is-size-5  important">
+              <b>{{ $t('CreateVertoPassword.important') }}:</b> 
+            </div>
+            <div class="has-text-white">
+              {{ $t('CreateVertoPassword.important_warning') }}
+            </div>
+            <br>
+            <b-checkbox native-value="write" v-model="isEnabled" class="has-text-white">
+              {{ $t('CreateVertoPassword.i_understand') }}
+            </b-checkbox>
+            <br>
+            <br>
+            <input v-model="userPassword" :class="{ 'is-danger' : notMatchingPass }" class="input is-medium" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')">
+            <input v-model="checkPassword" :class="{ 'is-danger' : notMatchingPass }" class="input m-t-md is-medium" type="password" :placeholder="$t('CreateVertoPassword.confirm')">
+            <div v-if="fillAllFields">
+              <p class="has-text-danger m-t-md has-text-centered">
+                {{ $t('CreateVertoPassword.fillall') }}
+              </p>
+            </div>
             <div v-if="notMatchingPass">
-              <p class="has-text-danger m-t-md">
+              <p class="has-text-danger m-t-md has-text-centered">
                 {{ $t('CreateVertoPassword.mustmatch') }}
               </p>
             </div>
-            <input v-model="userPassword" :class="{ 'is-danger' : notMatchingPass }" class="input is-medium" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')">
-            <input v-model="checkPassword" :class="{ 'is-danger' : notMatchingPass }" class="input m-t-md is-medium" type="password" :placeholder="$t('CreateVertoPassword.confirm')">
+            <div class="has-text-centered">
+              <a :disabled="!isEnabled" class="button is-primary m-t-md is-size-5 green" @click="savePassword">
+                <p class="p-l-sm p-r-sm is-size-7 font-gibson-semibold second">{{ $t('CreateVertoPassword.save') }}</p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div v-if="fillAllFields">
-          <p class="has-text-danger m-t-md">
-            {{ $t('CreateVertoPassword.fillall') }}
-          </p>
-        </div>
-        <br><br>
-        <div class="has-text-dark m-t-xxl">
-          <a class="button m-t-md is-size-5 green is-pulled-right" @click="savePassword">
-            <p class="p-l-sm p-r-sm is-size-7 font-gibson-semibold second">{{ $t('CreateVertoPassword.save') }}</p>
-          </a>
         </div>
       </div>
-      <b-modal :active.sync="isInstructionsActive">
-        <div class="card">
-          <div class="card-content">
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('CreateVertoPassword.addwallet') }}
-              </slot>
-            </div>
-            <div>
-              {{ $t('CreateVertoPassword.onlysupport') }}
-            </div>
-            <br>
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('CreateVertoPassword.createwallet') }}
-              </slot>
-            </div>
-            <div>
-              <p v-html="$t('CreateVertoPassword.createkey')"></p>
-            </div>
-            <br>
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('CreateVertoPassword.wallets') }}
-              </slot>
-            </div>
-            <div>
-              {{ $t('CreateVertoPassword.choose') }}
-            </div>
-            <div class="modal-header">
-              <slot name="header">
-                {{ $t('CreateVertoPassword.delete') }}
-              </slot>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  {{ $t('CreateVertoPassword.trash') }} <font-awesome-icon icon="trash" class="fa-md has-text-grey-light m-l-sm trash-bin is-pulled-right m-r-sm"/>
-                </li>
-                <li>
-                  {{ $t('CreateVertoPassword.enter') }}
-                </li>
-                <li>
-                  <p v-html="$t('CreateVertoPassword.note')"></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </b-modal>
     </div>
   </section>
 </template>
@@ -102,11 +57,15 @@ export default {
       checkPassword: "",
       notMatchingPass: false,
       fillAllFields: false,
-      isInstructionsActive: false
+      isInstructionsActive: false,
+      isEnabled: false
     };
   },
   methods: {
     savePassword: function() {
+      if (!this.isEnabled) {
+        return;
+      }
       this.notMatchingPass = false;
       this.fillAllFields = false;
       if (this.userPassword.length > 0 && this.checkPassword.length > 0) {
@@ -134,6 +93,13 @@ export default {
 </script>
 
 <style scoped>
+.important-red {
+  color: red;
+}
+.create-password {
+  max-width: 35rem;
+  margin: 0 auto;
+}
 .hero-body.choose-password {
   background-color: #f7f7fa !important;
 }

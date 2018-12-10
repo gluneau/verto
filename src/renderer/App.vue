@@ -22,6 +22,13 @@
 </script>
 
 <style lang="scss">
+.important-red {
+  color: red;
+}
+.max-width {
+  max-width: 35rem;
+  margin: 0 auto;
+}
 // Import Bulma's core
 .navbar-burger span{
   background-color: black

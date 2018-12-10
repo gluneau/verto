@@ -51,7 +51,7 @@
         <div class="has-text-centered">
 
             <select class="input" v-model="createtype">
-              <option value="FILE">File</option>
+              <option value="FILE">Save File</option>
               <option value="WRITTEN">Write It Down</option>
             </select>
           <div class="has-text-dark ">

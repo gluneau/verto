@@ -2,6 +2,11 @@
   <section>
   <div class="hero is-fullheight is-paddingless has-blur-background">
     <div class="hero-head p-t-sm p-l-lg">
+      <div class="has-text-centered">
+        <div class="has-text-centered is-size-1 has-text-white">
+          {{ $t('ChangeVertoPassword.header') }}
+          </div>
+      </div> 
       <div class="change-password p-t-xl">
         <div class="field">
           <div class="control">
