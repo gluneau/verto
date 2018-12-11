@@ -5,7 +5,7 @@
     <div class="hero-head p-t-sm p-l-lg">
       <div class="has-text-centered">
         <div class="has-text-centered is-size-1 has-text-white">
-          {{ $t('DisplayKey.header') }}
+          {{ $t('DisplayKey.header') }} 
           </div>
           <img src="~@/assets/img/written.jpeg">
       </div> 

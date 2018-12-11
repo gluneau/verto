@@ -60,7 +60,8 @@
         "responsible": "I am entirely responsible for the security managment of my private key",
         "access": "I understand that Volentix and/or partners never have access to my private key",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "create": "Create"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
         "header": "Write It Down",
@@ -159,7 +160,7 @@
         "change": "Change Verto Password",
         "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
         "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
+        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
     },
     "BackupWallet": {
         "folder": "Select Folder",
@@ -195,15 +196,16 @@
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
-        "get_ready": "Get Ready",
+        "header": "Get VTX",
         "kyc": "KYC",
         "whitelist": "White List",
-        "kyc_1": "In order to get VTX, investors must first KYC with one of our trusted partners.",
-        "first_p_second_point": "If you have KYC'd through the web, you may now associate this wallet to the account directly.",
-        "second_p": "In some cases, you have already KYC'd but do not have a wallet associated with your account.",
-        "link_associate": "Associate Verto",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process"
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
+        "link_associate": "Already KYC'd",
+        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
+        "link_kyc": "Begin KYC Process",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Already Allocated",
@@ -222,5 +224,15 @@
         "time_remaining": "Time Remaining",
         "mins": "Minutes",
         "seconds": "seconds"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The email address is already assigned.",
+        "user_deactivated": "This user is no longer active."
     }
 }

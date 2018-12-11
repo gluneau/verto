@@ -349,7 +349,6 @@ export default {
     },
     async getPendingTransactions() {
       let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/investor-transactions?verto_public_address=" + this.wallet + "&status_code=" + this.transactionStatus);
-      console.log(results.data)
       this.loadingData = false;
       if (results.data.length > 0) {
         for (var i = 0; i < results.data.length; i++) {
@@ -357,7 +356,6 @@ export default {
           if (item.status === 'CONVERTED' && item.countdown_time_ends) {
             const serverTime = this.$route.query.server_time;
             const potentialTimeRemaining = Date.parse(item.countdown_time_ends) - Date.parse(item.server_time)
-            console.log(potentialTimeRemaining)
             if (potentialTimeRemaining > 0) {
               item.timeremaining = potentialTimeRemaining;
             }

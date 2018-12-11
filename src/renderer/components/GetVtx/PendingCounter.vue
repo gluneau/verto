@@ -26,7 +26,6 @@ export default {
       const router = this.$router;
       const self = this;
       axios.get(url).then(function (response) {
-        console.log("DDDDDDDDDDDD" + response.data[0])
         self.numberOfPendingTransactions = response.data.length;
       })
         .catch(function (error) {

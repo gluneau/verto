@@ -199,7 +199,7 @@ const router = new Router({
     {
       path: '/venueassignaddress',
       name: 'venueassignaddress',
-      component: require('@/components/VenueAssignAddress').default,
+      component: require('@/components/GetVtx/VenueAssignAddress').default,
       meta: {
         requiresAuth: true
       }

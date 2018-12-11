@@ -111,10 +111,8 @@ export default {
         config = JSON.parse(sjcl.decrypt(this.originalPassword, databack));
       } catch (error) {
         this.incorrectPassword = true
-        console.log("3" + error)
         return;
       }
-      console.log("4")
       if (this.userPassword.length > 0 && this.checkPassword.length > 0) {
         if (this.userPassword === this.checkPassword) {
           const router = this.$router;

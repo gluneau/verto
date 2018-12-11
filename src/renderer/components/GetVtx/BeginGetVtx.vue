@@ -35,10 +35,8 @@ export default {
     //               KEEP the logic below as it will be uncommented once the Get Vtx is finalized.
     //
     let url = process.env.CROWDFUND_URL + "/public/api/allocate-native-chain/?verto_public_address=" + this.$store.state.currentWallet.key;
-    console.log(url)
     const router = this.$router;
     axios.get(url).then(function (response) {
-      console.log(response.data)
       if (response.data.message === 'wallet_not_whitelisted') {
         router.push({ path: "notwhitelisted" })
       } else if (response.data.message === 'wallet_not_allocated') {

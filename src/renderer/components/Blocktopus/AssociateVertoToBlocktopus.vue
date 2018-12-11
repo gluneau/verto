@@ -23,14 +23,12 @@ export default {
   },
   destroyed() {
     EventBus.removeListener(this.callback)
-    console.log("I am being destroyed......")
   },
   methods: {
     signup: function() {
       this.$router.push("walletmanager")
     },
     callback: function(e) {
-      console.log("Data: " + e.data);
       if (e.data && (typeof e.data === 'string' || e.data instanceof String)) {
         if (e.data.startsWith('success')) {
           this.$router.push({ path: "blocktopussuccesssful" })

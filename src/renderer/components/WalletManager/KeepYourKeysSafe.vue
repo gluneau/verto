@@ -59,8 +59,8 @@
         <div class="has-text-centered">
 
             <select class="input" v-model="createtype">
-              <option value="FILE">Save File</option>
-              <option value="WRITTEN">Write It Down</option>
+              <option value="FILE">{{ $t('SaveYourKeys.save_keys') }}</option>
+              <option value="WRITTEN">{{ $t('DisplayKey.header') }}</option>
             </select>
           <div class="has-text-dark ">
             <a :disabled="buttonsAreDisabled" class="button is-primary m-t-md is-size-5 aqua" @click="disableWiFi()">

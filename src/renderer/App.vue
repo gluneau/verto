@@ -29,6 +29,9 @@
   max-width: 35rem;
   margin: 0 auto;
 }
+.max-width-padding {
+  padding: 5px;
+}
 // Import Bulma's core
 .navbar-burger span{
   background-color: black
