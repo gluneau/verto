@@ -38,8 +38,8 @@
         </div>
     </div>
     <div class="hero-body is-paddingless has-background-darkgreen">
-      <div class="container w-main-b-graident">
-        <div class=" is-marginless p-b-md">
+      <div class="container w-main-b-graident has-text-centered">
+        <div class="transactions-history p-b-md p-t-lg">
           <div v-if="loadingData" class="p-l-lg p-r-md m-t-md is-size-4 has-text-grey-light">
             <p>
               {{ $t('Main.loading') }}...
@@ -51,14 +51,14 @@
             <div v-if="transactionStatus == 'CONVERTED'">
               <div class="columns list-item is-marginless has-text-white ">
                 <div class="column is-12 is-paddingless  font-calibri">
-                  <div class="columns is-marginless has-text-centered">
-                    <div class="column has-text-white is-2">
+                  <div class="columns is-marginless has-text-centered transactions-header">
+                    <div class="column">
                       Days Left
                     </div>
-                    <div class="column has-text-white is-4">
+                    <div class="column">
                       Time Left
                     </div>
-                    <div class="column has-text-white is-2 is-marginless">
+                    <div class="column">
                       VTX
                     </div>
                   </div>
@@ -66,16 +66,16 @@
               </div>
             </div>
             <div v-if="transactionStatus !== 'CONVERTED'">
-              <div class="columns list-item is-marginless has-text-white ">
-                <div class="column is-12 is-paddingless  font-calibri">
+              <div class="columns list-item is-marginless has-text-centered transactions-header">
+                <div class="column is-12 is-paddingless font-calibri">
                   <div class="columns is-marginless">
-                    <div class="column has-text-white is-4">
+                    <div class="column">
                       Confirmed Date
                     </div>
-                    <div class="column has-text-white is-3">
+                    <div class="column">
                       Status
                     </div>
-                    <div class="column has-text-white is-4 is-marginless">
+                    <div class="column">
                       VTX
                     </div>
                   </div>
@@ -95,11 +95,11 @@
                         </div>
 
                       </div>
-                      <div class="column has-text-white is-3">
+                      <div class="column has-text-white">
                             {{ transaction.status }}
                       </div>
 
-                      <div class="column has-text-white is-4">
+                      <div class="column has-text-white">
                             {{ transaction.vtx_amount }} VTX
                       </div>
                     </div>
@@ -108,22 +108,22 @@
                             <countdown :time="transaction.  timeremaining" :transform="transform">
                               <template slot-scope="props">
                                 <div class="columns is-marginless has-text-centered">
-                                  <div class="column has-text-white is-2">
-                                    <span class="is-size-2">
+                                  <div class="column has-text-white">
+                                    <span class="is-size-3">
                                       {{ props.days }}
                                     </span>
 
                                   </div>
-                                  <div class="column has-text-white is-4">
-                                    <span class="is-size-2">
+                                  <div class="column has-text-white">
+                                    <span class="is-size-3">
                                       {{ props.hours }}:
                                     {{ props.minutes }}:
                                     {{ props.seconds }}
                                     </span>
 
                                   </div>
-                                  <div class="column has-text-white is-2 is-marginless">
-                                    <span class="is-size-2">
+                                  <div class="column has-text-white">
+                                    <span class="is-size-3">
                                       {{ transaction.vtx_amount.toFixed(2) }}
                                     </span>
                                   </div>
@@ -132,7 +132,7 @@
                               </template>
                             </countdown>
                       </div>
-                      <div v-if="!transaction.countdown_time_ends" class="column has-text-white is-3">
+                      <div v-if="!transaction.countdown_time_ends" class="column has-text-white">
                             {{ transaction.confirmations_count }} {{ $t('TransactionHistory.number_of_approved_blocks') }}
                           <div class="column has-text-white is-4 is-marginless">
                                 {{ transaction.vtx_amount }} VTX
@@ -403,6 +403,10 @@ export default {
   color: #00DEB1;
   font-size: 12pt;
 }
+.transactions-header {
+  color: #00DEB1;
+  font-size: 14pt;
+}
 .td-align-right {
   text-align: right;
   display:block
@@ -482,5 +486,9 @@ export default {
 }
 .hero.is-fullheight {
   height: 100vh;
+}
+.transactions-history {
+  max-width: 45rem;
+  margin: 0 auto;
 }
 </style>
