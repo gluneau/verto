@@ -49,6 +49,7 @@ export default {
           "&server_time=" + response.data.data.server_time
         )
       }
+      purchase_not_allowed needs to be done
     })
       .catch(function (error) {
         console.log(error);

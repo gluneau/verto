@@ -26,11 +26,16 @@ export default {
       const router = this.$router;
       const self = this;
       axios.get(url).then(function (response) {
-        self.numberOfPendingTransactions = response.data.length;
-      })
-        .catch(function (error) {
-          console.log(error);
-        });
+        let numTransactions = 0;
+        for (let i = 0; i < response.data.length; i++) {
+          if (response.data[i].status === 'CONVERTED') {
+            numTransactions++;
+          }
+        }
+        self.numberOfPendingTransactions = numTransactions;
+      }).catch(function (error) {
+        console.log(error);
+      });
     }
   }
 }

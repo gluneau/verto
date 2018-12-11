@@ -4,20 +4,16 @@
       <div class="container top-bg">
         <div class="container p-l-lg p-r-lg p-b-md">
           <div class="p-t-lg p-b-lg has-text-centered">
-            <!-- <div class="is-pulled-left is-vcentered is-flex m-t-md">
-              <router-link to="/welcome">
-                <font-awesome-icon icon="arrow-left" class="fa-sm has-text-white m-l-sm"/>
-              </router-link>
-            </div> -->
             <img src="~@/assets/img/wallet-logo.png" class="logo">
             <br>
             <br>
             <div class="is-size-4 has-text-white m-l-md has-text-centered select">
                 <select class=" " v-model="transactionStatus" @change="refreshContent">
-                  <option value="CONVERTED">Pending</option>
                   <option value="CONFIRMED">Accepted</option>
+                  <option value="CONVERTED">Pending</option>
+                  <option value="CANCELLED">Cancelled</option>
+                  <option value="COMPLETED">Completed</option>
                 </select>
-
             </div>
             <br>
             <br>
@@ -69,7 +65,7 @@
                 </div>
               </div>
             </div>
-            <div v-if="transactionStatus == 'CONFIRMED'">
+            <div v-if="transactionStatus !== 'CONVERTED'">
               <div class="columns list-item is-marginless has-text-white ">
                 <div class="column is-12 is-paddingless  font-calibri">
                   <div class="columns is-marginless">
@@ -90,7 +86,7 @@
               <a @click="transactionDetails(transaction)">
                 <div class="columns list-item is-marginless has-text-white is-mobile p-t-md p-b-md p-r-md p-l-md">
                   <div class="column is-12 is-paddingless  font-calibri">
-                    <div v-if="transaction.status == 'CONFIRMED'" class="columns is-marginless ">
+                    <div v-if="transaction.status !== 'CONVERTED'" class="columns is-marginless ">
                       <div class="column is-4 has-text-white">
                         <div v-if="transaction.native_transaction_time">
                           {{ transaction.native_transaction_time | formatDate }}
@@ -350,18 +346,25 @@ export default {
     async getPendingTransactions() {
       let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/investor-transactions?verto_public_address=" + this.wallet + "&status_code=" + this.transactionStatus);
       this.loadingData = false;
+      this.transactions = [];
+      let filteredResults = [];
       if (results.data.length > 0) {
+        console.log(results.data.length)
         for (var i = 0; i < results.data.length; i++) {
           const item = results.data[i];
-          if (item.status === 'CONVERTED' && item.countdown_time_ends) {
-            const serverTime = this.$route.query.server_time;
-            const potentialTimeRemaining = Date.parse(item.countdown_time_ends) - Date.parse(item.server_time)
-            if (potentialTimeRemaining > 0) {
-              item.timeremaining = potentialTimeRemaining;
+          if (item.status === this.transactionStatus) {
+            console.log("ADDING>>> " + item.status + " : " + this.transactionStatus)
+            filteredResults.push(item)
+            if (item.status === 'CONVERTED' && item.countdown_time_ends) {
+              const serverTime = this.$route.query.server_time;
+              const potentialTimeRemaining = Date.parse(item.countdown_time_ends) - Date.parse(item.server_time)
+              if (potentialTimeRemaining > 0) {
+                item.timeremaining = potentialTimeRemaining;
+              }
             }
           }
         }
-        this.transactions = results.data;
+        this.transactions = filteredResults;
         this.hasTransactions = true;
         this.noTransactions = false;
       } else {
