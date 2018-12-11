@@ -232,7 +232,7 @@
         "bad_credentials": "The credentials provided are invalid.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The email address is already assigned.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
         "user_deactivated": "This user is no longer active."
     }
 }
