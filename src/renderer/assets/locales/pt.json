@@ -61,7 +61,7 @@
         "private": "Privado",
         "public": "Público",
         "already": "The name or the key has already been used.",
-        "mustname": "You must provide a name for your key.",
+        "mustname": "Deve fornecer um nome para a sua chave.",
         "walletname": "Nome da Carteira",
         "writedown": "Anote as suas chaves.",
         "privkey": "Chave privada",
@@ -71,37 +71,37 @@
         "goodpaper": "Use um bom papel que dure.",
         "polaroid": "Se quiser tirar uma foto, use uma plataforma não digital como o 35mm ou o Polaroid.",
         "once": "Uma vez Terminado",
-        "look": "Look for a warm, safe, secure, dry place such as a bank safety deposit box.",
+        "look": "Procure um lugar, quente, seguro, protegido, seco, assim como um cofre de depósitos bancários.",
         "provisions": "Add provisions to your will on who and how the transfer of your wallet will be conducted.",
-        "donot": "Do Not",
-        "fold": "Fold the paper.",
-        "share": "Share with anyone.",
-        "picture": "Take a picture with your cell phone.",
-        "screenshot": "Take a screenshot.",
-        "copied": "Key copied"
+        "donot": "Não",
+        "fold": "Dobre o papel.",
+        "share": "Partilhe com alguém.",
+        "picture": "Tire um fotografia com o seu telemóvel.",
+        "screenshot": "Tire uma captura de ecrâ.",
+        "copied": "Chave copiada"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "Continuar"
     },
     "Main": {
-        "address": "Wallet address",
+        "address": "Endereço da Carteira",
         "loading": "Loading data",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
+        "history": "Histórico de Transações",
+        "transactions": "Não tem transações",
+        "getvtx": "Obtenha VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Copiado"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
         "native": "Native Currency",
-        "amount": "Amount",
-        "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
-        "transid": "Ledger Trans. ID",
+        "amount": "Quantidade",
+        "ratio": "Rátio de Conversão",
+        "confirmation": "Confirmação",
+        "transid": "ID do Ledger de Transferência",
         "pre": "Pre Bonus",
         "phase": "Phase Bonus",
-        "additional": "Additional Bonus",
+        "additional": "Bónus Adicional",
         "total": "Total",
         "received": "Recebido",
         "converted": "Convertido",
@@ -111,14 +111,14 @@
     },
     "SettingsView": {
         "settings": "Definições",
-        "updates": "Check for Updates",
+        "updates": "Verifique por Atualizações",
         "whitelist": "Whitelist",
         "blocktopus": "Associate with Blocktopus",
         "manager": "Wallet Manager",
         "change": "Senha",
         "backup": "Backup Wallet",
         "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
+        "logout": "Desconectar-se",
         "telegram": "Telegram",
         "sendmail": "Send Mail",
         "language": "Idioma",
@@ -136,7 +136,7 @@
         "current": "Preço VTX Atual",
         "additional": "Bónus Adicionais",
         "bonus": "Bónus",
-        "soon": "Coming Soon",
+        "soon": "Brevemente",
         "getvtx": "GetVtx",
         "native_chain_address": "Native Chain Address",
         "available_for": "Endereço disponível até"
@@ -169,40 +169,40 @@
         "cloud": "Store on the cloud."
     },
     "RequestNativeChainAddress": {
-        "header": "Request Address",
-        "button": "Allocate Address",
+        "header": "Solicitar Endereço",
+        "button": "Alocar Endereço",
         "err_noAddressAvailable": "No address available for that chain. Please try again.",
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
         "first_p": "The following two rules apply:",
         "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
         "third_p": "2. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
+        "access": "Eu compreendo e concordo",
         "select_currency": "Select A Native Chain",
-        "time_remaining": "Available In"
+        "time_remaining": "Disponível Em"
     },
     "NotWhitelisted": {
         "header": "Not Whitelisted",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
+        "first_p": "Antes de conseguir obter VTX, deve completar o seguinte:",
         "first_p_first_point": "1. KYC with one of our trusted partners.",
         "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
         "subheader_1": "Already Signed Up For KYC",
         "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
-        "link_associate": "Associate This Verto Address Now.",
+        "link_associate": "Associe Este Endereço Verto Agora.",
         "second_subheader": "Need To KYC",
         "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
         "link_kyc": "Begin KYC Process Now."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
+        "header": "KYC Já Alocado",
         "first_p": "The KYC'd account has already been allocated a Verto Public Address."
     },
     "BeginGetVtx": {
         "header": "Checking Wallet Status"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Tempo Restante",
+        "mins": "Minutos",
+        "seconds": "segundos"
     }
 }
