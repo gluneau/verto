@@ -147,26 +147,26 @@
         "confirm": "Potwierdź Nowe Hasło Verto",
         "required": "Należy wypełnić wszystkie pola.",
         "change": "Zmień Hasło Verto",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
+        "recommended": "Zaleca się wykonanie kopii zapasowej bieżącej konfiguracji Verto przed zmianą hasła. Możesz wykonać kopię zapasową Verto ",
         "here": "tutaj",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
+        "access": "Zmienia hasło, aby uzyskać dostęp do Verto. Po wybraniu, cała konfiguracja jest szyfrowana przy użyciu nowego hasła. Może zechcesz "
     },
     "BackupWallet": {
         "folder": "Wybierz Folder",
-        "backup": "Backup",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
-        "select": "Select 'Backup Wallet'"
+        "backup": "Kopia zapasowa",
+        "simple": "Proste narzędzie do tworzenia kopii zapasowych portfela w celu przywrócenia lub otwarcia na innym urządzeniu. Po prostu",
+        "directory": "Wybierz katalog, w którym chcesz utworzyć kopię zapasową portfela.",
+        "willbackup": "Verto utworzy kopie zapasową portfela z nazwą 'verto' + data + '.config'",
+        "select": "Wybierz 'Zrób Kopię Zapasową Portfela'"
     },
     "ChoosePassword": {
-        "file": "Choose file",
-        "choose": "Choose Wallet Password",
-        "confirm": "Confirm Wallet password",
-        "storeext": "Store on an external drive, wallet, or USB key.",
-        "storeloc": "Store it on your computers local drive.",
-        "emailit": "Email it.",
-        "cloud": "Store on the cloud."
+        "file": "Wybierz plik",
+        "choose": "Wybierz Hasło Portfela",
+        "confirm": "Potwierdź hasło Portfela",
+        "storeext": "Przechowuj na dysku zewnętrznym, portfelu lub kluczu USB.",
+        "storeloc": "Przechowuj go na lokalnym dysku komputera.",
+        "emailit": "Wyślij e-mailem.",
+        "cloud": "Przechowuj w chmurze."
     },
     "RequestNativeChainAddress": {
         "header": "Request Address",
