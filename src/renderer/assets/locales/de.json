@@ -173,7 +173,7 @@
         "button": "Adresse zuweisen",
         "err_noAddressAvailable": "Keine Adresse für diese Kette verfügbar. Bitte versuchen Sie es erneut.",
         "err_pendingTransactionsExist": "Ausstehende Transaktionen sind vorhanden",
-        "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
+        "err_investor_must_wait": "Sie müssen eine Stunde warten, bevor Sie eine neue Adresse anfordern können.",
         "first_p": "The following two rules apply:",
         "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
         "third_p": "2. You are only able to request one native chain address per hour.",
