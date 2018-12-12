@@ -2,7 +2,7 @@
     "Welcome": {
         "welcometo": "WELKOM BIJ",
         "welcomeback": "Welkom terug!",
-        "password": "Password",
+        "password": "Wachtwoord",
         "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
         "incorrect": "The Verto Password Is Incorrect.",
         "login": "Login",
@@ -11,18 +11,18 @@
         "join_message": "We're glad you've joined us."
     },
     "CreateVertoPassword": {
-        "vertopassword": "Verto Password",
+        "vertopassword": "Verto wachtwoord",
         "confirm": "Confirm Verto password",
-        "mustmatch": "Passwords must match.",
+        "mustmatch": "Wachtwoorden moeten overeenkomen.",
         "fillall": "Please fill all the fields above",
-        "save": "Save",
-        "addwallet": "Add Wallet",
+        "save": "Opslaan",
+        "addwallet": "Portemonnee toevoegen",
         "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password to add your wallet.",
-        "createwallet": "Create Wallet",
+        "createwallet": "Portemonnee aanmaken",
         "createkey": "Create public/private key pairs for a new wallet. Note that <b>ONLY</b> the public key is stored in Verto. You are responsible for the management of your own private key, its storage, and security.",
         "wallets": "Wallets",
         "choose": "Choose to open a wallet by simply clicking on its name.",
-        "delete": "Delete Wallet",
+        "delete": "Portemonnee verwijderen",
         "trash": "Click on the 'Trash' icon",
         "enter": "Enter your password.",
         "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets."
@@ -30,10 +30,10 @@
     "WalletManager": {
         "used": "The name or the wallet has already been used.",
         "both": "You must supply both a name and the public key for the wallet.",
-        "submit": "Submit",
+        "submit": "Verzenden",
         "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
-        "cancel": "Cancel",
-        "delete": "Delete",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen",
         "keyhere": "Wallet Public Key Here"
     },
     "KeepYourKeysSafe": {
@@ -42,8 +42,8 @@
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "The first choice is to write your key down.",
         "second": "The second choice is to encrypt your key in a password protected  file.",
-        "next": "Next",
-        "back": "Back"
+        "next": "Volgende",
+        "back": "Vorige"
     },
     "SaveYourKeys": {
         "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
