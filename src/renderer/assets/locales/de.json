@@ -8,7 +8,7 @@
         "login": "Login",
         "create": "Verto Passwort erstellen",
         "subtitle_message": "Verto is your gateway to Volentix, with Verto, you can purchase VTX, the native token of the Volentix ecosystem.",
-        "join_message": "We're glad you've joined us."
+        "join_message": "Wir sind froh, dass Sie uns beigetreten sind."
     },
     "CreateVertoPassword": {
         "vertopassword": "Verto Passwort",
@@ -17,9 +17,9 @@
         "fillall": "Bitte alle Felder ausfüllen",
         "save": "Speichern",
         "addwallet": "Wallet hinzufügen",
-        "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password to add your wallet.",
+        "onlysupport": "Im Moment unterstützt Verto nur die Möglichkeit, öffentliche Schlüssel hinzuzufügen. Um eine Wallet hinzuzufügen, geben Sie einfach einen Namen, die Wallet-Adresse und das Verto-Passwort an, um Ihre Wallet hinzuzufügen.",
         "createwallet": "Wallet erstellen",
-        "createkey": "Create public/private key pairs for a new wallet. Note that <b>ONLY</b> the public key is stored in Verto. You are responsible for the management of your own private key, its storage, and security.",
+        "createkey": "Erstellen Sie öffentliche/private Schlüsselpaare für eine neue Wallet. Beachten Sie, dass <b>NUR</b> der öffentliche Schlüssel in Verto gespeichert ist. Sie sind für die Verwaltung Ihres eigenen privaten Schlüssels, dessen Speicherung und Sicherheit verantwortlich.",
         "wallets": "Wallets",
         "choose": "Um ein Wallet zu öffnen, klicke einfach auf den Namen.",
         "delete": "Wallet löschen",
@@ -29,9 +29,9 @@
     },
     "WalletManager": {
         "used": "Der Name der Wallet wurde bereits verwendet.",
-        "both": "You must supply both a name and the public key for the wallet.",
+        "both": "Sie müssen sowohl einen Namen als auch den öffentlichen Schlüssel für die Wallet angeben.",
         "submit": "Absenden",
-        "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
+        "cannotrecover": "Verto kann die einmal gelöschte Wallet nicht mehr wiederherstellen. Drücken Sie die Löschtaste erneut, um sie endgültig zu löschen.",
         "cancel": "Abbrechen",
         "delete": "Löschen",
         "keyhere": "Wallet Public Key Here"
