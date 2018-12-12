@@ -24,7 +24,7 @@
         "choose": "Choose to open a wallet by simply clicking on its name.",
         "delete": "Portemonnee verwijderen",
         "trash": "Click on the 'Trash' icon",
-        "enter": "Enter your password.",
+        "enter": "Voer je wachtwoord in.",
         "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets."
     },
     "WalletManager": {
