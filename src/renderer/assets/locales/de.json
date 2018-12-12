@@ -4,14 +4,14 @@
         "welcomeback": "Willkommen zurück!",
         "password": "Passwort",
         "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
-        "incorrect": "The Verto Password Is Incorrect.",
+        "incorrect": "Das Verto-Passwort ist nicht korrekt.",
         "login": "Login",
-        "create": "Create Verto Password",
+        "create": "Verto Passwort erstellen",
         "subtitle_message": "Verto is your gateway to Volentix, with Verto, you can purchase VTX, the native token of the Volentix ecosystem.",
         "join_message": "We're glad you've joined us."
     },
     "CreateVertoPassword": {
-        "vertopassword": "Verto Password",
+        "vertopassword": "Verto Passwort",
         "confirm": "Confirm Verto password",
         "mustmatch": "Passwords must match.",
         "fillall": "Please fill all the fields above",
