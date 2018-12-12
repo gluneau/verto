@@ -8,7 +8,7 @@
         "login": "Login",
         "create": "Criar Senha Verto",
         "subtitle_message": "Verto is your gateway to Volentix, with Verto, you can purchase VTX, the native token of the Volentix ecosystem.",
-        "join_message": "We're glad you've joined us."
+        "join_message": "Estamos felizes por que se juntou a nós."
     },
     "CreateVertoPassword": {
         "vertopassword": "Senha Verto",
@@ -21,7 +21,7 @@
         "createwallet": "Criar Carteira",
         "createkey": "Create public/private key pairs for a new wallet. Note that <b>ONLY</b> the public key is stored in Verto. You are responsible for the management of your own private key, its storage, and security.",
         "wallets": "Carteiras",
-        "choose": "Choose to open a wallet by simply clicking on its name.",
+        "choose": "Opte por abrir uma carteira, simplesmente clicando no seu nome.",
         "delete": "Eliminar Carteira",
         "trash": "Clique no ícon \"Lixo\"",
         "enter": "Introduza a sua senha.",
@@ -29,12 +29,12 @@
     },
     "WalletManager": {
         "used": "O nome ou a carteira já foi usado(a).",
-        "both": "You must supply both a name and the public key for the wallet.",
+        "both": "Deve fornecer um nome e uma chave pública para a carteira.",
         "submit": "Submeter",
         "cannotrecover": "Verto não consegue recuperar a certeira uma vez eliminada. Pressione o botão eliminar para uma eliminação definitiva.",
         "cancel": "Cancelar",
         "delete": "Eliminar",
-        "keyhere": "Wallet Public Key Here"
+        "keyhere": "Chave Pública da Carteira Aqui"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Mantenha as suas chaves seguras",
@@ -46,7 +46,7 @@
         "back": "Anterior"
     },
     "SaveYourKeys": {
-        "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Vai necessitar de uma estratégia para guardar fisicamente a sua chave privada. Esta estratégia deve incluir o pensamento a longo termo, incluíndo:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "Eu concordo com os Termos e Condições",
@@ -198,7 +198,7 @@
         "first_p": "The KYC'd account has already been allocated a Verto Public Address."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Verificando o Status da Carteira"
     },
     "Countdown": {
         "time_remaining": "Tempo Restante",
