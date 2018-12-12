@@ -51,15 +51,15 @@
         "legacy": "<b>Spadek:</b> Przypadki chodzą po ludziach. Życie się kończy. Musisz zaplanować przekazanie swojego portfela innej osobie. W niektórych przypadkach może to być testament, podczas gdy w innych staje się poszukiwaniem skarbu. Wybór należy do ciebie.",
         "agree": "Zgadzam się na Zasady % Warunki",
         "responsible": "Jestem w pełni odpowiedzialny za zarządzanie bezpieczeństwem mojego klucza prywatnego",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
-        "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "tofile": "Save to file",
-        "writedown": "I'll write it down"
+        "access": "Rozumiem, że Volentix i/lub partnerzy nigdy nie mają dostępu do mojego klucza prywatnego",
+        "wifi": "Rozumiem, że WIFI zostanie tymczasowo wyłączony podczas generowania kluczy",
+        "tofile": "Zapisz w pliku",
+        "writedown": "Zapiszę to"
     },
     "DisplayKey": {
-        "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
-        "private": "Private",
-        "public": "Public",
+        "understand": "Rozumiem, że klucz prywatny nie jest przechowywany w Verto i nie można go odzyskać.",
+        "private": "Prywatny",
+        "public": "Publiczny",
         "already": "The name or the key has already been used.",
         "mustname": "You must provide a name for your key.",
         "walletname": "Wallet Name",
@@ -118,41 +118,41 @@
         "change": "Password",
         "backup": "Backup Wallet",
         "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
+        "logout": "Wyloguj",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options"
+        "sendmail": "Wyślij Maila",
+        "language": "Język",
+        "help": "Pomoc",
+        "optionsdd": " Opcje"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Nazwa użytkownika Blocktopus",
+        "password": "Hasło Blocktopus"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
+        "vtxsold": "Sprzedane VTX",
+        "round": "Dostępny Bonus",
+        "amount": "Kwota Bonusu",
+        "current": "Aktualna Cena VTX",
+        "additional": "Dodatkowe Bonusy",
         "bonus": "Bonus",
-        "soon": "Coming Soon",
-        "getvtx": "GetVtx",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
+        "soon": "Wkrótce Dostępne",
+        "getvtx": "OtrzymajVtx",
+        "native_chain_address": "Macierzysty Adres Sieci",
+        "available_for": "Adres Dostępny Aż"
     },
     "ChangeVertoPassword": {
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
-        "confirm": "Confirm New Verto Password",
-        "required": "All fields are required.",
-        "change": "Change Verto Password",
+        "current": "Obecne hasło Verto",
+        "new": "Nowe Hasło Verto",
+        "confirm": "Potwierdź Nowe Hasło Verto",
+        "required": "Należy wypełnić wszystkie pola.",
+        "change": "Zmień Hasło Verto",
         "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
+        "here": "tutaj",
         "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
     },
     "BackupWallet": {
-        "folder": "Select Folder",
+        "folder": "Wybierz Folder",
         "backup": "Backup",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
@@ -178,7 +178,7 @@
         "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
         "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
+        "select_currency": "Wybierz Sieć Macierzystą",
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
