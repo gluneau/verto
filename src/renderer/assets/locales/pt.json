@@ -60,7 +60,7 @@
         "understand": "Eu compreendo que a chave privada não é guardada no Verto e não pode ser recuperada.",
         "private": "Privado",
         "public": "Público",
-        "already": "The name or the key has already been used.",
+        "already": "O nome ou a chave já foi usado(a).",
         "mustname": "Deve fornecer um nome para a sua chave.",
         "walletname": "Nome da Carteira",
         "writedown": "Anote as suas chaves.",
