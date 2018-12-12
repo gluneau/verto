@@ -33,6 +33,18 @@ trading clients, the simplest operations being accomplished with atomic swaps [V
 - Node >=10.2.0
 - NPM >=6.4 or Yarn
 
+Copy the `.env_template` file to the `.env` and fill the variables
+``` json
+CHAIN_ID= [your_chain_id]
+# for MainNet endpoint
+HTTP_ENDPOINT=https://api.eosio.cr
+# for TestNet endpoint
+HTTP_ENDPOINT=http://api.kylin.alohaeos.com
+LEDGER_ACCOUNT_NAME= [base_account_name]
+CROWDFUND_URL= [crowdfund_url]
+BLOCKTOPUS_URL=https://volentix.blocktopus.io
+VENUE_URL=https://venue.volentix.io/   
+```
 ``` bash
 # install dependencies
 npm install
