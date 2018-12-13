@@ -17,7 +17,7 @@
         "fillall": "Por favor preencha todos os campos acima",
         "save": "Guardar",
         "addwallet": "Adicionar Carteira",
-        "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password to add your wallet.",
+        "onlysupport": "Por enquanto, Verto só tem a habilidade de adicionar chaves públicas. Para adicionar uma carteira, apenas forneça um nome, o endereço da carteira e a senha Verto para adicionar a sua carteira.",
         "createwallet": "Criar Carteira",
         "createkey": "Crie pares de chaves públicas/privadas para uma carteira nova. Note que <b>APENAS</b> a chave pública é guardada no Verto. Você é responsável pela gestão da sua própria chave privada, o seu armazenamento e segurança.",
         "wallets": "Carteiras",
@@ -39,7 +39,7 @@
     "KeepYourKeysSafe": {
         "keepsafe": "Mantenha as suas chaves seguras",
         "before": "Antes de continuar, é importate notar que está totalmente responsável pela gestão, segurança, proteção e recuperação da sua chave privada. Mais ninguém, incluindo parceiros do ecossistema Volentix.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
+        "choices": "Tens duas opções para conservar a tua chave privada. Ambos os métodos estão concebidos para assegurar a segurança da sua chave privada.",
         "first": "A primeira escolha é anotar num papel a sua chave.",
         "second": "A segunda escolha é encriptar a sua chave num ficheiro protegido por uma senha.",
         "next": "Próximo",
@@ -47,7 +47,7 @@
     },
     "SaveYourKeys": {
         "strategy": "Vai necessitar de uma estratégia para guardar fisicamente a sua chave privada. Esta estratégia deve incluir o pensamento a longo termo, incluíndo:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
+        "physical": "<b>Segurança Física:</b> Válvulas de qualquer tipo que proporcionam a proteção de que procura. Pense num sítio que esteja seguro de roubo e dos elementos da natureza. Em alguns casos, escolherá um banco ou um advogado. Noutros vai preferir enterrá-la no seu quintal. A escolha é sua.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "Eu concordo com os Termos e Condições",
         "responsible": "Estou inteiramente responsável pela gestão da segurança da minha chave privada",
