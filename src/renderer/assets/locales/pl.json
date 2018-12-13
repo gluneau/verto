@@ -72,11 +72,11 @@
         "polaroid": "Jeśli chcesz zrobić zdjęcie, użyj platformy innej niż cyfrowa, takiej jak 35 mm lub Polaroid.",
         "once": "Po Ukończeniu",
         "look": "Poszukaj ciepłego, bezpiecznego, suchego miejsca, takiego jak sejf bankowy.",
-        "provisions": "Add provisions to your will on who and how the transfer of your wallet will be conducted.",
-        "donot": "Do Not",
+        "provisions": "Dodaj postanowienia do testamentu, na kogo i jak przeniesiony zostanie twój portfel.",
+        "donot": "Nie",
         "fold": "Złóż papier.",
-        "share": "Share with anyone.",
-        "picture": "Take a picture with your cell phone.",
+        "share": "Udostępniaj nikomu.",
+        "picture": "Zrób zdjęcie telefonem komórkowym.",
         "screenshot": "Zrób zrzut ekranu.",
         "copied": "Klucz skopiowany"
     },
@@ -93,7 +93,7 @@
         "copied": "Skopiowane"
     },
     "TransactionHistory": {
-        "history": "Get VTX History",
+        "history": "Uzyskaj Historię VTX",
         "native": "Waluta Macierzysta",
         "amount": "Kwota",
         "ratio": "Współczynnik Konwersji",
@@ -117,7 +117,7 @@
         "manager": "Menedżer Portfela",
         "change": "Hasło",
         "backup": "Kopia Zapasowa Portfela",
-        "gettrans": "Get VTX Transaction History",
+        "gettrans": "Uzyskaj Historię Transakcji VTX",
         "logout": "Wyloguj",
         "telegram": "Telegram",
         "sendmail": "Wyślij Maila",
@@ -169,21 +169,21 @@
         "cloud": "Przechowuj w chmurze."
     },
     "RequestNativeChainAddress": {
-        "header": "Request Address",
-        "button": "Allocate Address",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
-        "err_pendingTransactionsExist": "Pending transactions exist",
+        "header": "Żądanie Adresu",
+        "button": "Przydziel Adres",
+        "err_noAddressAvailable": "Brak adresu dla tej sieci. Proszę spróbuj ponownie.",
+        "err_pendingTransactionsExist": "Dostępne są oczekujące transakcje",
         "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
-        "first_p": "The following two rules apply:",
+        "first_p": "Obowiązują następujące dwie zasady:",
         "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
         "third_p": "2. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
+        "access": "Rozumiem i zgadzam się",
         "select_currency": "Wybierz Sieć Macierzystą",
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
         "header": "Not Whitelisted",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
+        "first_p": "Zanim będziesz mógł Uzyskać VTX, musisz wykonać następujące czynności:",
         "first_p_first_point": "1. KYC with one of our trusted partners.",
         "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
         "subheader_1": "Already Signed Up For KYC",
@@ -194,15 +194,15 @@
         "link_kyc": "Begin KYC Process Now."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC Jest Już Przydzielony",
+        "first_p": "Konto KYC'd ma już przydzielony Adres Publiczny Verto."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Sprawdzanie Stan Portfela"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Pozostały Czas",
+        "mins": "Minuty",
+        "seconds": "sekundy"
     }
 }
