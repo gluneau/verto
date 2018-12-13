@@ -23,7 +23,6 @@ export default {
   },
   destroyed() {
     EventBus.removeListener(this.callback)
-    console.log("I am being destroyed......")
   },
   methods: {
     signup: function() {

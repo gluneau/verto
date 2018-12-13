@@ -76,7 +76,6 @@ export default {
     }
     if (fs.existsSync(path.join(electron.remote.app.getPath('userData'), '/verto.config'))) {
       this.hasPassword = true;
-      console.log("You are here.")
     }
   },
   methods: {

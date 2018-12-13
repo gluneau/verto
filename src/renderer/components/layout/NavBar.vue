@@ -91,9 +91,6 @@ export default {
       appName: this.$appName
     };
   },
-  mounted: function() {
-    console.log(this.$i18n.locale)
-  },
   methods: {
     hasChosenWallet: function() {
       return this.$store.state.currentWallet.key
@@ -123,10 +120,6 @@ export default {
     updateLanguage: function(lang) {
       this.showParentsPane();
       this.$i18n.locale = lang;
-    },
-    checkBlocktopus: function() {
-      console.log(this.blocktopusUrl)
-      console.log(__dirname)
     },
     openTelegram: function() {
       this.showDropDownOptions = false;

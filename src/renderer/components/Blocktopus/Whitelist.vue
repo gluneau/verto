@@ -1,6 +1,6 @@
 <template>
   <section>
-    <iframe :src="blocktopusLink"/>
+    <iframe   id="blocktopusiframe" :src="blocktopusLink"/>
   </section>
 </template>
 
@@ -70,5 +70,13 @@ export default {
 }
 .hero-body.choose-password input {
   border-radius: 0.5rem;
+}
+#blocktopusiframe
+{
+    height:   100%;
+    left:     0px;
+    position: absolute;
+    top:      0px;
+    width:    100%;
 }
 </style>

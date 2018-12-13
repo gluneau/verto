@@ -100,7 +100,6 @@ export default {
     this.nativeChainName = this.$route.query.native_chain_name;
     const serverTime = this.$route.query.server_time;
     const potentialTimeRemaining = Date.parse(this.validUntil) - Date.parse(serverTime)
-    console.log(potentialTimeRemaining)
     if (potentialTimeRemaining > 0) {
       this.timeremaining = potentialTimeRemaining;
     }

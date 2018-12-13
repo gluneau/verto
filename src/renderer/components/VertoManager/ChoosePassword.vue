@@ -153,8 +153,6 @@ export default {
           config.keys.push(key);
           // write the file.
           const walletInfo = JSON.stringify({name: this.keyname, publickey: this.publicKey, privatekey: this.privateKey})
-          console.log(walletInfo)
-          console.log("Password: " + this.userPassword)
           fs.writeFileSync(savePath, sjcl.encrypt(this.userPassword, walletInfo), 'utf-8');
           // Write the config file.
           fs.writeFileSync(filePath, sjcl.encrypt(this.walletpassword, JSON.stringify(config)), 'utf-8');

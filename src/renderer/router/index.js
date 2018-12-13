@@ -27,25 +27,6 @@ const router = new Router({
       }
     },
     {
-      path: '/home',
-      name: 'Home',
-      meta: { layout: "no-sidebar" },
-      component: require('@/components/Home').default
-    },
-    {
-      path: '/settings',
-      name: 'Settings',
-      component: require('@/components/Settings').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/newversionisavailable',
-      name: 'NewVersionIsAvailable',
-      component: require('@/components/NewVersionIsAvailable').default
-    },
-    {
       path: '/welcome',
       name: 'Welcome',
       meta: { layout: "login" },
@@ -54,20 +35,15 @@ const router = new Router({
     {
       path: '/transactiondetails',
       name: 'TransactionDetails',
-      component: require('@/components/TransactionDetails').default,
+      component: require('@/components/TransactionDetails/ViewTransactionDetails').default,
       meta: {
         requiresAuth: true
       }
     },
     {
-      path: '/downloadversion',
-      name: 'DownloadVersion',
-      component: require('@/components/DownloadVersion').default
-    },
-    {
       path: '/congratsscreen',
       name: 'CongratsScreen',
-      component: require('@/components/WalletManager/CongratsScreen').default,
+      component: require('@/components/VertoManager/CongratsScreen').default,
       meta: {
         requiresAuth: true
       }
@@ -75,15 +51,7 @@ const router = new Router({
     {
       path: '/displaykey',
       name: 'DisplayKey',
-      component: require('@/components/WalletManager/DisplayKey').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/generatekey',
-      name: 'GenerateKey',
-      component: require('@/components/GenerateKey').default,
+      component: require('@/components/VertoManager/DisplayKey').default,
       meta: {
         requiresAuth: true
       }
@@ -99,36 +67,7 @@ const router = new Router({
     {
       path: '/keepyourkeyssafe',
       name: 'KeepYourKeysSafe',
-      component: require('@/components/WalletManager/KeepYourKeysSafe').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/signupwithgatewayprovider',
-      name: 'SignUpWithGatewayProvider',
-      component: require('@/components/SignUpWithGatewayProvider').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/storekeys',
-      name: 'StoreKeys',
-      component: require('@/components/StoreKeys').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/termsconditions',
-      name: 'TermsConditions',
-      component: require('@/components/TermsConditions').default
-    },
-    {
-      path: '/usercredentials',
-      name: 'UserCredentials',
-      component: require('@/components/UserCredentials').default,
+      component: require('@/components/VertoManager/KeepYourKeysSafe').default,
       meta: {
         requiresAuth: true
       }
@@ -136,7 +75,7 @@ const router = new Router({
     {
       path: '/choosepassword',
       name: 'choosepassword',
-      component: require('@/components/WalletManager/ChoosePassword').default,
+      component: require('@/components/VertoManager/ChoosePassword').default,
       meta: {
         requiresAuth: true
       }
@@ -144,12 +83,12 @@ const router = new Router({
     {
       path: '/createvertopassword',
       name: 'createvertopassword',
-      component: require('@/components/CreateVertoPassword').default
+      component: require('@/components/VertoManager/CreateVertoPassword').default
     },
     {
       path: '/walletmanager',
       name: 'walletmanager',
-      component: require('@/components/WalletManager/WalletManager').default,
+      component: require('@/components/VertoManager/WalletManager').default,
       meta: {
         requiresAuth: true
       }
@@ -171,19 +110,9 @@ const router = new Router({
       }
     },
     {
-      path: '/failure',
-      name: 'failure',
-      component: require('@/components/Failure').default
-    },
-    {
-      path: '/success',
-      name: 'success',
-      component: require('@/components/Success').default
-    },
-    {
       path: '/changevertopassword',
       name: 'changevertopassword',
-      component: require('@/components/ChangeVertoPassword').default,
+      component: require('@/components/VertoManager/ChangeVertoPassword').default,
       meta: {
         requiresAuth: true
       }
@@ -191,7 +120,7 @@ const router = new Router({
     {
       path: '/backupwallet',
       name: 'backupwallet',
-      component: require('@/components/BackupWallet').default,
+      component: require('@/components/VertoManager/BackupWallet').default,
       meta: {
         requiresAuth: true
       }

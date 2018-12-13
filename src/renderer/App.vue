@@ -7,12 +7,10 @@
 </template>
 
 <script>
-  import particlesJS from '@/components/layout/ParticlesJS'
   import PendingCounter from '@/components/GetVtx/PendingCounter'
   const defaultLayout = "default";
   export default {
     name: 'verto',
-    components: { particlesJS },
     computed: {
       layout() {
         return (this.$route.meta.layout || defaultLayout) + "-layout";

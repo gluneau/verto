@@ -120,7 +120,6 @@
     "less-loader": "^4.1.0",
     "moment": "^2.22.2",
     "open": "0.0.5",
-    "particles.js": "^2.0.0",
     "sjcl": "^1.0.7",
     "volentix-ledger": "^0.2.71",
     "vue": "^2.5.17",

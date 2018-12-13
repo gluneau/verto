@@ -100,10 +100,6 @@ export default {
         }
       });
     },
-    checkBlocktopus: function() {
-      console.log(this.blocktopusUrl)
-      console.log(__dirname)
-    },
     openTelegram: function() {
       var open = require("open");
       open("http://t.me/volentix");

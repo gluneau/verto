@@ -199,7 +199,6 @@ export default {
     async getTransactionHistory() {
       this.hasTransactions = false;
       this.noTransactions = false;
-      // console.log("wallet: " + this.wallet);
       try {
         const userTransactions = await ledger.retrieveTransactions({
           account: myaccount,
@@ -214,7 +213,6 @@ export default {
         } else {
           this.noTransactions = true;
         }
-        console.log(this.transactions)
       } catch (error) {
         console.log(error)
         this.noTransactions = true;
@@ -239,7 +237,6 @@ export default {
         },
         "vltxtgevtxtr");
         this.balance = parseFloat(balance.amount).toFixed(2);
-        console.log("new balance: " + this.balance);
         if (this.balance > 0) {
           let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/summary/");
           this.currentBtcValue = ((results.data.current_price * this.balance) / 100000000)

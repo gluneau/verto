@@ -262,7 +262,6 @@ export default {
       this.showParentNavOptions = true;
     },
     chooseDefault: function(key) {
-      console.log("choose default=" + JSON.stringify(key))
       this.newDefaultKey = key;
       this.walletpassword = "";
       this.isChangingDefault = true;
@@ -393,7 +392,6 @@ export default {
             newKeysArray.push({name: config.keys[i].name, key: config.keys[i].key});
           }
         }
-        console.log(newKeysArray);
         config.keys = newKeysArray;
         fs.writeFileSync(filePath, sjcl.encrypt(this.deletekeypassword, JSON.stringify(config)), 'utf-8');
         this.existingKeys = newKeysArray;

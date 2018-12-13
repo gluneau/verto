@@ -349,11 +349,9 @@ export default {
       this.transactions = [];
       let filteredResults = [];
       if (results.data.length > 0) {
-        console.log(results.data.length)
         for (var i = 0; i < results.data.length; i++) {
           const item = results.data[i];
           if (item.status === this.transactionStatus) {
-            console.log("ADDING>>> " + item.status + " : " + this.transactionStatus)
             filteredResults.push(item)
             if (item.status === 'CONVERTED' && item.countdown_time_ends) {
               const serverTime = this.$route.query.server_time;
