@@ -85,7 +85,7 @@
     },
     "Main": {
         "address": "Endereço da Carteira",
-        "loading": "Loading data",
+        "loading": "A carregar dados",
         "history": "Histórico de Transações",
         "transactions": "Não tem transações",
         "getvtx": "Obtenha VTX",
@@ -178,11 +178,11 @@
         "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
         "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "Eu compreendo e concordo",
-        "select_currency": "Select A Native Chain",
+        "select_currency": "Selecionar a Chain Nativa",
         "time_remaining": "Disponível Em"
     },
     "NotWhitelisted": {
-        "header": "Not Whitelisted",
+        "header": "Não está na Whitelist",
         "first_p": "Antes de conseguir obter VTX, deve completar o seguinte:",
         "first_p_first_point": "1. KYC with one of our trusted partners.",
         "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
