@@ -48,10 +48,10 @@
     "SaveYourKeys": {
         "strategy": "Necesitas planear una estrategia para el almacenamiento físico de tu clave privada. Esta estrategia de almacenamiento debería estar pensada a largo plazo, incluyendo:",
         "physical": "<b>Seguridad Física:</b> Bóvedas de cualquier tipo que proporcionen la protección que estás buscando. Piensa de algún lugar que sepas sea seguro contra los robos y también contra los elementos externos. En algunos casos, escogerás a algún banco o un abogado. En otros quizás prefieras enterrarlo en tu patio. La elección es tuya.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
-        "agree": "I agree with the Terms & Conditions",
-        "responsible": "I am entirely responsible for the security managment of my private key",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
+        "legacy": "<b>Legado:</b>Las cosas pasan. La vida se acaba. Necesitas un plan para la transferencia de tu monedero a alguien más. En algunos casos quizás haya un testamento, mientras que en otros se puede convertir en una carrera de buitres. La elección es tuya.",
+        "agree": "Estoy de acuerdo con los términos y condiciones",
+        "responsible": "Yo soy totalmente responsable por la gestión de seguridad de mi llave privada",
+        "access": "Entiendo que Volentix y/o sus socios nunca tendrán acceso a mi llave privada",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "tofile": "Save to file",
         "writedown": "I'll write it down"
