@@ -175,7 +175,7 @@
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
         "first_p": "The following two rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
+        "second_p": "1. O endereço que recebe é válido apenas por um período de tempo limitado. Por isso, cada transação que efetue após o período de alocação pode ser perdida. Ao efetuar transações, certifique-se sempre que tem um endereço de chain nativa atribuído à sua carteira.",
         "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "Eu compreendo e concordo",
         "select_currency": "Selecionar a Chain Nativa",
