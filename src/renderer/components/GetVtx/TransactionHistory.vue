@@ -84,7 +84,7 @@
             </div>
             <div v-for="transaction in transactions" :key="transaction.id" class="">
               <a @click="transactionDetails(transaction)">
-                <div class="columns list-item is-marginless has-text-white is-mobile p-t-md p-b-md p-r-md p-l-md">
+                <div class="columns list-item is-marginless has-text-white is-mobile">
                   <div class="column is-12 is-paddingless  font-calibri">
                     <div v-if="transaction.status !== 'CONVERTED'" class="columns is-marginless ">
                       <div class="column is-4 has-text-white">
@@ -490,5 +490,8 @@ export default {
 .transactions-history {
   max-width: 45rem;
   margin: 0 auto;
+}
+.transactions-history .column {
+  max-height: 1.5rem;
 }
 </style>
