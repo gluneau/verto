@@ -47,7 +47,7 @@
     },
     "SaveYourKeys": {
         "strategy": "Necesitas planear una estrategia para el almacenamiento físico de tu clave privada. Esta estrategia de almacenamiento debería estar pensada a largo plazo, incluyendo:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
+        "physical": "<b>Seguridad Física:</b> Bóvedas de cualquier tipo que proporcionen la protección que estás buscando. Piensa de algún lugar que sepas sea seguro contra los robos y también contra los elementos externos. En algunos casos, escogerás a algún banco o un abogado. En otros quizás prefieras enterrarlo en tu patio. La elección es tuya.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
