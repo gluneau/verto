@@ -168,8 +168,8 @@ export default {
       walletpassword: "",
       incorrectPassword: false,
       isInstructionsActive: false,
-      showPrivate: false,
-      showPublic: false
+      showPrivate: true,
+      showPublic: true
     };
   },
   mounted() {

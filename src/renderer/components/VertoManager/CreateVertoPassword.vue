@@ -49,6 +49,7 @@
 
 <script>
 import sjcl from "sjcl";
+import fileManager from "../FileManager.js";
 
 export default {
   data() {
@@ -60,6 +61,9 @@ export default {
       isInstructionsActive: false,
       isEnabled: false
     };
+  },
+  mounted() {
+    fileManager.sayHello()
   },
   methods: {
     savePassword: function() {
