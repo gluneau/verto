@@ -127,14 +127,14 @@
     },
     "AssociateView": {
         "username": "Nombre de Usuario Blocktopus",
-        "password": "Blocktopus Password"
+        "password": "Contraseña Blocktopus"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
+        "vtxsold": "VTX Vendido",
+        "round": "Ronda Bonus",
+        "amount": "Monto Bonus",
+        "current": "Precio Actual VTX",
+        "additional": "Bonus Adicionales",
         "bonus": "Bonus",
         "soon": "Coming Soon",
         "getvtx": "GetVtx",
