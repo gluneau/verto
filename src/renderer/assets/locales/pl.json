@@ -74,35 +74,35 @@
         "look": "Poszukaj ciepłego, bezpiecznego, suchego miejsca, takiego jak sejf bankowy.",
         "provisions": "Add provisions to your will on who and how the transfer of your wallet will be conducted.",
         "donot": "Do Not",
-        "fold": "Fold the paper.",
+        "fold": "Złóż papier.",
         "share": "Share with anyone.",
         "picture": "Take a picture with your cell phone.",
-        "screenshot": "Take a screenshot.",
-        "copied": "Key copied"
+        "screenshot": "Zrób zrzut ekranu.",
+        "copied": "Klucz skopiowany"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "Kontynuuj"
     },
     "Main": {
-        "address": "Wallet address",
-        "loading": "Loading data",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
+        "address": "Adres portfela",
+        "loading": "Wczytywanie danych",
+        "history": "Historia transakcji",
+        "transactions": "Nie masz żadnych transakcji",
+        "getvtx": "Zdobądź VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Skopiowane"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
-        "native": "Native Currency",
-        "amount": "Amount",
-        "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "native": "Waluta Macierzysta",
+        "amount": "Kwota",
+        "ratio": "Współczynnik Konwersji",
+        "confirmation": "Potwierdzenie",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
-        "phase": "Phase Bonus",
-        "additional": "Additional Bonus",
-        "total": "Total",
+        "phase": "Faza Bonusowa",
+        "additional": "Dodatkowy Bonus",
+        "total": "Ogółem",
         "received": "Recieved",
         "converted": "Converted",
         "pending": "Pending",
