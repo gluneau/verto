@@ -190,8 +190,8 @@
         "second_p": "Jeśli zarejestrowałeś się już w procesie KYC, przez Internet możesz teraz powiązać swój portfel z tym kontem.",
         "link_associate": "Powiąż Ten Adres Verto Teraz.",
         "second_subheader": "Need To KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "third_p": "Aby Uzyskać Vtx, wymagane jest, abyś był zidentyfikowany za pomocą KYC w celu spełnienia wymogów regulacyjnych. Pamiętaj, że jeśli KYC przez Verto twój publiczny adres zostanie automatycznie powiązany z twoim kontem KYC. W rezultacie, po zatwierdzeniu KYC, będziesz mógł natychmiast Uzyskać VTX.",
+        "link_kyc": "Rozpocznij Teraz Proces KYC."
     },
     "KycAlreadyAssociated": {
         "header": "KYC Jest Już Przydzielony",
