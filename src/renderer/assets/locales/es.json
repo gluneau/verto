@@ -52,15 +52,15 @@
         "agree": "Estoy de acuerdo con los términos y condiciones",
         "responsible": "Yo soy totalmente responsable por la gestión de seguridad de mi llave privada",
         "access": "Entiendo que Volentix y/o sus socios nunca tendrán acceso a mi llave privada",
-        "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "tofile": "Save to file",
-        "writedown": "I'll write it down"
+        "wifi": "Entiendo que el WIFI se desactivará temporalmente durante la generación de claves",
+        "tofile": "Guardar archivo en",
+        "writedown": "Lo anotaré"
     },
     "DisplayKey": {
-        "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
-        "private": "Private",
-        "public": "Public",
-        "already": "The name or the key has already been used.",
+        "understand": "Entiendo que la llave privada no se almacena en Verto y no puede ser recuperada.",
+        "private": "Privada",
+        "public": "Pública",
+        "already": "El nombre o la llave ya ha sido usada.",
         "mustname": "You must provide a name for your key.",
         "walletname": "Wallet Name",
         "writedown": "Write down your keys.",
@@ -120,13 +120,13 @@
         "gettrans": "Get VTX Transaction History",
         "logout": "Logout",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options"
+        "sendmail": "Enviar correo",
+        "language": "Lenguaje",
+        "help": "Ayuda",
+        "optionsdd": " Opciones"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
+        "username": "Nombre de Usuario Blocktopus",
         "password": "Blocktopus Password"
     },
     "GetVtx": {
