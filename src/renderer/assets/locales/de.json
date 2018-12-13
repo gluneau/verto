@@ -78,24 +78,24 @@
         "share": "Teilen Sie es mit anderen.",
         "picture": "Machen Sie ein Foto mit Ihrem Handy.",
         "screenshot": "Bildschirmfoto aufnehmen.",
-        "copied": "Key copied"
+        "copied": "Schlüssel kopiert"
     },
     "CongratsScreen": {
         "continue": "Continue"
     },
     "Main": {
-        "address": "Wallet address",
+        "address": "Wallet-Adresse",
         "loading": "Loading data",
-        "history": "Transaction History",
+        "history": "Transaktionsverlauf",
         "transactions": "You have no transactions",
         "getvtx": "Get VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Kopiert"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
         "native": "Native Currency",
-        "amount": "Amount",
+        "amount": "Betrag",
         "ratio": "Conversion Ratio",
         "confirmation": "Confirmation",
         "transid": "Ledger Trans. ID",
