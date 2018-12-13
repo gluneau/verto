@@ -136,8 +136,8 @@
         "current": "Precio Actual VTX",
         "additional": "Bonus Adicionales",
         "bonus": "Bonus",
-        "soon": "Coming Soon",
-        "getvtx": "GetVtx",
+        "soon": "Próximamente",
+        "getvtx": "Obtén Vtx",
         "native_chain_address": "Native Chain Address",
         "available_for": "Address Available Until"
     },
