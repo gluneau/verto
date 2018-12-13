@@ -1,6 +1,6 @@
 <template>
   <section class="has-background-darkgreen">
-    <iframe id="vespucciiframe" :src="vespucciLink"/>
+    <iframe :src="vespucciLink"/>
   </section>
 </template>
 
@@ -15,11 +15,11 @@ export default {
       email: "",
       amount: 0,
       currency: 'BTC',
-      vespucciLink: "https://vespucci.site/"
+      vespucciLink: "https://vespucci.site?embed"
     };
   },
   beforeMount() {
-    EventBus.addListener(this.callback)
+    EventBus.addListener(this.callback);
   },
   destroyed() {
     EventBus.removeListener(this.callback)

@@ -43,7 +43,7 @@
                 {{ $t('SettingsView.change') }}
               </router-link>
               &nbsp;&nbsp;
-              <!--.
+              <!--
               <router-link to="/vespucciopen" @click.native="showParentsPane()">
                 {{ $t('SettingsView.vespucci_open') }}
               </router-link>
