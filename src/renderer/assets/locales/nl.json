@@ -39,14 +39,14 @@
     "KeepYourKeysSafe": {
         "keepsafe": "Houd je sleutels veilig",
         "before": "Voordat je verder gaat, is het belangrijk om te weten dat je volledig verantwoordelijk bent voor het beheer, de veiligheid, de bescherming en het herstellen van je privé-sleutel. Niemand anders, ook niet de partners van het Volentix ecosysteem.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "The first choice is to write your key down.",
-        "second": "The second choice is to encrypt your key in a password protected  file.",
+        "choices": "Je hebt 2 keuzes om je persoonlijke sleutel te behouden. Beide methoden zijn ontworpen om ervoor te zorgen dat je privé-sleutel veilig blijft.",
+        "first": "De eerste keuze is om je sleutel op te schrijven.",
+        "second": "De tweede keuze is om je sleutel te coderen in een met wachtwoord beveiligd bestand.",
         "next": "Volgende",
         "back": "Vorige"
     },
     "SaveYourKeys": {
-        "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Je moet een strategie bedenken voor de fysieke opslag van je persoonlijke sleutel. Deze opslagstrategie moet langetermijndenken bevatten, inclusief:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
