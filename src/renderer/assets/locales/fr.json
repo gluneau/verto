@@ -17,7 +17,7 @@
         "fillall": "Veuillez remplir tous les champs ci-dessus",
         "save": "Enregistrer",
         "addwallet": "Ajouter un portefeuille",
-        "onlysupport": "Pour le moment, Verto ne prend en charge que la possibilité d'ajouter des clés publiques. Pour ajouter un portefeuille, indiquez simplement un nom, l'adresse du portefeuille et le mot de passe Verto pour l'ajouter.",
+        "onlysupport": "Pour le moment, Verto ne prend en charge que la possibilité d'ajouter des clés publiques. Pour ajouter un portefeuille, indiquez simplement un nom, l'adresse du portefeuille et le mot de passe Verto.",
         "createwallet": "Créer un portefeuille",
         "createkey": "Créez des paires de clés publique / privée pour un nouveau portefeuille. Notez que <b>UNIQUEMENT</b> la clé publique est stockée dans Verto. Vous êtes responsable de la gestion de votre propre clé privée, de son stockage et sa sécurité.",
         "wallets": "Portefeuilles",
@@ -190,19 +190,19 @@
         "second_p": "Si vous avez déjà complété pour le processus CSC (connaître son client), via le web, vous pouvez associer votre portefeuille avec ce compte maintenant.",
         "link_associate": "Associer cette adresse Verto maintenant.",
         "second_subheader": "Besoin de CSC (connaître son client)",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "third_p": "Afin d’obtenir des VTX, il est nécessaire que vous soyez CSC (connaître son client) afin de satisfaire le respect de la réglementation. Notez que si vous êtes CSC par Verto votre adresse publique sera automatiquement associé à votre compte CSC. Ainsi, une fois que vous êtes CSC approuvée, vous serez en mesure d’obtenir VTX immédiatement.",
+        "link_kyc": "Commencez maintenant le processus à CSC (connaître son client)."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "CSC (connaître son client) déjà associé",
+        "first_p": "Le compte CSC (connaître son client) a déjà été associé à une adresse publique Verto."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Vérification l’état du portefeuille"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Temps Restant",
+        "mins": "minutes",
+        "seconds": "secondes"
     }
 }
