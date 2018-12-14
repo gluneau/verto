@@ -46,8 +46,8 @@
         "back": "Назад"
     },
     "SaveYourKeys": {
-        "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
+        "strategy": "Морате да испланирате стратегију за чување свог приватног кључа. Требало би да размишљате дугорочно, на пример:",
+        "physical": "<b>Физичка сигурност:</b> Размишљајте о некој врсти трезора. О нечему што одолева лоповима и зубу времена. Можда бисте могли да га оставите у сефу банке. Или да га закопате у ћупу испод старог храста. Избор је Ваш.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
