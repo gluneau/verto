@@ -1,7 +1,7 @@
 {
     "Welcome": {
         "welcometo": "BIENVENIDO A",
-        "welcomeback": "¡Bienvenido de nuevo!",
+        "welcomeback": "¡Bienvenido de vuelta!",
         "password": "Contraseña",
         "nopassword": "No se ha fijado una contraseña para el monedero. Por favor crea una contraseña primero.",
         "incorrect": "La contraseña Verto ingresada es incorrecta.",
@@ -17,7 +17,7 @@
         "fillall": "Por favor, rellene todos los campos anteriores",
         "save": "Guardar",
         "addwallet": "Añadir Monedero",
-        "onlysupport": "Por ahora, Verto solamente admite la habilidad de añadir llaves públicas. Para añadir un monedero, simplemente proporciona un nombre, la dirección del monedero, y la contraseña Verto para añadir su monedero.",
+        "onlysupport": "Por ahora, Verto solamente es capaz de añadir llaves públicas. Para añadir un monedero, simplemente proporciona un nombre, la dirección del monedero, y la contraseña Verto para añadir su monedero.",
         "createwallet": "Crear Monedero",
         "createkey": "Crear un par de llaves públicas/privadas para un nuevo monedero. Note que <b>SOLAMENTE</b> la llave pública es almacenada en Verto. Eres responsable por la administración de tus propias llaves privadas, su almacenamiento, y su seguridad.",
         "wallets": "Monederos",
@@ -183,26 +183,26 @@
     },
     "NotWhitelisted": {
         "header": "No se encuentra en la lista blanca",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
-        "first_p_first_point": "1. KYC with one of our trusted partners.",
-        "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
-        "subheader_1": "Already Signed Up For KYC",
-        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
-        "link_associate": "Associate This Verto Address Now.",
-        "second_subheader": "Need To KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "first_p": "Antes de que sea capaz de obtener VTX, debe completar lo siguiente:",
+        "first_p_first_point": "1. KYC con uno de sus socios de confianza.",
+        "first_p_second_point": "2. Asociar una Dirección Pública de Verto con la cuenta donde haya sido realizado el proceso KYC.",
+        "subheader_1": "Ya se inscribió para el proceso KYC",
+        "second_p": "Si ya se encuentra inscrito para el proceso KYC, a través de la web, puede asociar su monedero con esta cuenta ahora.",
+        "link_associate": "Asociar esta dirección Verto ahora.",
+        "second_subheader": "Debe realizar el proceso KYC",
+        "third_p": "Para poder obtener VTX, se requiere haber realizado el proceso KYC, para poder cumplir con las normas reglamentarias. Si realiza el proceso KYC a través de Verto, su dirección pública estará automáticamente asociada a la cuenta donde realizo el KYC. Como resultado, una vez su KYC haya sido aprobado, podrá obtener VTX inmediatamente.",
+        "link_kyc": "Comenzando proceso KYC ahora."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC ya asignado",
+        "first_p": "A la cuenta donde se realizó el proceso KYC ya se le ha asignado una Dirección Pública Verto."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Comprobación del Estado del Monedero"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Tiempo Restante",
+        "mins": "Minutos",
+        "seconds": "segundos"
     }
 }
