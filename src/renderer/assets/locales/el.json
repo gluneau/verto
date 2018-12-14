@@ -195,14 +195,14 @@
     },
     "KycAlreadyAssociated": {
         "header": "Έχει Γίνει Αντιστοίχηση Επαλήθευσης KYC",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "first_p": "Αυτός ο λογαριασμός που έχει περάσει από επαλήθευση KYC, έχει ήδη αντιστοιχιστεί με μια Δημόσια Διεύθυνση Verto."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Έλεγχος Κατάστασης Πορτοφολιού"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Χρόνος που Απομένει",
+        "mins": "Λεπτά",
+        "seconds": "δευτερόλεπτα"
     }
 }
