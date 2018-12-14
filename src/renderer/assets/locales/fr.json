@@ -59,7 +59,7 @@
     "DisplayKey": {
         "understand": "Je comprends que la clé privée n'est pas stockée dans Verto et ne peut pas être récupérée.",
         "private": "Privé",
-        "public": "Public",
+        "public": "Publique",
         "already": "Le nom ou la clé a déjà été utilisé.",
         "mustname": "Vous devez donner un nom à votre clé.",
         "walletname": "Nom du portefeuille",
@@ -98,7 +98,7 @@
         "amount": "Montant",
         "ratio": "Ratio de conversion",
         "confirmation": "Confirmation",
-        "transid": "Ledger Trans. ID",
+        "transid": "ID de trans. au grand livre",
         "pre": "Pré Bonus",
         "phase": "Bonus de phase",
         "additional": "Bonus supplémentaire",
@@ -122,8 +122,8 @@
         "telegram": "Telegram",
         "sendmail": "Envoyer un courriel",
         "language": "Langage",
-        "help": "Help",
-        "optionsdd": " Options"
+        "help": "Aide",
+        "optionsdd": " Paramètres"
     },
     "AssociateView": {
         "username": "Nom d'utilisateur Blocktopus",
@@ -137,9 +137,9 @@
         "additional": "Bonus supplémentaires",
         "bonus": "Bonus",
         "soon": "Bientôt disponible",
-        "getvtx": "GetVtx",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
+        "getvtx": "Get VTX",
+        "native_chain_address": "Adresse de la chaîne native",
+        "available_for": "Adresse disponible jusqu’au"
     },
     "ChangeVertoPassword": {
         "current": "Mot de passe Verto actuel",
@@ -169,27 +169,27 @@
         "cloud": "Le stocker sur le nuage."
     },
     "RequestNativeChainAddress": {
-        "header": "Request Address",
-        "button": "Allocate Address",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
-        "err_pendingTransactionsExist": "Pending transactions exist",
-        "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
-        "first_p": "The following two rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
-        "third_p": "2. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
-        "time_remaining": "Available In"
+        "header": "Demande d'adresse",
+        "button": "Allouer l’adresse",
+        "err_noAddressAvailable": "Aucune adresse disponible pour cette chaîne. S’il vous plaît essayer de nouveau.",
+        "err_pendingTransactionsExist": "Des transactions en attente existe",
+        "err_investor_must_wait": "Vous devez attendre une heure avant de demander une nouvelle adresse.",
+        "first_p": "Les deux règles suivantes s’appliquent :",
+        "second_p": "1. L’adresse que vous recevez n’est valide que pour une période de temps limitée. En conséquence, toute transaction que vous envoyez après la période d’allocation peut-être être perdue. Lors de l’envoi des transactions, assurez vous que vous avez toujours une adresse de la chaîne native attribuée à votre portefeuille.",
+        "third_p": "2. Vous êtes seulement capable de demander une adresse de chaîne native par heure.",
+        "access": "Je comprends et j'accepte",
+        "select_currency": "Sélectionnez une chaîne Native",
+        "time_remaining": "Disponible dans"
     },
     "NotWhitelisted": {
-        "header": "Not Whitelisted",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
-        "first_p_first_point": "1. KYC with one of our trusted partners.",
-        "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
-        "subheader_1": "Already Signed Up For KYC",
-        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
-        "link_associate": "Associate This Verto Address Now.",
-        "second_subheader": "Need To KYC",
+        "header": "Pas inscrit dans la liste blanche",
+        "first_p": "Avant que vous soyez en mesure d’obtenir VTX, vous devez remplir ce qui suit :",
+        "first_p_first_point": "1. CSC (connaître son client) avec l’un de nos partenaires de confiance.",
+        "first_p_second_point": "2. Associer une adresse publique Verto à votre compte CSC (connaître son client).",
+        "subheader_1": "Déjà inscrit à CSC (connaître son client)",
+        "second_p": "Si vous avez déjà complété pour le processus CSC (connaître son client), via le web, vous pouvez associer votre portefeuille avec ce compte maintenant.",
+        "link_associate": "Associer cette adresse Verto maintenant.",
+        "second_subheader": "Besoin de CSC (connaître son client)",
         "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
         "link_kyc": "Begin KYC Process Now."
     },
