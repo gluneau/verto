@@ -144,16 +144,16 @@
     "ChangeVertoPassword": {
         "current": "Contraseña Verto Actual",
         "new": "Nueva Contraseña Verto",
-        "confirm": "Confirm New Verto Password",
-        "required": "All fields are required.",
-        "change": "Change Verto Password",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
+        "confirm": "Confirmar Nueva Contraseña Verto",
+        "required": "Debe completar todos los campos.",
+        "change": "Cambiar la Contraseña Verto",
+        "recommended": "Es recomendado que primero cree un reapldo de la configuración actual de Verto antes de cambiar la contraseña. Puede crear una copia de seguridad de Verto ",
+        "here": "aquí",
+        "access": "Cambia la contraseña para acceder a Verto. Una vez seleccionada, toda configuración es encriptada usando la nueva contraseña. Quizás desees "
     },
     "BackupWallet": {
-        "folder": "Select Folder",
-        "backup": "Backup",
+        "folder": "Seleccionar Carpeta",
+        "backup": "Respaldo",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
         "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
