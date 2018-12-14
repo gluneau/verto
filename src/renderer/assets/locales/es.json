@@ -1,6 +1,6 @@
 {
     "Welcome": {
-        "welcometo": "BIENVENIDO A",
+        "welcometo": "BIENVENIDO A VERTO",
         "welcomeback": "¡Bienvenido de vuelta!",
         "password": "Contraseña",
         "nopassword": "No se ha fijado una contraseña para el monedero. Por favor crea una contraseña primero.",
@@ -137,7 +137,7 @@
         "additional": "Bonus Adicionales",
         "bonus": "Bonus",
         "soon": "Próximamente",
-        "getvtx": "Get VTX",
+        "getvtx": "Obtén VTX",
         "native_chain_address": "Dirección Nativa de Cadena",
         "available_for": "Dirección Disponible Hasta"
     },
