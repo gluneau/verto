@@ -186,16 +186,16 @@
         "first_p": "Antes de conseguir obter VTX, deve completar o seguinte:",
         "first_p_first_point": "1. KYC with one of our trusted partners.",
         "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
-        "subheader_1": "Already Signed Up For KYC",
-        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
+        "subheader_1": "Já se inscreveu para o processo KYC",
+        "second_p": "Se já se encontra inscrito para o processo KYC, através da web, pode agora associar a sua carteira com esta conta.",
         "link_associate": "Associe Este Endereço Verto Agora.",
-        "second_subheader": "Need To KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "second_subheader": "Deve realizar o processo KYC",
+        "third_p": "Para obter VTX, é necessário realizar o processo KYC para poder cumprir com as normas regulamentares. Nota que se realizares o processo KYC através do Verto, o teu endereço público será automátiamente associado à tua conta onde se realizou o KYC. Como resultado, uma vez que o seu KYC for aprovado, poderá obter VTX imediatamente.",
+        "link_kyc": "Começar o Processo KYC Agora."
     },
     "KycAlreadyAssociated": {
         "header": "KYC Já Alocado",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "first_p": "A conta onde se realizou o processo KYC já está alocada a um Endereço Público do Verto."
     },
     "BeginGetVtx": {
         "header": "Verificando o Status da Carteira"
