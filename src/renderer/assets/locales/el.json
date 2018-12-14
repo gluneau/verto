@@ -1,12 +1,12 @@
 {
     "Welcome": {
-        "welcometo": "WELCOME TO",
-        "welcomeback": "Welcome Back!",
-        "password": "Password",
-        "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
-        "incorrect": "The Verto Password Is Incorrect.",
-        "login": "Login",
-        "create": "Create Verto Password",
+        "welcometo": "ΚΑΛΏΣ ΉΡΘΑΤΕ",
+        "welcomeback": "Καλώς ήρθατε και πάλι!",
+        "password": "Κωδικός",
+        "nopassword": "Δεν Έχει Οριστεί Κωδικός Για Αυτό Το Πορτοφόλι. Παρακαλώ Δημιουργήστε Πρώτα Έναν Κωδικό.",
+        "incorrect": "Ο Κωδικός Verto Είναι Λάθος.",
+        "login": "Σύνδεση",
+        "create": "Δημιουργία Κωδικού Verto",
         "subtitle_message": "Verto is your gateway to Volentix, with Verto, you can purchase VTX, the native token of the Volentix ecosystem.",
         "join_message": "We're glad you've joined us."
     },
