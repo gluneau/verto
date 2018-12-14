@@ -41,7 +41,7 @@
         "before": "Voordat je verder gaat, is het belangrijk om te weten dat je volledig verantwoordelijk bent voor het beheer, de veiligheid, de bescherming en het herstellen van je privé-sleutel. Niemand anders, ook niet de partners van het Volentix ecosysteem.",
         "choices": "Je hebt 2 keuzes om je persoonlijke sleutel te behouden. Beide methoden zijn ontworpen om ervoor te zorgen dat je privé-sleutel veilig blijft.",
         "first": "De eerste keuze is om je sleutel op te schrijven.",
-        "second": "De tweede keuze is om je sleutel te coderen in een met wachtwoord beveiligd bestand.",
+        "second": "De tweede keuze is om je sleutel te versleutelen in een met wachtwoord beveiligd bestand.",
         "next": "Volgende",
         "back": "Vorige"
     },
@@ -147,12 +147,12 @@
         "confirm": "Bevestig nieuw Verto-wachtwoord",
         "required": "Alle velden zijn verplicht.",
         "change": "Verto-wachtwoord wijzigen",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
+        "recommended": "Het wordt aanbevolen om eerst een back-up te maken van de huidige configuratie van Verto voordat je het wachtwoord wijzigt. Je kunt een back-up maken van Verto ",
+        "here": "hier",
+        "access": "Wijzigt het wachtwoord om toegang te krijgen tot Verto. Eenmaal geselecteerd wordt alle configuratie versleuteld met behulp van het nieuwe wachtwoord. Mogelijk wilt u "
     },
     "BackupWallet": {
-        "folder": "Select Folder",
+        "folder": "Map selecteren",
         "backup": "Backup",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
