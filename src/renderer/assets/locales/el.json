@@ -21,37 +21,37 @@
         "createwallet": "Δημιουργία Πορτοφολιού",
         "createkey": "Δημιουργήστε ζεύγη δημόσιων/ιδιωτικών κλειδιών για ένα νέο πορτοφόλι. Σημειώστε πως <b>ΜΟΝΟ</b> το δημόσιο κλειδί αποθηκεύεται στο Verto. Είστε υπεύθυνοι για την διαχείριση των ιδιωτικών κλειδιών σας, την αποθήκευση και την ασφάλειά τους.",
         "wallets": "Πορτοφόλια",
-        "choose": "Choose to open a wallet by simply clicking on its name.",
+        "choose": "Επιλέξτε να ανοίξετε ένα πορτοφόλι, απλά κάνοντας κλικ στο όνομά του.",
         "delete": "Διαγραφή Πορτοφολιού",
-        "trash": "Click on the 'Trash' icon",
+        "trash": "Κάντε κλικ στο εικονίδιο του \"Κάδου Ανακύκλωσης\"",
         "enter": "Εισάγετε τον κωδικό σας.",
-        "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets."
+        "note": "<b>ΣΗΜΕΙΩΣΗ:</b> Το Verto δε μπορεί να ανακτήσει διαγραμμένα πορτοφόλια."
     },
     "WalletManager": {
         "used": "Το όνομα ή το πορτοφόλι έχει ήδη χρησιμοποιηθεί.",
-        "both": "You must supply both a name and the public key for the wallet.",
+        "both": "Πρέπει να ορίσετε ένα όνομα και το δημόσιο κλειδί για το πορτοφολιού.",
         "submit": "Υποβολή",
-        "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
+        "cannotrecover": "Το Verto δε μπορεί αν ανακτήσει το πορτοφόλι αφού διαγραφεί. Πατήστε ξανά το κουμπί διαγραφής για να οριστικοποιήσετε τη διαγραφή.",
         "cancel": "Άκυρο",
         "delete": "Διαγραφή",
-        "keyhere": "Wallet Public Key Here"
+        "keyhere": "Δημόσιο Κλειδί Πορτοφολιού Εδώ"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep your keys safe",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "The first choice is to write your key down.",
-        "second": "The second choice is to encrypt your key in a password protected  file.",
-        "next": "Next",
-        "back": "Back"
+        "keepsafe": "Κρατήστε τα κλειδιά σας ασφαλή",
+        "before": "Πριν συνεχίσετε, είναι σημαντικό να σημειώσουμε πως είστε εξ ολοκλήρου υπεύθυνοι για τη διαχείριση, την ασφάλεια, την προστασία, και την ανάκτηση του ιδιωτικού σας κλειδιού. Κανένας άλλος, συμπεριλαμβανομένων των συνεργατών του Volentix.",
+        "choices": "Έχετε 2 επιλογές για την αποθήκευση του ιδιωτικού σας κλειδιού. Και οι 2 μέθοδοι έχουν σχεδιαστεί για την εξασφάλιση του ιδιωτικού σας κλειδιού.",
+        "first": "Η πρώτη επιλογή είναι να γράψετε (σε χαρτί) το κλειδί σας.",
+        "second": "Η δεύτερη επιλογή είναι να κρυπτογραφήσετε το κλειδί σας σε ένα αρχείο προστατευμένο με κωδικό.",
+        "next": "Επόμενο",
+        "back": "Επιστροφή"
     },
     "SaveYourKeys": {
-        "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
-        "agree": "I agree with the Terms & Conditions",
-        "responsible": "I am entirely responsible for the security managment of my private key",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
+        "strategy": "Θα πρέπει να σχεδιάσετε μια στρατηγική για την φυσική αποθήκευση του ιδιωτικού σας κλειδιού. Αυτή η στρατηγική πρέπει να είναι σχεδιασμένη με μακροπρόθεσμο σκοπό, όπως:",
+        "physical": "<b>Φυσική Ασφάλεια:</b> Θησαυροφυλάκια οποιουδήποτε είδους, που παρέχουν την προστασία που επιδιώκετε. Σκεφτείτε ένα μέρος που γνωρίζετε ότι είναι ασφαλές από κλοπές. Σε ορισμένες περιπτώσεις, μπορείτε να επιλέξετε μια τράπεζα ή έναν δικηγόρο. Σε άλλες περιπτώσεις, μπορεί να επιλέξετε να το θάψετε στην αυλή σας. Η επιλογή είναι δική σας.",
+        "legacy": "<b>Κληρονομιά:</b> Συμβαίνουν διάφορα πράγματα. Π.χ. η ζωή τελειώνει. Θα πρέπει να σχεδιάσετε ένα σχέδιο για τη μεταβίβαση του πορτοφολιού σας σε κάποιον τρίτο. Σε κάποιες περιπτώσεις, μπορεί να είναι μια διαθήκη, ενώ σε άλλες ένα κυνήγι θησαυρού. Η επιλογή είναι δική σας.",
+        "agree": "Αποδέχομαι τους Όρους και τις Προϋποθέσεις",
+        "responsible": "Είμαι εξ ολοκλήρου υπεύθυνος για την ασφάλεια του ιδιωτικού μου κλειδιού",
+        "access": "Καταλαβαίνω ότι η Volentix και οι συνεργάτες της δεν έχουν πρόσβαση στο ιδιωτικό μου κλειδί",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "tofile": "Save to file",
         "writedown": "I'll write it down"
