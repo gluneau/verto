@@ -104,42 +104,42 @@
         "additional": "Додатни Бонус",
         "total": "Укупно",
         "received": "Примљено",
-        "converted": "Converted",
-        "pending": "Pending",
-        "confirmed": "Confirmed",
-        "approved": "Approved"
+        "converted": "Конвертовано",
+        "pending": "Нa чекању",
+        "confirmed": "Потврђено",
+        "approved": "Одобрено"
     },
     "SettingsView": {
-        "settings": "Settings",
-        "updates": "Check for Updates",
-        "whitelist": "Whitelist",
-        "blocktopus": "Associate with Blocktopus",
-        "manager": "Wallet Manager",
-        "change": "Password",
-        "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
-        "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options"
+        "settings": "Подешавања",
+        "updates": "Провери ажурирања",
+        "whitelist": "Бела листа",
+        "blocktopus": "Придружите Blocktopus-у",
+        "manager": "Менаџер новчаника",
+        "change": "Лозинка",
+        "backup": "Резервна копија новчаника",
+        "gettrans": "Набавите VTX Историју Трансакција",
+        "logout": "Одјава",
+        "telegram": "Телеграм",
+        "sendmail": "Пошаљи поруку",
+        "language": "Језик",
+        "help": "Помоћ",
+        "optionsdd": " Опције"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Blocktopus корисничко име",
+        "password": "Blocktopus лозинка"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
-        "bonus": "Bonus",
-        "soon": "Coming Soon",
+        "vtxsold": "VTX продато",
+        "round": "Бонус Рунда",
+        "amount": "Бонус Износ",
+        "current": "Тренутна цена VTX",
+        "additional": "Додатни Бонуси",
+        "bonus": "Бонус",
+        "soon": "Ускоро",
         "getvtx": "GetVtx",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
+        "native_chain_address": "Нативна адреса ланца",
+        "available_for": "Адреса ће бити доступна до"
     },
     "ChangeVertoPassword": {
         "current": "Current Verto Password",
@@ -190,19 +190,19 @@
         "second_p": "Ако сте се већ пријавили за KYC процес, преко веба, можете одмах повезати свој новчаник са тим налогом.",
         "link_associate": "Одмах повежите ову Verto адресу.",
         "second_subheader": "Потребно за KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "third_p": "Како бисте набавили VTX, неопходно је да имате потврђен идентитет преко KYC-а. Имајте на уму то да ако обављате KYC преко Verto-а, Ваша јавна адреса ће аутоматски бити повезана са Вашим KYC налогом. Као последица, једном када је KYC одобрен, одмах ћете моћи да преузмете VTX.",
+        "link_kyc": "Одмах отпочните процес KYC."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC је већ додељен",
+        "first_p": "KYC налог је већ додељен Verto јавној адреси."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Проверавање статуса новчаника"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Преостало време",
+        "mins": "Минута",
+        "seconds": "секунди"
     }
 }
