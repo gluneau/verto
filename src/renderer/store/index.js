@@ -10,7 +10,8 @@ export default new Vuex.Store({
   state: {
     userKey: "",
     loggedin: false,
-    keys: []
+    keys: [],
+    currentWallet: {}
   },
   actions: {
     save({
@@ -23,6 +24,9 @@ export default new Vuex.Store({
     },
     setKeys(context, newkeys) {
       context.commit("KEYS", newkeys);
+    },
+    setCurrentWallet(context, newWallet) {
+      context.commit("CURRENTWALLET", newWallet);
     }
   },
   mutations: {
@@ -34,6 +38,9 @@ export default new Vuex.Store({
     },
     KEYS(state, newkeys) {
       state.keys = newkeys;
+    },
+    CURRENTWALLET(state, newKey) {
+      state.currentWallet = newKey
     }
   }
 })

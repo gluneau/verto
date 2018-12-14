@@ -1,11 +1,11 @@
 <template>
-  <section class="has-background-darkgreen">
-    <iframe id="blocktopusiframe" :src="blocktopusLink"/>
+  <section>
+    <iframe   id="blocktopusiframe" :src="blocktopusLink"/>
   </section>
 </template>
 
 <script>
-import sjcl from "sjcl"
+import sjcl from "sjcl";
 import EventBus from '../../bus'
 
 export default {
@@ -15,7 +15,7 @@ export default {
       email: "",
       amount: 0,
       currency: 'BTC',
-      blocktopusLink: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_in?verto_public_address=' + this.$store.state.currentWallet.key
+      blocktopusLink: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_up?verto_public_address=' + this.$store.state.currentWallet.key
     };
   },
   beforeMount() {
@@ -31,7 +31,7 @@ export default {
     callback: function(e) {
       if (e.data && (typeof e.data === 'string' || e.data instanceof String)) {
         if (e.data.startsWith('success')) {
-          this.$router.push({ path: "blocktopussuccesssful" })
+          this.$router.push({ path: "whitelistsuccessful" })
         } else if (e.data.startsWith('cancel')) {
           this.$router.push({ path: "main" })
         } else if (e.data.startsWith('error')) {

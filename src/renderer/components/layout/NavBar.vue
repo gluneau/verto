@@ -1,54 +1,63 @@
 <template>
-  <nav class="navbar is-light">
-    <div class="navbar-brand">
-      <div class="navbar-item" href="/">
-        Vue multi layouts
+  <nav class="navbar is-dark">
+    <div class="navbar-brand  has-text-centered">
+      <div class="navbar-item  has-text-centered" href="/">
+        {{ appVersion }}
+      </div>
+      <div v-if="showParents" class="navbar-item is-logo has-text-centered" href="/">
+        <img src="~@/assets/img/verto-logo-white.png" class="" alt="avatar">
       </div>
 
-      <a class="navbar-burger" @click="open = !open">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+
+      <span class="navbar-burger burger" data-target="navMenu"  @click="showMobileChildren">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </div>
-
-    <div class="navbar-menu" :class="{'is-active': open}">
-      <div class="navbar-start">
-      </div>
+    <div class="navbar-menu" id="navMenu" :class="{'is-active': open}">
 
       <div class="navbar-end">
         <div class="navbar-item">
-              <div class="mr2 f6 link br1 bw1  ph3 pv1 dib black-40 flex items-center justify-center w4">
-                <a href="#" v-if="showDropDownOptions" v-on:click.prevent="showOptionsChildren()" class="mr2 f6 link br1 bw1  ph3 pv1 dib black-40 flex items-center justify-center w4">
-                  <div>{{ $t('SettingsView.optionsdd') }}</div>
+
+                <a href="#" v-if="showDropDownOptions" v-on:click.prevent="showOptionsChildren()" style="vertical-align: text-bottom">
+                  {{ $t('SettingsView.optionsdd') }}
                 </a>
-              </div>
-              <div>
+
                 <a href="#" v-if="showDropDownLanguage" v-on:click.prevent="showLanguageChildren()" class="">
                     <img v-if="$i18n.locale == 'en'" src="~@/assets/img/lang/en.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'fr'" src="~@/assets/img/lang/fr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                 </a>
-              </div>
-          <transition name="slide-fade">
-            <div v-if="showDropDownOptionsChildren" class="justify-center">
-              <a class="br-100 ba b--black-10 h2 w2 mh2 link" @click="showParents()">
-                <font-awesome-icon icon="arrow-left" class="fa-sm  m-l-sm"/>
-              </a>
-              <router-link class="f6 link ph3 pv1 dib black-40  items-center justify-center w4" :to="{name: 'walletmanager'}" @click.native="open = false">
+
+            <div v-if="showDropDownOptionsChildren" >
+
+              <router-link v-if="hasChosenWallet()" :to="{path: 'main'}" @click.native="showParentsPane()">
+                {{ $t('SettingsView.current_wallet') }}
+              </router-link>
+              &nbsp;&nbsp;
+              <router-link  :to="{name: 'walletmanager'}" @click.native="showParentsPane()">
                 {{ $t('SettingsView.manager') }}
               </router-link>
-              <router-link to="/changevertopassword" class="f6 link ph3 pv1 dib black-40  items-center justify-center w4" @click.native="showParents()">
+              &nbsp;&nbsp;
+              <router-link to="/changevertopassword" @click.native="showParentsPane()">
                 {{ $t('SettingsView.change') }}
               </router-link>
-              <router-link to="/logout" class="f6 link ph3 pv1 dib black-40  items-center justify-center w4" @click.native="showParents()">
+              &nbsp;&nbsp;
+              <!--
+              <router-link to="/vespucciopen" @click.native="showParentsPane()">
+                {{ $t('SettingsView.vespucci_open') }}
+              </router-link>
+              &nbsp;&nbsp;
+              -->
+              <!-- class="f6 link ph3 pv1 dib black-40  items-center justify-center w4  has-text-white" -->
+              <router-link to="/logout"  @click.native="showParentsPane()">
                 {{ $t('SettingsView.logout') }}
               </router-link>
+              <a @click="showParentsPane()">
+                <font-awesome-icon icon="angle-up" class="fa-sm has-text-white m-l-sm"/>
+              </a>
             </div>
-          </transition>
           <div v-if="showDopDownLanguageChildren" class="justify-center">
-            <a class="" @click="showParents()">
-              <font-awesome-icon icon="arrow-left" class="fa-sm  m-l-sm"/>
-            </a>
             <a class="" @click="updateLanguage('en')">
               <img src="~@/assets/img/lang/en.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
@@ -56,17 +65,15 @@
               <img src="~@/assets/img/lang/fr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
           </div>
-
-          
           <div>
-            
+          </div>
           </div>
         </div>
       </div>
       </div>
     </div>
   </nav>
-</template> 
+</template>
 
 <script>
 export default {
@@ -78,13 +85,20 @@ export default {
       showDropDownOptions: true,
       showDropDownLanguage: true,
       showDropDownOptionsChildren: false,
-      showDopDownLanguageChildren: false
+      showDopDownLanguageChildren: false,
+      showParents: true,
+      appVersion: this.$appVersion,
+      appName: this.$appName
     };
   },
-  mounted: function() {
-    console.log(this.$i18n.locale)
-  },
   methods: {
+    hasChosenWallet: function() {
+      return this.$store.state.currentWallet.key
+    },
+    showMobileChildren: function() {
+      this.open = !this.open;
+      this.showParents = !this.showParents
+    },
     showLanguageChildren: function() {
       this.showDropDownOptions = false;
       this.showDropDownLanguage = false;
@@ -97,19 +111,15 @@ export default {
       this.showDropDownOptionsChildren = true;
       this.showDopDownLanguageChildren = false;
     },
-    showParents: function() {
-      this.showDropDownOptions = true;
-      this.showDropDownLanguage = true;
+    showParentsPane: function() {
       this.showDropDownOptionsChildren = false;
       this.showDopDownLanguageChildren = false;
+      this.showDropDownOptions = true;
+      this.showDropDownLanguage = true;
     },
     updateLanguage: function(lang) {
-      this.showParents();
+      this.showParentsPane();
       this.$i18n.locale = lang;
-    },
-    checkBlocktopus: function() {
-      console.log(this.blocktopusUrl)
-      console.log(__dirname)
     },
     openTelegram: function() {
       this.showDropDownOptions = false;
@@ -126,6 +136,24 @@ export default {
 </script>
 
 <style lang="less">
+a.openClass:link {color:#ff0000;}
+a.openClass:visited {color:#ff0000;}
+a.openClass:hover {color:#ff0000;}
+a.closedClass:link {color:#ff0000;}
+a.closedClass:visited {color:#ff0000;}
+a.closedClass:hover {color:#ff0000;}
+.navbar-burger burger {
+    background: black;
+    border: none;
+}
+.navbar-item.is-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -63px; // 50% in my case
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 /*! TACHYONS v4.9.0 | http://tachyons.io */
 /*
  *
@@ -366,7 +394,7 @@ template { display: none; }
 [hidden] { display: none; }
 /* Modules */
 /*
- 
+
   BOX SIZING
 
 */
@@ -960,7 +988,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FORMS
-   
+
 */
 .input-reset { -webkit-appearance: none; -moz-appearance: none; }
 .button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner { border: 0; padding: 0; }
@@ -1245,8 +1273,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
    Docs: http://tachyons.io/docs/themes/skins/
 
    Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will 
-   be set to the current text color. 
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
 
 */
 /* Text colors */
@@ -1364,13 +1392,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-washed-yellow { background-color: #fffceb; }
 .bg-washed-red { background-color: #ffdfdf; }
 .bg-inherit { background-color: inherit; }
-/* 
-  
+/*
+
    SKINS:PSEUDO
 
    Customize the color of an element when
    it is focused or hovered over.
- 
+
  */
 .hover-black:hover { color: #000; }
 .hover-black:focus { color: #000; }
@@ -2051,16 +2079,16 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
-/* 
+/*
    Add shadow on hover.
 
-   Performant box-shadow animation pattern from 
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+   Performant box-shadow animation pattern from
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
 */
 .shadow-hover { cursor: pointer; position: relative; transition: all .5s cubic-bezier( .165, .84, .44, 1 ); }
 .shadow-hover::after { content: ''; box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); border-radius: inherit; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
-/* Combine with classes in skins and skins-pseudo for 
+/* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 .bg-animate, .bg-animate:hover, .bg-animate:focus { transition: background-color .15s ease-in-out; }
 /*
@@ -3522,12 +3550,22 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .slide-fade-leave-active {
   transition: all .2s ease;
 }
-.slide-fade-enter { 
+.slide-fade-enter {
   transform: translateY(-50px);
   opacity: 0;
 }
 .slide-fade-leave-to {
  transform: translateY(-50px);
-  opacity: 0; 
+  opacity: 0;
+}
+
+.navbar-menu.is-active {
+  background-color: transparent !important;
+}
+.navbar-menu a{
+  color: white !important;
+}
+.navbar-menu.is-active a{
+  color: white !important;
 }
 </style>

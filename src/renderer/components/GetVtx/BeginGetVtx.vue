@@ -29,7 +29,12 @@ export default {
     };
   },
   mounted() {
-    let url = process.env.CROWDFUND_URL + "/public/api/allocate-native-chain/?verto_public_address=" + this.$store.state.userKey;
+    this.$router.push({ path: "notwhitelisted" })
+    /*
+    //
+    //               KEEP the logic below as it will be uncommented once the Get Vtx is finalized.
+    //
+    let url = process.env.CROWDFUND_URL + "/public/api/allocate-native-chain/?verto_public_address=" + this.$store.state.currentWallet.key;
     const router = this.$router;
     axios.get(url).then(function (response) {
       if (response.data.message === 'wallet_not_whitelisted') {
@@ -44,10 +49,12 @@ export default {
           "&server_time=" + response.data.data.server_time
         )
       }
+      purchase_not_allowed needs to be done
     })
       .catch(function (error) {
         console.log(error);
       });
+    */
   },
   methods: {
   },

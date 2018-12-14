@@ -1,5 +1,9 @@
 import Vue from 'vue'
+import { mount } from '@vue/test-utils'
 import Main from '@/components/Main'
+import router from "@/router"
+import { i18n } from '@/plugins/i18n.js'
+import store from '@/store'
 
 describe('Main.vue', () => {
   it('Has a mounted hook', () => {
@@ -16,8 +20,14 @@ describe('Main.vue', () => {
   })
 
   it('Renders the correct message', () => {
-    const Constructor = Vue.extend(Main)
-    const vm = new Constructor().$mount()
-    assert.include(vm.$el.querySelector('.wallet-address').textContent, 'Wallet address:')
+    const vm = new Vue({
+      el: document.createElement('div'),
+      render: h => h(Main),
+      router: router,
+      i18n: i18n,
+      store: store
+    }).$mount()
+
+    assert.include(vm.$el.querySelector('.wallet-address').textContent, '')
   })
 })
