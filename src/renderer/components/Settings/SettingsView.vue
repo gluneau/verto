@@ -74,7 +74,7 @@ export default {
   name: 'locale-changer',
   data() {
     return {
-      langs: ['en', 'fr'],
+      langs: ['en', 'fr', 'es', 'sr', 'pl', 'el'],
       appVersion: this.$appVersion,
       appName: this.$appName,
       blocktopusUrl: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_up?verto_public_address=' + this.$store.state.userKey
