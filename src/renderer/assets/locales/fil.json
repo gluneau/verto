@@ -171,13 +171,13 @@
         "backup": "Backup",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
-        "select": "Select 'Backup Wallet'"
+        "willbackup": "Iba-back up ng Verto ang wallet na may pangalang 'verto' + the date + '.config'",
+        "select": "Piliin ang 'I-back up ang Wallet'"
     },
     "ChoosePassword": {
-        "header": "Save File",
-        "file": "Choose file",
-        "choose": "Choose Wallet Password",
+        "header": "I-save ang Payl",
+        "file": "Pumili ng Payl",
+        "choose": "Pumili ng Password ng Wallet",
         "confirm": "Confirm Wallet password",
         "storeext": "Store on an external drive, wallet, or USB key.",
         "storeloc": "Store it on your computers local drive.",
