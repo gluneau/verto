@@ -6,15 +6,15 @@
         "nopassword": "Aucun mot de passe n'a été défini pour le portefeuille. Créez d'abord un mot de passe.",
         "incorrect": "Le mot de passe Verto est incorrect.",
         "login": "Connexion",
-        "create": "Créez un mot de passe Verto",
-        "subtitle_message": "Verto est votre passerelle à Volentix. Avec Verto, vous pouvez acheter le jeton natif VTX de l’écosystème Volentix.",
+        "create": "Débuter",
+        "subtitle_message": "Verto est votre passerelle à Volentix.",
         "join_message": "Nous sommes heureux de vous compter parmi nous."
     },
     "CreateVertoPassword": {
         "header": "Créez un mot de passe Verto",
         "important": "IMPORTANT",
         "important_warning": "S’il vous plaît lire attentivement. Ce mot de passe ne peuvent pas être récupéré. Si vous oubliez ou perdez votre mot de passe, vous perdrez votre porte-monnaie pour toujours.",
-        "vertopassword": "Mot de passe Verto",
+        "vertopassword": "Mot de passe Verto principal",
         "i_understand": "Je comprends",
         "confirm": "Confirmer le mot de passe Verto",
         "mustmatch": "Les mots de passe doivent correspondre.",
@@ -231,6 +231,6 @@
         "important_info": "Ces informations ne sont jamais stockées au sein de Verto.",
         "email_verification_required": "Vous devez tout d’abord vérifier votre courriel avec Venue avant d’associer le portefeuille.",
         "verto_address_not_unique": "Cette adresse a déjà été attribuée à un autre utilisateur.",
-        "user_deactivated": "This user is no longer active."
+        "user_deactivated": "Cet utilisateur n'est plus actif."
     }
 }
