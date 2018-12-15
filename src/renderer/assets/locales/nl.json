@@ -176,33 +176,33 @@
         "err_investor_must_wait": "Je moet een uur wachten voordat je een nieuw adres aanvraagt.",
         "first_p": "De volgende twee regels zijn van toepassing:",
         "second_p": "1. Het adres dat je ontvangt is slechts voor een beperkte periode geldig. Hierdoor kan elke transactie die je na de toewijzingsperiode verstuurt, verloren gaan. Zorg er bij het verzenden van transacties altijd voor dat je nog steeds een oorspronkelijk keten-adres aan je portemonnee hebt toegewezen.",
-        "third_p": "2. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
-        "time_remaining": "Available In"
+        "third_p": "2. Je kunt slechts één oorspronkelijk keten-adres per uur aanvragen.",
+        "access": "Ik begrijp het en ga akkoord",
+        "select_currency": "Selecteer een oorspronkelijke keten",
+        "time_remaining": "Beschikbaar in"
     },
     "NotWhitelisted": {
-        "header": "Not Whitelisted",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
-        "first_p_first_point": "1. KYC with one of our trusted partners.",
-        "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
-        "subheader_1": "Already Signed Up For KYC",
-        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
-        "link_associate": "Associate This Verto Address Now.",
-        "second_subheader": "Need To KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "header": "Niet whitelisted",
+        "first_p": "Voordat je VTX kunt bemachtigen, moet je de volgende handelingen uitvoeren:",
+        "first_p_first_point": "1. KYC met één van onze vertrouwde partners.",
+        "first_p_second_point": "2. Koppel een openbaar Verto-adres aan je KYC-account.",
+        "subheader_1": "Al aangemeld voor KYC",
+        "second_p": "Als je je al hebt aangemeld voor het KYC-proces, via het web, kun je je portemonnee nu aan dit account koppelen.",
+        "link_associate": "Dit Verto-adres nu koppelen.",
+        "second_subheader": "KYC nodig",
+        "third_p": "Om VTX te bemachtigen, is het vereist dat je KYC (Know Your Customer) doorloopt om te voldoen aan de regelgeving. Als je KYC via Verto gebruikt, wordt je openbare adres automatisch gekoppeld aan je KYC-account. Als gevolg hiervan kun je, zodra je KYC-goedgekeurd bent, onmiddellijk VTX bemachtigen.",
+        "link_kyc": "Start KYC-proces nu."
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC reeds toegewezen",
+        "first_p": "Het KYC-gekeurde account heeft al een Verto openbaar adres toegewezen gekregen."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Status van de portemonnee controleren"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Resterende tijd",
+        "mins": "Minuten",
+        "seconds": "seconden"
     }
 }
