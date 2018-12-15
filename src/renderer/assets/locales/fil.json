@@ -36,7 +36,7 @@
         "used": "Ang pangalan o ang wallet ay nagamit na.",
         "both": "Dapat mong ilagay ang parehong pangalan at public key para sa wallet.",
         "submit": "Submit",
-        "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
+        "cannotrecover": "Hindi kayang i-recover ng verto ang wallet kapag nabura na. Muling pindutin ang burahin na pindutan para sa huling pagbura.",
         "cancel": "Cancel",
         "delete": "Delete",
         "keyhere": "Wallet Public Key Here",
@@ -45,7 +45,7 @@
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Keep Your Keys Safe",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
+        "before": "Bago magpatuloy, napakahalaga na tandaan na ikaw ang ganap na responsable para sa pamamahala, kaligtasan, protksyon at recovery ng iyong private key. Walang sinuman kasama ang mga partner ng ecosystem ng Volentix.",
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "Write your key down.",
         "second": "Or, encrypt your key in a password protected file.",
