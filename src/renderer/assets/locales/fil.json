@@ -8,11 +8,11 @@
         "login": "Mag-login",
         "create": "Mag-simula",
         "subtitle_message": "Ang Verto ang iyong daan patungo sa Volentix.",
-        "join_message": "We're glad you've joined us."
+        "join_message": "Nagagalak kami na ikaw'y sumali sa amin."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Gumawa ng Password sa Verto",
+        "important": "MAHALAGA",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
