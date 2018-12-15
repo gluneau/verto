@@ -11,11 +11,15 @@
         "join_message": "Cieszymy się, że do nas dołączyłeś."
     },
     "CreateVertoPassword": {
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Hasło Verto",
+        "i_understand": "I understand",
         "confirm": "Potwierdź Hasło Verto",
         "mustmatch": "Hasła muszą się zgadzać.",
         "fillall": "Prosimy wypełnić wszystkie powyżej",
-        "save": "Zapisz",
+        "done": "Done",
         "addwallet": "Dodaj Portfel",
         "onlysupport": "Jak na razie Verto obsługuje tylko możliwość dodawania kluczy publicznych. Aby dodać portfel, wystarczy podać nazwę, adres portfela i hasło Verto, aby dodać swój portfel.",
         "createwallet": "Stwórz Portfel",
@@ -25,7 +29,8 @@
         "delete": "Usuń Portfel",
         "trash": "Kliknij na ikonę 'Śmieci'",
         "enter": "Wprowadź hasło.",
-        "note": "<b>UWAGA:</b> Verto nie może odzyskać skasowanych portfeli."
+        "note": "<b>UWAGA:</b> Verto nie może odzyskać skasowanych portfeli.",
+        "save": "Zapisz"
     },
     "WalletManager": {
         "used": "Nazwa lub portfel zostały już użyte.",
@@ -34,7 +39,9 @@
         "cannotrecover": "Verto nie może odzyskać portfela po usunięciu. Naciśnij ponownie przycisk usuwania, aby ostatecznie usunąć.",
         "cancel": "Anuluj",
         "delete": "Usuń",
-        "keyhere": "Klucz Publiczny Portfela Tutaj"
+        "keyhere": "Klucz Publiczny Portfela Tutaj",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Dbaj o bezpieczeństwo swoich kluczy",
@@ -53,13 +60,16 @@
         "responsible": "Jestem w pełni odpowiedzialny za zarządzanie bezpieczeństwem mojego klucza prywatnego",
         "access": "Rozumiem, że Volentix i/lub partnerzy nigdy nie mają dostępu do mojego klucza prywatnego",
         "wifi": "Rozumiem, że WIFI zostanie tymczasowo wyłączony podczas generowania kluczy",
-        "tofile": "Zapisz w pliku",
-        "writedown": "Zapiszę to"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "Rozumiem, że klucz prywatny nie jest przechowywany w Verto i nie można go odzyskać.",
-        "private": "Prywatny",
-        "public": "Publiczny",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "Nazwa lub klucz zostały już użyte.",
         "mustname": "Musisz podać nazwę swojego klucza.",
         "walletname": "Nazwa Portfela",
@@ -107,7 +117,8 @@
         "converted": "Przeliczono",
         "pending": "W toku",
         "confirmed": "Potwierdzony",
-        "approved": "Zatwierdzone"
+        "approved": "Zatwierdzone",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Ustawienia",
@@ -123,7 +134,9 @@
         "sendmail": "Wyślij Maila",
         "language": "Język",
         "help": "Pomoc",
-        "optionsdd": " Opcje"
+        "optionsdd": " Opcje",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Nazwa użytkownika Blocktopus",
@@ -137,11 +150,13 @@
         "additional": "Dodatkowe Bonusy",
         "bonus": "Bonus",
         "soon": "Wkrótce Dostępne",
-        "getvtx": "Get VTX",
+        "getvtx": "OtrzymajVtx",
         "native_chain_address": "Macierzysty Adres Sieci",
-        "available_for": "Adres Dostępny Aż"
+        "available_for": "Adres Dostępny Aż",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Obecne hasło Verto",
         "new": "Nowe Hasło Verto",
         "confirm": "Potwierdź Nowe Hasło Verto",
@@ -160,13 +175,15 @@
         "select": "Wybierz 'Zrób Kopię Zapasową Portfela'"
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Wybierz plik",
         "choose": "Wybierz Hasło Portfela",
         "confirm": "Potwierdź hasło Portfela",
         "storeext": "Przechowuj na dysku zewnętrznym, portfelu lub kluczu USB.",
         "storeloc": "Przechowuj go na lokalnym dysku komputera.",
         "emailit": "Wyślij e-mailem.",
-        "cloud": "Przechowuj w chmurze."
+        "cloud": "Przechowuj w chmurze.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Żądanie Adresu",
@@ -176,6 +193,7 @@
         "err_investor_must_wait": "Zanim zażądasz nowy adres, musisz poczekać godzinę.",
         "first_p": "Obowiązują następujące dwie zasady:",
         "second_p": "1. Otrzymany adres jest ważny tylko przez ograniczony czas. W rezultacie każda transakcja wysłana po okresie alokacji może zostać utracona. Wysyłając transakcje, zawsze upewnij się, że nadal masz macierzysty adres łańcucha przypisany do portfela.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "2. Możesz zażądać tylko jednego adresu sieciowego na godzinę.",
         "access": "Rozumiem i zgadzam się",
         "select_currency": "Wybierz Sieć Macierzystą",
@@ -183,15 +201,15 @@
     },
     "NotWhitelisted": {
         "header": "Nie Ma Na Białej Liście",
-        "first_p": "Zanim będziesz mógł Uzyskać VTX, musisz wykonać następujące czynności:",
-        "first_p_first_point": "1. KYC z jednym z naszych zaufanych partnerów.",
-        "first_p_second_point": "2. Powiąż Adres Publiczny Verto z kontem KYC.",
-        "subheader_1": "Już Zarejestrowany Na KYC",
-        "second_p": "Jeśli zarejestrowałeś się już w procesie KYC, przez Internet możesz teraz powiązać swój portfel z tym kontem.",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
         "link_associate": "Powiąż Ten Adres Verto Teraz.",
-        "second_subheader": "Wymaga Identyfikacji KYC",
-        "third_p": "Aby Uzyskać Vtx, wymagane jest, abyś był zidentyfikowany za pomocą KYC w celu spełnienia wymogów regulacyjnych. Pamiętaj, że jeśli KYC przez Verto twój publiczny adres zostanie automatycznie powiązany z twoim kontem KYC. W rezultacie, po zatwierdzeniu KYC, będziesz mógł natychmiast Uzyskać VTX.",
-        "link_kyc": "Rozpocznij Teraz Proces KYC."
+        "second_p": "Jeśli zarejestrowałeś się już w procesie KYC, przez Internet możesz teraz powiązać swój portfel z tym kontem.",
+        "link_kyc": "Rozpocznij Teraz Proces KYC.",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Jest Już Przydzielony",
@@ -204,5 +222,15 @@
         "time_remaining": "Pozostały Czas",
         "mins": "Minuty",
         "seconds": "sekundy"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }
