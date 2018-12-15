@@ -13,7 +13,7 @@
     "CreateVertoPassword": {
         "header": "Gumawa ng Password sa Verto",
         "important": "MAHALAGA",
-        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
+        "important_warning": "Pakiusap, basahing mabuti. Ang password na ito ay hindi na mai-rerecover pa. Kung makalimutan o mawala mo ang password, ay tuluyan mo nang mawawala ang iyong wallet.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
         "confirm": "Confirm Verto password",
