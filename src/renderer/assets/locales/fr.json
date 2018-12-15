@@ -54,8 +54,8 @@
     },
     "SaveYourKeys": {
         "strategy": "Vous devez planifier une stratégie pour le stockage physique de votre clé privée. Cette stratégie de stockage doit inclure une réflexion à long terme, notamment:",
-        "physical": "<b>Sécurité physique:</b> Des coffres-forts de toute nature offrant la protection recherchée. Pensez à un endroit à l’abri du vol ainsi que des éléments. Dans certains cas, vous choisirez banque ou un avocat. Dans d’autres, vous préférerez peut-être l’enterrer dans votre jardin. À vous de choisir.",
-        "legacy": "<b>Héritage:</b> Il arrive des choses. La vie se termine. Vous devez planifier le transfert de votre portefeuille à quelqu'un d'autre. Dans certains cas, cela peut être par votre testament, alors que dans d'autres, une chasse au trésor. À vous de choisir.",
+        "physical": "<b>Sécurité physique:</b> Des coffres-forts de toute nature offrant la protection recherchée. Pensez à un endroit à l’abri du vol ainsi que des éléments. Dans certains cas, vous choisirez banque ou un avocat. Vous pouvez choisir de protéger vos clés en stockant des copies à plusieurs endroits.",
+        "legacy": "<b>Héritage:</b> Il arrive des choses. La vie se termine. Vous devez planifier le transfert de votre portefeuille à quelqu'un d'autre. Dans certains cas, cela peut être par votre testament, s'il vous plaît examiner attentivement vos options. À vous de choisir.",
         "agree": "J'accepte les conditions générales",
         "responsible": "Je suis entièrement responsable de la gestion de la sécurité de ma clé privée",
         "access": "Je comprends que Volentix et / ou ses partenaires n'ont jamais accès à ma clé privée",
@@ -72,7 +72,7 @@
         "hidePublic": "Masquer la clé publique",
         "already": "Le nom ou la clé a déjà été utilisé.",
         "mustname": "Vous devez donner un nom à votre clé.",
-        "walletname": "Nom du portefeuille",
+        "walletname": "Nom du portefeuille: e.g. Épargne",
         "writedown": "Écrivez vos clés.",
         "privkey": "Clé privée",
         "pubkey": "Clé publique",
@@ -150,7 +150,7 @@
         "additional": "Bonus supplémentaires",
         "bonus": "Bonus",
         "soon": "Bientôt disponible",
-        "getvtx": "GetVtx",
+        "getvtx": "Obtenez VTX avec",
         "native_chain_address": "Adresse de la chaîne native",
         "available_for": "Adresse disponible jusqu’au",
         "native_chain_header": "Adresse de la chaîne native"
@@ -164,7 +164,7 @@
         "change": "Changer le mot de passe Verto",
         "recommended": "Il est recommandé de sauvegarder d'abord la configuration actuelle de Verto avant de changer le mot de passe. Vous pouvez sauvegarder Verto ",
         "here": "ici",
-        "access": "Une fois la modification du mot de passe pour accéder à Verto sélectionnée, la configuration sera cryptée à l'aide du nouveau mot de passe. Vous voudrez peut-être "
+        "access": "Une fois la modification du mot de passe pour accéder à Verto sélectionnée, la configuration sera cryptée à l'aide du nouveau mot de passe."
     },
     "BackupWallet": {
         "folder": "Sélectionner le dossier",
@@ -191,8 +191,8 @@
         "err_noAddressAvailable": "Aucune adresse disponible pour cette chaîne. S’il vous plaît essayer de nouveau.",
         "err_pendingTransactionsExist": "Des transactions en attente existe",
         "err_investor_must_wait": "Vous devez attendre une heure avant de demander une nouvelle adresse.",
-        "first_p": "The following two rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
+        "first_p": "Les règles suivantes s’appliquent :",
+        "second_p": "1. l’adresse que vous recevez n’est valide que pour une période de temps limitée.",
         "second_p_point_1": "2. toute transaction que vous envoyez après la période d’allocation peut-être être perdue.",
         "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "Je comprends et j'accepte",
