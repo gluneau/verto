@@ -53,11 +53,11 @@
         "back": "Back"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "strategy": "Magplano ng istratihiya para sa pisikal na imbakan ng iyong private key. Ang imbakan na istratehiyang ito ay dapat na nakasama sa iyong pangmatagalan na pagiisip, kasama ang:",
+        "physical": "<b>Pisikal na Siguridad:</b> Kahit anong mga vault na nagbibigay proteksyon na iyong hinahanap. Magisip ng kung saang alam mo na ligtas mula sa magnanakaw gayun din sa mga elemento. Ilang mga halimbawa ay isang bahay o ligtas na banko, o abogado. Maaari mong piliin na protektahan ang iyong mga key sa pamamagitan ng pag iimbak ng kopya nito sa iba't ibang lugar.",
+        "legacy": "<b>Pamana:</b> Nangyayari ang mga bagay-bagay. Natatapos ang buhay. Kailangan mong pagplanuhan ang paglipat ng iyong wallet sa ibang tao. Sa ilang mga kaso iyan ay maaaring isang habilin, pakiusap na ikonsidera mong maigi ang iyong mga opsyon. Ang pagpili ay nasa saiyo.",
         "agree": "I agree with the Terms & Conditions",
-        "responsible": "I am entirely responsible for the security managment of my private key",
+        "responsible": "Ako ay ganap na responsable para sa pamamahala ng seguridad sa aking private key",
         "access": "I understand that Volentix and/or partners never have access to my private key",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "create": "Create",
