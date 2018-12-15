@@ -46,9 +46,9 @@
     "KeepYourKeysSafe": {
         "keepsafe": "Keep Your Keys Safe",
         "before": "Bago magpatuloy, napakahalaga na tandaan na ikaw ang ganap na responsable para sa pamamahala, kaligtasan, protksyon at recovery ng iyong private key. Walang sinuman kasama ang mga partner ng ecosystem ng Volentix.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "choices": "May dalawa kang pagpipilian sa pagpilit ng iyong private key. Ang parehong paraan ay dinisensyo para tiyakin na mapanatiling ligtas ang iyong private key.",
+        "first": "Isulat ang iyong key.",
+        "second": "O, I-enkrip ang iyong key sa isang payl ng pinoprotektahan ng password.",
         "next": "Next",
         "back": "Back"
     },
