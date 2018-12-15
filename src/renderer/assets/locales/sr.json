@@ -11,11 +11,15 @@
         "join_message": "Драго нам је да сте нам се придружили."
     },
     "CreateVertoPassword": {
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto лозинка",
+        "i_understand": "I understand",
         "confirm": "Потврдите Verto лозинку",
         "mustmatch": "Лозинке се не поклапају.",
         "fillall": "Молимо Вас да попуните сва поља",
-        "save": "Сачувај",
+        "done": "Done",
         "addwallet": "Додај новчаник",
         "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password to add your wallet.",
         "createwallet": "Креирај новчаник",
@@ -25,7 +29,8 @@
         "delete": "Избриши новчаник",
         "trash": "Кликните на \"Корпицу за отпатке\"",
         "enter": "Унесите лозинку.",
-        "note": "<b>НАПОМЕНА:</b> Verto није у могућности да избрише новчаник."
+        "note": "<b>НАПОМЕНА:</b> Verto није у могућности да избрише новчаник.",
+        "save": "Сачувај"
     },
     "WalletManager": {
         "used": "Име новчаника или новчаник су већ у употреби.",
@@ -34,7 +39,9 @@
         "cannotrecover": "Verto неће моћи да поврати новчаник након што је избрисан. Притисните дугме \"Обриши\" како бисте довршили процес брисања.",
         "cancel": "Откажи",
         "delete": "Избриши",
-        "keyhere": "Унесите јавни кључ"
+        "keyhere": "Унесите јавни кључ",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Брижљиво чувајте своје кључеве",
@@ -53,13 +60,16 @@
         "responsible": "Сносим пуну одговорност за сигурност свог приватног кључа",
         "access": "Разумем да Volentix и/или партнери немају приступ мом приватном кључу",
         "wifi": "Разумем да ће WIFI бити угашен н кратко, док се кључеви генеришу",
-        "tofile": "Сачувај у фајл",
-        "writedown": "Записаћу на папир"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "Јасно ми је да приватни кључ није сачуван на Verto-у и да се но може повратити у случају губитка.",
-        "private": "Приватно",
-        "public": "Јавно",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "Име или кључ су већ у употреби.",
         "mustname": "Морате доделити име кључу.",
         "walletname": "Име новчаника",
@@ -107,7 +117,8 @@
         "converted": "Конвертовано",
         "pending": "Нa чекању",
         "confirmed": "Потврђено",
-        "approved": "Одобрено"
+        "approved": "Одобрено",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Подешавања",
@@ -123,7 +134,9 @@
         "sendmail": "Пошаљи поруку",
         "language": "Језик",
         "help": "Помоћ",
-        "optionsdd": " Опције"
+        "optionsdd": " Опције",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Blocktopus корисничко име",
@@ -139,9 +152,11 @@
         "soon": "Ускоро",
         "getvtx": "GetVtx",
         "native_chain_address": "Нативна адреса ланца",
-        "available_for": "Адреса ће бити доступна до"
+        "available_for": "Адреса ће бити доступна до",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Тренутна лозинка за Verto",
         "new": "Нова лозинка за Verto",
         "confirm": "Потврдите Нову Verto лозинку",
@@ -160,13 +175,15 @@
         "select": "Изаберите 'Направите резервну копију новчаника'"
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Изабери фајл",
         "choose": "Одаберите лозинку за новчаник",
         "confirm": "Потврдите лозинку за новчаник",
         "storeext": "Ускладиштите на екстерни диск, новчаник или USB кључ.",
         "storeloc": "Ускладиштите на локални диск рачунара.",
         "emailit": "Пошаљите Email-ом.",
-        "cloud": "Ускладиштите на облак."
+        "cloud": "Ускладиштите на облак.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Затражи адресу",
@@ -176,6 +193,7 @@
         "err_investor_must_wait": "Морате сачекати један сат пре него што затражите нову адресу.",
         "first_p": "Примењују се два правила:",
         "second_p": "1. Адреса коју ћете добити, биће валидна неко време. То има за последицу да ће свака трансакција обављена после периода алокације бити изгубљена. Када шаљете трансакције, обратите пажњу на то да и даље имате адресу нативног ланца која је додељена Вашем новчанику.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "2. Можете послати захтев за само једну нативну адресу ланца, по сату.",
         "access": "Разумем и слажем се са свим",
         "select_currency": "Изаберите нативни ланац",
@@ -183,15 +201,15 @@
     },
     "NotWhitelisted": {
         "header": "Није на Белој листи",
-        "first_p": "Пре него што преузмете Get VTX, морате испунити следеће:",
-        "first_p_first_point": "1. KYC (верификација идентитета) са једним од наших партнера од поверења.",
-        "first_p_second_point": "2. Повежите Verto јавну адресу са својим KYC налогом.",
-        "subheader_1": "Већ сте се пријавили за KYC",
-        "second_p": "Ако сте се већ пријавили за KYC процес, преко веба, можете одмах повезати свој новчаник са тим налогом.",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
         "link_associate": "Одмах повежите ову Verto адресу.",
-        "second_subheader": "Потребно за KYC",
-        "third_p": "Како бисте набавили VTX, неопходно је да имате потврђен идентитет преко KYC-а. Имајте на уму то да ако обављате KYC преко Verto-а, Ваша јавна адреса ће аутоматски бити повезана са Вашим KYC налогом. Као последица, једном када је KYC одобрен, одмах ћете моћи да преузмете VTX.",
-        "link_kyc": "Одмах отпочните процес KYC."
+        "second_p": "Ако сте се већ пријавили за KYC процес, преко веба, можете одмах повезати свој новчаник са тим налогом.",
+        "link_kyc": "Одмах отпочните процес KYC.",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC је већ додељен",
@@ -204,5 +222,15 @@
         "time_remaining": "Преостало време",
         "mins": "Минута",
         "seconds": "секунди"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }

@@ -1,6 +1,6 @@
 {
     "Welcome": {
-        "welcometo": "BIENVENIDO A",
+        "welcometo": "BIENVENIDO A VERTO",
         "welcomeback": "¡Bienvenido de vuelta!",
         "password": "Contraseña",
         "nopassword": "No se ha fijado una contraseña para el monedero. Por favor crea una contraseña primero.",
@@ -11,11 +11,15 @@
         "join_message": "Estamos felices de que estés con nosotros."
     },
     "CreateVertoPassword": {
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Contraseña Verto",
+        "i_understand": "I understand",
         "confirm": "Confirmar contraseña Verto",
         "mustmatch": "Las contraseñas deben coincidir.",
         "fillall": "Por favor, rellene todos los campos anteriores",
-        "save": "Guardar",
+        "done": "Done",
         "addwallet": "Añadir Monedero",
         "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password to add your wallet.",
         "createwallet": "Crear Monedero",
@@ -25,7 +29,8 @@
         "delete": "Eliminar Monedero",
         "trash": "Haga click en el ícono de ¨Basura¨",
         "enter": "Escriba su contraseña.",
-        "note": "<b>NOTA:</b> Verto es incapaz de recuperar monederos eliminados."
+        "note": "<b>NOTA:</b> Verto es incapaz de recuperar monederos eliminados.",
+        "save": "Guardar"
     },
     "WalletManager": {
         "used": "El nombre o el monedero ya ha sido usado.",
@@ -34,7 +39,9 @@
         "cannotrecover": "Verto no puede recuperar el monedero una vez el mismo ha sido eliminado. Presione el botón eliminar de nueva para su eliminación final.",
         "cancel": "Cancelar",
         "delete": "Eliminar",
-        "keyhere": "Llave Pública del Monedero Aquí"
+        "keyhere": "Llave Pública del Monedero Aquí",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Mantenga sus llaves a salvo",
@@ -53,13 +60,16 @@
         "responsible": "Yo soy totalmente responsable por la gestión de seguridad de mi llave privada",
         "access": "Entiendo que Volentix y/o sus socios nunca tendrán acceso a mi llave privada",
         "wifi": "Entiendo que el WIFI se desactivará temporalmente durante la generación de claves",
-        "tofile": "Guardar archivo en",
-        "writedown": "Lo anotaré"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "Entiendo que la llave privada no se almacena en Verto y no puede ser recuperada.",
-        "private": "Privada",
-        "public": "Pública",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "El nombre o la llave ya ha sido usada.",
         "mustname": "Debe proporcionar un nombre para su llave.",
         "walletname": "Nombre del Monedero",
@@ -107,7 +117,8 @@
         "converted": "Convertido",
         "pending": "Pendiente",
         "confirmed": "Confirmado",
-        "approved": "Aprobado"
+        "approved": "Aprobado",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Ajustes",
@@ -123,7 +134,9 @@
         "sendmail": "Enviar correo",
         "language": "Lenguaje",
         "help": "Ayuda",
-        "optionsdd": " Opciones"
+        "optionsdd": " Opciones",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Nombre de Usuario Blocktopus",
@@ -139,9 +152,11 @@
         "soon": "Próximamente",
         "getvtx": "Obtén Vtx",
         "native_chain_address": "Dirección Nativa de Cadena",
-        "available_for": "Dirección Disponible Hasta"
+        "available_for": "Dirección Disponible Hasta",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Contraseña Verto Actual",
         "new": "Nueva Contraseña Verto",
         "confirm": "Confirmar Nueva Contraseña Verto",
@@ -160,13 +175,15 @@
         "select": "Seleccionar 'Respaldar Monedero'"
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Escoger archivo",
         "choose": "Escoger Contraseña del Monedero",
         "confirm": "Confirmar contraseña del Monedero",
         "storeext": "Almacenar en un disco externo, monedero, o llave USB.",
         "storeloc": "Almacenarlo en el disco local de la computadora.",
         "emailit": "Enviarlo por correo electrónico.",
-        "cloud": "Almacenarlo en la nube."
+        "cloud": "Almacenarlo en la nube.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Solicitar la dirección",
@@ -176,6 +193,7 @@
         "err_investor_must_wait": "Debe esperar una hora antes de solicitar una nueva dirección.",
         "first_p": "Las dos reglas siguientes aplican:",
         "second_p": "1. La dirección que recibiste es solamente válida por un período limitado de tiempo. Como resultado, cualquier transacción que sea enviada luego del período dado será una transacción perdida. Al momento de enviar transacciones siempre asegúrate de aún tener una dureccuón nativa asignada al monedero.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "2. Solamente se puede solicitar una dirección de la cadena nativa por hora.",
         "access": "Entiendo y acepto",
         "select_currency": "Seleccionar una cadena nativa",
@@ -183,15 +201,15 @@
     },
     "NotWhitelisted": {
         "header": "No se encuentra en la lista blanca",
-        "first_p": "Antes de que sea capaz de obtener VTX, debe completar lo siguiente:",
-        "first_p_first_point": "1. KYC con uno de sus socios de confianza.",
-        "first_p_second_point": "2. Asociar una Dirección Pública de Verto con la cuenta donde haya sido realizado el proceso KYC.",
-        "subheader_1": "Ya se inscribió para el proceso KYC",
-        "second_p": "Si ya se encuentra inscrito para el proceso KYC, a través de la web, puede asociar su monedero con esta cuenta ahora.",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
         "link_associate": "Asociar esta dirección Verto ahora.",
-        "second_subheader": "Debe realizar el proceso KYC",
-        "third_p": "Para poder obtener VTX, se requiere haber realizado el proceso KYC, para poder cumplir con las normas reglamentarias. Si realiza el proceso KYC a través de Verto, su dirección pública estará automáticamente asociada a la cuenta donde realizo el KYC. Como resultado, una vez su KYC haya sido aprobado, podrá obtener VTX inmediatamente.",
-        "link_kyc": "Comenzando proceso KYC ahora."
+        "second_p": "Si ya se encuentra inscrito para el proceso KYC, a través de la web, puede asociar su monedero con esta cuenta ahora.",
+        "link_kyc": "Comenzando proceso KYC ahora.",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC ya asignado",
@@ -204,5 +222,15 @@
         "time_remaining": "Tiempo Restante",
         "mins": "Minutos",
         "seconds": "segundos"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }

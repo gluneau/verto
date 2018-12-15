@@ -11,11 +11,15 @@
         "join_message": "Χαιρόμαστε που είστε μαζί μας."
     },
     "CreateVertoPassword": {
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Κωδικός Verto",
+        "i_understand": "I understand",
         "confirm": "Επιβεβαίωση κωδικού Verto",
         "mustmatch": "Οι κωδικοί πρέπει να ταιριάζουν.",
         "fillall": "Παρακαλώ συμπληρώστε όλα τα παραπάνω πεδία",
-        "save": "Αποθήκευση",
+        "done": "Done",
         "addwallet": "Προσθήκη Πορτοφολιού",
         "onlysupport": "Προς το παρόν, το Verto υποστηρίζει μόνο την προσθήκη δημοσίων κλειδιών. Για να προσθέσετε ένα πορτοφόλι, παρακαλώ εισάγετε ένα όνομα, τη διεύθυνση του πορτοφολιού, και τον κωδικό Verto.",
         "createwallet": "Δημιουργία Πορτοφολιού",
@@ -25,7 +29,8 @@
         "delete": "Διαγραφή Πορτοφολιού",
         "trash": "Κάντε κλικ στο εικονίδιο του \"Κάδου Ανακύκλωσης\"",
         "enter": "Εισάγετε τον κωδικό σας.",
-        "note": "<b>ΣΗΜΕΙΩΣΗ:</b> Το Verto δε μπορεί να ανακτήσει διαγραμμένα πορτοφόλια."
+        "note": "<b>ΣΗΜΕΙΩΣΗ:</b> Το Verto δε μπορεί να ανακτήσει διαγραμμένα πορτοφόλια.",
+        "save": "Αποθήκευση"
     },
     "WalletManager": {
         "used": "Το όνομα ή το πορτοφόλι έχει ήδη χρησιμοποιηθεί.",
@@ -34,7 +39,9 @@
         "cannotrecover": "Το Verto δε μπορεί αν ανακτήσει το πορτοφόλι αφού διαγραφεί. Πατήστε ξανά το κουμπί διαγραφής για να οριστικοποιήσετε τη διαγραφή.",
         "cancel": "Άκυρο",
         "delete": "Διαγραφή",
-        "keyhere": "Δημόσιο Κλειδί Πορτοφολιού Εδώ"
+        "keyhere": "Δημόσιο Κλειδί Πορτοφολιού Εδώ",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Κρατήστε τα κλειδιά σας ασφαλή",
@@ -53,13 +60,16 @@
         "responsible": "Είμαι εξ ολοκλήρου υπεύθυνος για την ασφάλεια του ιδιωτικού μου κλειδιού",
         "access": "Καταλαβαίνω ότι η Volentix και οι συνεργάτες της δεν έχουν πρόσβαση στο ιδιωτικό μου κλειδί",
         "wifi": "Καταλαβαίνω ότι το WiFi θα απενεργοποιηθεί προσωρινά, όσο δημιουργούνται τα κλειδιά",
-        "tofile": "Αποθήκευση σε αρχείο",
-        "writedown": "Θα το γράψω σε χαρτί"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "Καταλαβαίνω ότι το ιδιωτικό κλειδί δεν αποθηκεύεται στο Verto και ότι δε μπορεί να ανακτηθεί.",
-        "private": "Ιδιωτικό",
-        "public": "Δημόσιο",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "Το όνομα ή το κλειδί έχει ήδη χρησιμοποιηθεί.",
         "mustname": "Πρέπει να δώσετε ένα όνομα για το κλειδί σας.",
         "walletname": "Όνομα Πορτοφολιού",
@@ -107,7 +117,8 @@
         "converted": "Μετατράπηκαν",
         "pending": "Σε Εκκρεμότητα",
         "confirmed": "Επιβεβαιώθηκαν",
-        "approved": "Εγκρίθηκαν"
+        "approved": "Εγκρίθηκαν",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Ρυθμίσεις",
@@ -123,7 +134,9 @@
         "sendmail": "Αποστολή Email",
         "language": "Γλώσσα",
         "help": "Βοήθεια",
-        "optionsdd": " Επιλογές"
+        "optionsdd": " Επιλογές",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Όνομα Χρήστη Blocktopus",
@@ -139,9 +152,11 @@
         "soon": "Σύντομα Διαθέσιμο",
         "getvtx": "GetVtx",
         "native_chain_address": "Διεύθυνση Μητρικής Αλυσίδας",
-        "available_for": "Διεύθυνση Διαθέσιμη Μέχρι"
+        "available_for": "Διεύθυνση Διαθέσιμη Μέχρι",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Τρέχων κωδικός Verto",
         "new": "Νέος Κωδικός Verto",
         "confirm": "Επιβεβαίωση Κωδικού Verto",
@@ -160,13 +175,15 @@
         "select": "Επιλέξτε \"Αντίγραφο Ασφαλείας Πορτοφολιού\""
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Επιλογή αρχείου",
         "choose": "Επιλέξτε κωδικό Πορτοφολιού",
         "confirm": "Επιβεβαίωση κωδικού πορτοφολιού",
         "storeext": "Αποθήκευση σε έναν εξωτερικό δίσκο, πορτοφόλι, ή flash USB.",
         "storeloc": "Αποθήκευση στον τοπικό δίσκο του υπολογιστή.",
         "emailit": "Αποστολή με Email.",
-        "cloud": "Αποθήκευση στο cloud."
+        "cloud": "Αποθήκευση στο cloud.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Αίτηση Διεύθυνσης",
@@ -176,6 +193,7 @@
         "err_investor_must_wait": "Θα πρέπει να περιμένετε μια ώρα, πριν ζητήσετε πάλι νέα διεύθυνση.",
         "first_p": "Ισχύουν οι δύο παρακάτω κανόνες:",
         "second_p": "1. Η διεύθυνση που θα λάβετε είναι έγκυρη για περιορισμένο χρονικό διάστημα. Ως αποτέλεσμα, οποιαδήποτε συναλλαγή αποστείλετε μετά την περίοδο διαθεσιμότητας, μπορεί να χαθεί. Όταν κάνετε μια συναλλαγή, σιγουρευτείτε ότι έχετε σίγουρα μια διεύθυνση που αντιστοιχεί στο πορτοφόλι σας.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "2. Μπορείτε να ζητάτε μόνο μια διεύθυνση μητρική αλυσίδας ανά ώρα.",
         "access": "Καταλαβαίνω και συμφωνώ",
         "select_currency": "Επιλέξτε μια Μητρική Αλυσίδα",
@@ -183,15 +201,15 @@
     },
     "NotWhitelisted": {
         "header": "Μη Εγκεκριμένο",
-        "first_p": "Πριν μπορέσετε να παραλάβετε VTX, θα πρέπει να ολοκληρώσετε τα παρακάτω:",
-        "first_p_first_point": "1. Επαλήθευση KYC με έναν από τους έμπιστους συνεργάτες μας.",
-        "first_p_second_point": "2. Συνδέσετε μια Δημόσια Διεύθυνση Verto στον λογαριασμό που έχει περάσει επαλήθευση KYC.",
-        "subheader_1": "Έχω Ήδη Κάνει Επαλήθευση KYC",
-        "second_p": "Αν έχετε ήδη εκκινήσει ήδη τη διαδικασία επαλήθευσης KYC, μέσω του web, μπορείτε να αντιστοιχίσετε το πορτοφόλι σας με αυτό το λογαριασμό.",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
         "link_associate": "Αντιστοίχηση Αυτής Της Διεύθυνσης Verto.",
-        "second_subheader": "Πρέπει να γίνει επαλήθευση KYC",
-        "third_p": "Για να λάβετε τα Vtx, είστε υποχρεωμένοι να κάνετε επαλήθευση KYC, όπως ορίζουν οι κανονισμοί συμμόρφωσης. Σημειώστε ότι αν κάνετε επαλήθευση KYC μέσω του Verto, η δημόσια διεύθυνση σας θα αντιστοιχιστεί αυτόματα στον λογαριασμό KYC. Ως αποτέλεσμα, μόλις ολοκληρωθεί η επαλήθευση KYC, θα μπορέσετε να λάβετε τα VTX σας άμεσα.",
-        "link_kyc": "Εκκίνηση Διαδικασίας Επαλήθευσης KYC τώρα."
+        "second_p": "Αν έχετε ήδη εκκινήσει ήδη τη διαδικασία επαλήθευσης KYC, μέσω του web, μπορείτε να αντιστοιχίσετε το πορτοφόλι σας με αυτό το λογαριασμό.",
+        "link_kyc": "Εκκίνηση Διαδικασίας Επαλήθευσης KYC τώρα.",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "Έχει Γίνει Αντιστοίχηση Επαλήθευσης KYC",
@@ -204,5 +222,15 @@
         "time_remaining": "Χρόνος που Απομένει",
         "mins": "Λεπτά",
         "seconds": "δευτερόλεπτα"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }
