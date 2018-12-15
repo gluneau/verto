@@ -164,7 +164,7 @@
         "change": "Change Verto Password",
         "recommended": "Ito ay inererekomenda na i-backup mo muna ang kasalukuyang kompigurasyon ng Verto bago mo palitan ang password. Maaari mong i-back up ang Verto ",
         "here": "dito",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Pagpapalit ng password upang ma-akses ang Verto. Sa sandaling piliin, ang lahat ng kompigurasyon ay mai-enkrip gamit ang bagong password."
     },
     "BackupWallet": {
         "folder": "Select Folder",
