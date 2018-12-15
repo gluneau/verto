@@ -40,39 +40,39 @@
         "cancel": "Annuleren",
         "delete": "Verwijderen",
         "keyhere": "Publieke sleutel portemonnee hier",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "header": "Portemonnee Manager",
+        "wallets": "Portemonnees"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Houd je sleutels veilig",
         "before": "Voordat je verder gaat, is het belangrijk om te weten dat je volledig verantwoordelijk bent voor het beheer, de veiligheid, de bescherming en het herstellen van je privé-sleutel. Niemand anders, ook niet de partners van het Volentix ecosysteem.",
         "choices": "Je hebt 2 keuzes om je persoonlijke sleutel te behouden. Beide methoden zijn ontworpen om ervoor te zorgen dat je privé-sleutel veilig blijft.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "first": "Schrijf je sleutel op.",
+        "second": "Of versleutel je sleutel in een met wachtwoord beveiligd bestand.",
         "next": "Volgende",
         "back": "Vorige"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "strategy": "Plan een strategie voor de fysieke opslag van je persoonlijke sleutel. Deze opslagstrategie moet langetermijndenken omvatten, inclusief:",
+        "physical": "<b>Fysieke beveiliging: </b> Kluizen van welke aard dan ook die de bescherming bieden die je zoekt. Denk aan een plek waarvan je weet dat deze veilig is tegen diefstal en de elementen. Sommige voorbeelden zijn een huis- of bankkluis of een advocaat. Je kunt ervoor kiezen om je sleutels te beschermen door kopieën op meerdere plaatsen op te slaan.",
+        "legacy": "<b>Gezondheid: </b> Dingen gebeuren. Het leven eindigt. Je moet de overdracht van je portemonnee aan iemand anders plannen. In sommige gevallen kan dat een testament zijn, overweeg alsjeblieft zorgvuldig je opties. De keuze is aan jou.",
         "agree": "Ik ga akkoord met de algemene voorwaarden",
         "responsible": "Ik ben volledig verantwoordelijk voor het veiligheidsbeheer van mijn persoonlijke sleutel",
         "access": "Ik begrijp dat Volentix en/of partners nooit toegang tot mijn persoonlijke sleutel hebben",
         "wifi": "Ik begrijp dat WIFI tijdelijk zal worden uitgeschakeld tijdens het genereren van sleutels",
-        "create": "Create",
-        "save_keys": "Save File"
+        "create": "Aanmaken",
+        "save_keys": "Bestand opslaan"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Schrijf het op",
         "understand": "Ik begrijp dat de persoonlijke sleutel niet in Verto is opgeslagen en niet kan worden hersteld.",
-        "showPrivate": "Show Private",
-        "hidePrivate": "Hide Private",
-        "showPublic": "Show Public",
-        "hidePublic": "Hide Public",
+        "showPrivate": "Toon privé",
+        "hidePrivate": "Verberg privé",
+        "showPublic": "Toon publiek",
+        "hidePublic": "Verberg publiek",
         "already": "De naam of de sleutel is al gebruikt.",
         "mustname": "Je moet een naam opgeven voor je sleutel.",
-        "walletname": "Give Wallet Name: ie Savings",
+        "walletname": "Geef portemonnee-naam: bijvoorbeeld Sparen",
         "writedown": "Schrijf je sleutels op.",
         "privkey": "Privé-sleutel",
         "pubkey": "Openbare sleutel",
@@ -113,12 +113,12 @@
         "phase": "Fase-bonus",
         "additional": "Extra Bonus",
         "total": "Totaal",
-        "received": "Received",
+        "received": "Ontvangen",
         "converted": "Geconverteerd",
         "pending": "In behandeling",
         "confirmed": "Bevestigd",
         "approved": "Goedgekeurd",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/6 bevestigde blokken"
     },
     "SettingsView": {
         "settings": "Instellingen",
@@ -136,7 +136,7 @@
         "help": "Help",
         "optionsdd": "Opties",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Huidige portemonnee"
     },
     "AssociateView": {
         "username": "Blocktopus gebruikersnaam",
@@ -150,13 +150,13 @@
         "additional": "Extra bonussen",
         "bonus": "Bonus",
         "soon": "Binnenkort beschikbaar",
-        "getvtx": "Get VTX With",
+        "getvtx": "Verkrijg VTX met",
         "native_chain_address": "Oorspronkelijk keten-adres",
         "available_for": "Adres beschikbaar tot",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Oorspronkelijk keten-adres"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
+        "header": "Wachtwoord wijzigen",
         "current": "Huidig Verto-wachtwoord",
         "new": "Nieuwe Verto-wachtwoord",
         "confirm": "Bevestig nieuw Verto-wachtwoord",
@@ -164,7 +164,7 @@
         "change": "Verto-wachtwoord wijzigen",
         "recommended": "Het wordt aanbevolen om eerst een back-up te maken van de huidige configuratie van Verto voordat je het wachtwoord wijzigt. Je kunt een back-up maken van Verto ",
         "here": "hier",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Wijzigt het wachtwoord om toegang te krijgen tot Verto. Eenmaal geselecteerd wordt alle configuratie versleuteld met behulp van het nieuwe wachtwoord."
     },
     "BackupWallet": {
         "folder": "Map selecteren",
@@ -175,7 +175,7 @@
         "select": "Selecteer 'Back-up portemonnee'"
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Bestand opslaan",
         "file": "Kies bestand",
         "choose": "Kies portemonnee-wachtwoord",
         "confirm": "Bevestig portemonnee-wachtwoord",
@@ -183,7 +183,7 @@
         "storeloc": "Opslaan op de lokale schijf van je computer.",
         "emailit": "E-mail het.",
         "cloud": "Sla het op in de cloud.",
-        "save": "Save"
+        "save": "Opslaan"
     },
     "RequestNativeChainAddress": {
         "header": "Adres aanvragen",
@@ -191,8 +191,8 @@
         "err_noAddressAvailable": "Geen adres beschikbaar voor die keten. Probeer het alsjeblieft opnieuw.",
         "err_pendingTransactionsExist": "In behandeling zijnde transacties bestaan",
         "err_investor_must_wait": "Je moet een uur wachten voordat je een nieuw adres aanvraagt.",
-        "first_p": "The following rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
+        "first_p": "De volgende regels zijn van toepassing:",
+        "second_p": "1. het adres dat je ontvangt is alleen geldig voor een beperkte periode.",
         "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "3. You are only able to request one native chain address per hour.",
         "access": "Ik begrijp het en ga akkoord",
