@@ -11,11 +11,15 @@
         "join_message": "Nous sommes heureux de vous compter parmi nous."
     },
     "CreateVertoPassword": {
+        "header": "Créez un mot de passe Verto",
+        "important": "IMPORTANT",
+        "important_warning": "S’il vous plaît lire attentivement. Ce mot de passe ne peuvent pas être récupéré. Si vous oubliez ou perdez votre mot de passe, vous perdrez votre porte-monnaie pour toujours.",
         "vertopassword": "Mot de passe Verto",
+        "i_understand": "Je comprends",
         "confirm": "Confirmer le mot de passe Verto",
         "mustmatch": "Les mots de passe doivent correspondre.",
         "fillall": "Veuillez remplir tous les champs ci-dessus",
-        "save": "Enregistrer",
+        "done": "Terminé",
         "addwallet": "Ajouter un portefeuille",
         "onlysupport": "Pour le moment, Verto ne prend en charge que la possibilité d'ajouter des clés publiques. Pour ajouter un portefeuille, indiquez simplement un nom, l'adresse du portefeuille et le mot de passe Verto.",
         "createwallet": "Créer un portefeuille",
@@ -25,7 +29,8 @@
         "delete": "Supprimer le portefeuille",
         "trash": "Cliquez sur l'icône 'Corbeille'",
         "enter": "Entrez votre mot de passe.",
-        "note": "<b>REMARQUE:</b> Verto ne peut pas récupérer les portefeuilles supprimés."
+        "note": "<b>REMARQUE:</b> Verto ne peut pas récupérer les portefeuilles supprimés.",
+        "save": "Enregistrer"
     },
     "WalletManager": {
         "used": "Le nom ou le portefeuille a déjà été utilisé.",
@@ -34,7 +39,9 @@
         "cannotrecover": "Verto ne peut pas récupérer le portefeuille une fois supprimé. Appuyez à nouveau sur le bouton Supprimer pour le supprimer définitivement.",
         "cancel": "Annuler",
         "delete": "Supprimer",
-        "keyhere": "Ici vas la clé publique du portefeuille"
+        "keyhere": "Ici vas la clé publique du portefeuille",
+        "header": "Gestionnaire de portefeuille",
+        "wallets": "Portefeuilles"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Gardez vos clés en sécurité",
@@ -53,13 +60,16 @@
         "responsible": "Je suis entièrement responsable de la gestion de la sécurité de ma clé privée",
         "access": "Je comprends que Volentix et / ou ses partenaires n'ont jamais accès à ma clé privée",
         "wifi": "Je comprends que le WIFI sera désactivé temporairement lors de la génération des clés",
-        "tofile": "Enregistrer dans un fichier",
-        "writedown": "Je vais l'écrire"
+        "create": "Créer",
+        "save_keys": "Enregistrer le fichier"
     },
     "DisplayKey": {
+        "header": "Notez-le",
         "understand": "Je comprends que la clé privée n'est pas stockée dans Verto et ne peut pas être récupérée.",
-        "private": "Privé",
-        "public": "Publique",
+        "showPrivate": "Voir la clé privé",
+        "hidePrivate": "Cacher la clé privé",
+        "showPublic": "Voir la clé publique",
+        "hidePublic": "Masquer la clé publique",
         "already": "Le nom ou la clé a déjà été utilisé.",
         "mustname": "Vous devez donner un nom à votre clé.",
         "walletname": "Nom du portefeuille",
@@ -107,7 +117,8 @@
         "converted": "Converti",
         "pending": "En attente",
         "confirmed": "Confirmé",
-        "approved": "Approuvé"
+        "approved": "Approuvé",
+        "number_of_approved_blocks": "/ 6 blocs confirmés"
     },
     "SettingsView": {
         "settings": "Paramètres",
@@ -123,7 +134,9 @@
         "sendmail": "Envoyer un courriel",
         "language": "Langage",
         "help": "Aide",
-        "optionsdd": " Paramètres"
+        "optionsdd": " Paramètres",
+        "vespucci_open": "Ouvrir Vespucci",
+        "current_wallet": "Portefeuille actuel"
     },
     "AssociateView": {
         "username": "Nom d'utilisateur Blocktopus",
@@ -137,11 +150,13 @@
         "additional": "Bonus supplémentaires",
         "bonus": "Bonus",
         "soon": "Bientôt disponible",
-        "getvtx": "Obtenez VTX",
+        "getvtx": "GetVtx",
         "native_chain_address": "Adresse de la chaîne native",
-        "available_for": "Adresse disponible jusqu’au"
+        "available_for": "Adresse disponible jusqu’au",
+        "native_chain_header": "Adresse de la chaîne native"
     },
     "ChangeVertoPassword": {
+        "header": "Modifier le mot de passe",
         "current": "Mot de passe Verto actuel",
         "new": "Nouveau mot de passe Verto",
         "confirm": "Confirmer le nouveau mot de passe Verto",
@@ -160,13 +175,15 @@
         "select": "Sélectionnez 'Sauvegarde du portefeuille'"
     },
     "ChoosePassword": {
+        "header": "Enregistrer le fichier",
         "file": "Choisir le fichier",
         "choose": "Choisissez le mot de passe du portefeuille",
         "confirm": "Confirmer le mot de passe du portefeuille",
         "storeext": "Stockez-le sur un lecteur externe, un portefeuille ou une clé USB.",
         "storeloc": "Le stockez sur le lecteur local de votre ordinateur.",
         "emailit": "L'envoyez par courriel.",
-        "cloud": "Le stocker sur le nuage."
+        "cloud": "Le stocker sur le nuage.",
+        "save": "Enregistrer"
     },
     "RequestNativeChainAddress": {
         "header": "Demande d'adresse",
@@ -174,24 +191,25 @@
         "err_noAddressAvailable": "Aucune adresse disponible pour cette chaîne. S’il vous plaît essayer de nouveau.",
         "err_pendingTransactionsExist": "Des transactions en attente existe",
         "err_investor_must_wait": "Vous devez attendre une heure avant de demander une nouvelle adresse.",
-        "first_p": "Les deux règles suivantes s’appliquent :",
-        "second_p": "1. L’adresse que vous recevez n’est valide que pour une période de temps limitée. En conséquence, toute transaction que vous envoyez après la période d’allocation peut-être être perdue. Lors de l’envoi des transactions, assurez vous que vous avez toujours une adresse de la chaîne native attribuée à votre portefeuille.",
-        "third_p": "2. Vous êtes seulement capable de demander une adresse de chaîne native par heure.",
+        "first_p": "The following two rules apply:",
+        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
+        "second_p_point_1": "2. toute transaction que vous envoyez après la période d’allocation peut-être être perdue.",
+        "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "Je comprends et j'accepte",
         "select_currency": "Sélectionnez une chaîne Native",
         "time_remaining": "Disponible dans"
     },
     "NotWhitelisted": {
-        "header": "Pas inscrit dans la liste blanche",
-        "first_p": "Avant que vous soyez en mesure d’obtenir VTX, vous devez remplir ce qui suit :",
-        "first_p_first_point": "1. CSC (connaître son client) avec l’un de nos partenaires de confiance.",
-        "first_p_second_point": "2. Associer une adresse publique Verto à votre compte CSC (connaître son client).",
-        "subheader_1": "Déjà inscrit à CSC (connaître son client)",
-        "second_p": "Si vous avez déjà complété pour le processus CSC (connaître son client), via le web, vous pouvez associer votre portefeuille avec ce compte maintenant.",
-        "link_associate": "Associer cette adresse Verto maintenant.",
-        "second_subheader": "Besoin de CSC (connaître son client)",
-        "third_p": "Afin d’obtenir des VTX, il est nécessaire que vous soyez CSC (connaître son client) afin de satisfaire le respect de la réglementation. Notez que si vous êtes CSC par Verto votre adresse publique sera automatiquement associé à votre compte CSC. Ainsi, une fois que vous êtes CSC approuvée, vous serez en mesure d’obtenir VTX immédiatement.",
-        "link_kyc": "Commencez maintenant le processus à CSC (connaître son client)."
+        "header": "Not Whitelisted",
+        "kyc": "CSC (connaître son client)",
+        "whitelist": "Liste Blanche",
+        "kyc_1": "Pour obtenir des VTX, les investisseurs doivent CSC (connaître son client) avec l’un de nos partenaires de confiance. Ce processus consiste à s’assurer que nous restons dans l’acquiescement avec les organismes de réglementation dans votre région. Notez que ce processus doit uniquement être exécuté une fois avant d’être accepté comme un contributeur potentiel. Notez que cette sélection associera ce portefeuille à votre application de CSC.",
+        "link_associate": "Associate This Verto Address Now.",
+        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
+        "link_kyc": "Begin KYC Process Now.",
+        "assign_verto_to_venue": "Assigner Verto à Venue",
+        "assign_verto_to_venue_desc": "Si vous êtes membre de Venue, vous devrez associer un portefeuille afin de réclamer votre VTX. Notez que vous devrez aussi compléter le processus CSC (connaître son client). Une fois que les deux actions sont terminées, votre VTX sera alloué à ce portefeuille.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "CSC (connaître son client) déjà associé",
@@ -204,5 +222,15 @@
         "time_remaining": "Temps Restant",
         "mins": "minutes",
         "seconds": "secondes"
+    },
+    "VenueAssignAddress": {
+        "header": "Assignation d'adresse à Venue",
+        "venue_username": "Nom d’utilisateur de Venue",
+        "venue_password": "Mot de passe Venue",
+        "bad_credentials": "Les informations d’identification fournies ne sont pas valides.",
+        "important_info": "Ces informations ne sont jamais stockées au sein de Verto.",
+        "email_verification_required": "Vous devez tout d’abord vérifier votre courriel avec Venue avant d’associer le portefeuille.",
+        "verto_address_not_unique": "Cette adresse a déjà été attribuée à un autre utilisateur.",
+        "user_deactivated": "This user is no longer active."
     }
 }
