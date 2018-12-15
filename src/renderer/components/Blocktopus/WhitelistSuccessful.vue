@@ -3,7 +3,7 @@
     <div class="hero-body congrats p-t-md">
       <div class="container font-gibson m-t-xl">
         <!-- warning image translation needed -->
-        <img src="~@/assets/img/congratsScreen.png">
+        <img src="~@/assets/img/sunnysky.jpg">
         <div>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default {
       setTimeout(function() {
         router.push({ path: "main" })
       },
-      2000);
+      4000);
     }
   }
 };

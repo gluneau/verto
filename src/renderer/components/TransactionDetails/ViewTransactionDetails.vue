@@ -1,11 +1,8 @@
 <template>
+  <div class="hero is-fullheight is-paddingless">
   <div class="hero-body is-paddingless has-blur-background font-gibson">
-    <div class="gradient-wrapper">&nbsp;</div>
     <div class="container">
-      <div class="columns is-marginless p-b-md">
-        <div>
-          <div class="top-layer">
-            <div class="column list-item">
+          <div class="top-layer list-item">
               <div class="is-size-custom-header has-text-centered">
                 <p class="has-text-aqua">Transaction Record</p>
               </div>
@@ -15,22 +12,20 @@
               <div class="m-t-sm p-b-md is-size-vtx-amount has-text-centered">
                 <p class="has-text-light"> {{ parseFloat($route.params.transaction.amount) >= 0 ? '+' : '-' }}{{ parseFloat($route.params.transaction.amount).toFixed(2) }} VTX</p>
               </div>
-            </div>
-          </div>
         </div>
-        <div class="column list-item font-gibson has-text-white">
+        <div class="list-item font-gibson has-text-white">
           <div v-if="$route.params.transaction.fromAccount && $route.params.transaction.fromKey">
             <p class="is-size-5 has-text-grey p-t-md p-l-sm">From:</p>
             <div class="wallet-address">
               <span class="is-size-7 has-text-aqua p-l-sm">Account: </span>
               <span class="size-font-wallet has-text-white p-l-sm"> {{ $route.params.transaction.fromAccount }} </span>
             </div>
-            <!-- <b-tooltip :label="$route.params.transaction.fromKey" position="is-bottom" type="is-white">
+            <b-tooltip :label="$route.params.transaction.fromKey" position="is-bottom" type="is-white">
               <div class="wallet-address">
                 <span class="is-size-7 has-text-aqua p-l-sm">Wallet: </span>
                 <span class="size-font-wallet has-text-white p-l-sm"> {{ $route.params.transaction.fromKey }} </span>
               </div>
-            </b-tooltip> -->
+            </b-tooltip>
           </div>
           <p class="is-size-5 has-text-grey p-t-sm p-l-sm">To:</p>
           <div class="wallet-address">
@@ -117,9 +112,6 @@ export default {
 .is-size-vtx-amount {
   font-size: 2.7rem;
 }
-.copy-button {
-  width: 100%;
-}
 .has-blur-background {
   background-image: url(~@/assets/img/transaction-back-screen.jpg);
   background-size: 100% 100%;
@@ -142,6 +134,12 @@ export default {
 }
 .list-item {
   border-bottom: solid 1px rgba(55, 202, 189, 0.3);
-  width: 100vw;
+}
+.container {
+  /* margin-top: -10rem !important; */
+  max-width: 40rem;
+}
+.hero.is-fullheight {
+  min-height: 80vh !important;
 }
 </style>

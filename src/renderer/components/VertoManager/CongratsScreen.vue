@@ -1,11 +1,10 @@
 <template>
   <section>
-    <div class="hero-body congrats p-t-md">
-      <div class="container font-gibson m-t-xl">
+    <div class="hero is-fullheight is-paddingless has-blur-background">
+      <div class="font-gibson m-t-xl has-text-centered    ">
         <!-- warning image translation needed -->
         <img src="~@/assets/img/congratsScreen.png">
-        <div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -14,6 +13,9 @@
 <script>
 export default {
   mounted() {
+    let command = "networksetup -setairportpower en0 on";
+    let exec = require("child_process").exec;
+    exec(command);
     this.redirect();
   },
   methods: {
@@ -33,7 +35,6 @@ export default {
   background-color: #162929 !important;
 }
 .hero-body.congrats img {
-  width: 100%;
 }
 .congrats .font-gibson-semibold {
   color: #454f63;
@@ -45,5 +46,8 @@ export default {
   border-radius: 0.6rem;
   margin-top: 3rem !important;
   height: 3.5rem;
+}
+.hero.is-fullheight {
+  min-height: 80vh !important;
 }
 </style>

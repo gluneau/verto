@@ -10,8 +10,6 @@ class WindowEventBus {
     let listners = this.listeners
     eventer(messageEvent, function(e) {
       for (var i = 0; i < listners.length; i++) {
-        console.log(e)
-        console.log("#####################################")
         listners[i](e);
       }
     }, false);

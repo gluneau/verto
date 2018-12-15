@@ -31,18 +31,19 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    width: 480,
-    height: 850,
+    // width: 480,
+    // height: 850,
     useContentSize: true,
     resizable: true,
     // titleBarStyle: 'hidden',
     title: "Verto wallet",
     icon: `file://${__dirname}/static/icon.png`,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#000000",
     center: true,
     vibrancy: "appearance-based",
     webPreferences: { webSecurity: false }
   })
+  mainWindow.maximize();
   mainWindow.loadURL(winURL)
   mainWindow.on('closed', () => {
     mainWindow = null

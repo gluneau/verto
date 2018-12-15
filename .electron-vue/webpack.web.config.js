@@ -4,6 +4,7 @@ process.env.BABEL_ENV = 'web'
 
 const path = require('path')
 const webpack = require('webpack')
+const { dependencies } = require('../package.json')
 
 const BabiliWebpackPlugin = require('babili-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -16,6 +17,11 @@ let webConfig = {
   entry: {
     web: path.join(__dirname, '../src/renderer/main.js')
   },
+  externals: [
+    ...Object.keys(dependencies || {}),
+    // FIXME: Dirty hack to avoid warnings during compilation
+    {'dotenv': 'dotenv'}
+  ],
   module: {
     rules: [
       {
@@ -91,6 +97,10 @@ let webConfig = {
       }
     ]
   },
+  node: {
+    fs: 'empty',
+    child_process: 'empty'
+},
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({filename: 'styles.css'}),
@@ -102,7 +112,7 @@ let webConfig = {
         removeAttributeQuotes: true,
         removeComments: true
       },
-      nodeModules: false
+      nodeModules: path.resolve(__dirname, '../node_modules')
     }),
     new webpack.DefinePlugin({
       'process.env.IS_WEB': 'true'
@@ -119,7 +129,7 @@ let webConfig = {
       '@': path.join(__dirname, '../src/renderer'),
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['.js', '.vue', '.json', '.css']
+    extensions: ['.js', '.vue', '.json', '.css', '.node']
   },
   target: 'web'
 }
