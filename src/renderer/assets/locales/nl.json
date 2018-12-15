@@ -11,11 +11,15 @@
         "join_message": "We zijn blij dat je je bij ons hebt aangemeld."
     },
     "CreateVertoPassword": {
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto wachtwoord",
+        "i_understand": "I understand",
         "confirm": "Bevestig Verto wachtwoord",
         "mustmatch": "Wachtwoorden moeten overeenkomen.",
         "fillall": "Vul alsjeblieft alle bovenstaande velden in",
-        "save": "Opslaan",
+        "done": "Done",
         "addwallet": "Portemonnee toevoegen",
         "onlysupport": "Voorlopig ondersteunt Verto alleen de mogelijkheid om openbare sleutels toe te voegen. Om een portemonnee toe te voegen, geef je gewoon een naam, het portemonnee-adres en het Verto-wachtwoord op om je portemonnee toe te voegen.",
         "createwallet": "Portemonnee aanmaken",
@@ -25,7 +29,8 @@
         "delete": "Portemonnee verwijderen",
         "trash": "Klik op het 'Prullenbak'-pictogram",
         "enter": "Voer je wachtwoord in.",
-        "note": "<b>OPMERKING:</b> Verto is niet in staat om verwijderde portemonnees te herstellen."
+        "note": "<b>OPMERKING:</b> Verto is niet in staat om verwijderde portemonnees te herstellen.",
+        "save": "Opslaan"
     },
     "WalletManager": {
         "used": "De naam of de portemonnee is al gebruikt.",
@@ -34,35 +39,40 @@
         "cannotrecover": "Verto kan de portemonnee eenmaal verwijderd niet meer herstellen. Druk nogmaals op de delete-knop om de portemonnee definitief te verwijderen.",
         "cancel": "Annuleren",
         "delete": "Verwijderen",
-        "keyhere": "Publieke sleutel portemonnee hier"
+        "keyhere": "Publieke sleutel portemonnee hier",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Houd je sleutels veilig",
         "before": "Voordat je verder gaat, is het belangrijk om te weten dat je volledig verantwoordelijk bent voor het beheer, de veiligheid, de bescherming en het herstellen van je privé-sleutel. Niemand anders, ook niet de partners van het Volentix ecosysteem.",
         "choices": "Je hebt 2 keuzes om je persoonlijke sleutel te behouden. Beide methoden zijn ontworpen om ervoor te zorgen dat je privé-sleutel veilig blijft.",
-        "first": "De eerste keuze is om je sleutel op te schrijven.",
-        "second": "De tweede keuze is om je sleutel te versleutelen in een met wachtwoord beveiligd bestand.",
+        "first": "The first choice is to write your key down.",
+        "second": "The second choice is to encrypt your key in a password protected  file.",
         "next": "Volgende",
         "back": "Vorige"
     },
     "SaveYourKeys": {
-        "strategy": "Je moet een strategie bedenken voor de fysieke opslag van je persoonlijke sleutel. Deze opslagstrategie moet langetermijndenken bevatten, inclusief:",
-        "physical": "<b>Fysieke beveiliging: </b> Een kluis van enige aard die de bescherming biedt die je zoekt. Denk aan een plek waarvan je weet dat het veilig is tegen diefstal en de elementen. In sommige gevallen kies je een bank of advocaat.  In andere gevallen kun je er de voorkeur aan geven om het in je achtertuin te begraven. De keuze is aan jou.",
-        "legacy": "<b>Gezondheid:</b> Dingen gebeuren. Het leven eindigt. Je moet de overdracht van je portemonnee aan iemand anders plannen. In sommige gevallen kan dat een testament zijn, terwijl het in andere gevallen een speurtocht wordt. De keuze is aan jou.",
+        "strategy": "You will need to plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know its safe from theft as well as the elements. In some cases, you will choose a bank or lawyer.  In others you may prefer to bury it in your backyard. The choice is yours.",
+        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
         "agree": "Ik ga akkoord met de algemene voorwaarden",
         "responsible": "Ik ben volledig verantwoordelijk voor het veiligheidsbeheer van mijn persoonlijke sleutel",
         "access": "Ik begrijp dat Volentix en/of partners nooit toegang tot mijn persoonlijke sleutel hebben",
         "wifi": "Ik begrijp dat WIFI tijdelijk zal worden uitgeschakeld tijdens het genereren van sleutels",
-        "tofile": "Opslaan naar bestand",
-        "writedown": "Ik schrijf het op"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "Ik begrijp dat de persoonlijke sleutel niet in Verto is opgeslagen en niet kan worden hersteld.",
-        "private": "Privé",
-        "public": "Openbaar",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "De naam of de sleutel is al gebruikt.",
         "mustname": "Je moet een naam opgeven voor je sleutel.",
-        "walletname": "Naam portemonnee",
+        "walletname": "Wallet Name",
         "writedown": "Schrijf je sleutels op.",
         "privkey": "Privé-sleutel",
         "pubkey": "Openbare sleutel",
@@ -107,7 +117,8 @@
         "converted": "Geconverteerd",
         "pending": "In behandeling",
         "confirmed": "Bevestigd",
-        "approved": "Goedgekeurd"
+        "approved": "Goedgekeurd",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Instellingen",
@@ -123,7 +134,9 @@
         "sendmail": "Stuur Mail",
         "language": "Taal",
         "help": "Help",
-        "optionsdd": "Opties"
+        "optionsdd": "Opties",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Blocktopus gebruikersnaam",
@@ -137,11 +150,13 @@
         "additional": "Extra bonussen",
         "bonus": "Bonus",
         "soon": "Binnenkort beschikbaar",
-        "getvtx": "VTX bemachtigen",
+        "getvtx": "GetVtx",
         "native_chain_address": "Oorspronkelijk keten-adres",
-        "available_for": "Adres beschikbaar tot"
+        "available_for": "Adres beschikbaar tot",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Huidig Verto-wachtwoord",
         "new": "Nieuwe Verto-wachtwoord",
         "confirm": "Bevestig nieuw Verto-wachtwoord",
@@ -149,7 +164,7 @@
         "change": "Verto-wachtwoord wijzigen",
         "recommended": "Het wordt aanbevolen om eerst een back-up te maken van de huidige configuratie van Verto voordat je het wachtwoord wijzigt. Je kunt een back-up maken van Verto ",
         "here": "hier",
-        "access": "Wijzigt het wachtwoord om toegang te krijgen tot Verto. Eenmaal geselecteerd wordt alle configuratie versleuteld met behulp van het nieuwe wachtwoord. Mogelijk wilt u "
+        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password. You may want to "
     },
     "BackupWallet": {
         "folder": "Map selecteren",
@@ -160,13 +175,15 @@
         "select": "Selecteer 'Back-up portemonnee'"
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Kies bestand",
         "choose": "Kies portemonnee-wachtwoord",
         "confirm": "Bevestig portemonnee-wachtwoord",
         "storeext": "Opslaan op een externe schijf, portemonnee of USB-sleutel.",
         "storeloc": "Opslaan op de lokale schijf van je computer.",
         "emailit": "E-mail het.",
-        "cloud": "Sla het op in de cloud."
+        "cloud": "Sla het op in de cloud.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Adres aanvragen",
@@ -174,24 +191,25 @@
         "err_noAddressAvailable": "Geen adres beschikbaar voor die keten. Probeer het alsjeblieft opnieuw.",
         "err_pendingTransactionsExist": "In behandeling zijnde transacties bestaan",
         "err_investor_must_wait": "Je moet een uur wachten voordat je een nieuw adres aanvraagt.",
-        "first_p": "De volgende twee regels zijn van toepassing:",
-        "second_p": "1. Het adres dat je ontvangt is slechts voor een beperkte periode geldig. Hierdoor kan elke transactie die je na de toewijzingsperiode verstuurt, verloren gaan. Zorg er bij het verzenden van transacties altijd voor dat je nog steeds een oorspronkelijk keten-adres aan je portemonnee hebt toegewezen.",
-        "third_p": "2. Je kunt slechts één oorspronkelijk keten-adres per uur aanvragen.",
+        "first_p": "The following two rules apply:",
+        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
+        "third_p": "2. You are only able to request one native chain address per hour.",
         "access": "Ik begrijp het en ga akkoord",
         "select_currency": "Selecteer een oorspronkelijke keten",
         "time_remaining": "Beschikbaar in"
     },
     "NotWhitelisted": {
-        "header": "Niet whitelisted",
-        "first_p": "Voordat je VTX kunt bemachtigen, moet je de volgende handelingen uitvoeren:",
-        "first_p_first_point": "1. KYC met één van onze vertrouwde partners.",
-        "first_p_second_point": "2. Koppel een openbaar Verto-adres aan je KYC-account.",
-        "subheader_1": "Al aangemeld voor KYC",
-        "second_p": "Als je je al hebt aangemeld voor het KYC-proces, via het web, kun je je portemonnee nu aan dit account koppelen.",
-        "link_associate": "Dit Verto-adres nu koppelen.",
-        "second_subheader": "KYC nodig",
-        "third_p": "Om VTX te bemachtigen, is het vereist dat je KYC (Know Your Customer) doorloopt om te voldoen aan de regelgeving. Als je KYC via Verto gebruikt, wordt je openbare adres automatisch gekoppeld aan je KYC-account. Als gevolg hiervan kun je, zodra je KYC-goedgekeurd bent, onmiddellijk VTX bemachtigen.",
-        "link_kyc": "Start KYC-proces nu."
+        "header": "Not Whitelisted",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
+        "link_associate": "Associate This Verto Address Now.",
+        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
+        "link_kyc": "Begin KYC Process Now.",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC reeds toegewezen",
@@ -204,5 +222,15 @@
         "time_remaining": "Resterende tijd",
         "mins": "Minuten",
         "seconds": "seconden"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }
