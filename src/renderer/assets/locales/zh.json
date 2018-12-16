@@ -54,7 +54,7 @@
     },
     "SaveYourKeys": {
         "strategy": "计划私钥物理存储的策略。此存储策略应该包括长期考量，包括：",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "physical": "<b>物理安全：</b>任何提供您所寻求的保护的保险库。想想您知道的不会被偷盗的某个地方以及要素。一些例子如家或银行保险箱，或律师。您可以选择通过将副本存储在多个地方来保护您的密钥。",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
