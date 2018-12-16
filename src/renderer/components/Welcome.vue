@@ -60,7 +60,7 @@ export default {
   // name: 'locale-changer',
   data() {
     return {
-      // langs: ['en', 'fr', 'es', 'sr', 'pl', 'el'],
+      // langs: ['en', 'fr', 'es', 'sr', 'pl', 'el', zh, nl],
       subtitle_message: this.$t('Welcome.subtitle_message'),
       join_message: this.$t('Welcome.join_message'),
       publicKey: "",
