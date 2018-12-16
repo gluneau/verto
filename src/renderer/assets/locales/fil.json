@@ -203,7 +203,7 @@
         "header": "Get VTX",
         "kyc": "KYC",
         "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
+        "kyc_1": "Para makakuha ng VTX, ang mga mamumuhunan ay dapat na mag-KYC (Know Your Customer) sa isa sa aming pinagkakatiwalaang mga kasosyo. Tinitiyak ng prosesong ito na kami ay nananatiling sumusunod sa tagapangasiwa ng iyong rehiyon. Tandaan na ang prosesong ito ay dapat lamang kumpletuhin ng isang beses bago tanggapin bilang isang potensyal na kontribyutor. Tandaan na ang seleksyon na ito ay i-uugnay ang wallet na ito sa aplikasyon mo sa KYC.",
         "link_associate": "Already KYC'd",
         "second_p": "Kung ikaw ay nakapag KYC na, subalit, hindi pa nai-uugnay ang wallet na ito sa iyong akawnt, mangyaring mag-log sa provider ng KYC para gawin ito. Ang mga hakbang na ito ay kinakailangan bago mo maaaring makuha ang VTX. Tandaan na kapag ay nag KYC na sa wallet, hindi mo na kakailanganing gawin ang mga hakbang na ito.",
         "link_kyc": "Begin KYC Process",
@@ -212,8 +212,8 @@
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "Ang KYC ay Nailaan na",
+        "first_p": "Ang naka KYC na akawnt ay nakapaglaan na ng isang Publick Address ng Verto."
     },
     "BeginGetVtx": {
         "header": "Checking Wallet Status"
@@ -229,8 +229,8 @@
         "venue_password": "Venue Password",
         "bad_credentials": "The credentials provided are invalid.",
         "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "email_verification_required": "Kailangan mo munang patunayan ang iyong email sa Venue bago i-ugnay ang wallet.",
         "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "user_deactivated": "Ang user na ito ay matagal ng hindi aktibo."
     }
 }
