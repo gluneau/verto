@@ -12,14 +12,14 @@
     },
     "CreateVertoPassword": {
         "header": "创建Verto密码",
-        "important": "重要",
+        "important": "重要提示",
         "important_warning": "请仔细阅读。此密码无法恢复。如果忘记或者丢失您的密码，您将永远失去您的钱包。",
         "vertopassword": "Verto主密码",
         "i_understand": "我明白",
         "confirm": "确认Verto密码",
         "mustmatch": "密码必须完全一致。",
         "fillall": "请填写以上所有字段",
-        "done": "已完全",
+        "done": "已完成",
         "addwallet": "添加钱包",
         "onlysupport": "目前为止，Verto仅支持添加公钥的功能。要添加钱包，只需提供名称，钱包地址和Verto密码。",
         "createwallet": "创建钱包",
@@ -36,7 +36,7 @@
         "used": "此名称或者钱包已被使用。",
         "both": "您必须同时提供钱包的名称和公钥。",
         "submit": "递交",
-        "cannotrecover": "钱包一旦删除，Verto将无法恢复。请再次按删除按钮来进行最后的删除。",
+        "cannotrecover": "钱包一旦删除，Verto将无法恢复。请再次按压删除按钮来进行最后的删除。",
         "cancel": "取消",
         "delete": "删除",
         "keyhere": "这里是钱包的公钥",
@@ -44,7 +44,7 @@
         "wallets": "钱包"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "确保您的钥匙安全",
+        "keepsafe": "确保您的密钥安全",
         "before": "在继续之前，请务必注意，您完全负责自己私钥的管理，安全和保护。只有您，没有其他人包括Volentix 生态系统合作伙伴会对它负责。",
         "choices": "您有2种选择来保留您的私钥。这两种方法都旨在确保您的私钥安全。",
         "first": "写下您的私钥。",
@@ -135,7 +135,7 @@
         "language": "语言",
         "help": "帮助",
         "optionsdd": " 选项",
-        "vespucci_open": "Vespucci Open",
+        "vespucci_open": "Vespucci开放",
         "current_wallet": "当前钱包"
     },
     "AssociateView": {
