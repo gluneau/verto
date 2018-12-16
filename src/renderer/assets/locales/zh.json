@@ -45,15 +45,15 @@
     },
     "KeepYourKeysSafe": {
         "keepsafe": "确保您的钥匙安全",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
-        "back": "Back"
+        "before": "在继续之前，请务必注意，您完全负责自己私钥的管理，安全和保护。只有您，没有其他人包括Volentix 生态系统合作伙伴会对它负责。",
+        "choices": "您有2种选择来保留您的私钥。这两种方法都旨在确保您的私钥安全。",
+        "first": "写下您的私钥。",
+        "second": "或者，把您的私钥加密在密码保护的文件中。",
+        "next": "下一步",
+        "back": "返回"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "计划私钥物理存储的策略。此存储策略应该包括长期考量，包括：",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
