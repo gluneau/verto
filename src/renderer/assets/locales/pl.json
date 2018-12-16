@@ -6,13 +6,13 @@
         "nopassword": "Nie Ustawiono Hasła Do Portfela. Najpierw Stwórz Hasło.",
         "incorrect": "Hasło Verto Jest Niepoprawne.",
         "login": "Login",
-        "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "create": "Rozpocznij",
+        "subtitle_message": "Verto jest twoją bramą do Volentix.",
         "join_message": "Cieszymy się, że do nas dołączyłeś."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Utwórz Hasło Verto",
+        "important": "WAŻNE",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
