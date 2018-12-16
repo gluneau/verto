@@ -213,24 +213,24 @@
     },
     "KycAlreadyAssociated": {
         "header": "KYC已经分配",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "first_p": "此KYC认证过的账户已经被分配了一个Verto 公共地址。"
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "检查钱包状态"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "剩余时间",
+        "mins": "分钟",
+        "seconds": "秒"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "header": "Venue分配地址",
+        "venue_username": "Venue用户名",
+        "venue_password": "Venue密码",
+        "bad_credentials": "提供的凭证无效。",
+        "important_info": "此信息永远不会存储在Verto中。",
+        "email_verification_required": "在关联钱包之前，您必须先在Venue验证您的电子邮件地址。",
+        "verto_address_not_unique": "此地址已分配给另一位用户。",
+        "user_deactivated": "此用户不再有效。"
     }
 }
