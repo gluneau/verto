@@ -208,7 +208,7 @@
         "second_p": "Kung ikaw ay nakapag KYC na, subalit, hindi pa nai-uugnay ang wallet na ito sa iyong akawnt, mangyaring mag-log sa provider ng KYC para gawin ito. Ang mga hakbang na ito ay kinakailangan bago mo maaaring makuha ang VTX. Tandaan na kapag ay nag KYC na sa wallet, hindi mo na kakailanganing gawin ang mga hakbang na ito.",
         "link_kyc": "Begin KYC Process",
         "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "assign_verto_to_venue_desc": "Kung ikaw ay isang miyembro ng Venue, kakailanganin mong mag-ugnay ng isang wallet para makuha ang iyong VTX. Tandaan na kailangan mo ring kompletuhin ang proseso sa KYC. Kapag ang parehong mga aksyon ay na kumpleto na, ang iyong VTX ay mailalaan sa wallet na ito.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
