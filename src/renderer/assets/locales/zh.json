@@ -136,34 +136,34 @@
         "help": "帮助",
         "optionsdd": " 选项",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "当前钱包"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Blocktopus用户名",
+        "password": "Blocktopus密码"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
-        "bonus": "Bonus",
-        "soon": "Coming Soon",
-        "getvtx": "Get VTX With",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
-        "native_chain_header": "Native Chain Address"
+        "vtxsold": "已售出的VTX",
+        "round": "奖金环节",
+        "amount": "奖金金额",
+        "current": "当前VTX 价格",
+        "additional": "额外奖金",
+        "bonus": "奖金",
+        "soon": "即将上线",
+        "getvtx": "获取VTX通过",
+        "native_chain_address": "原生链地址",
+        "available_for": "地址可用至",
+        "native_chain_header": "原生链地址"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
-        "confirm": "Confirm New Verto Password",
-        "required": "All fields are required.",
-        "change": "Change Verto Password",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
+        "header": "更改密码",
+        "current": "当前 Verto密码",
+        "new": "新的 Verto 密码",
+        "confirm": "确认新的 Verto密码",
+        "required": "所有字段必填。",
+        "change": "更改 Verto密码",
+        "recommended": "建议在更改密码前先备份 Verto的当前配置。您可以备份 Verto ",
+        "here": "这里",
         "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
     },
     "BackupWallet": {
