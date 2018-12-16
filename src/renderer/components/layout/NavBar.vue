@@ -27,6 +27,12 @@
                 <a href="#" v-if="showDropDownLanguage" v-on:click.prevent="showLanguageChildren()" class="">
                     <img v-if="$i18n.locale == 'en'" src="~@/assets/img/lang/en.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'fr'" src="~@/assets/img/lang/fr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'es'" src="~@/assets/img/lang/es.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'el'" src="~@/assets/img/lang/el.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'sr'" src="~@/assets/img/lang/sr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'pl'" src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'zh'" src="~@/assets/img/lang/zh.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'nl'" src="~@/assets/img/lang/nl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                 </a>
 
             <div v-if="showDropDownOptionsChildren" >
@@ -64,6 +70,15 @@
             <a class="" @click="updateLanguage('fr')">
               <img src="~@/assets/img/lang/fr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
+            <a class="" @click="updateLanguage('nl')">
+              <img src="~@/assets/img/lang/nl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
+            <a class="" @click="updateLanguage('zh')">
+              <img src="~@/assets/img/lang/zh.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
+            <a class="" @click="updateLanguage('pl')">
+              <img src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
           </div>
           <div>
           </div>
@@ -81,7 +96,7 @@ export default {
   data() {
     return {
       open: false,
-      langs: ['en', 'fr'],
+      langs: ['en', 'fr', 'pl', 'zh', 'nl'], // 'es', 'sr', 'el',
       showDropDownOptions: true,
       showDropDownLanguage: true,
       showDropDownOptionsChildren: false,
