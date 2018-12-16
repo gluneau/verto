@@ -6,18 +6,22 @@
         "nopassword": "Nie Ustawiono Hasła Do Portfela. Najpierw Stwórz Hasło.",
         "incorrect": "Hasło Verto Jest Niepoprawne.",
         "login": "Login",
-        "create": "Utwórz Hasło Verto",
-        "subtitle_message": "Verto jest twoją bramą do Volentix, dzięki Verto możesz kupić VTX, macierzysty token ekosystemu Volentix.",
+        "create": "Rozpocznij",
+        "subtitle_message": "Verto jest twoją bramą do Volentix.",
         "join_message": "Cieszymy się, że do nas dołączyłeś."
     },
     "CreateVertoPassword": {
-        "vertopassword": "Hasło Verto",
+        "header": "Utwórz Hasło Verto",
+        "important": "WAŻNE",
+        "important_warning": "Przeczytaj uważnie. Tego hasła nie można odzyskać. Jeśli zapomnisz lub zgubisz swoje hasło, stracisz swoje portfele na zawsze.",
+        "vertopassword": "GłówneHasło Verto",
+        "i_understand": "Rozumiem",
         "confirm": "Potwierdź Hasło Verto",
         "mustmatch": "Hasła muszą się zgadzać.",
         "fillall": "Prosimy wypełnić wszystkie powyżej",
-        "save": "Zapisz",
+        "done": "Gotowe",
         "addwallet": "Dodaj Portfel",
-        "onlysupport": "Jak na razie Verto obsługuje tylko możliwość dodawania kluczy publicznych. Aby dodać portfel, wystarczy podać nazwę, adres portfela i hasło Verto, aby dodać swój portfel.",
+        "onlysupport": "Jak na razie Verto obsługuje tylko możliwość dodawania kluczy publicznych. Aby dodać portfel, wystarczy podać nazwę, adres portfela i hasło Verto.",
         "createwallet": "Stwórz Portfel",
         "createkey": "Stwórz publiczne/prywatne pary kluczy dla nowego portfela. Zauważ, że <b>TYLKO</b> klucz publiczny jest przechowywany w Verto. Jesteś odpowiedzialny za zarządzanie swoim prywatnym kluczem, jego przechowywaniem i bezpieczeństwem.",
         "wallets": "Portfele",
@@ -25,7 +29,8 @@
         "delete": "Usuń Portfel",
         "trash": "Kliknij na ikonę 'Śmieci'",
         "enter": "Wprowadź hasło.",
-        "note": "<b>UWAGA:</b> Verto nie może odzyskać skasowanych portfeli."
+        "note": "<b>UWAGA:</b> Verto nie może odzyskać skasowanych portfeli.",
+        "save": "Zapisz"
     },
     "WalletManager": {
         "used": "Nazwa lub portfel zostały już użyte.",
@@ -34,35 +39,40 @@
         "cannotrecover": "Verto nie może odzyskać portfela po usunięciu. Naciśnij ponownie przycisk usuwania, aby ostatecznie usunąć.",
         "cancel": "Anuluj",
         "delete": "Usuń",
-        "keyhere": "Klucz Publiczny Portfela Tutaj"
+        "keyhere": "Klucz Publiczny Portfela Tutaj",
+        "header": "Menedżer Portfela",
+        "wallets": "Portfele"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Dbaj o bezpieczeństwo swoich kluczy",
+        "keepsafe": "Dbaj O Bezpieczeństwo Swoich Kluczy",
         "before": "Przed kontynuowaniem należy pamiętać, że ponosisz całkowitą odpowiedzialność za zarządzanie, bezpieczeństwo, ochronę i odzyskiwanie swojego klucza prywatnego. Nikt inny, w tym partnerzy ekosystemu Volentix.",
         "choices": "Masz 2 opcje na przechowywanie klucza prywatnego. Obie metody zostały zaprojektowane w celu zapewnienia bezpieczeństwa twojego klucza prywatnego.",
-        "first": "Pierwszym wyborem jest zapisanie klucza.",
-        "second": "Drugim wyborem jest zaszyfrowanie klucza w pliku chronionym hasłem.",
+        "first": "Zapisz swój klucz na kartce.",
+        "second": "Lub zaszyfruj klucz w pliku chronionym hasłem.",
         "next": "Następny",
         "back": "Wstecz"
     },
     "SaveYourKeys": {
-        "strategy": "Będziesz musiał zaplanować strategię fizycznego przechowywania Twojego klucza prywatnego. Ta strategia przechowywania powinna obejmować myślenie długoterminowe, w tym:",
-        "physical": "<b>Bezpieczeństwo Fizyczne:</b> Skarbce wszelkiego rodzaju, które zapewniają ochronę, której szukasz. Pomyśl o miejscu, gdzie wiesz, że jest bezpieczna zarówno przed kradzieżą, jak i przed żywiołami. W niektórych przypadkach wybierzesz bank lub prawnika. W innych możesz go pogrzebać na swoim podwórku. Wybór należy do ciebie.",
-        "legacy": "<b>Spadek:</b> Przypadki chodzą po ludziach. Życie się kończy. Musisz zaplanować przekazanie swojego portfela innej osobie. W niektórych przypadkach może to być testament, podczas gdy w innych staje się poszukiwaniem skarbu. Wybór należy do ciebie.",
+        "strategy": "Zaplanuj strategię fizycznego przechowywania Twojego klucza prywatnego. Ta strategia przechowywania powinna obejmować myślenie długoterminowe, w tym:",
+        "physical": "<b>Bezpieczeństwo Fizyczne:</b> Skarbce wszelkiego rodzaju, które zapewniają ochronę, której szukasz. Pomyśl o miejscu, gdzie wiesz, że jest bezpieczne od kradzieży, a także od żywiołów. Niektóre przykłady to sejf w domu lub banku, albo prawnika. Możesz chronić swoje klucze, przechowując kopie w wielu miejscach.",
+        "legacy": "<b>Spadek:</b> Przypadki chodzą po ludziach. Życie się kończy. Musisz zaplanować przekazanie swojego portfela innej osobie. W niektórych przypadkach może to być testament, rozważ ostrożnie swoje opcje. Wybór należy do ciebie.",
         "agree": "Zgadzam się na Zasady % Warunki",
         "responsible": "Jestem w pełni odpowiedzialny za zarządzanie bezpieczeństwem mojego klucza prywatnego",
         "access": "Rozumiem, że Volentix i/lub partnerzy nigdy nie mają dostępu do mojego klucza prywatnego",
         "wifi": "Rozumiem, że WIFI zostanie tymczasowo wyłączony podczas generowania kluczy",
-        "tofile": "Zapisz w pliku",
-        "writedown": "Zapiszę to"
+        "create": "Stwórz",
+        "save_keys": "Zapisz Plik"
     },
     "DisplayKey": {
+        "header": "Zapisz to",
         "understand": "Rozumiem, że klucz prywatny nie jest przechowywany w Verto i nie można go odzyskać.",
-        "private": "Prywatny",
-        "public": "Publiczny",
+        "showPrivate": "Pokaż Prywatne",
+        "hidePrivate": "Ukryj Prywatne",
+        "showPublic": "Pokaż Publicznie",
+        "hidePublic": "Ukryj Publiczne",
         "already": "Nazwa lub klucz zostały już użyte.",
         "mustname": "Musisz podać nazwę swojego klucza.",
-        "walletname": "Nazwa Portfela",
+        "walletname": "Podaj Nazwę Portfela: tj. Oszczędności",
         "writedown": "Zapisz swoje klucze.",
         "privkey": "Klucz prywatny",
         "pubkey": "Klucz publiczny",
@@ -103,11 +113,12 @@
         "phase": "Faza Bonusowa",
         "additional": "Dodatkowy Bonus",
         "total": "Ogółem",
-        "received": "Odebrane",
+        "received": "Otrzymano",
         "converted": "Przeliczono",
         "pending": "W toku",
         "confirmed": "Potwierdzony",
-        "approved": "Zatwierdzone"
+        "approved": "Zatwierdzone",
+        "number_of_approved_blocks": "/ 6 Potwierdzone Bloki"
     },
     "SettingsView": {
         "settings": "Ustawienia",
@@ -123,7 +134,9 @@
         "sendmail": "Wyślij Maila",
         "language": "Język",
         "help": "Pomoc",
-        "optionsdd": " Opcje"
+        "optionsdd": " Opcje",
+        "vespucci_open": "Otwórz Vespucci",
+        "current_wallet": "Aktualny Portfel"
     },
     "AssociateView": {
         "username": "Nazwa użytkownika Blocktopus",
@@ -137,11 +150,13 @@
         "additional": "Dodatkowe Bonusy",
         "bonus": "Bonus",
         "soon": "Wkrótce Dostępne",
-        "getvtx": "OtrzymajVtx",
+        "getvtx": "Otrzymaj VTX Z",
         "native_chain_address": "Macierzysty Adres Sieci",
-        "available_for": "Adres Dostępny Aż"
+        "available_for": "Adres Dostępny Aż",
+        "native_chain_header": "Macierzysty Adres Sieci"
     },
     "ChangeVertoPassword": {
+        "header": "Zmiana Hasła",
         "current": "Obecne hasło Verto",
         "new": "Nowe Hasło Verto",
         "confirm": "Potwierdź Nowe Hasło Verto",
@@ -149,7 +164,7 @@
         "change": "Zmień Hasło Verto",
         "recommended": "Zaleca się wykonanie kopii zapasowej bieżącej konfiguracji Verto przed zmianą hasła. Możesz wykonać kopię zapasową Verto ",
         "here": "tutaj",
-        "access": "Zmienia hasło, aby uzyskać dostęp do Verto. Po wybraniu, cała konfiguracja jest szyfrowana przy użyciu nowego hasła. Może zechcesz "
+        "access": "Zmienia hasło, aby uzyskać dostęp do Verto. Po wybraniu, cała konfiguracja jest szyfrowana przy użyciu nowego hasła."
     },
     "BackupWallet": {
         "folder": "Wybierz Folder",
@@ -160,13 +175,15 @@
         "select": "Wybierz 'Zrób Kopię Zapasową Portfela'"
     },
     "ChoosePassword": {
+        "header": "Zapisz Plik",
         "file": "Wybierz plik",
         "choose": "Wybierz Hasło Portfela",
         "confirm": "Potwierdź hasło Portfela",
         "storeext": "Przechowuj na dysku zewnętrznym, portfelu lub kluczu USB.",
         "storeloc": "Przechowuj go na lokalnym dysku komputera.",
         "emailit": "Wyślij e-mailem.",
-        "cloud": "Przechowuj w chmurze."
+        "cloud": "Przechowuj w chmurze.",
+        "save": "Zapisz"
     },
     "RequestNativeChainAddress": {
         "header": "Żądanie Adresu",
@@ -174,24 +191,25 @@
         "err_noAddressAvailable": "Brak adresu dla tej sieci. Proszę spróbuj ponownie.",
         "err_pendingTransactionsExist": "Dostępne są oczekujące transakcje",
         "err_investor_must_wait": "Zanim zażądasz nowy adres, musisz poczekać godzinę.",
-        "first_p": "Obowiązują następujące dwie zasady:",
-        "second_p": "1. Otrzymany adres jest ważny tylko przez ograniczony czas. W rezultacie każda transakcja wysłana po okresie alokacji może zostać utracona. Wysyłając transakcje, zawsze upewnij się, że nadal masz macierzysty adres łańcucha przypisany do portfela.",
-        "third_p": "2. Możesz zażądać tylko jednego adresu sieciowego na godzinę.",
+        "first_p": "Obowiązują następujące zasady:",
+        "second_p": "1. Otrzymany adres jest ważny tylko przez ograniczony czas.",
+        "second_p_point_1": "2. Każda transakcja wysłana po upływie okresu alokacji może zostać utracona.",
+        "third_p": "3. Możesz zażądać tylko jednego adresu sieciowego na godzinę.",
         "access": "Rozumiem i zgadzam się",
         "select_currency": "Wybierz Sieć Macierzystą",
         "time_remaining": "Dostępny W"
     },
     "NotWhitelisted": {
-        "header": "Nie Ma Na Białej Liście",
-        "first_p": "Zanim będziesz mógł Uzyskać VTX, musisz wykonać następujące czynności:",
-        "first_p_first_point": "1. KYC z jednym z naszych zaufanych partnerów.",
-        "first_p_second_point": "2. Powiąż Adres Publiczny Verto z kontem KYC.",
-        "subheader_1": "Już Zarejestrowany Na KYC",
-        "second_p": "Jeśli zarejestrowałeś się już w procesie KYC, przez Internet możesz teraz powiązać swój portfel z tym kontem.",
-        "link_associate": "Powiąż Ten Adres Verto Teraz.",
-        "second_subheader": "Wymaga Identyfikacji KYC",
-        "third_p": "Aby Uzyskać Vtx, wymagane jest, abyś był zidentyfikowany za pomocą KYC w celu spełnienia wymogów regulacyjnych. Pamiętaj, że jeśli KYC przez Verto twój publiczny adres zostanie automatycznie powiązany z twoim kontem KYC. W rezultacie, po zatwierdzeniu KYC, będziesz mógł natychmiast Uzyskać VTX.",
-        "link_kyc": "Rozpocznij Teraz Proces KYC."
+        "header": "Zdobądź VTX",
+        "kyc": "KYC",
+        "whitelist": "Biała Lista",
+        "kyc_1": "Aby uzyskać VTX, inwestorzy muszą dokonać weryfikacji KYC (Know Your Customer) z jednym z naszych zaufanych partnerów. Ten proces ma na celu zapewnienie, że pozostajemy w zgodności z regulatorami w Twoim regionie. Pamiętaj, że ten proces może zostać zakończony tylko raz, zanim zostanie zaakceptowany jako potencjalny twórca. Pamiętaj, że ten wybór spowoduje powiązanie tego portfela z aplikacją KYC.",
+        "link_associate": "Już dokonano weryfikacji KYC",
+        "second_p": "Jeśli masz dokonałeś już weryfikacji KYC, jednak nie powiązałeś tego portfela z kontem, zaloguj się do dostawcy KYC, aby to zrobić. Ten krok jest wymagany, zanim będziesz mógł uzyskać VTX. Pamiętaj, że jeśli KYC w portfelu nie będzie wymagane, nie będziesz musiał wykonywać tego kroku.",
+        "link_kyc": "Rozpocznij Teraz Proces KYC",
+        "assign_verto_to_venue": "Przydziel Verto To Venue",
+        "assign_verto_to_venue_desc": "Jeśli jesteś członkiem Venue, musisz powiązać portfel w celu uzyskania swojego VTX. Zauważ, że będziesz również musiał ukończyć proces KYC. Gdy obie czynności zostaną zakończone, twój VTX zostanie przydzielony do tego portfela.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Jest Już Przydzielony",
@@ -204,5 +222,15 @@
         "time_remaining": "Pozostały Czas",
         "mins": "Minuty",
         "seconds": "sekundy"
+    },
+    "VenueAssignAddress": {
+        "header": "Przypisany Adres Venue",
+        "venue_username": "Nazwa Użytkownika Venue",
+        "venue_password": "Hasło Venue",
+        "bad_credentials": "Dane logowania są nieprawidłowe.",
+        "important_info": "Informacje te nigdy nie są przechowywane w Verto.",
+        "email_verification_required": "Przed powiązaniem portfela musisz najpierw zweryfikować swój adres e-mail w aplikacji Venue.",
+        "verto_address_not_unique": "Adres jest już przypisany do innego użytkownika.",
+        "user_deactivated": "Ten użytkownik nie jest już aktywny."
     }
 }

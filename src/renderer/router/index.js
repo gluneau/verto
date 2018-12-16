@@ -27,30 +27,6 @@ const router = new Router({
       }
     },
     {
-      path: '/home',
-      name: 'Home',
-      meta: { layout: "no-sidebar" },
-      component: require('@/components/Home').default
-    },
-    {
-      path: '/settings',
-      name: 'Settings',
-      component: require('@/components/Settings').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/checkforupdates',
-      name: 'CheckForUpdates',
-      component: require('@/components/CheckForUpdates').default
-    },
-    {
-      path: '/newversionisavailable',
-      name: 'NewVersionIsAvailable',
-      component: require('@/components/NewVersionIsAvailable').default
-    },
-    {
       path: '/welcome',
       name: 'Welcome',
       meta: { layout: "login" },
@@ -59,28 +35,15 @@ const router = new Router({
     {
       path: '/transactiondetails',
       name: 'TransactionDetails',
-      component: require('@/components/TransactionDetails').default,
+      component: require('@/components/TransactionDetails/ViewTransactionDetails').default,
       meta: {
         requiresAuth: true
       }
-    },
-    {
-      path: '/associatewithblocktopus',
-      name: 'AssociateWithBlocktopus',
-      component: require('@/components/AssociateWithBlocktopus').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/downloadversion',
-      name: 'DownloadVersion',
-      component: require('@/components/DownloadVersion').default
     },
     {
       path: '/congratsscreen',
       name: 'CongratsScreen',
-      component: require('@/components/CongratsScreen').default,
+      component: require('@/components/VertoManager/CongratsScreen').default,
       meta: {
         requiresAuth: true
       }
@@ -88,15 +51,7 @@ const router = new Router({
     {
       path: '/displaykey',
       name: 'DisplayKey',
-      component: require('@/components/DisplayKey').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/generatekey',
-      name: 'GenerateKey',
-      component: require('@/components/GenerateKey').default,
+      component: require('@/components/VertoManager/DisplayKey').default,
       meta: {
         requiresAuth: true
       }
@@ -112,44 +67,7 @@ const router = new Router({
     {
       path: '/keepyourkeyssafe',
       name: 'KeepYourKeysSafe',
-      component: require('@/components/KeepYourKeysSafe').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/saveyourkeys',
-      name: 'SaveYourKeys',
-      component: require('@/components/SaveYourKeys').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/signupwithgatewayprovider',
-      name: 'SignUpWithGatewayProvider',
-      component: require('@/components/SignUpWithGatewayProvider').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/storekeys',
-      name: 'StoreKeys',
-      component: require('@/components/StoreKeys').default,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/termsconditions',
-      name: 'TermsConditions',
-      component: require('@/components/TermsConditions').default
-    },
-    {
-      path: '/usercredentials',
-      name: 'UserCredentials',
-      component: require('@/components/UserCredentials').default,
+      component: require('@/components/VertoManager/KeepYourKeysSafe').default,
       meta: {
         requiresAuth: true
       }
@@ -157,7 +75,7 @@ const router = new Router({
     {
       path: '/choosepassword',
       name: 'choosepassword',
-      component: require('@/components/ChoosePassword').default,
+      component: require('@/components/VertoManager/ChoosePassword').default,
       meta: {
         requiresAuth: true
       }
@@ -165,12 +83,12 @@ const router = new Router({
     {
       path: '/createvertopassword',
       name: 'createvertopassword',
-      component: require('@/components/CreateVertoPassword').default
+      component: require('@/components/VertoManager/CreateVertoPassword').default
     },
     {
       path: '/walletmanager',
       name: 'walletmanager',
-      component: require('@/components/WalletManager').default,
+      component: require('@/components/VertoManager/WalletManager').default,
       meta: {
         requiresAuth: true
       }
@@ -178,25 +96,23 @@ const router = new Router({
     {
       path: '/whitelist',
       name: 'whitelist',
-      component: require('@/components/Whitelist').default,
+      component: require('@/components/Blocktopus/Whitelist').default,
       meta: {
         requiresAuth: true
       }
     },
     {
-      path: '/failure',
-      name: 'failure',
-      component: require('@/components/Failure').default
-    },
-    {
-      path: '/success',
-      name: 'success',
-      component: require('@/components/Success').default
+      path: '/whitelistsuccessful',
+      name: 'whitelistsuccessful',
+      component: require('@/components/Blocktopus/WhitelistSuccessful').default,
+      meta: {
+        requiresAuth: true
+      }
     },
     {
       path: '/changevertopassword',
       name: 'changevertopassword',
-      component: require('@/components/ChangeVertoPassword').default,
+      component: require('@/components/VertoManager/ChangeVertoPassword').default,
       meta: {
         requiresAuth: true
       }
@@ -204,7 +120,7 @@ const router = new Router({
     {
       path: '/backupwallet',
       name: 'backupwallet',
-      component: require('@/components/BackupWallet').default,
+      component: require('@/components/VertoManager/BackupWallet').default,
       meta: {
         requiresAuth: true
       }
@@ -212,7 +128,7 @@ const router = new Router({
     {
       path: '/venueassignaddress',
       name: 'venueassignaddress',
-      component: require('@/components/VenueAssignAddress').default,
+      component: require('@/components/GetVtx/VenueAssignAddress').default,
       meta: {
         requiresAuth: true
       }
@@ -269,6 +185,14 @@ const router = new Router({
       path: '/kycalreadyassociated',
       name: 'kycalreadyassociated',
       component: require('@/components/Blocktopus/KycAlreadyAssociated').default,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/vespucciopen',
+      name: 'vespucciopen',
+      component: require('@/components/Vespucci/Open').default,
       meta: {
         requiresAuth: true
       }

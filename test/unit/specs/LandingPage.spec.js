@@ -1,5 +1,7 @@
 import Vue from 'vue'
+import { mount } from '@vue/test-utils'
 import LandingPage from '@/components/LandingPage'
+import router from "@/router"
 
 describe('LandingPage.vue', () => {
   it('Has a created hook', () => {
@@ -10,12 +12,16 @@ describe('LandingPage.vue', () => {
     assert.typeOf(LandingPage.data, 'function')
     const defaultData = LandingPage.data()
     assert.equal(defaultData.messages, 'Welcome page')
+    assert.isFalse(defaultData.is_login)
   })
 
   it('Renders the correct message', () => {
-    const Constructor = Vue.extend(LandingPage)
-    const vm = new Constructor().$mount()
-    // expect(vm.$el.querySelector('.container').textContent).toBe('Welcome page')
+    const vm = new Vue({
+      el: document.createElement('div'),
+      render: h => h(LandingPage),
+      router: router
+    }).$mount()
+
     assert.include(vm.$el.querySelector('.container').textContent, 'Welcome page')
   })
 })

@@ -1,10 +1,5 @@
 <template>
   <section class="hero is-fullheight wallet-background">
-    <!-- <div class="locale-changer p-t-md m-l-md">
-      <select v-model="$i18n.locale">
-        <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
-      </select>
-    </div> -->
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="box has-text-white is-radiusless is-shadowless">
@@ -28,14 +23,15 @@
             </div>
             <form>
               <input  v-model="password" class="input m-b-sm" type="password" :placeholder="$t('Welcome.password')">
-              <div class="level-item has-text-centered is-marginless">
-                <a class="p-t-lg button is-fullwidth is-success" @click="login"> {{ $t('Welcome.login') }} </a>
+              <div class="level-item has-text-centered m-t-sm">
+                <a class="p-t-lg button is-success" @click="login"> {{ $t('Welcome.login') }} </a>
               </div>
             </form>
           </div>
           <div v-if="!hasPassword">
             <div class="is-size-6 m-t-md">{{ join_message }}</div>
-            <a class="p-t-lg button is-fullwidth is-primary" @click="createvertopassword">
+            <br>
+            <a class="p-t-lg button is-primary is-normal" @click="createvertopassword">
               {{ $t('Welcome.create') }}
             </a>
           </div>
@@ -80,7 +76,6 @@ export default {
     }
     if (fs.existsSync(path.join(electron.remote.app.getPath('userData'), '/verto.config'))) {
       this.hasPassword = true;
-      console.log("You are here.")
     }
   },
   methods: {
@@ -99,7 +94,21 @@ export default {
           const config = JSON.parse(sjcl.decrypt(this.password, databack));
           this.$store.dispatch("setKeys", config.keys);
           this.$store.dispatch("login", true);
-          this.$router.push({ path: "walletmanager" });
+          let foundDefault = false;
+          let i;
+          for (i = 0; i < config.keys.length; i++) {
+            const key = config.keys[i];
+            if (key.defaultKey) {
+              this.$store.commit("save", key.address);
+              this.$store.dispatch("setCurrentWallet", key);
+              foundDefault = true;
+            }
+          }
+          if (foundDefault) {
+            this.$router.push({ path: "main" });
+          } else {
+            this.$router.push({ path: "walletmanager" });
+          }
         } catch (error) {
           this.incorrectPassword = true
         }
@@ -113,6 +122,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 30rem;
+}
 .wallet-background {
   height: 100vh;
   background-image: url(~@/assets/img/wallet-bg.jpg);

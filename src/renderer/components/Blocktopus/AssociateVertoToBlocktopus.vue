@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <iframe id="blocktopusiframe" :src="blocktopusLink" />
+  <section class="has-background-darkgreen">
+    <iframe id="blocktopusiframe" :src="blocktopusLink"/>
   </section>
 </template>
 
@@ -15,7 +15,7 @@ export default {
       email: "",
       amount: 0,
       currency: 'BTC',
-      blocktopusLink: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_in?verto_public_address=' + this.$store.state.userKey
+      blocktopusLink: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_in?verto_public_address=' + this.$store.state.currentWallet.key
     };
   },
   beforeMount() {
@@ -23,14 +23,12 @@ export default {
   },
   destroyed() {
     EventBus.removeListener(this.callback)
-    console.log("I am being destroyed......")
   },
   methods: {
     signup: function() {
       this.$router.push("walletmanager")
     },
     callback: function(e) {
-      console.log("Data: " + e.data);
       if (e.data && (typeof e.data === 'string' || e.data instanceof String)) {
         if (e.data.startsWith('success')) {
           this.$router.push({ path: "blocktopussuccesssful" })

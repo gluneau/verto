@@ -13,19 +13,15 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div style="min-height: 100vh">
     <nav-bar />
 
-    <div class="container section">
+    <div class="section is-dark">
       <div class="columns">
-        <div class="column is-12">
+        <div class="column is-12 ">
           <slot />
         </div>
-
-        
       </div>
     </div>
-
-    <footer-bar />
   </div>
 </template>

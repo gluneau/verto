@@ -6,18 +6,22 @@
         "nopassword": "Es wurde noch kein Passwort für die Wallet erstellt. Bitte erstelle zuerst ein Passwort.",
         "incorrect": "Das Verto-Passwort ist nicht korrekt.",
         "login": "Login",
-        "create": "Verto Passwort erstellen",
-        "subtitle_message": "Verto ist Ihr Tor zu Volentix, mit Verto können Sie VTX, das native Token des Volentix-Ökosystems, erwerben.",
+        "create": "Begin",
+        "subtitle_message": "Verto is your gateway into Volentix.",
         "join_message": "Wir sind froh, dass Sie uns beigetreten sind."
     },
     "CreateVertoPassword": {
-        "vertopassword": "Verto Passwort",
+        "header": "Create Verto Password",
+        "important": "IMPORTANT",
+        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
+        "vertopassword": "Verto MainPassword",
+        "i_understand": "I understand",
         "confirm": "Verto-Passwort bestätigen",
         "mustmatch": "Passwörter müssen übereinstimmen.",
         "fillall": "Bitte alle Felder ausfüllen",
-        "save": "Speichern",
+        "done": "Done",
         "addwallet": "Wallet hinzufügen",
-        "onlysupport": "Im Moment unterstützt Verto nur die Möglichkeit, öffentliche Schlüssel hinzuzufügen. Um eine Wallet hinzuzufügen, geben Sie einfach einen Namen, die Wallet-Adresse und das Verto-Passwort an, um Ihre Wallet hinzuzufügen.",
+        "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password.",
         "createwallet": "Wallet erstellen",
         "createkey": "Erstellen Sie öffentliche/private Schlüsselpaare für eine neue Wallet. Beachten Sie, dass <b>NUR</b> der öffentliche Schlüssel in Verto gespeichert ist. Sie sind für die Verwaltung Ihres eigenen privaten Schlüssels, dessen Speicherung und Sicherheit verantwortlich.",
         "wallets": "Wallets",
@@ -25,7 +29,8 @@
         "delete": "Wallet löschen",
         "trash": "Klicke auf das 'Papierkorb' Icon",
         "enter": "Geben Sie Ihr Passwort ein.",
-        "note": "<b>HINWEIS:</b> Verto kann gelöschte Wallets nicht wiederherstellen."
+        "note": "<b>HINWEIS:</b> Verto kann gelöschte Wallets nicht wiederherstellen.",
+        "save": "Speichern"
     },
     "WalletManager": {
         "used": "Der Name der Wallet wurde bereits verwendet.",
@@ -34,35 +39,40 @@
         "cannotrecover": "Verto kann die einmal gelöschte Wallet nicht mehr wiederherstellen. Drücken Sie die Löschtaste erneut, um sie endgültig zu löschen.",
         "cancel": "Abbrechen",
         "delete": "Löschen",
-        "keyhere": "Öffentlicher Wallet Key hier"
+        "keyhere": "Öffentlicher Wallet Key hier",
+        "header": "Wallet Manager",
+        "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Schützen Sie Ihre Schlüssel",
+        "keepsafe": "Keep Your Keys Safe",
         "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
         "choices": "Sie haben 2 Möglichkeiten, Ihren privaten Schlüssel zu behalten. Beide Methoden sind entworfen, um sicherzustellen, dass Ihr privater Schlüssel sicher bleibt.",
-        "first": "Die erste Möglichkeit ist, Ihr Schlüssel aufzuschreiben.",
-        "second": "Die zweite Möglichkeit ist die Verschlüsselung Ihres Schlüssels in einer passwortgeschützten Datei.",
+        "first": "Write your key down.",
+        "second": "Or, encrypt your key in a password protected file.",
         "next": "Nächste",
         "back": "Zurück"
     },
     "SaveYourKeys": {
-        "strategy": "Sie müssen eine Strategie für die physische Speicherung Ihres privaten Schlüssels planen. Diese Speicherstrategie sollte langfristiges Denken beinhalten, einschließlich:",
-        "physical": "<b>Physische Sicherheit:</b> Tresore jeglicher Art, die den gewünschten Schutz bieten. Denken Sie an einen Ort, an dem Sie wissen, dass er sowohl vor Diebstahl als auch vor den Elementen sicher ist. In einigen Fällen werden Sie eine Bank oder einen Anwalt wählen. In anderen können Sie es vorziehen, es in Ihrem Hinterhof zu vergraben. Sie haben die Wahl.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, while in others it becomes a scavanger hunt. The choice is yours.",
+        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "Ich stimme den Allgemeinen Geschäftsbedingungen zu",
         "responsible": "I am entirely responsible for the security managment of my private key",
         "access": "Ich verstehe, dass Volentix und/oder Partner nie Zugang zu meinem privaten Schlüssel haben",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "tofile": "In Datei speichern",
-        "writedown": "Ich werde es aufschreiben"
+        "create": "Create",
+        "save_keys": "Save File"
     },
     "DisplayKey": {
+        "header": "Write It Down",
         "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
-        "private": "Privat",
-        "public": "Öffentlich",
+        "showPrivate": "Show Private",
+        "hidePrivate": "Hide Private",
+        "showPublic": "Show Public",
+        "hidePublic": "Hide Public",
         "already": "Der Name oder der Schlüssel wurde bereits verwendet.",
         "mustname": "Sie müssen einen Namen für Ihren Schlüssel angeben.",
-        "walletname": "Name der Wallet",
+        "walletname": "Give Wallet Name: ie Savings",
         "writedown": "Schreiben Sie Ihren Schlüssel auf.",
         "privkey": "Privater Schlüssel",
         "pubkey": "Öffentlicher Schlüssel",
@@ -103,11 +113,12 @@
         "phase": "Phase Bonus",
         "additional": "Additional Bonus",
         "total": "Total",
-        "received": "Empfangen",
+        "received": "Received",
         "converted": "Converted",
         "pending": "Ausstehend",
         "confirmed": "Confirmed",
-        "approved": "Genehmigt"
+        "approved": "Genehmigt",
+        "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Einstellungen",
@@ -123,7 +134,9 @@
         "sendmail": "Send Mail",
         "language": "Language",
         "help": "Help",
-        "optionsdd": " Options"
+        "optionsdd": " Options",
+        "vespucci_open": "Vespucci Open",
+        "current_wallet": "Current Wallet"
     },
     "AssociateView": {
         "username": "Blocktopus Username",
@@ -137,11 +150,13 @@
         "additional": "Additional Bonuses",
         "bonus": "Bonus",
         "soon": "Coming Soon",
-        "getvtx": "GetVtx",
+        "getvtx": "Get VTX With",
         "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until"
+        "available_for": "Address Available Until",
+        "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
+        "header": "Change Password",
         "current": "Current Verto Password",
         "new": "New Verto Password",
         "confirm": "Neues Verto-Passwort bestätigen",
@@ -149,7 +164,7 @@
         "change": "Verto-Passwort ändern",
         "recommended": "Es wird empfohlen, zuerst die aktuelle Konfiguration von Verto zu sichern, bevor Sie das Passwort ändern. Sie können Verto sichern ",
         "here": "hier",
-        "access": "Ändert das Passwort, um auf Verto zuzugreifen. Einmal ausgewählt, wird die gesamte Konfiguration mit dem neuen Passwort verschlüsselt. Sie sollten vielleicht "
+        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
     },
     "BackupWallet": {
         "folder": "Ordner auswählen",
@@ -160,13 +175,15 @@
         "select": "Wählen Sie 'Backup-Wallet'"
     },
     "ChoosePassword": {
+        "header": "Save File",
         "file": "Datei auswählen",
         "choose": "Wallet Passwort wählen",
         "confirm": "Wallet Passwort bestätigen",
         "storeext": "Speichern Sie es auf einem externen Laufwerk, einer Brieftasche oder einem USB-Stick.",
         "storeloc": "Speichern Sie es auf dem lokalen Laufwerk Ihres Computers.",
         "emailit": "Schicken Sie es per E-Mail.",
-        "cloud": "Speichern in der Cloud."
+        "cloud": "Speichern in der Cloud.",
+        "save": "Save"
     },
     "RequestNativeChainAddress": {
         "header": "Adresse anfordern",
@@ -174,24 +191,25 @@
         "err_noAddressAvailable": "Keine Adresse für diese Kette verfügbar. Bitte versuchen Sie es erneut.",
         "err_pendingTransactionsExist": "Ausstehende Transaktionen sind vorhanden",
         "err_investor_must_wait": "Sie müssen eine Stunde warten, bevor Sie eine neue Adresse anfordern können.",
-        "first_p": "The following two rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time. As a result, any transaction you send after the allocation period may be lost. When sending transactions always make sure you still have an native chain address assigned to your wallet.",
-        "third_p": "2. You are only able to request one native chain address per hour.",
+        "first_p": "The following rules apply:",
+        "second_p": "1. The address you receive is only valid for a limited period of time.",
+        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
+        "third_p": "3. You are only able to request one native chain address per hour.",
         "access": "I understand and agree",
         "select_currency": "Select A Native Chain",
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
-        "header": "Not Whitelisted",
-        "first_p": "Before you are able to Get VTX, you must complete the following:",
-        "first_p_first_point": "1. KYC with one of our trusted partners.",
-        "first_p_second_point": "2. Associate a Verto Public Address to your KYC'd account.",
-        "subheader_1": "Already Signed Up For KYC",
-        "second_p": "If you have already signed up for the KYC process, through the web, you can associate your wallet with this account now.",
-        "link_associate": "Associate This Verto Address Now.",
-        "second_subheader": "Need To KYC",
-        "third_p": "In order to Get Vtx, it is required that you are KYC'd in order to meet regulatory compliance. Note that if you KYC through Verto your public address will be automatically be associated to your KYC account. As a result, once you are KYC approved, you will be able to Get VTX immediately.",
-        "link_kyc": "Begin KYC Process Now."
+        "header": "Get VTX",
+        "kyc": "KYC",
+        "whitelist": "White List",
+        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
+        "link_associate": "Already KYC'd",
+        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
+        "link_kyc": "Begin KYC Process",
+        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Already Allocated",
@@ -204,5 +222,15 @@
         "time_remaining": "Time Remaining",
         "mins": "Minutes",
         "seconds": "seconds"
+    },
+    "VenueAssignAddress": {
+        "header": "Venue Assign Address",
+        "venue_username": "Venue User Name",
+        "venue_password": "Venue Password",
+        "bad_credentials": "The credentials provided are invalid.",
+        "important_info": "This information is never stored within Verto.",
+        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "verto_address_not_unique": "The address is already assigned to another user.",
+        "user_deactivated": "This user is no longer active."
     }
 }

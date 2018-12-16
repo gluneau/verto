@@ -11,7 +11,6 @@ const projectRoot = path.resolve(__dirname, '../../src/renderer')
 process.env.BABEL_ENV = 'test'
 
 let webpackConfig = merge(baseConfig, {
-  mode: 'development',
   devtool: '#inline-source-map',
   plugins: [
     new webpack.DefinePlugin({
@@ -37,9 +36,13 @@ module.exports = config => {
     },
     coverageReporter: {
       dir: './coverage',
-      reporters: [
-        { type: 'lcov', subdir: '.' },
-        { type: 'text-summary' }
+      reporters: [{
+          type: 'lcov',
+          subdir: '.'
+        },
+        {
+          type: 'text-summary'
+        }
       ]
     },
     customLaunchers: {
@@ -53,16 +56,11 @@ module.exports = config => {
     preprocessors: {
       './index.js': ['webpack', 'sourcemap']
     },
-    reporters: ['mocha', 'coverage'],
+    reporters: ['spec', 'coverage'],
     singleRun: true,
     webpack: webpackConfig,
     webpackMiddleware: {
       noInfo: true
-    },
-    mochaReporter: {
-      output: 'autowatch',
-      showDiff: true,
-      divider: '<-->'
     }
   })
 }

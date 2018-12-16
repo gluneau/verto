@@ -20,9 +20,9 @@ export default {
     redirect: function() {
       const router = this.$router;
       setTimeout(function() {
-        router.push({ path: "settings" })
+        router.push({ path: "main" })
       },
-      4000);
+      2000);
     }
   }
 };

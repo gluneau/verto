@@ -20,9 +20,24 @@
 </script>
 
 <style lang="scss">
+.important-red {
+  color: red;
+}
+.max-width {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+.max-width-padding {
+  padding: 5px;
+}
 // Import Bulma's core
+.navbar-burger span{
+  background-color: black
+}
 @import "~bulma/sass/utilities/_all";
-
+.navbar-burger span{
+  background-color: black
+}
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -74,7 +89,6 @@ $white: #f4f4f2;
 
 body,
 html {
-  overflow: hidden !important;
   font-family: 'Calibri' !important;
 }
 
@@ -140,6 +154,8 @@ html {
 .has-background-darklightgreen {
   background-color: $dark-light-green;
 }
+
+::-webkit-scrollbar { display: none; }
 
 $sizeUnit: rem;
 $marginKey: 'm';
