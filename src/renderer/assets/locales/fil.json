@@ -27,36 +27,36 @@
         "wallets": "Mga wallet",
         "choose": "Pumili upang magbukas ng isang wallet sa pamamagitan lama ngng pag-klik sa pangalan nito.",
         "delete": "Burahin ang Wallet",
-        "trash": "Click on the 'Trash' icon",
-        "enter": "Enter your password.",
+        "trash": "Mag-klik sa 'Trash' na icon",
+        "enter": "Ipasok ang iyong password.",
         "note": "<b>TANDAAN:</b> ang Verto ay hindi kayang i-recover ang nabura nang mga wallet.",
-        "save": "Save"
+        "save": "I-save"
     },
     "WalletManager": {
         "used": "Ang pangalan o ang wallet ay nagamit na.",
         "both": "Dapat mong ilagay ang parehong pangalan at public key para sa wallet.",
-        "submit": "Submit",
+        "submit": "I-sumite",
         "cannotrecover": "Hindi kayang i-recover ng verto ang wallet kapag nabura na. Muling pindutin ang burahin na pindutan para sa huling pagbura.",
-        "cancel": "Cancel",
-        "delete": "Delete",
-        "keyhere": "Wallet Public Key Here",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "cancel": "Kanselahin",
+        "delete": "Tangalin",
+        "keyhere": "Public Key ng Wallet Dito",
+        "header": "Tagapamahala ng Wallet",
+        "wallets": "Mga Wallet"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Panatilihing Ligtas ang Iyong Key",
         "before": "Bago magpatuloy, napakahalaga na tandaan na ikaw ang ganap na responsable para sa pamamahala, kaligtasan, protksyon at recovery ng iyong private key. Walang sinuman kasama ang mga partner ng ecosystem ng Volentix.",
         "choices": "May dalawa kang pagpipilian sa pagpilit ng iyong private key. Ang parehong paraan ay dinisensyo para tiyakin na mapanatiling ligtas ang iyong private key.",
         "first": "Isulat ang iyong key.",
         "second": "O, I-enkrip ang iyong key sa isang payl ng pinoprotektahan ng password.",
-        "next": "Next",
-        "back": "Back"
+        "next": "Susunod",
+        "back": "Bumalik"
     },
     "SaveYourKeys": {
         "strategy": "Magplano ng istratihiya para sa pisikal na imbakan ng iyong private key. Ang imbakan na istratehiyang ito ay dapat na nakasama sa iyong pangmatagalan na pagiisip, kasama ang:",
         "physical": "<b>Pisikal na Siguridad:</b> Kahit anong mga vault na nagbibigay proteksyon na iyong hinahanap. Magisip ng kung saang alam mo na ligtas mula sa magnanakaw gayun din sa mga elemento. Ilang mga halimbawa ay isang bahay o ligtas na banko, o abogado. Maaari mong piliin na protektahan ang iyong mga key sa pamamagitan ng pag iimbak ng kopya nito sa iba't ibang lugar.",
         "legacy": "<b>Pamana:</b> Nangyayari ang mga bagay-bagay. Natatapos ang buhay. Kailangan mong pagplanuhan ang paglipat ng iyong wallet sa ibang tao. Sa ilang mga kaso iyan ay maaaring isang habilin, pakiusap na ikonsidera mong maigi ang iyong mga opsyon. Ang pagpili ay nasa saiyo.",
-        "agree": "I agree with the Terms & Conditions",
+        "agree": "Sumasang-ayon ako sa mga Termino & mga Kondisyon",
         "responsible": "Ako ay ganap na responsable para sa pamamahala ng seguridad sa aking private key",
         "access": "Nauunawaan ko na ang Volentix at/o ang mga kasosyo ay walang akses sa aking private key",
         "wifi": "Nauunawaan ko na ang WIFI ay pansamantalang hindi papaganahin sa panahon ng paggawa ng mga key",
@@ -228,9 +228,9 @@
         "venue_username": "Venue User Name",
         "venue_password": "Venue Password",
         "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
+        "important_info": "Ang impormasyong ito ay hindi kailanman maiimbak sa loob ng Verto.",
         "email_verification_required": "Kailangan mo munang patunayan ang iyong email sa Venue bago i-ugnay ang wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
+        "verto_address_not_unique": "Ang address ay nakalaan na para sa ibang user.",
         "user_deactivated": "Ang user na ito ay matagal ng hindi aktibo."
     }
 }
