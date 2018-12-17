@@ -117,12 +117,12 @@
         "converted": "Nakombert",
         "pending": "Nakatigil",
         "confirmed": "Nakumpirma na",
-        "approved": "Approved",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "approved": "Naaprobahan na",
+        "number_of_approved_blocks": "/6 na Nakumpirmang mga Block"
     },
     "SettingsView": {
-        "settings": "Settings",
-        "updates": "Check for Updates",
+        "settings": "Mga setting",
+        "updates": "I-tsek para sa mga Update",
         "whitelist": "Whitelist",
         "blocktopus": "Associate with Blocktopus",
         "manager": "Wallet Manager",
