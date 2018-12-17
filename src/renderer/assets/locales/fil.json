@@ -200,14 +200,14 @@
         "time_remaining": "Maaari Sa"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "Kumuha ng VTX",
         "kyc": "KYC",
         "whitelist": "White List",
         "kyc_1": "Para makakuha ng VTX, ang mga mamumuhunan ay dapat na mag-KYC (Know Your Customer) sa isa sa aming pinagkakatiwalaang mga kasosyo. Tinitiyak ng prosesong ito na kami ay nananatiling sumusunod sa tagapangasiwa ng iyong rehiyon. Tandaan na ang prosesong ito ay dapat lamang kumpletuhin ng isang beses bago tanggapin bilang isang potensyal na kontribyutor. Tandaan na ang seleksyon na ito ay i-uugnay ang wallet na ito sa aplikasyon mo sa KYC.",
-        "link_associate": "Already KYC'd",
+        "link_associate": "Na KYC na",
         "second_p": "Kung ikaw ay nakapag KYC na, subalit, hindi pa nai-uugnay ang wallet na ito sa iyong akawnt, mangyaring mag-log sa provider ng KYC para gawin ito. Ang mga hakbang na ito ay kinakailangan bago mo maaaring makuha ang VTX. Tandaan na kapag ay nag KYC na sa wallet, hindi mo na kakailanganing gawin ang mga hakbang na ito.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "link_kyc": "Simulan ang Proseso sa pag-KYC",
+        "assign_verto_to_venue": "Italaga ang Verto Sa Venue",
         "assign_verto_to_venue_desc": "Kung ikaw ay isang miyembro ng Venue, kakailanganin mong mag-ugnay ng isang wallet para makuha ang iyong VTX. Tandaan na kailangan mo ring kompletuhin ang proseso sa KYC. Kapag ang parehong mga aksyon ay na kumpleto na, ang iyong VTX ay mailalaan sa wallet na ito.",
         "click_venue": "Venue"
     },
@@ -216,18 +216,18 @@
         "first_p": "Ang naka KYC na akawnt ay nakapaglaan na ng isang Publick Address ng Verto."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Sinusuri ang Estado ng Wallet"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Natitirang Oras",
+        "mins": "Mga Minuto",
+        "seconds": "mga segundo"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
+        "header": "Naka-assign na Address ng Venue",
+        "venue_username": "Pangalan ng User sa Venue",
+        "venue_password": "Password sa Venue",
+        "bad_credentials": "Ang mga kredensyal na ibinigay ay hindi balido.",
         "important_info": "Ang impormasyong ito ay hindi kailanman maiimbak sa loob ng Verto.",
         "email_verification_required": "Kailangan mo munang patunayan ang iyong email sa Venue bago i-ugnay ang wallet.",
         "verto_address_not_unique": "Ang address ay nakalaan na para sa ibang user.",
