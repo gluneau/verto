@@ -92,6 +92,18 @@
       "publisherName": "Volentix Labs, Inc."
     },
     "linux": {
+      "category": "Network",
+      "description": "A multi-currency crypto wallet with initial support for EOS & VTX",
+      "desktop": {
+        "Name": "Verto",
+        "GenericName": "Verto Wallet",
+        "X-GNOME-FullName": "Verto",
+        "Comment": "A multi-currency crypto wallet with initial support for EOS & VTX",
+        "Type": "Application",
+        "Terminal": "false",
+        "StartupNotify": "false",
+        "Categories": "Network;"
+      },
       "icon": "icons/linux",
       "target": "deb"
     },
@@ -151,7 +163,7 @@
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
-    "electron": "^3.0.8",
+    "electron": "^3.0.13",
     "electron-builder": "^20.31.2",
     "electron-debug": "^2.0.0",
     "electron-devtools-installer": "^2.2.4",
