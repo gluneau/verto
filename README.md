@@ -7,7 +7,7 @@
 
 # Verto
 
-> A multi-currency cross-blockchain peer-to-peer wallet with initial support for 
+> A multi-currency cross-blockchain peer-to-peer wallet with initial support for
 VTX Bitcoin Bitcoincash Dash EOS Ethereum Litecoin and Neo
 
 Verto is being built as a multi-currency wallet
@@ -17,9 +17,9 @@ local management of private and public keys
 in peer-to-peer transactions, with the goal of
 eliminating the risks of devastating losses of
 stake associated with traumatic failures of central
-operators. 
+operators.
 Verto plans to employ a system of smart contracts to maintain the state between two
-trading clients, the simplest operations being accomplished with atomic swaps [Volentix ecosystem](https://volentix.io). 
+trading clients, the simplest operations being accomplished with atomic swaps [Volentix ecosystem](https://volentix.io).
 
 ## Table of Contents
 
@@ -35,15 +35,16 @@ trading clients, the simplest operations being accomplished with atomic swaps [V
 
 Copy the `.env_template` file to the `.env` and fill the variables
 ``` json
-CHAIN_ID= [your_chain_id]
+CHAIN_ID=[your_chain_id]
 # for MainNet endpoint
 HTTP_ENDPOINT=https://api.eosio.cr
 # for TestNet endpoint
 HTTP_ENDPOINT=http://api.kylin.alohaeos.com
-LEDGER_ACCOUNT_NAME= [base_account_name]
-CROWDFUND_URL= [crowdfund_url]
+LEDGER_ACCOUNT_NAME=[base_account_name]
+ACCOUNT_NAME=[account_name]
+CROWDFUND_URL=[crowdfund_url]
 BLOCKTOPUS_URL=https://volentix.blocktopus.io
-VENUE_URL=https://venue.volentix.io/   
+VENUE_URL=https://venue.volentix.io/
 ```
 ``` bash
 # install dependencies
