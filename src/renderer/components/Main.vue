@@ -138,8 +138,8 @@ import PendingCounter from '@/components/GetVtx/PendingCounter'
 
 const chainId = process.env.CHAIN_ID
 const httpEndpoint = process.env.HTTP_ENDPOINT
+const myaccount = process.env.ACCOUNT_NAME
 
-const myaccount = "vtxtrust";
 let ledger = {};
 
 export default {
