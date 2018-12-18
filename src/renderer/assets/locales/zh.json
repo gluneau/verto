@@ -36,7 +36,7 @@
         "used": "此名称或者钱包已被使用。",
         "both": "您必须同时提供钱包的名称和公钥。",
         "submit": "递交",
-        "cannotrecover": "钱包一旦删除，Verto将无法恢复。请再次按压删除按钮来进行最后的删除。",
+        "cannotrecover": "钱包一旦删除，Verto将无法恢复。请再次按删除按钮来进行最后的删除。",
         "cancel": "取消",
         "delete": "删除",
         "keyhere": "这里是钱包的公钥",
@@ -114,11 +114,11 @@
         "additional": "额外奖金",
         "total": "总计",
         "received": "已收到",
-        "converted": "转换",
-        "pending": "有待",
+        "converted": "已转换",
+        "pending": "待定",
         "confirmed": "已确认",
         "approved": "已确认",
-        "number_of_approved_blocks": "/6已确认的模块"
+        "number_of_approved_blocks": "/6已确认的块"
     },
     "SettingsView": {
         "settings": "设置",
@@ -171,7 +171,7 @@
         "backup": "备份",
         "simple": "简单的工具来备份您的钱包以便恢复或在另一台设备上打开。只要",
         "directory": "选择钱包要备份到的目录。",
-        "willbackup": "Verto将用'verto'名称 + 日期 + '.config'来备份钱包",
+        "willbackup": "Verto将用'verto'名称 + 日期 + '.config'作为名字来备份钱包",
         "select": "选择‘备份钱包’"
     },
     "ChoosePassword": {
@@ -231,6 +231,6 @@
         "important_info": "此信息永远不会存储在Verto中。",
         "email_verification_required": "在关联钱包之前，您必须先在Venue验证您的电子邮件地址。",
         "verto_address_not_unique": "此地址已分配给另一位用户。",
-        "user_deactivated": "此用户不再有效。"
+        "user_deactivated": "此用户不再活跃。"
     }
 }

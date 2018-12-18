@@ -33,6 +33,7 @@
                     <img v-if="$i18n.locale == 'pl'" src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'zh'" src="~@/assets/img/lang/zh.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'nl'" src="~@/assets/img/lang/nl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'fil'" src="~@/assets/img/lang/fil.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                 </a>
 
             <div v-if="showDropDownOptionsChildren" >
@@ -79,6 +80,9 @@
             <a class="" @click="updateLanguage('pl')">
               <img src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
+            <a class="" @click="updateLanguage('fil')">
+              <img src="~@/assets/img/lang/fil.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
           </div>
           <div>
           </div>
@@ -96,7 +100,7 @@ export default {
   data() {
     return {
       open: false,
-      langs: ['en', 'fr', 'pl', 'zh', 'nl'], // 'es', 'sr', 'el',
+      langs: ['en', 'fr', 'pl', 'zh', 'nl', 'fil'], // 'es', 'sr', 'el',
       showDropDownOptions: true,
       showDropDownLanguage: true,
       showDropDownOptionsChildren: false,
