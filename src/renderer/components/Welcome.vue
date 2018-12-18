@@ -56,7 +56,7 @@ export default {
   // name: 'locale-changer',
   data() {
     return {
-      // langs: ['en', 'fr', 'es', 'sr', 'pl', 'el', zh, nl],
+      // langs: ['en', 'fr', 'es', 'sr', 'pl', 'el', 'zh', 'nl', 'fil'],
       subtitle_message: this.$t('Welcome.subtitle_message'),
       join_message: this.$t('Welcome.join_message'),
       publicKey: "",
