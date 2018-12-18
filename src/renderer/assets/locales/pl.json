@@ -118,7 +118,7 @@
         "pending": "W toku",
         "confirmed": "Potwierdzony",
         "approved": "Zatwierdzone",
-        "number_of_approved_blocks": "/ 6 Potwierdzone Bloki"
+        "number_of_approved_blocks": "/6 Potwierdzone Bloki"
     },
     "SettingsView": {
         "settings": "Ustawienia",
