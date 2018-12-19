@@ -51,6 +51,7 @@
             <b-table class="transactions-table"
               v-if="transactionStatus === 'CONVERTED'"
               :data="transactions"
+              @click="handleRowClick"
               :columns="columns['CONVERTED']">
               <template slot-scope="props">
                 <b-table-column field="status">
@@ -72,6 +73,7 @@
             <b-table class="transactions-table"
               v-if="transactionStatus === 'CONFIRMED'"
               :data="transactions"
+              @click="handleRowClick"
               :columns="columns['CONFIRMED']">
               <template slot-scope="props">
                 <b-table-column field="status">
@@ -314,6 +316,12 @@ export default {
   mounted() {
     this.setWallet();
     this.getPendingTransactions();
+  },
+  watch: {
+    transactionStatus: function () {
+      this.hasTransactions = false
+      this.transactions = []
+    }
   },
   methods: {
     setWallet: function() {

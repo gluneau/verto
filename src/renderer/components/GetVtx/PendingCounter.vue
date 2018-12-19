@@ -20,7 +20,7 @@ export default {
       pendingTxnPooling: null
     };
   },
-  created () {
+  mounted () {
     this.poolTransactions()
   },
   beforeDestroy () {
