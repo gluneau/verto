@@ -215,7 +215,7 @@
         "header": "Checking Wallet Status"
     },
     "GetVtx": {
-        "getvtx": "Get Vtx With",
+        "getvtx": "Get VTX with",
         "native_chain_address": "Native Chain Address",
         "available_for": "Address Available Until",
         "native_chain_header": "Native Chain Address"

@@ -9,9 +9,9 @@
             <br>
             <div class="is-size-4 has-text-white m-l-md has-text-centered select">
                 <select class=" " v-model="transactionStatus" @change="refreshContent">
-                  <option value="CONFIRMED">Accepted</option>
-                  <option value="CONVERTED">Pending</option>
                   <option value="CANCELLED">Cancelled</option>
+                  <option value="CONVERTED">Pending</option>
+                  <option value="CONFIRMED">Accepted</option>
                   <option value="COMPLETED">Completed</option>
                 </select>
             </div>
@@ -46,103 +46,74 @@
             </p>
           </div>
 
-
           <div v-if="hasTransactions">
-            <div v-if="transactionStatus == 'CONVERTED'">
-              <div class="columns list-item is-marginless has-text-white ">
-                <div class="column is-12 is-paddingless  font-calibri">
-                  <div class="columns is-marginless has-text-centered transactions-header">
-                    <div class="column">
-                      Days Left
-                    </div>
-                    <div class="column">
-                      Time Left
-                    </div>
-                    <div class="column">
-                      VTX
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div v-if="transactionStatus !== 'CONVERTED'">
-              <div class="columns list-item is-marginless has-text-centered transactions-header">
-                <div class="column is-12 is-paddingless font-calibri">
-                  <div class="columns is-marginless">
-                    <div class="column">
-                      Confirmed Date
-                    </div>
-                    <div class="column">
-                      Status
-                    </div>
-                    <div class="column">
-                      VTX
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div v-for="transaction in transactions" :key="transaction.id" class="">
-              <a @click="transactionDetails(transaction)">
-                <div class="columns list-item is-marginless has-text-white is-mobile">
-                  <div class="column is-12 is-paddingless  font-calibri">
-                    <div v-if="transaction.status !== 'CONVERTED'" class="columns is-marginless ">
-                      <div class="column is-4 has-text-white">
-                        <div v-if="transaction.native_transaction_time">
-                          {{ transaction.native_transaction_time | formatDate }}
-                          &nbsp;&nbsp;&nbsp;
-                          {{ transaction.native_transaction_time | formatTime }}
-                        </div>
 
-                      </div>
-                      <div class="column has-text-white">
-                            {{ transaction.status }}
-                      </div>
+            <b-table class="transactions-table"
+              v-if="transactionStatus === 'CONVERTED'"
+              :data="transactions"
+              :columns="columns['CONVERTED']">
+              <template slot-scope="props">
+                <b-table-column field="status">
+                  {{ props.row.status }}
+                </b-table-column>
+                <b-table-column field="native_transaction_time">
+                  {{ props.row.native_transaction_time | formatDate }}
+                  {{ props.row.native_transaction_time | formatTime }}
+                </b-table-column>
+                <b-table-column field="confirmations_count">
+                  {{ props.row.confirmations_count }} / 6
+                </b-table-column>
+                <b-table-column field="vtx_amount">
+                  {{ props.row.vtx_amount }}
+                </b-table-column>
+              </template>
+            </b-table>
 
-                      <div class="column has-text-white">
-                            {{ transaction.vtx_amount }} VTX
-                      </div>
-                    </div>
-                    <div v-if="transaction.status == 'CONVERTED'" class="columns is-marginless ">
-                      <div v-if="transaction.countdown_time_ends" class="column has-text-white is-12">
-                            <countdown :time="transaction.  timeremaining" :transform="transform">
-                              <template slot-scope="props">
-                                <div class="columns is-marginless has-text-centered">
-                                  <div class="column has-text-white">
-                                    <span class="is-size-3">
-                                      {{ props.days }}
-                                    </span>
+            <b-table class="transactions-table"
+              v-if="transactionStatus === 'CONFIRMED'"
+              :data="transactions"
+              :columns="columns['CONFIRMED']">
+              <template slot-scope="props">
+                <b-table-column field="status">
+                  {{ props.row.status }}
+                </b-table-column>
+                <b-table-column field="native_transaction_time">
+                  {{ props.row.native_transaction_time | formatDate }}
+                  {{ props.row.native_transaction_time | formatTime }}
+                </b-table-column>
+                <b-table-column field="confirmation_time">
+                  {{ props.row.confirmation_time | formatDate }}
+                  {{ props.row.confirmation_time | formatTime }}
+                </b-table-column>
+                <b-table-column field="vtx_amount">
+                  {{ props.row.vtx_amount }}
+                </b-table-column>
+              </template>
+            </b-table>
 
-                                  </div>
-                                  <div class="column has-text-white">
-                                    <span class="is-size-3">
-                                      {{ props.hours }}:
-                                    {{ props.minutes }}:
-                                    {{ props.seconds }}
-                                    </span>
+            <b-table class="transactions-table"
+              v-if="transactionStatus === 'COMPLETED'"
+              :data="transactions"
+              @click="handleRowClick"
+              :columns="columns['COMPLETED']">
+              <template slot-scope="props">
+                <b-table-column field="status">
+                  {{ props.row.status }}
+                </b-table-column>
+                <b-table-column field="native_transaction_time">
+                  {{ props.row.native_transaction_time | formatDate }}
+                  {{ props.row.native_transaction_time | formatTime }}
+                </b-table-column>
+                <b-table-column field="confirmation_time">
+                  {{ props.row.confirmation_time | formatDate }}
+                  {{ props.row.confirmation_time | formatTime }}
+                </b-table-column>
+                <b-table-column field="vtx_amount">
+                  {{ props.row.vtx_amount }}
+                </b-table-column>
+              </template>
+            </b-table>
 
-                                  </div>
-                                  <div class="column has-text-white">
-                                    <span class="is-size-3">
-                                      {{ transaction.vtx_amount.toFixed(2) }}
-                                    </span>
-                                  </div>
-                                </div>
-
-                              </template>
-                            </countdown>
-                      </div>
-                      <div v-if="!transaction.countdown_time_ends" class="column has-text-white">
-                            {{ transaction.confirmations_count }} {{ $t('TransactionHistory.number_of_approved_blocks') }}
-                          <div class="column has-text-white is-4 is-marginless">
-                                {{ transaction.vtx_amount }} VTX
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
           <div v-if="noTransactions">
             <p class="has-text-grey is-size-5 m-l-lg has-text-weight-bold">
@@ -152,13 +123,6 @@
         </div>
       </div>
     </div>
-    <b-modal :active.sync="isCardModalActive" class="modal-qr">
-      <div class="card-content has-text-centered">
-        <p class="image qr-modal">
-          <qrcode :value="wallet" :options="{ size: 220 }" class="has-text-centered"></qrcode>
-        </p>
-      </div>
-    </b-modal>
     <b-modal :active.sync="isTransactionDetailsActive" class="transaction-details-popup">
       <div class="card-content has-text-centered has-text-white">
         <p class="is-marginless is-size-4 has-text-white font-gibson"> {{ currentTransaction.status }} </p>
@@ -305,6 +269,31 @@ export default {
   data() {
     return {
       transactions: [],
+      columns: {
+        'CONFIRMED': [
+          { field: 'status', label: 'Status' },
+          { field: 'native_transaction_time', label: 'Transaction Received' },
+          { field: 'confirmation_time', label: 'Confirmation Time' },
+          { field: 'vtx_amount', label: 'VTX Amount' }
+        ],
+        'CONVERTED': [
+          { field: 'status', label: 'Status' },
+          { field: 'native_transaction_time', label: 'Transaction Received' },
+          { field: 'confirmations_count', label: 'Confirmations Count' },
+          { field: 'vtx_amount', label: 'VTX Amount' }
+        ],
+        'COMPLETED': [
+          { field: 'status', label: 'Status' },
+          { field: 'native_transaction_time', label: 'Transaction Received' },
+          { field: 'confirmation_time', label: 'Confirmation Time' },
+          { field: 'vtx_amount', label: 'VTX Amount' }
+        ],
+        'CANCELLED': [
+          { field: 'status', label: 'Status' },
+          { field: 'cancel_time', label: 'Cancellation Time' },
+          { field: 'vtx_amount', label: 'VTX Amount' }
+        ]
+      },
       messages: "",
       isCardModalActive: false,
       wallet: "",
@@ -391,6 +380,10 @@ export default {
     },
     refreshContent() {
       this.getPendingTransactions();
+    },
+    handleRowClick(row) {
+      this.currentTransaction = row
+      this.isTransactionDetailsActive = true
     }
   }
 };
@@ -491,5 +484,8 @@ export default {
 }
 .transactions-history .column {
   max-height: 1.5rem;
+}
+.transactions-table {
+  width: 100%;
 }
 </style>
