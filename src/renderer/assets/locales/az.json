@@ -57,8 +57,8 @@
         "physical": "<b>Fiziki Təhlükəsizlik:</b> Aradığınız qorumanı təmin edən hər hansısa bir anbar. Bildiyin bir yeri, oğrulardan və elementlərdən qoruduğunu düşünün. Bəzi nümunələr, ev, bank və ya vəkil. Kopyaları bir çox yerdə saxlayaraq açarlarınızı qorumağı seçə bilərsiniz.",
         "legacy": "<b>Miras:</b> Birşeylər baş verir. Həyat bitir. Pulqabınızı başqasına köçürməyi planlaşdırmalısınız. Bəzi hallarda istək ola bilər, zəhmət olmasa seçimlərinizi diqqətlə nəzərdən keçirin. Seçim sizindir.",
         "agree": "Qaydalar və Şərtlər ilə razıyam",
-        "responsible": "I am entirely responsible for the security managment of my private key",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
+        "responsible": "Özəl açarımın təhlükəsizlik idarəçiliyinə görə tamamilə məsuliyyət daşıyıram",
+        "access": "Başa düşürəm ki, Volentix və/və ya tərəfdaşları heç vaxt özəl açarıma müraciət edə bilməz",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "create": "Yarat",
         "save_keys": "Faylı Saxla"
