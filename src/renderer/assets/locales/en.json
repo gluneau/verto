@@ -218,6 +218,12 @@
     "BeginGetVtx": {
         "header": "Checking Wallet Status"
     },
+    "GetVtx": {
+        "getvtx": "Get VTX with",
+        "native_chain_address": "Native Chain Address",
+        "available_for": "Address Available Until",
+        "native_chain_header": "Native Chain Address"
+    },
     "Countdown": {
         "time_remaining": "Time Remaining",
         "mins": "Minutes",
@@ -232,5 +238,11 @@
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
         "verto_address_not_unique": "The address is already assigned to another user.",
         "user_deactivated": "This user is no longer active."
+    },
+    "PendingCounter": {
+        "title": "View Pending Transactions"
+    },
+    "TransactionHistory": {
+        "backToWallet": "Back To Wallet"
     }
 }

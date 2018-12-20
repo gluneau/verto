@@ -2,7 +2,7 @@
     <div class="PendingCounter">
         <!-- <div v-if="numberOfPendingTransactions == 0" class=""> -->
             <router-link to="/gettxtransactionhistory" class="pending">
-                View Pending Transactions: ( {{ numberOfPendingTransactions}} ) 
+              {{ $t('PendingCounter.title') }}: ( {{ numberOfPendingTransactions}} )
             </router-link>
         <!-- </div> -->
     </div>
@@ -10,15 +10,21 @@
 
 <script>
 import axios from 'axios'
+import { setInterval, clearInterval } from 'timers';
+
 export default {
   name: 'pending',
   data() {
     return {
-      numberOfPendingTransactions: 0
+      numberOfPendingTransactions: 0,
+      pendingTxnPooling: null
     };
   },
-  mounted() {
-    this.getNumPendingTransactions();
+  mounted () {
+    this.poolTransactions()
+  },
+  beforeDestroy () {
+    clearInterval(this.pendingTxnPooling)
   },
   methods: {
     getNumPendingTransactions: function() {
@@ -36,6 +42,12 @@ export default {
       }).catch(function (error) {
         console.log(error);
       });
+    },
+    poolTransactions: function() {
+      let vm = this
+      this.pendingTxnPooling = setInterval(function () {
+        vm.getNumPendingTransactions()
+      }, 3000);
     }
   }
 }

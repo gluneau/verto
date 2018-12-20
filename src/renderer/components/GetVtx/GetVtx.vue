@@ -3,7 +3,7 @@
     <div class="hero-head p-t-sm">
       <div class="control p-md has-text-centered">
         
-        <img v-if="!doneCountdown" src="~@/assets/img/ethereum.png" class="logo">
+        <img v-if="!doneCountdown" :src="getCryptoLogoUrl(nativeChainName)" width="100">
         <div class="getvtx-header">
           {{ $t('GetVtx.getvtx') }} {{ nativeChainName }}
         </div>
@@ -105,6 +105,9 @@ export default {
     }
   },
   methods: {
+    getCryptoLogoUrl(chainName) {
+      return require('../../assets/img/currencies/' + chainName + '.png')
+    },
     toast() {
       this.$toast.open({
         type: "is-white",
