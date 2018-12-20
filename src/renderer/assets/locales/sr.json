@@ -6,13 +6,13 @@
         "nopassword": "Лозинка за Ваш новчаник није подешена. Молимо Вас да прво креирате лозинку.",
         "incorrect": "Лозинка за Verto није исправна.",
         "login": "Пријавите се",
-        "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "create": "Почетак",
+        "subtitle_message": "Verto је Ваша улазница за Volentix.",
         "join_message": "Драго нам је да сте нам се придружили."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Креирајте лозинку за Verto",
+        "important": "ВАЖНО",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
