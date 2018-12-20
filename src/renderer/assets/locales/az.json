@@ -188,15 +188,15 @@
     "RequestNativeChainAddress": {
         "header": "Tələb olunan ünvan",
         "button": "Allocate Address",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
-        "err_pendingTransactionsExist": "Pending transactions exist",
-        "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
+        "err_noAddressAvailable": "Bu zincir üçün uyğun ünvan yoxdur. Zəhmət olmasa yenidən sınayın.",
+        "err_pendingTransactionsExist": "Gözləyən köçürmələr var",
+        "err_investor_must_wait": "Yeni bir ünvan tələb etməmişdən əvvəl bir saat gözləməlisiniz.",
         "first_p": "Aşağıdakı qaydalar tətbiq olunur:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
+        "second_p": "1. Aldığınız ünvan yalnız limitli bir dövr üçün etibarlıdır.",
+        "second_p_point_1": "2. Məbləğin tutulmasından sonra göndərdiyiniz bütün köçürmələr itə bilər.",
+        "third_p": "3. Saat başına yalnız bir yerli zincir ünvanı tələb edə bilərsiniz.",
+        "access": "Başa düşürəm və razıyam",
+        "select_currency": "Yerli Bir Zincir Seç",
         "time_remaining": "Mövcuddur"
     },
     "NotWhitelisted": {
@@ -207,9 +207,9 @@
         "link_associate": "Already KYC'd",
         "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
         "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "assign_verto_to_venue": "Verto-nu Venue-yə təyin et",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
-        "click_venue": "Məkan"
+        "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Already Allocated",
@@ -224,10 +224,10 @@
         "seconds": "saniyə"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Məkan İstifadəçi Adı",
-        "venue_password": "Məkan Şifrəsi",
-        "bad_credentials": "The credentials provided are invalid.",
+        "header": "Venue Təyinetmə Ünvanı",
+        "venue_username": "Venue İstifadəçi Adı",
+        "venue_password": "Venue Şifrəsi",
+        "bad_credentials": "Təqdim edilən məlumatlar etibarsızdır.",
         "important_info": "Bu məlumat heç vaxt Verto daxilində saxlanılmayacaq.",
         "email_verification_required": "Pulqabını əlaqələndirməmişdən əvvəl, birinci Venue ilə e-poçtunuzu təsdiqləməlisiniz.",
         "verto_address_not_unique": "Bu ünvan artıq başqa bir istifadəçiyə təyin edilib.",
