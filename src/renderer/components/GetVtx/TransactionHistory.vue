@@ -387,6 +387,8 @@ export default {
       });
     },
     refreshContent() {
+      this.hasTransactions = false
+      this.transactions = []
       this.getPendingTransactions();
     },
     handleRowClick(row) {
