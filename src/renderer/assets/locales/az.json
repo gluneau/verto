@@ -53,8 +53,8 @@
         "back": "Geri"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "strategy": "Özəl açarınızın fiziki saxlanılması üçün bir strategiya qurun. Bu saxlama strategiyası uzunmüddətli düşünməni ehtiva etməlidir, o cümlədən:",
+        "physical": "<b>Fiziki Təhlükəsizlik:</b> Aradığınız qorumanı təmin edən hər hansısa bir anbar. Bildiyin bir yeri, oğrulardan və elementlərdən qoruduğunu düşünün. Bəzi nümunələr, ev, bank və ya vəkil. Kopyaları bir çox yerdə saxlayaraq açarlarınızı qorumağı seçə bilərsiniz.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
