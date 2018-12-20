@@ -6,22 +6,22 @@
         "nopassword": "Лозинка за Ваш новчаник није подешена. Молимо Вас да прво креирате лозинку.",
         "incorrect": "Лозинка за Verto није исправна.",
         "login": "Пријавите се",
-        "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "create": "Почетак",
+        "subtitle_message": "Verto је Ваша улазница за Volentix.",
         "join_message": "Драго нам је да сте нам се придружили."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
-        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
-        "vertopassword": "Verto MainPassword",
-        "i_understand": "I understand",
+        "header": "Креирајте лозинку за Verto",
+        "important": "ВАЖНО",
+        "important_warning": "Молимо Вас, пажљиво прочитајте. Лозикну је немогуће повратити. Ако је заборавите или изгубите, Ваша лозинка ће бити изгубљена, за сва времена.",
+        "vertopassword": "Verto ГлавнаЛозинка",
+        "i_understand": "Разумем",
         "confirm": "Потврдите Verto лозинку",
         "mustmatch": "Лозинке се не поклапају.",
         "fillall": "Молимо Вас да попуните сва поља",
-        "done": "Done",
+        "done": "Урађено",
         "addwallet": "Додај новчаник",
-        "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password.",
+        "onlysupport": "За сада, Verto једино подржава могућност додавања јавних кључева. Како бисте додали новчаник, једноставно одаберите име, адресу новчаника и лозинку за Verto.",
         "createwallet": "Креирај новчаник",
         "createkey": "Преирање пара јавног/приватног пара кључева за нови новчаник. Напомена, <b>САМО</b> јавни кључ је сачуван у Verto-у. Сами сте одговорни за свој приватни кључ, чување кључа и безбедност.",
         "wallets": "Новчаници",
@@ -40,39 +40,39 @@
         "cancel": "Откажи",
         "delete": "Избриши",
         "keyhere": "Унесите јавни кључ",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "header": "Менаџер новчаника",
+        "wallets": "Новчаници"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Брижљиво Чувајте Своје Кључеве",
         "before": "Пре него што наставите, будите свесни да сте у потпуности одговорни за безбедност, заштиту и чување свог приватног кључа. Једино Ви. Нико други Вам не може помоћи, укључујући партнере Volentix екосистема.",
         "choices": "Имате 2 могућности за чување приватног кључа. Обе методе су дизајниране тако да Ваш приватни кључ остаје безбедан.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "first": "Запишите свој кључ.",
+        "second": "Или, шифрујте свој кључ у фајлу заштићеном додатном лозинком.",
         "next": "Даље",
         "back": "Назад"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "strategy": "Морате да испланирате стратегију за чување свог приватног кључа. Требало би да размишљате дугорочно, на пример:",
+        "physical": "<b>Физичка сигурност:</b> Размишљајте о некој врсти трезора. О нечему што одолева лоповима и зубу времена. Можда бисте могли да га оставите у сефу банке или код адвоката, или бисте могли да чувате већи број копија на различитим местима.",
+        "legacy": "<b>Заоставштина:</b> Лоше ствари се догађају. Живот може да се оконча. Размислите о томе коме ћете оставити свој новчаник. Можда бисте могли да га уврстите у Вашу опоруку. Избор је на Вама.",
         "agree": "Слажем се са условима коришћења",
         "responsible": "Сносим пуну одговорност за сигурност свог приватног кључа",
         "access": "Разумем да Volentix и/или партнери немају приступ мом приватном кључу",
         "wifi": "Разумем да ће WIFI бити угашен н кратко, док се кључеви генеришу",
-        "create": "Create",
-        "save_keys": "Save File"
+        "create": "Креирај",
+        "save_keys": "Сачувај Фајл"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Запишите",
         "understand": "Јасно ми је да приватни кључ није сачуван на Verto-у и да се но може повратити у случају губитка.",
-        "showPrivate": "Show Private",
-        "hidePrivate": "Hide Private",
-        "showPublic": "Show Public",
-        "hidePublic": "Hide Public",
+        "showPrivate": "Прикажи приватни",
+        "hidePrivate": "Сакриј приватни",
+        "showPublic": "Прикажи јавни",
+        "hidePublic": "Сакриј јавни",
         "already": "Име или кључ су већ у употреби.",
         "mustname": "Морате доделити име кључу.",
-        "walletname": "Give Wallet Name: ie Savings",
+        "walletname": "Дајте име новчанику: пример, Штедња",
         "writedown": "Запишите своје кључеве.",
         "privkey": "Приватни кључ",
         "pubkey": "Јавни кључ",
@@ -113,12 +113,12 @@
         "phase": "Фазни Бонус",
         "additional": "Додатни Бонус",
         "total": "Укупно",
-        "received": "Received",
+        "received": "Примљено",
         "converted": "Конвертовано",
         "pending": "Нa чекању",
         "confirmed": "Потврђено",
         "approved": "Одобрено",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/6 Потврђених Блокова"
     },
     "SettingsView": {
         "settings": "Подешавања",
@@ -136,7 +136,7 @@
         "help": "Помоћ",
         "optionsdd": " Опције",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Тренутни новчаник"
     },
     "AssociateView": {
         "username": "Blocktopus корисничко име",
@@ -150,13 +150,13 @@
         "additional": "Додатни Бонуси",
         "bonus": "Бонус",
         "soon": "Ускоро",
-        "getvtx": "Get VTX With",
+        "getvtx": "Набавите VTX са",
         "native_chain_address": "Нативна адреса ланца",
         "available_for": "Адреса ће бити доступна до",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Нативна адреса ланца"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
+        "header": "Промени лозинку",
         "current": "Тренутна лозинка за Verto",
         "new": "Нова лозинка за Verto",
         "confirm": "Потврдите Нову Verto лозинку",
@@ -164,7 +164,7 @@
         "change": "Промените лозинку за Verto",
         "recommended": "Препоручује се да прво направите резервну копију тренутне конфигурације Verto-а пре него што промените лозинку. Можете напратити резервну копију Verto-а ",
         "here": "овде",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Мења лозинку за приступ Verto-у. Једном када селектујете, сва конфигурација се шифрује (encrypt) коришћењем нове лозинке."
     },
     "BackupWallet": {
         "folder": "Изабери фолдер",
@@ -175,7 +175,7 @@
         "select": "Изаберите 'Направите резервну копију новчаника'"
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Сачувај Фајл",
         "file": "Изабери фајл",
         "choose": "Одаберите лозинку за новчаник",
         "confirm": "Потврдите лозинку за новчаник",
@@ -183,7 +183,7 @@
         "storeloc": "Ускладиштите на локални диск рачунара.",
         "emailit": "Пошаљите Email-ом.",
         "cloud": "Ускладиштите на облак.",
-        "save": "Save"
+        "save": "Сачувај"
     },
     "RequestNativeChainAddress": {
         "header": "Затражи адресу",
@@ -191,24 +191,24 @@
         "err_noAddressAvailable": "Нема доступне адресе за тај ланац. Покушајте поново.",
         "err_pendingTransactionsExist": "Има трансакција на чекању",
         "err_investor_must_wait": "Морате сачекати један сат пре него што затражите нову адресу.",
-        "first_p": "The following rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "first_p": "Примењују се следећа правила:",
+        "second_p": "1. адреса који добијете је валидна током одређеног периода времена.",
+        "second_p_point_1": "2. Свака трансакција обављена после тог рока, биће изгубљена.",
+        "third_p": "3. Можете послати захтев за само једну нативну адресу ланца, по сату.",
         "access": "Разумем и слажем се са свим",
         "select_currency": "Изаберите нативни ланац",
         "time_remaining": "Доступно на"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
-        "kyc": "KYC",
-        "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "header": "Набавите VTX",
+        "kyc": "Идентификација, KYC",
+        "whitelist": "Листа проверених",
+        "kyc_1": "Како бисте добили VTX, инвеститори морају спровести KYC процедуру (провера идентитета купца) преко једног од партнера од поверења. Овај процес се спроводи са циљем да се испоштују све регулативе специфичне за неки регион. Овај процес се спроводи само једном пре него што се прихвати нови члан. Треба да разумете да ће ова секција повезати дати новчаник са KYC апликацијом.",
+        "link_associate": "KYC је већ обављен",
+        "second_p": "Ако сте већ прошли кроз KYC процес, а наведени новчаник није повезан са Вашим новчаником, молимо Вас, пријавите KYC провајдеру да то изврши. Овај корак је неопходно спровести пре него што добијете VTX. Напомена, након што сте једном обавили KYC процес везан за овај новчаник, у следећем кориаку то нећете морати.",
+        "link_kyc": "Отпочни процес KYC",
+        "assign_verto_to_venue": "Додлеите Verto Venue-у",
+        "assign_verto_to_venue_desc": "Ако сте учлањени на Venue, мораћете да повежете свој новчаник како бисте остварили право на VTX. Напомињемо да ћете у том случају морати да обавите KYC процес. Након што обавите оба задатка, ваш VTX ће бити додељен новчанику.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
@@ -224,13 +224,13 @@
         "seconds": "секунди"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "header": "Venue Додељивање Адреса",
+        "venue_username": "Venue Корисничко Име",
+        "venue_password": "Venue Лозинка",
+        "bad_credentials": "Обезбеђене акредитације су неважеће.",
+        "important_info": "Ова информација се не чува на Verto-у.",
+        "email_verification_required": "Прво морате да верификујете своју email адресу са Venue пре него што ћете је повезати са новчаником.",
+        "verto_address_not_unique": "Адреса је већ додељена неком другом кориснику.",
+        "user_deactivated": "Овај корисник више није активан."
     }
 }

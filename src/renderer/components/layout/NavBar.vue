@@ -80,6 +80,9 @@
             <a class="" @click="updateLanguage('pl')">
               <img src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
+            <a class="" @click="updateLanguage('sr')">
+              <img src="~@/assets/img/lang/sr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
             <a class="" @click="updateLanguage('fil')">
               <img src="~@/assets/img/lang/fil.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
@@ -100,7 +103,7 @@ export default {
   data() {
     return {
       open: false,
-      langs: ['en', 'fr', 'pl', 'zh', 'nl', 'fil'], // 'es', 'sr', 'el',
+      langs: ['en', 'fr', 'pl', 'zh', 'nl', 'sr', 'fil'], // 'es', 'el',
       showDropDownOptions: true,
       showDropDownLanguage: true,
       showDropDownOptionsChildren: false,
