@@ -208,7 +208,7 @@
         "second_p": "Ако сте већ прошли кроз KYC процес, а наведени новчаник није повезан са Вашим новчаником, молимо Вас, пријавите KYC провајдеру да то изврши. Овај корак је неопходно спровести пре него што добијете VTX. Напомена, након што сте једном обавили KYC процес везан за овај новчаник, у следећем кориаку то нећете морати.",
         "link_kyc": "Отпочни процес KYC",
         "assign_verto_to_venue": "Додлеите Verto Venue-у",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "assign_verto_to_venue_desc": "Ако сте учлањени на Venue, мораћете да повежете свој новчаник како бисте остварили право на VTX. Напомињемо да ћете у том случају морати да обавите KYC процес. Након што обавите оба задатка, ваш VTX ће бити додељен новчанику.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
@@ -224,13 +224,13 @@
         "seconds": "секунди"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "header": "Venue Додељивање Адреса",
+        "venue_username": "Venue Корисничко Име",
+        "venue_password": "Venue Лозинка",
+        "bad_credentials": "Обезбеђене акредитације су неважеће.",
+        "important_info": "Ова информација се не чува на Verto-у.",
+        "email_verification_required": "Прво морате да верификујете своју email адресу са Venue пре него што ћете је повезати са новчаником.",
+        "verto_address_not_unique": "Адреса је већ додељена неком другом кориснику.",
+        "user_deactivated": "Овај корисник више није активан."
     }
 }
