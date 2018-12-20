@@ -202,12 +202,12 @@
     "NotWhitelisted": {
         "header": "Набавите VTX",
         "kyc": "Идентификација, KYC",
-        "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "whitelist": "Листа проверених",
+        "kyc_1": "Како бисте добили VTX, инвеститори морају спровести KYC процедуру (провера идентитета купца) преко једног од партнера од поверења. Овај процес се спроводи са циљем да се испоштују све регулативе специфичне за неки регион. Овај процес се спроводи само једном пре него што се прихвати нови члан. Треба да разумете да ће ова секција повезати дати новчаник са KYC апликацијом.",
+        "link_associate": "KYC је већ обављен",
+        "second_p": "Ако сте већ прошли кроз KYC процес, а наведени новчаник није повезан са Вашим новчаником, молимо Вас, пријавите KYC провајдеру да то изврши. Овај корак је неопходно спровести пре него што добијете VTX. Напомена, након што сте једном обавили KYC процес везан за овај новчаник, у следећем кориаку то нећете морати.",
+        "link_kyc": "Отпочни процес KYC",
+        "assign_verto_to_venue": "Додлеите Verto Venue-у",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
         "click_venue": "Venue"
     },
