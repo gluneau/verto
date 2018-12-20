@@ -3,7 +3,7 @@
         "welcometo": "XOŞ GƏLDİNİZ",
         "welcomeback": "Yenidən Xoş Gəldiniz!",
         "password": "Şifrə",
-        "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
+        "nopassword": "Pulqabı üçün heç bir şifrə tənzimlənməyib. Zəhmət olmasa əvvəlcə bir şifrə yaradın.",
         "incorrect": "Verto şifrəsi yanlışdır.",
         "login": "Giriş",
         "create": "Başla",
@@ -46,11 +46,11 @@
     "KeepYourKeysSafe": {
         "keepsafe": "Açarlarınızı Təhlükəsizlikdə Saxlayın",
         "before": "Davam etməmişdən əvvəl, unutmayın ki, özəl açarınızın idarəsi, təhlükəsizliyi, qorunması və bərpa edilməsinə görə siz məsuliyyət daşıyırsınız. Volentix ekosisteminin tərəfdaşları daxil heç biri.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
-        "back": "Back"
+        "choices": "Özəl açarınızı davam etdirmək üçün 2 seçiminiz var. Hər iki üsul özəl açarınızın təhlükəsizlikdə olmasını təmin etmək üçün dizayn edilmişdir.",
+        "first": "Açarınızı aşağıda yazın.",
+        "second": "Ya da, açarınızı şifrə qoruyan faylda şifrələyin.",
+        "next": "Növbəti",
+        "back": "Geri"
     },
     "SaveYourKeys": {
         "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
