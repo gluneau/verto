@@ -30,7 +30,7 @@ export default {
   },
   mounted() {
     this.$router.push({ path: "notwhitelisted" })
-    /*
+    /**/
     //
     //               KEEP the logic below as it will be uncommented once the Get Vtx is finalized.
     //
@@ -48,13 +48,13 @@ export default {
           "&native_chain_name=" + response.data.data.native_chain_name +
           "&server_time=" + response.data.data.server_time
         )
+      } else if (response.data.message === 'purchase_not_allowed') {
+        router.push({ path: "notapprovedforpurchase" })
       }
-      purchase_not_allowed needs to be done
     })
       .catch(function (error) {
         console.log(error);
       });
-    */
   },
   methods: {
   },

@@ -100,7 +100,9 @@
         "transactions": "You have no transactions",
         "getvtx": "Get VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Copied",
+        "approvedMessage": "Approved! Get VTX Now!",
+        "waitingForApproval": "Waiting Final Approval"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
@@ -244,5 +246,11 @@
     },
     "TransactionHistory": {
         "backToWallet": "Back To Wallet"
+    },
+    "NotApprovedForPurchase": {
+        "header": "Awaiting Final Approval",
+        "patience": "Please be patient. We are slowly throttling the people who available to Get Vtx.",
+        "approved": "Once approved, you will see a message in Verto informing you that you are now able to Get VTX.",
+        "back": "Back to Wallet"
     }
 }

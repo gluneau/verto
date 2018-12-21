@@ -32,15 +32,20 @@
         </div>
       </div>
         <div class="has-text-white container p-b-md has-text-centered" >
+          <div v-if="approvedToBuyVtx" class="whitelist-header">
+            {{ $t('Main.approvedMessage') }}
+          </div>
           <div class="is-marginless is-mobile has-background-darkgreen p-l-lg p-r-lg p-t-sm p-b-sm has-text-centered">
-            <router-link to="/begingetvtx">
-              <a class="button is-size-5 is-primary" >
-                <p class="p-l-md p-r-md has-text-weight-bold has-text-centered is-size-6">{{ $t('Main.getvtx') }}</p>
-              </a>
-            </router-link>
-            <br>
-            <br>
-            <pending-counter/>
+            <a :disabled="awaitingFinalApproval" class="button is-size-5 is-primary" @click="getVtx()">
+              <p class="p-l-md p-r-md has-text-weight-bold has-text-centered is-size-6">{{ $t('Main.getvtx') }}</p>
+            </a>
+            <div v-if="approvedToBuyVtx">
+              <br>
+              <pending-counter/>
+            </div>
+            <div v-if="awaitingFinalApproval" class="whitelist-header">
+              {{ $t('Main.waitingForApproval') }}
+            </div>
           </div>
         </div>
     </div>
@@ -146,6 +151,9 @@ export default {
   data() {
     return {
       open: false,
+      approvedToBuyVtx: false,
+      needsWhitelisting: false,
+      awaitingFinalApproval: false,
       transactions: [
         {
           s: "",
@@ -188,10 +196,33 @@ export default {
     },
     process.env.LEDGER_ACCOUNT_NAME);
     this.setWallet();
+    this.confimApprovalOfGetVtx();
     this.refreshBalance();
     this.getTransactionHistory();
   },
   methods: {
+    async confimApprovalOfGetVtx() {
+      this.approvedToBuyVtx = false;
+      this.needsWhitelisting = false;
+      this.awaitingFinalApproval = false;
+      let url = process.env.CROWDFUND_URL + "/public/api/allocate-native-chain/?verto_public_address=" + this.$store.state.currentWallet.key;
+      const response = await axios.get(url);
+      const message = response.data.message;
+      if (message === 'wallet_not_allocated' || message === 'wallet_allocated') {
+        this.approvedToBuyVtx = true;
+      } else if (message === 'wallet_not_whitelisted') {
+        this.needsWhitelisting = true;
+      } else if (message === 'purchase_not_allowed') {
+        this.awaitingFinalApproval = true;
+      }
+      console.log("DATA MESSAGE: " + response.data.message)
+    },
+    getVtx: function() {
+      if (this.awaitingFinalApproval) {
+        return;
+      }
+      this.$router.push({ path: "begingetvtx" })
+    },
     setWallet: function() {
       this.walletName = this.$store.state.currentWallet.name;
       this.wallet = this.$store.state.currentWallet.key
@@ -273,6 +304,10 @@ export default {
 </script>
 
 <style scoped>
+.whitelist-header {
+  color: #f4f4f4;
+  font-size: 30pt;
+}
 .notices.is-top {
   top: 18rem !important;
   left: 18.5rem;

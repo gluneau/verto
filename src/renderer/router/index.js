@@ -134,6 +134,14 @@ const router = new Router({
       }
     },
     {
+      path: '/notapprovedforpurchase',
+      name: 'notapprovedforpurchase',
+      component: require('@/components/GetVtx/NotApprovedForPurchase').default,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
       path: '/gettxtransactionhistory',
       name: 'gettxtransactionhistory',
       component: require('@/components/GetVtx/TransactionHistory').default,
