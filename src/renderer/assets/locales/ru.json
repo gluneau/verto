@@ -29,8 +29,8 @@
         "delete": "Удалить кошелек",
         "trash": "Click on the 'Trash' icon",
         "enter": "Введите свой пароль.",
-        "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets.",
-        "save": "Save"
+        "note": "<b>ПРИМЕЧАНИЕ:</b> Verto не может восстанавливать удаленные кошельки.",
+        "save": "Сохранить"
     },
     "WalletManager": {
         "used": "The name or the wallet has already been used.",
