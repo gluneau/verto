@@ -11,11 +11,11 @@
         "join_message": "We're glad you've joined us."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Создайте пароль для Verto",
+        "important": "ВАЖНО",
         "important_warning": "Пожалуйста, прочитайте внимательно. Этот пароль не может быть восстановлен. Если вы забудете или потеряете свой пароль, вы потеряете свои кошельки навсегда.",
         "vertopassword": "Verto MainPassword",
-        "i_understand": "I understand",
+        "i_understand": "Я понимаю",
         "confirm": "Confirm Verto password",
         "mustmatch": "Пароли должны совпадать.",
         "fillall": "Please fill all the fields above",
