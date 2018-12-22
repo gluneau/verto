@@ -88,16 +88,16 @@
         "share": "Share with anyone.",
         "picture": "Take a picture with your cell phone.",
         "screenshot": "Take a screenshot.",
-        "copied": "Key copied"
+        "copied": "Ключ скопирован"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "Продолжить"
     },
     "Main": {
-        "address": "Wallet address",
-        "loading": "Loading data",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
+        "address": "Адрес кошелька",
+        "loading": "Загрузка данных",
+        "history": "История транзакций",
+        "transactions": "У вас нет транзакций",
         "getvtx": "Get VTX",
         "number": "N<sup>o</sup>",
         "copied": "Copied"
