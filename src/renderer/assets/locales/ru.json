@@ -41,7 +41,7 @@
         "delete": "Удалить",
         "keyhere": "Wallet Public Key Here",
         "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "wallets": "Кошельки"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Keep Your Keys Safe",
@@ -49,8 +49,8 @@
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "Write your key down.",
         "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
-        "back": "Back"
+        "next": "Далее",
+        "back": "Назад"
     },
     "SaveYourKeys": {
         "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
