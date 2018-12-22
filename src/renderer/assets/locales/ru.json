@@ -3,11 +3,11 @@
         "welcometo": "WELCOME TO",
         "welcomeback": "С возвращением!",
         "password": "Пароль",
-        "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
+        "nopassword": "Для кошелька не установлен пароль. Пожалуйста, сначала создайте пароль.",
         "incorrect": "The Verto Password Is Incorrect.",
         "login": "Login",
         "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "subtitle_message": "Verto это ваши врата в Volentix.",
         "join_message": "Мы рады, что вы присоединились к нам."
     },
     "CreateVertoPassword": {
