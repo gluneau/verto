@@ -27,7 +27,7 @@
         "wallets": "Кошельки",
         "choose": "Choose to open a wallet by simply clicking on its name.",
         "delete": "Удалить кошелек",
-        "trash": "Click on the 'Trash' icon",
+        "trash": "Нажмите на иконку \"Корзина\"",
         "enter": "Введите свой пароль.",
         "note": "<b>ПРИМЕЧАНИЕ:</b> Verto не может восстанавливать удаленные кошельки.",
         "save": "Сохранить"
@@ -44,7 +44,7 @@
         "wallets": "Кошельки"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Надежно Храните Ваши Ключи",
         "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "Write your key down.",
@@ -74,8 +74,8 @@
         "mustname": "You must provide a name for your key.",
         "walletname": "Give Wallet Name: ie Savings",
         "writedown": "Write down your keys.",
-        "privkey": "Private key",
-        "pubkey": "Public key",
+        "privkey": "Приватный ключ",
+        "pubkey": "Публичный ключ",
         "recommended": "Recommended",
         "goodpen": "Use a good pen that will not smudge or fade over time.",
         "goodpaper": "Use good paper that will last.",
