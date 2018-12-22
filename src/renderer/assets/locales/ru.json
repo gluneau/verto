@@ -1,14 +1,14 @@
 {
     "Welcome": {
         "welcometo": "WELCOME TO",
-        "welcomeback": "Welcome Back!",
+        "welcomeback": "С возвращением!",
         "password": "Пароль",
         "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
         "incorrect": "The Verto Password Is Incorrect.",
         "login": "Login",
         "create": "Begin",
         "subtitle_message": "Verto is your gateway into Volentix.",
-        "join_message": "We're glad you've joined us."
+        "join_message": "Мы рады, что вы присоединились к нам."
     },
     "CreateVertoPassword": {
         "header": "Создайте пароль для Verto",
