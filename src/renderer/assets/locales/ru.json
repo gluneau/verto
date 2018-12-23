@@ -121,8 +121,8 @@
         "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
-        "settings": "Settings",
-        "updates": "Check for Updates",
+        "settings": "Настройки",
+        "updates": "Проверить обновления",
         "whitelist": "Whitelist",
         "blocktopus": "Associate with Blocktopus",
         "manager": "Wallet Manager",
@@ -156,9 +156,9 @@
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
+        "header": "Сменить пароль",
+        "current": "Текущий пароль к Verto",
+        "new": "Новый пароль к Verto",
         "confirm": "Confirm New Verto Password",
         "required": "Все поля обязательны для заполнения.",
         "change": "Change Verto Password",
