@@ -44,24 +44,24 @@
         "wallets": "Carteiras"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Matenha As Suas Chaves Seguras",
         "before": "Antes de continuar, é importate notar que está totalmente responsável pela gestão, segurança, proteção e recuperação da sua chave privada. Mais ninguém, incluindo parceiros do ecossistema Volentix.",
         "choices": "Tens duas opções para conservar a tua chave privada. Ambos os métodos estão concebidos para assegurar a segurança da sua chave privada.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "first": "Anote a sua chave.",
+        "second": "Ou, encripte a sua chave num ficheiro protegido por uma senha.",
         "next": "Próximo",
         "back": "Anterior"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Planeie uma estratégia para guardar fisicamente a sua chave privada. Esta estratégia deve ter em mente o pensamento a longo prazo, incluindo:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "legacy": "<b>Legado:</b>Coisas acontecem. A vida acaba. Precisa planear a transferência de sua carteira para alguém. Em alguns casos isso pode ser uma vontade, por favor considere as suas opções cuidadosamente. A escolha é sua.",
         "agree": "Eu concordo com os Termos e Condições",
         "responsible": "Estou inteiramente responsável pela gestão da segurança da minha chave privada",
         "access": "Eu compreendo que o Volentix e/ou parceiros nunca têm acesso à minha chave privada",
         "wifi": "Eu compreendo que o WIFI estará desativado temporariamente durante a criação de chaves",
         "create": "Create",
-        "save_keys": "Save File"
+        "save_keys": "Guardar Ficheiro"
     },
     "DisplayKey": {
         "header": "Write It Down",
