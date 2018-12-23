@@ -60,7 +60,7 @@
         "responsible": "Estou inteiramente responsável pela gestão da segurança da minha chave privada",
         "access": "Eu compreendo que o Volentix e/ou parceiros nunca têm acesso à minha chave privada",
         "wifi": "Eu compreendo que o WIFI estará desativado temporariamente durante a criação de chaves",
-        "create": "Create",
+        "create": "Criar",
         "save_keys": "Guardar Ficheiro"
     },
     "DisplayKey": {
@@ -229,8 +229,8 @@
         "venue_password": "Senha Venue",
         "bad_credentials": "As credenciais fornecidas são inválidas.",
         "important_info": "Esta informação nunca é armazenada dentro do Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
+        "email_verification_required": "Você deve verificar primeiramente o seu email como Venue antes de associar a carteira.",
+        "verto_address_not_unique": "Este endereço já está atribuído a outro utilizador.",
         "user_deactivated": "Este utilizador já não está ativo."
     }
 }
