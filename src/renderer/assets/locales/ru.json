@@ -59,13 +59,13 @@
         "agree": "Я согласен с Условиями использования",
         "responsible": "Я несу полную ответственность за обеспечение безопасности моего закрытого ключа",
         "access": "Я понимаю, что Volentix и/или партнеры не имеют доступа к моему закрытому ключу",
-        "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "create": "Create",
-        "save_keys": "Save File"
+        "wifi": "Я понимаю, что WIFI будет временно отключен во время генерации ключей",
+        "create": "Создать",
+        "save_keys": "Сохранить файл"
     },
     "DisplayKey": {
-        "header": "Write It Down",
-        "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
+        "header": "Запишите его",
+        "understand": "Я понимаю, что закрытый ключ не хранится в Verto и не может быть восстановлен.",
         "showPrivate": "Show Private",
         "hidePrivate": "Hide Private",
         "showPublic": "Show Public",
