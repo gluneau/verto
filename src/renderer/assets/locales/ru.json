@@ -83,11 +83,11 @@
         "once": "Once Completed",
         "look": "Look for a warm, safe, secure, dry place such as a bank safety deposit box.",
         "provisions": "Add provisions to your will on who and how the transfer of your wallet will be conducted.",
-        "donot": "Do Not",
-        "fold": "Fold the paper.",
-        "share": "Share with anyone.",
-        "picture": "Take a picture with your cell phone.",
-        "screenshot": "Take a screenshot.",
+        "donot": "Не нужно",
+        "fold": "Складывать бумагу.",
+        "share": "Делиться с кем-либо.",
+        "picture": "Делать фото мобильным телефоном.",
+        "screenshot": "Делать скриншот.",
         "copied": "Ключ скопирован"
     },
     "CongratsScreen": {
@@ -100,14 +100,14 @@
         "transactions": "У вас нет транзакций",
         "getvtx": "Get VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Скопировано"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
         "native": "Native Currency",
         "amount": "Amount",
         "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "confirmation": "Подтверждение",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
         "phase": "Phase Bonus",
