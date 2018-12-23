@@ -104,12 +104,12 @@
     },
     "TransactionHistory": {
         "history": "Get VTX History",
-        "native": "Native Currency",
+        "native": "Moeda Nativa",
         "amount": "Quantidade",
         "ratio": "Rátio de Conversão",
         "confirmation": "Confirmação",
         "transid": "ID do Ledger de Transferência",
-        "pre": "Pre Bonus",
+        "pre": "Pré Bónus",
         "phase": "Phase Bonus",
         "additional": "Bónus Adicional",
         "total": "Total",
@@ -183,12 +183,12 @@
         "storeloc": "Guarde-a na drive local do seu computador.",
         "emailit": "Email it.",
         "cloud": "Store on the cloud.",
-        "save": "Save"
+        "save": "Guardar"
     },
     "RequestNativeChainAddress": {
         "header": "Solicitar Endereço",
         "button": "Alocar Endereço",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
+        "err_noAddressAvailable": "Nenhum endereço disponível para essa chain. Por favor tente novamente.",
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
         "first_p": "The following rules apply:",
