@@ -6,7 +6,7 @@
         "nopassword": "Nenhuma Senha Foi Atribuída À Carteira. Por Favor, crie uma senha primeiro.",
         "incorrect": "A Senha Verto Está Incorreta.",
         "login": "Login",
-        "create": "Begin",
+        "create": "Começar",
         "subtitle_message": "Verto is your gateway into Volentix.",
         "join_message": "Estamos felizes por que se juntou a nós."
     },
@@ -40,7 +40,7 @@
         "cancel": "Cancelar",
         "delete": "Eliminar",
         "keyhere": "Chave Pública da Carteira Aqui",
-        "header": "Wallet Manager",
+        "header": "Gerenciador de Carteiras",
         "wallets": "Carteiras"
     },
     "KeepYourKeysSafe": {
@@ -64,7 +64,7 @@
         "save_keys": "Guardar Ficheiro"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Anote-a",
         "understand": "Eu compreendo que a chave privada não é guardada no Verto e não pode ser recuperada.",
         "showPrivate": "Show Private",
         "hidePrivate": "Hide Private",
@@ -113,7 +113,7 @@
         "phase": "Phase Bonus",
         "additional": "Bónus Adicional",
         "total": "Total",
-        "received": "Received",
+        "received": "Recebido",
         "converted": "Convertido",
         "pending": "Pendente",
         "confirmed": "Confirmado",
@@ -131,12 +131,12 @@
         "gettrans": "Get VTX Transaction History",
         "logout": "Desconectar-se",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
+        "sendmail": "Enviar Mail",
         "language": "Idioma",
         "help": "Ajuda",
         "optionsdd": " Opções",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Carteira Atual"
     },
     "AssociateView": {
         "username": "Nome de utilizador Blocktopus",
@@ -150,13 +150,13 @@
         "additional": "Bónus Adicionais",
         "bonus": "Bónus",
         "soon": "Brevemente",
-        "getvtx": "Get VTX With",
-        "native_chain_address": "Native Chain Address",
+        "getvtx": "Obtenha VTX Com",
+        "native_chain_address": "Endereço da Chain Nativa",
         "available_for": "Endereço disponível até",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Endereço da Chain Nativa"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
+        "header": "Mudar Senha",
         "current": "Senha Verto Atual",
         "new": "Nova Senha Verto",
         "confirm": "Confirma Nova Senha Verto",
