@@ -1,6 +1,6 @@
 {
     "Welcome": {
-        "welcometo": "WELCOME TO",
+        "welcometo": "ДОБРО ПОЖАЛОВАТЬ В",
         "welcomeback": "С возвращением!",
         "password": "Пароль",
         "nopassword": "Для кошелька не установлен пароль. Пожалуйста, сначала создайте пароль.",
@@ -53,7 +53,7 @@
         "back": "Назад"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Спланируйте стратегию физического хранения вашего закрытого ключа. Эта стратегия хранения должна включать долгосрочное мышление, в том числе:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
