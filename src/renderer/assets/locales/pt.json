@@ -7,14 +7,14 @@
         "incorrect": "A Senha Verto Está Incorreta.",
         "login": "Login",
         "create": "Começar",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "subtitle_message": "Verto é a porta para Volentix.",
         "join_message": "Estamos felizes por que se juntou a nós."
     },
     "CreateVertoPassword": {
         "header": "Criar Senha Verto",
         "important": "IMPORTANTE",
         "important_warning": "Por favor, leia cuidadosamente. Esta senha não pode ser recuperada. Se te esqueceres ou perderes a tua senha irás perder as tuas carteiras para sempre.",
-        "vertopassword": "Verto MainPassword",
+        "vertopassword": "SenhaPrincipal Verto",
         "i_understand": "Eu compreendo",
         "confirm": "Confirmar a senha Verto",
         "mustmatch": "Senhas devem coincidir.",
