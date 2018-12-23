@@ -57,8 +57,8 @@
         "physical": "<b>Физическая безопасность.</b> Хранилища любого типа, обеспечивающие необходимую вам защиту. Подумайте о месте, которое вы знаете как безопасное от кражи и стихий. Некоторые примеры - сейф дома или в банке, либо юрист. Вы можете защитить свои ключи, храня копии в нескольких местах.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "Я согласен с Условиями использования",
-        "responsible": "I am entirely responsible for the security managment of my private key",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
+        "responsible": "Я несу полную ответственность за обеспечение безопасности моего закрытого ключа",
+        "access": "Я понимаю, что Volentix и/или партнеры не имеют доступа к моему закрытому ключу",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "create": "Create",
         "save_keys": "Save File"
