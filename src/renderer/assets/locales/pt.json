@@ -124,11 +124,11 @@
         "settings": "Definições",
         "updates": "Verifique por Atualizações",
         "whitelist": "Whitelist",
-        "blocktopus": "Associate with Blocktopus",
-        "manager": "Wallet Manager",
+        "blocktopus": "Associar com Blocktopus",
+        "manager": "Gerenciador de Carteiras",
         "change": "Senha",
         "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
+        "gettrans": "Obter o Histórico de Transações de VTX",
         "logout": "Desconectar-se",
         "telegram": "Telegram",
         "sendmail": "Enviar Mail",
@@ -175,7 +175,7 @@
         "select": "Select 'Backup Wallet'"
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Guardar Ficheiro",
         "file": "Selecionar ficheiro",
         "choose": "Escolher a senha da Carteira",
         "confirm": "Confirmar a senha da Carteira",
@@ -192,23 +192,23 @@
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
         "first_p": "The following rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "second_p": "1. O endereço que receber está disponível apenas por um período de tempo limitado.",
+        "second_p_point_1": "2. Qualquer transação que envie após o período de alocação pode ser perdida.",
+        "third_p": "3. Apenas pode requisitar um endereço de chain nativa por hora.",
         "access": "Eu compreendo e concordo",
         "select_currency": "Selecionar a Chain Nativa",
         "time_remaining": "Disponível Em"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "Obtenha VTX",
         "kyc": "KYC",
         "whitelist": "White List",
         "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
         "link_associate": "Already KYC'd",
         "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "link_kyc": "Começar o Processo KYC",
+        "assign_verto_to_venue": "Atribuir Verto a Venue",
+        "assign_verto_to_venue_desc": "Se é um membro de Venue, vai necessitar de associar uma carteira para reclamar o seu VTX. Note que também irá precisar de completar o processo KYC. Uma vez que ambas as ações estajam completas, o seu VTX será alocado para esta carteira.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
@@ -224,7 +224,7 @@
         "seconds": "segundos"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
+        "header": "Endereço de Atribuição Venue",
         "venue_username": "Nome de utilizador Venue",
         "venue_password": "Senha Venue",
         "bad_credentials": "As credenciais fornecidas são inválidas.",
