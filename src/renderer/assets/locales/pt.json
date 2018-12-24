@@ -3,7 +3,7 @@
         "welcometo": "BEM-VINDO A",
         "welcomeback": "Bem-vindo de volta!",
         "password": "Senha",
-        "nopassword": "Nenhuma Senha Foi Atribuída À Carteira. Por Favor, crie uma senha primeiro.",
+        "nopassword": "Nenhuma Senha Foi Atribuída À Carteira. Por Favor, Crie Uma Senha Primeiro.",
         "incorrect": "A Senha Verto Está Incorreta.",
         "login": "Login",
         "create": "Começar",
@@ -54,7 +54,7 @@
     },
     "SaveYourKeys": {
         "strategy": "Planeie uma estratégia para guardar fisicamente a sua chave privada. Esta estratégia deve ter em mente o pensamento a longo prazo, incluindo:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "physical": "<b>Segurança Física:</b> Cofres de qualquer tipo que forneçam a proteção de que procura. Pense num lugar que sabe que está seguro de roubo, assim como dos elementos da natureza. alguns exemplos são um banco ou um advogado. pode escolher proteger as suas chaves guardando cópias em vários lugares.",
         "legacy": "<b>Legado:</b>Coisas acontecem. A vida acaba. Precisa planear a transferência de sua carteira para alguém. Em alguns casos isso pode ser uma vontade, por favor considere as suas opções cuidadosamente. A escolha é sua.",
         "agree": "Eu concordo com os Termos e Condições",
         "responsible": "Estou inteiramente responsável pela gestão da segurança da minha chave privada",
