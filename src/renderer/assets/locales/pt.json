@@ -127,7 +127,7 @@
         "blocktopus": "Associar com Blocktopus",
         "manager": "Gerenciador de Carteiras",
         "change": "Senha",
-        "backup": "Backup Wallet",
+        "backup": "Carteira Backup",
         "gettrans": "Obter o Histórico de Transações de VTX",
         "logout": "Desconectar-se",
         "telegram": "Telegram",
@@ -162,7 +162,7 @@
         "confirm": "Confirma Nova Senha Verto",
         "required": "Todos os campos são obrigatórios.",
         "change": "Mudar a Senha Verto",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
+        "recommended": "É recomendado que você primeiro faça backup da configuração atual do Verto antes de mudar a senha. Pode fazer back up do Verto ",
         "here": "aqui",
         "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
     },
