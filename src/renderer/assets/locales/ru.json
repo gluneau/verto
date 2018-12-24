@@ -228,9 +228,9 @@
         "venue_username": "Venue User Name",
         "venue_password": "Venue Password",
         "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
+        "important_info": "Эта информация никогда не сохраняется в Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "verto_address_not_unique": "Адрес уже присвоен другому пользователю.",
+        "user_deactivated": "Этот пользователь больше не активен."
     }
 }
