@@ -69,7 +69,7 @@
         "showPrivate": "Ver a Chave Privada",
         "hidePrivate": "Ocultar a Chave Privada",
         "showPublic": "Ver a Chave Pública",
-        "hidePublic": "Ver a Chave Privada",
+        "hidePublic": "Ocultar a Chave Pública",
         "already": "O nome ou a chave já foi usado(a).",
         "mustname": "Deve fornecer um nome para a sua chave.",
         "walletname": "Dar Nome à Carteira: ex Poupanças",
@@ -87,7 +87,7 @@
         "fold": "Dobre o papel.",
         "share": "Partilhe com alguém.",
         "picture": "Tire um fotografia com o seu telemóvel.",
-        "screenshot": "Tire uma captura de ecrâ.",
+        "screenshot": "Faça uma captura de ecrâ.",
         "copied": "Chave copiada"
     },
     "CongratsScreen": {
@@ -146,7 +146,7 @@
         "vtxsold": "VTX Vendido",
         "round": "Ronda Bónus",
         "amount": "Montante Bónus",
-        "current": "Preço VTX Atual",
+        "current": "Preço Atual do VTX",
         "additional": "Bónus Adicionais",
         "bonus": "Bónus",
         "soon": "Brevemente",
@@ -208,7 +208,7 @@
         "second_p": "Se já fez o processo KYC, no entanto, não associou esta carteira com a sua conta, por favor faça o login no fornecedor de KYC para associá-la. Este passo é necessário antes de conseguir obter VTX. Note que, se realizou o processo KYC dentro da Carteira, não é necessário, a si, realizar este passo.",
         "link_kyc": "Começar o Processo KYC",
         "assign_verto_to_venue": "Atribuir Verto a Venue",
-        "assign_verto_to_venue_desc": "Se é um membro de Venue, vai necessitar de associar uma carteira para reclamar o seu VTX. Note que também irá precisar de completar o processo KYC. Uma vez que ambas as ações estajam completas, o seu VTX será alocado para esta carteira.",
+        "assign_verto_to_venue_desc": "Se é um membro de Venue, vai necessitar de associar uma carteira para reclamar o seu VTX. Note que também irá precisar de completar o processo KYC. Uma vez que ambas as ações estejam completas, o seu VTX será alocado para esta carteira.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
