@@ -98,7 +98,7 @@
         "loading": "Загрузка данных",
         "history": "История транзакций",
         "transactions": "У вас нет транзакций",
-        "getvtx": "Get VTX",
+        "getvtx": "Получить VTX",
         "number": "N<sup>o</sup>",
         "copied": "Скопировано"
     },
