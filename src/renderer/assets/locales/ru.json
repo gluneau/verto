@@ -110,8 +110,8 @@
         "confirmation": "Подтверждение",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
-        "phase": "Phase Bonus",
-        "additional": "Additional Bonus",
+        "phase": "Фазовый Бонус",
+        "additional": "Дополнительный Бонус",
         "total": "Total",
         "received": "Получено",
         "converted": "Конвертировано",
@@ -139,17 +139,17 @@
         "current_wallet": "Текущий кошелек"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Имя пользователя Blocktopus",
+        "password": "Пароль Blocktopus"
     },
     "GetVtx": {
         "vtxsold": "VTX Sold",
         "round": "Bonus Round",
-        "amount": "Bonus Amount",
+        "amount": "Количество Бонусов",
         "current": "Current VTX Price",
         "additional": "Additional Bonuses",
-        "bonus": "Bonus",
-        "soon": "Coming Soon",
+        "bonus": "Бонус",
+        "soon": "Скоро",
         "getvtx": "Get VTX With",
         "native_chain_address": "Native Chain Address",
         "available_for": "Address Available Until",
