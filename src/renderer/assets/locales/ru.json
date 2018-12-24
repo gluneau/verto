@@ -34,13 +34,13 @@
     },
     "WalletManager": {
         "used": "Название или кошелек уже используется.",
-        "both": "You must supply both a name and the public key for the wallet.",
-        "submit": "Submit",
+        "both": "Необходимо указать как имя, так и открытый ключ для кошелька.",
+        "submit": "Передать",
         "cannotrecover": "Verto не может восстановить кошелек после его удаления. Нажмите на кнопку \"Удалить\" еще раз для окончательного удаления.",
         "cancel": "Отменить",
         "delete": "Удалить",
         "keyhere": "Здесь Открытый Ключ кошелька",
-        "header": "Wallet Manager",
+        "header": "Управление кошельком",
         "wallets": "Кошельки"
     },
     "KeepYourKeysSafe": {
