@@ -205,7 +205,7 @@
         "whitelist": "White List",
         "kyc_1": "Чтобы получить VTX, инвесторы должны пройти KYC (Know Your Customer) верификацию с помощью одного из наших доверенных партнеров. Эта процедура призвана обеспечить соблюдение нами правил регуляторов в вашем регионе. Обратите внимание, что этот процесс нужно выполнить всего единожды, прежде чем быть принятым в качестве потенциального участника. Обратите внимание, что данный выбор свяжет этот кошелек с вашим KYC приложением.",
         "link_associate": "Еже есть KYC верификация",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
+        "second_p": "Если вы уже прошли KYC верификацию, однако еще не связали этот кошелек со своим аккаунтом, пожалуйста, авторизуйтесь у своего KYC провайдера, чтобы это сделать. Этот шаг необходим, прежде чем вы сможете получить VTX. Обратите внимание, что если вы прошли KYC верификацию в кошельке, вам не потребуется выполнять этот шаг.",
         "link_kyc": "Начать KYC верификацию",
         "assign_verto_to_venue": "Assign  Verto To Venue",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
