@@ -66,10 +66,10 @@
     "DisplayKey": {
         "header": "Anote-a",
         "understand": "Eu compreendo que a chave privada não é guardada no Verto e não pode ser recuperada.",
-        "showPrivate": "Show Private",
-        "hidePrivate": "Hide Private",
-        "showPublic": "Show Public",
-        "hidePublic": "Hide Public",
+        "showPrivate": "Ver a Chave Privada",
+        "hidePrivate": "Ocultar a Chave Privada",
+        "showPublic": "Ver a Chave Pública",
+        "hidePublic": "Ver a Chave Privada",
         "already": "O nome ou a chave já foi usado(a).",
         "mustname": "Deve fornecer um nome para a sua chave.",
         "walletname": "Dar Nome à Carteira: ex Poupanças",
@@ -118,7 +118,7 @@
         "pending": "Pendente",
         "confirmed": "Confirmado",
         "approved": "Aprovado",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/6 Blocos Confirmados"
     },
     "SettingsView": {
         "settings": "Definições",
@@ -164,15 +164,15 @@
         "change": "Mudar a Senha Verto",
         "recommended": "É recomendado que você primeiro faça backup da configuração atual do Verto antes de mudar a senha. Pode fazer back up do Verto ",
         "here": "aqui",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Muda a senha para acessar o Verto. Uma vez selecionado, todas as configurações são encriptadas usando a nova senha."
     },
     "BackupWallet": {
         "folder": "Selecionar Pasta",
         "backup": "Backup",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
-        "select": "Select 'Backup Wallet'"
+        "simple": "Uma ferramenta simples para fazer back up da sua carteira, para a restaurar ou abrir noutro dispositivo. Simplesmente",
+        "directory": "Selecione um diretório para fazer back up da carteira.",
+        "willbackup": "Verto vai fazer back up da carteira com o nome 'verto' + a data + '.config'",
+        "select": "Selecione 'Carteira Backup'"
     },
     "ChoosePassword": {
         "header": "Guardar Ficheiro",
