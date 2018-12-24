@@ -7,7 +7,7 @@
         "incorrect": "Verto şifrəsi yanlışdır.",
         "login": "Giriş",
         "create": "Başla",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "subtitle_message": "Verto, Volentix-ə açılan qapınızdır.",
         "join_message": "Bizə qoşulduğunuz üçün şadıq."
     },
     "CreateVertoPassword": {
@@ -108,7 +108,7 @@
         "amount": "Miqdar",
         "ratio": "Çevirmə Əmsalı",
         "confirmation": "Təsdiqləmə",
-        "transid": "Ledger Trans. ID",
+        "transid": "Köçürmə Kimliyi Dəftəri",
         "pre": "Əvvəlki Bonus",
         "phase": "Faza Bonusu",
         "additional": "Əlavə Bonus",
