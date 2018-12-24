@@ -229,7 +229,7 @@
         "venue_password": "Senha Venue",
         "bad_credentials": "As credenciais fornecidas são inválidas.",
         "important_info": "Esta informação nunca é armazenada dentro do Verto.",
-        "email_verification_required": "Você deve verificar primeiramente o seu email como Venue antes de associar a carteira.",
+        "email_verification_required": "Você deve verificar primeiramente o seu email com o Venue antes de associar a carteira.",
         "verto_address_not_unique": "Este endereço já está atribuído a outro utilizador.",
         "user_deactivated": "Este utilizador já não está ativo."
     }
