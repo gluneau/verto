@@ -113,12 +113,12 @@
         "phase": "Phase Bonus",
         "additional": "Additional Bonus",
         "total": "Total",
-        "received": "Received",
-        "converted": "Converted",
-        "pending": "Pending",
-        "confirmed": "Confirmed",
-        "approved": "Approved",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "received": "Получено",
+        "converted": "Конвертировано",
+        "pending": "В обработке",
+        "confirmed": "Подтверждено",
+        "approved": "Одобрено",
+        "number_of_approved_blocks": "/6 Подтвержденных блоков"
     },
     "SettingsView": {
         "settings": "Настройки",
@@ -127,16 +127,16 @@
         "blocktopus": "Associate with Blocktopus",
         "manager": "Wallet Manager",
         "change": "Password",
-        "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
+        "backup": "Резервная копия кошелька",
+        "gettrans": "Получить историю транзакций VTX",
+        "logout": "Выйти",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options",
+        "sendmail": "Отправить письмо",
+        "language": "Язык",
+        "help": "Помощь",
+        "optionsdd": " Опции",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Текущий кошелек"
     },
     "AssociateView": {
         "username": "Blocktopus Username",
