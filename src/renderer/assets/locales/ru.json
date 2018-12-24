@@ -5,8 +5,8 @@
         "password": "Пароль",
         "nopassword": "Для кошелька не установлен пароль. Пожалуйста, сначала создайте пароль.",
         "incorrect": "Пароль к Verto неверный.",
-        "login": "Login",
-        "create": "Begin",
+        "login": "Войти",
+        "create": "Начать",
         "subtitle_message": "Verto это ваши врата в Volentix.",
         "join_message": "Мы рады, что вы присоединились к нам."
     },
@@ -39,7 +39,7 @@
         "cannotrecover": "Verto не может восстановить кошелек после его удаления. Нажмите на кнопку \"Удалить\" еще раз для окончательного удаления.",
         "cancel": "Отменить",
         "delete": "Удалить",
-        "keyhere": "Wallet Public Key Here",
+        "keyhere": "Здесь Открытый Ключ кошелька",
         "header": "Wallet Manager",
         "wallets": "Кошельки"
     },
