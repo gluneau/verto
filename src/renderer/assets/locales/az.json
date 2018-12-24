@@ -164,14 +164,14 @@
         "change": "Verto Şifrəsini Dəyişdir",
         "recommended": "Şifrəni dəyişdirməmişdən əvvəl Verto-nun hazırki konfiqurasiyasını nüsxələməyiniz tövsiyə edilir. Verto-nu nüsxələyə bilərsiniz ",
         "here": "burada",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Verto-ya müraciət etmək üçün şifrəni dəyişdirin. Seçiləndən sonra, bütün konfiqurasiya yeni şifrə istifadə edilərək şifrələnir."
     },
     "BackupWallet": {
         "folder": "Qovluq Seç",
         "backup": "Nüsxələ",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
+        "simple": "Pulqabınızı nüsxələmək, başqa cihazda bərpa etmək və açmaq üçün sadə alət. Sadə",
+        "directory": "Pulqabınızı nüsxələmək üçün kataloq seçin.",
+        "willbackup": "Verto, pulqabını bu adda nüsxələyəcək 'verto' + tarix + '.config'",
         "select": "'Pulqabını Nüsxələ'ni seçin"
     },
     "ChoosePassword": {
@@ -187,7 +187,7 @@
     },
     "RequestNativeChainAddress": {
         "header": "Tələb olunan ünvan",
-        "button": "Allocate Address",
+        "button": "Ünvanı Mənimsət",
         "err_noAddressAvailable": "Bu zincir üçün uyğun ünvan yoxdur. Zəhmət olmasa yenidən sınayın.",
         "err_pendingTransactionsExist": "Gözləyən köçürmələr var",
         "err_investor_must_wait": "Yeni bir ünvan tələb etməmişdən əvvəl bir saat gözləməlisiniz.",
