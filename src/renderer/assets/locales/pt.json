@@ -161,10 +161,10 @@
         "new": "Nova Palavra-Passe Verto",
         "confirm": "Confirme a Nova Palavra-Passe Verto",
         "required": "Todos os campos são obrigatórios.",
-        "change": "Mudar a Senha Verto",
-        "recommended": "É recomendado que você primeiro faça backup da configuração atual do Verto antes de mudar a senha. Pode fazer back up do Verto ",
+        "change": "Mudar a Palavra-Passe Verto",
+        "recommended": "É recomendado que você primeiro faça backup da configuração atual do Verto antes de mudar a palavra-passe. Pode fazer backup do Verto ",
         "here": "aqui",
-        "access": "Muda a senha para acessar o Verto. Uma vez selecionado, todas as configurações são encriptadas usando a nova senha."
+        "access": "Muda a palavra-passe para aceder ao Verto. Uma vez selecionado, todas as configurações são encriptadas usando a nova palavra-passe."
     },
     "BackupWallet": {
         "folder": "Selecionar Pasta",
@@ -177,12 +177,12 @@
     "ChoosePassword": {
         "header": "Guardar Ficheiro",
         "file": "Selecionar ficheiro",
-        "choose": "Escolher a senha da Carteira",
-        "confirm": "Confirmar a senha da Carteira",
+        "choose": "Escolha a Palavra-Passe da Carteira",
+        "confirm": "Confirma a palavra-passe da Carteira",
         "storeext": "Guarde numa drive externa, carteira, ou chave USB.",
         "storeloc": "Guarde-a na drive local do seu computador.",
         "emailit": "Enviar por E-mail.",
-        "cloud": "Armazenar na \"cloud\".",
+        "cloud": "Armazenar na cloud.",
         "save": "Guardar"
     },
     "RequestNativeChainAddress": {
