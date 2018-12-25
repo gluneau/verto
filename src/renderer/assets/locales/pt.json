@@ -192,7 +192,7 @@
         "err_pendingTransactionsExist": "Existem transações pendentes",
         "err_investor_must_wait": "Deve esperar uma hora antes de solicitar um novo endereço.",
         "first_p": "As seguintes regras aplicam-se:",
-        "second_p": "1. O endereço que receber está disponível apenas por um período de tempo limitado.",
+        "second_p": "1. O endereço que irá receber está disponível apenas por um período de tempo limitado.",
         "second_p_point_1": "2. Qualquer transação que envie após o período de alocação pode ser perdida.",
         "third_p": "3. Apenas pode requisitar um endereço de chain nativa por hora.",
         "access": "Eu compreendo e concordo",
