@@ -140,7 +140,7 @@
     },
     "AssociateView": {
         "username": "Nome de utilizador Blocktopus",
-        "password": "Senha Blocktopus"
+        "password": "Palavra-Passe Blocktopus"
     },
     "GetVtx": {
         "vtxsold": "VTX Vendido",
@@ -156,10 +156,10 @@
         "native_chain_header": "Endereço da Chain Nativa"
     },
     "ChangeVertoPassword": {
-        "header": "Mudar Senha",
-        "current": "Senha Verto Atual",
-        "new": "Nova Senha Verto",
-        "confirm": "Confirma Nova Senha Verto",
+        "header": "Mudar Palavra-Passe",
+        "current": "Palavra-Passe Atual Verto",
+        "new": "Nova Palavra-Passe Verto",
+        "confirm": "Confirme a Nova Palavra-Passe Verto",
         "required": "Todos os campos são obrigatórios.",
         "change": "Mudar a Senha Verto",
         "recommended": "É recomendado que você primeiro faça backup da configuração atual do Verto antes de mudar a senha. Pode fazer back up do Verto ",
