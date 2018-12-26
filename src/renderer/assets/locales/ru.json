@@ -194,7 +194,7 @@
         "first_p": "Применяются следующие правила:",
         "second_p": "1. Полученный вами адрес действителен только в течение ограниченного периода времени.",
         "second_p_point_1": "2. Любая транзакция, отправленная вами после предоставленного срока, может быть потеряна.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "third_p": "3. Вы можете запросить только один адрес своей цепи в час.",
         "access": "I understand and agree",
         "select_currency": "Select A Native Chain",
         "time_remaining": "Available In"
