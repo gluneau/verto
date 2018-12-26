@@ -194,9 +194,9 @@
         "first_p": "Применяются следующие правила:",
         "second_p": "1. Полученный вами адрес действителен только в течение ограниченного периода времени.",
         "second_p_point_1": "2. Любая транзакция, отправленная вами после предоставленного срока, может быть потеряна.",
-        "third_p": "3. Вы можете запросить только один адрес своей цепи в час.",
-        "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
+        "third_p": "3. Вы можете запросить только один адрес родной сети в час.",
+        "access": "Я понимаю и согласен",
+        "select_currency": "Виберите родную сеть",
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
@@ -216,7 +216,7 @@
         "first_p": "The KYC'd account has already been allocated a Verto Public Address."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Проверка состояния кошелька"
     },
     "Countdown": {
         "time_remaining": "Time Remaining",
