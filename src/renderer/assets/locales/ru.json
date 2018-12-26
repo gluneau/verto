@@ -124,7 +124,7 @@
         "settings": "Настройки",
         "updates": "Проверить обновления",
         "whitelist": "Whitelist",
-        "blocktopus": "Associate with Blocktopus",
+        "blocktopus": "Связать с Blocktopus",
         "manager": "Управление кошельком",
         "change": "Пароль",
         "backup": "Резервная копия кошелька",
@@ -219,7 +219,7 @@
         "header": "Проверка состояния кошелька"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
+        "time_remaining": "Осталось времени",
         "mins": "Minutes",
         "seconds": "seconds"
     },
