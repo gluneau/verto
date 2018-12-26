@@ -105,7 +105,7 @@
     "TransactionHistory": {
         "history": "Получить историю VTX",
         "native": "Native Currency",
-        "amount": "Amount",
+        "amount": "Количество",
         "ratio": "Conversion Ratio",
         "confirmation": "Подтверждение",
         "transid": "Ledger Trans. ID",
@@ -177,8 +177,8 @@
     "ChoosePassword": {
         "header": "Сохранить файл",
         "file": "Выберите файл",
-        "choose": "Choose Wallet Password",
-        "confirm": "Confirm Wallet password",
+        "choose": "Выберите пароль для кошелька",
+        "confirm": "Подтвердите пароль для кошелька",
         "storeext": "Store on an external drive, wallet, or USB key.",
         "storeloc": "Store it on your computers local drive.",
         "emailit": "Email it.",
