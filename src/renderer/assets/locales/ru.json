@@ -169,8 +169,8 @@
     "BackupWallet": {
         "folder": "Выберите папку",
         "backup": "Резервная копия",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
+        "simple": "Простой инструмент для резервного копирования вашего кошелька с целью восстановления или открытия на другом устройстве. Просто",
+        "directory": "Выберите каталог для резервного копирования кошелька.",
         "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
         "select": "Select 'Backup Wallet'"
     },
