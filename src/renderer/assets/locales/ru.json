@@ -213,7 +213,7 @@
     },
     "KycAlreadyAssociated": {
         "header": "KYC верификация предоставлена",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "first_p": "Аккаунту, прошедшему KYC проверку был присвоен публичный адрес Verto."
     },
     "BeginGetVtx": {
         "header": "Проверка состояния кошелька"
@@ -229,7 +229,7 @@
         "venue_password": "Пароль Venue",
         "bad_credentials": "Предоставленные учетные данные неверны.",
         "important_info": "Эта информация никогда не сохраняется в Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "email_verification_required": "Прежде чем связать кошелек, вы должны сначала подтвердить свой email с помощью Venue.",
         "verto_address_not_unique": "Адрес уже присвоен другому пользователю.",
         "user_deactivated": "Этот пользователь больше не активен."
     }
