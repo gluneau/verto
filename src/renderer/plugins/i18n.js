@@ -8,6 +8,8 @@ import pl from '../assets/locales/pl.json'
 import el from '../assets/locales/el.json'
 import zh from '../assets/locales/zh.json'
 import nl from '../assets/locales/nl.json'
+import az from '../assets/locales/az.json'
+import pt from '../assets/locales/pt.json'
 import fil from '../assets/locales/fil.json'
 
 Vue.use(VueI18n)
@@ -15,5 +17,5 @@ Vue.use(VueI18n)
 export const i18n = new VueI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
-  messages: { en, fr, es, sr, pl, el, zh, nl, fil } // set locale messages
+  messages: { en, fr, es, sr, pl, el, zh, nl, az, pt, fil } // set locale messages
 })
