@@ -183,7 +183,7 @@
         "storeloc": "Store it on your computers local drive.",
         "emailit": "Email it.",
         "cloud": "Store on the cloud.",
-        "save": "Save"
+        "save": "Сохранить"
     },
     "RequestNativeChainAddress": {
         "header": "Request Address",
