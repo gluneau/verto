@@ -164,11 +164,11 @@
         "change": "Сменить пароль к Verto",
         "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
         "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Изменяет пароль для доступа к Verto. После выбора все настройки шифруются с использованием нового пароля."
     },
     "BackupWallet": {
-        "folder": "Select Folder",
-        "backup": "Backup",
+        "folder": "Выберите папку",
+        "backup": "Резервная копия",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
         "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
@@ -188,7 +188,7 @@
     "RequestNativeChainAddress": {
         "header": "Request Address",
         "button": "Allocate Address",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
+        "err_noAddressAvailable": "Нет доступного адреса для этой сети. Пожалуйста, попробуйте еще раз.",
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "Вы должны подождать час, прежде чем запрашивать новый адрес.",
         "first_p": "Применяются следующие правила:",
@@ -220,8 +220,8 @@
     },
     "Countdown": {
         "time_remaining": "Осталось времени",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "mins": "Минут",
+        "seconds": "секунд"
     },
     "VenueAssignAddress": {
         "header": "Venue Assign Address",
