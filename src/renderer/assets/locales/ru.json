@@ -1,6 +1,6 @@
 {
     "Welcome": {
-        "welcometo": "ДОБРО ПОЖАЛОВАТЬ В",
+        "welcometo": "ПРИВЕТСТВУЕМ В",
         "welcomeback": "С возвращением!",
         "password": "Пароль",
         "nopassword": "Для кошелька не установлен пароль. Пожалуйста, сначала создайте пароль.",
@@ -150,7 +150,7 @@
         "additional": "Дополнительные Бонусы",
         "bonus": "Бонус",
         "soon": "Скоро",
-        "getvtx": "Получить VTX за",
+        "getvtx": "Купить VTX за",
         "native_chain_address": "Адрес в своей сети",
         "available_for": "Адрес действителен до",
         "native_chain_header": "Адрес в своей сети"
@@ -189,7 +189,7 @@
         "header": "Запрос адреса",
         "button": "Предоставить адрес",
         "err_noAddressAvailable": "Нет доступного адреса для этой сети. Пожалуйста, попробуйте еще раз.",
-        "err_pendingTransactionsExist": "Есть транзакции в ожидании",
+        "err_pendingTransactionsExist": "Есть транзакции в обработке",
         "err_investor_must_wait": "Вы должны подождать час, прежде чем запрашивать новый адрес.",
         "first_p": "Применяются следующие правила:",
         "second_p": "1. Полученный вами адрес действителен только в течение ограниченного периода времени.",
@@ -224,7 +224,7 @@
         "seconds": "секунд"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
+        "header": "Адрес Venue для назначения",
         "venue_username": "Имя пользователя Venue",
         "venue_password": "Пароль Venue",
         "bad_credentials": "Предоставленные учетные данные неверны.",
