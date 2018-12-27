@@ -104,7 +104,7 @@
     },
     "TransactionHistory": {
         "history": "Получить историю VTX",
-        "native": "Native Currency",
+        "native": "Внутренняя валюта",
         "amount": "Количество",
         "ratio": "Курс конвертации",
         "confirmation": "Подтверждение",
@@ -150,7 +150,7 @@
         "additional": "Дополнительные Бонусы",
         "bonus": "Бонус",
         "soon": "Скоро",
-        "getvtx": "Get VTX With",
+        "getvtx": "Получить VTX за",
         "native_chain_address": "Native Chain Address",
         "available_for": "Адрес действителен до",
         "native_chain_header": "Native Chain Address"
