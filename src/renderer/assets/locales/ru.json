@@ -152,7 +152,7 @@
         "soon": "Скоро",
         "getvtx": "Get VTX With",
         "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
+        "available_for": "Адрес действителен до",
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
@@ -162,8 +162,8 @@
         "confirm": "Подтвердить новый пароль к Verto",
         "required": "Все поля обязательны для заполнения.",
         "change": "Сменить пароль к Verto",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
+        "recommended": "Рекомендуется сначала сделать резервную копию текущей конфигурации Verto, прежде чем менять пароль. Вы можете сделать резервную копию Verto ",
+        "here": "здесь",
         "access": "Изменяет пароль для доступа к Verto. После выбора все настройки шифруются с использованием нового пароля."
     },
     "BackupWallet": {
