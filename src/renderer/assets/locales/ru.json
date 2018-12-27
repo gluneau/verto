@@ -179,10 +179,10 @@
         "file": "Выберите файл",
         "choose": "Выберите пароль для кошелька",
         "confirm": "Подтвердите пароль для кошелька",
-        "storeext": "Store on an external drive, wallet, or USB key.",
-        "storeloc": "Store it on your computers local drive.",
-        "emailit": "Email it.",
-        "cloud": "Store on the cloud.",
+        "storeext": "Сохраните на внешнем диске, кошельке или USB-ключе.",
+        "storeloc": "Сохраните на локальный диск компьютера.",
+        "emailit": "Отправьте по e-mail.",
+        "cloud": "Сохраните в облаке.",
         "save": "Сохранить"
     },
     "RequestNativeChainAddress": {
