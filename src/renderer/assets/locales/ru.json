@@ -123,7 +123,7 @@
     "SettingsView": {
         "settings": "Настройки",
         "updates": "Проверить обновления",
-        "whitelist": "Whitelist",
+        "whitelist": "Белый список",
         "blocktopus": "Связать с Blocktopus",
         "manager": "Управление кошельком",
         "change": "Пароль",
@@ -197,7 +197,7 @@
         "third_p": "3. Вы можете запросить только один адрес родной сети в час.",
         "access": "Я понимаю и согласен",
         "select_currency": "Виберите родную сеть",
-        "time_remaining": "Available In"
+        "time_remaining": "Доступен через"
     },
     "NotWhitelisted": {
         "header": "Получить VTX",
