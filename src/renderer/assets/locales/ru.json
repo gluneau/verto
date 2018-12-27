@@ -189,7 +189,7 @@
         "header": "Request Address",
         "button": "Allocate Address",
         "err_noAddressAvailable": "Нет доступного адреса для этой сети. Пожалуйста, попробуйте еще раз.",
-        "err_pendingTransactionsExist": "Pending transactions exist",
+        "err_pendingTransactionsExist": "Есть транзакции в ожидании",
         "err_investor_must_wait": "Вы должны подождать час, прежде чем запрашивать новый адрес.",
         "first_p": "Применяются следующие правила:",
         "second_p": "1. Полученный вами адрес действителен только в течение ограниченного периода времени.",
