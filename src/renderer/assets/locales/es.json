@@ -55,24 +55,24 @@
     "SaveYourKeys": {
         "strategy": "Planee una estrategia para el almacenamiento físico de su llave privada. La estrategia de almacenamiento debería estar pensada a largo plazo, incluyendo:",
         "physical": "<b>Seguridad Física:</b> Bóvedas de cualquier tipo que proporcionen la protección que busca. Piense en algún lugar que usted sepa sea seguro contra robos así como también de los elementos externos. Algunos ejemplos son: un hogar, un banco o un abogado. Usted puede escoger proteger su llave al almacenar copias de la misma en múltiples lugares.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "legacy": "<b>Legado:</b>Las cosas pasan. La vida termina. Usted necesita realizar un plan para la transferencia de su monedero a alguien más. En algunos casos eso puede ser un testamento, por favor considere sus opciones cuidadosamente. La opción es suya.",
         "agree": "Estoy de acuerdo con los términos y condiciones",
         "responsible": "Yo soy totalmente responsable por la gestión de seguridad de mi llave privada",
         "access": "Entiendo que Volentix y/o sus socios nunca tendrán acceso a mi llave privada",
         "wifi": "Entiendo que el WIFI se desactivará temporalmente durante la generación de claves",
-        "create": "Create",
-        "save_keys": "Save File"
+        "create": "Crear",
+        "save_keys": "Guardar archivo"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Anota",
         "understand": "Entiendo que la llave privada no se almacena en Verto y no puede ser recuperada.",
-        "showPrivate": "Show Private",
-        "hidePrivate": "Hide Private",
-        "showPublic": "Show Public",
-        "hidePublic": "Hide Public",
+        "showPrivate": "Muestra la llave privada",
+        "hidePrivate": "Esconde la llave privada",
+        "showPublic": "Muestra la llave pública",
+        "hidePublic": "Esconde la llave pública",
         "already": "El nombre o la llave ya ha sido usada.",
         "mustname": "Debe proporcionar un nombre para su llave.",
-        "walletname": "Give Wallet Name: ie Savings",
+        "walletname": "Coloque un nombre al monedero, e. g: Ahorros",
         "writedown": "Escriba sus claves.",
         "privkey": "Llave privada",
         "pubkey": "Llave pública",
@@ -113,12 +113,12 @@
         "phase": "Bonus de Fase",
         "additional": "Bonus Adicional",
         "total": "Total",
-        "received": "Received",
+        "received": "Recibido",
         "converted": "Convertido",
         "pending": "Pendiente",
         "confirmed": "Confirmado",
         "approved": "Aprobado",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/6 Bloques confirmados"
     },
     "SettingsView": {
         "settings": "Ajustes",
@@ -135,8 +135,8 @@
         "language": "Lenguaje",
         "help": "Ayuda",
         "optionsdd": " Opciones",
-        "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "vespucci_open": "Vespucci Abrir",
+        "current_wallet": "Monedero Actual"
     },
     "AssociateView": {
         "username": "Nombre de Usuario Blocktopus",
@@ -150,7 +150,7 @@
         "additional": "Bonus Adicionales",
         "bonus": "Bonus",
         "soon": "Próximamente",
-        "getvtx": "Get VTX With",
+        "getvtx": "Obtén VTX con",
         "native_chain_address": "Dirección Nativa de Cadena",
         "available_for": "Dirección Disponible Hasta",
         "native_chain_header": "Native Chain Address"
