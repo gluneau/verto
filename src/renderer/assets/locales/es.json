@@ -153,10 +153,10 @@
         "getvtx": "Obtén VTX con",
         "native_chain_address": "Dirección Nativa de Cadena",
         "available_for": "Dirección Disponible Hasta",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Dirección nativa de cadena"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
+        "header": "Cambiar contraseña",
         "current": "Contraseña Verto Actual",
         "new": "Nueva Contraseña Verto",
         "confirm": "Confirmar Nueva Contraseña Verto",
@@ -164,7 +164,7 @@
         "change": "Cambiar la Contraseña Verto",
         "recommended": "Es recomendado que primero cree un reapldo de la configuración actual de Verto antes de cambiar la contraseña. Puede crear una copia de seguridad de Verto ",
         "here": "aquí",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Cambia la contraseña de acceso a Verto. Una vez seleccionada, toda la configuración es cifrada usando la nueva contraseña."
     },
     "BackupWallet": {
         "folder": "Seleccionar Carpeta",
@@ -175,7 +175,7 @@
         "select": "Seleccionar 'Respaldar Monedero'"
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Guardar archivo",
         "file": "Escoger archivo",
         "choose": "Escoger Contraseña del Monedero",
         "confirm": "Confirmar contraseña del Monedero",
@@ -183,7 +183,7 @@
         "storeloc": "Almacenarlo en el disco local de la computadora.",
         "emailit": "Enviarlo por correo electrónico.",
         "cloud": "Almacenarlo en la nube.",
-        "save": "Save"
+        "save": "Guardar"
     },
     "RequestNativeChainAddress": {
         "header": "Solicitar la dirección",
@@ -191,20 +191,20 @@
         "err_noAddressAvailable": "No hay dirección disponible para esa cadena. Por favor, inténtelo de nuevo.",
         "err_pendingTransactionsExist": "Existen transacciones pendientes",
         "err_investor_must_wait": "Debe esperar una hora antes de solicitar una nueva dirección.",
-        "first_p": "The following rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "first_p": "Las siguientes reglas aplican:",
+        "second_p": "1. La dirección que reciba es solamente válida por un período limitado de tiempo.",
+        "second_p_point_1": "2. Cualquier transacción que envíe luego del período de alocación puede perderse.",
+        "third_p": "3. Usted solamente es capaz de solicitar una dirección nativa de cadena por hora.",
         "access": "Entiendo y acepto",
         "select_currency": "Seleccionar una cadena nativa",
         "time_remaining": "Disponible en"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "Obtén VTX",
         "kyc": "KYC",
-        "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
+        "whitelist": "Lista blanca",
+        "kyc_1": "Para obtener VTX, los inversores deben realizar el proceso de Conocer al Comprador (mejor conocido como Know Your Customer en inglés) con uno de nuestros socios de confianza. El proceso es para asegurarnos que permanezcamos en cumplimiento con los entes reguladores en su región. Note que este proceso solo se debe realizar una vez antes de ser aceptado como contribuyente potencial. Note que esta selección asociará este monedero con su documentación KYC.",
+        "link_associate": "Ya ha realizado el proceso KYC",
         "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
         "link_kyc": "Begin KYC Process",
         "assign_verto_to_venue": "Assign  Verto To Venue",
