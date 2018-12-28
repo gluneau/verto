@@ -6,13 +6,13 @@
         "nopassword": "No se ha fijado una contraseña para el monedero. Por favor crea una contraseña primero.",
         "incorrect": "La contraseña Verto ingresada es incorrecta.",
         "login": "Iniciar sesión",
-        "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
+        "create": "Comenzar",
+        "subtitle_message": "Verto es tu portal hacia Volentix.",
         "join_message": "Estamos felices de que estés con nosotros."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Crear contraseña Verto",
+        "important": "IMPORTANTE",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
