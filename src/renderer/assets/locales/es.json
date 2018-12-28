@@ -208,7 +208,7 @@
         "second_p": "Si ha realizado el proceso, de todas formas, si usted no ha asociado su monedero con su cuenta, por favor ingrese al proveedor del servicio KYC para asociarlo. Este paso es requerido antes de obtener VTX. Note que si usted realizó el proceso KYC dentro del monedero no debe realizar este paso.",
         "link_kyc": "Comenzar el proceso KYC",
         "assign_verto_to_venue": "Asignar Verto al Lugar",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "assign_verto_to_venue_desc": "Si eres un miembro de Venue, debes asociar el monedero para poder reclamar su VTX. Note que también necesitará completar el proceso KYC. Una vez ambas acciones sean completadas, su VTX será aplicado a este monedero.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
