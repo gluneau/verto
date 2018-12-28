@@ -205,9 +205,9 @@
         "whitelist": "Lista blanca",
         "kyc_1": "Para obtener VTX, los inversores deben realizar el proceso de Conocer al Comprador (mejor conocido como Know Your Customer en inglés) con uno de nuestros socios de confianza. El proceso es para asegurarnos que permanezcamos en cumplimiento con los entes reguladores en su región. Note que este proceso solo se debe realizar una vez antes de ser aceptado como contribuyente potencial. Note que esta selección asociará este monedero con su documentación KYC.",
         "link_associate": "Ya ha realizado el proceso KYC",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
+        "second_p": "Si ha realizado el proceso, de todas formas, si usted no ha asociado su monedero con su cuenta, por favor ingrese al proveedor del servicio KYC para asociarlo. Este paso es requerido antes de obtener VTX. Note que si usted realizó el proceso KYC dentro del monedero no debe realizar este paso.",
+        "link_kyc": "Comenzar el proceso KYC",
+        "assign_verto_to_venue": "Asignar Verto al Lugar",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
         "click_venue": "Venue"
     },
