@@ -224,13 +224,13 @@
         "seconds": "segundos"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "header": "Asignar dirección Venue",
+        "venue_username": "Nombre de usuario Venue",
+        "venue_password": "Contraseña Venue",
+        "bad_credentials": "Las credenciales proporcionadas no son válidas.",
+        "important_info": "Está información no es guardada dentro de Verto.",
+        "email_verification_required": "Debe verificar primero su correo electrónico con Venue antes de asociar su monedero.",
+        "verto_address_not_unique": "La dirección ya ha sido asignada a otro usuario.",
+        "user_deactivated": "Este usuario no se encuentra activo."
     }
 }
