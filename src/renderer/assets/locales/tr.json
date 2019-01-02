@@ -201,32 +201,32 @@
     },
     "NotWhitelisted": {
         "header": "VTX Al",
-        "kyc": "KYC",
+        "kyc": "SMT",
         "whitelist": "Beyaz Liste",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "kyc_1": "VTX almak için, yatırımcılar güvenilen iş ortaklarımızdan biriyle SMT(Sizin Müşterinizi Tanımak) 'lidir. Bu işlem sizin bölgenizdeki düzenleyici kurumlar ile bizim uyumlu kalmamızı sağlamak içindir. Bu sürecin potansiyel bir iştirakçi olarak kabul edilmeden önce sadece bir kez tamamlanması gerektiğini unutmayın. Bu seçimin bu cüzdanı SMT uygulamanızla ilişkilendireceğini unutmayın.",
+        "link_associate": "Zaten SMT'de",
+        "second_p": "Eğer zaten SMT'niz var ise, ancak, bu cüzdanı hesabınızla ilişkilendirmediyseniz, lütfen bunu yapmak için SMT sağlayıcısına giriş yapın. Bu adım VTX alabilmeniz için gereklidir. Unutmayın ki cüzdan içinde SMT'deyseniz bu adımı yapmanız gerekmeyecektir.",
+        "link_kyc": "SMT İşlemini Başlat",
+        "assign_verto_to_venue": "Venue'ye Verto'yu Atamak",
+        "assign_verto_to_venue_desc": "Eğer Venue'nun bir üyesiyseniz, VTX'inizi almak için bir cüzdanı ilişkilendirmeniz gerekir. Aynı zamanda SMT işlemini tamamlanmamış olmanız gerekeceğini de unutmayın. Her iki işlem tamamlandıktan sonra, VTX'iniz bu cüzdana tahsis edilecektir.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "SMT Zaten Tahsis Edildi",
+        "first_p": "SMT'de hesabına zaten bir Verto Genel Adresi tahsis edildi."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Cüzdan Durumu Kontrol Ediliyor"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Kalan Süre",
+        "mins": "Dakikalar",
+        "seconds": "saniyeler"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
+        "header": "Venue Adres Atamak",
+        "venue_username": "Venue Kullanıcı Adı",
+        "venue_password": "Venue Şifre",
         "bad_credentials": "The credentials provided are invalid.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
