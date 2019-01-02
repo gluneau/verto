@@ -34,17 +34,17 @@
     },
     "WalletManager": {
         "used": "İsim veya cüzdan zaten kullanıldı.",
-        "both": "You must supply both a name and the public key for the wallet.",
-        "submit": "Submit",
-        "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
-        "cancel": "Cancel",
-        "delete": "Delete",
-        "keyhere": "Wallet Public Key Here",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "both": "Cüzdan için bir isim ve genel anahtarın ikisini de sağlamalısınız.",
+        "submit": "Gönder",
+        "cannotrecover": "Verto bir defa silinen cüzdanları kurtaramaz. Kesin silmek için sil butonuna tekrar basın.",
+        "cancel": "İptal",
+        "delete": "Sil",
+        "keyhere": "Cüzdan Genel Anahtarı Burada",
+        "header": "Cüzdan Yöneticisi",
+        "wallets": "Cüzdanlar"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Anahtarlarınızı Güvende Tutun",
         "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "Write your key down.",
