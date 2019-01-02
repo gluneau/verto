@@ -29,6 +29,7 @@
                     <img v-if="$i18n.locale == 'fr'" src="~@/assets/img/lang/fr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'ru'" src="~@/assets/img/lang/ru.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'es'" src="~@/assets/img/lang/es.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+                    <img v-if="$i18n.locale == 'tr'" src="~@/assets/img/lang/tr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'el'" src="~@/assets/img/lang/el.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'sr'" src="~@/assets/img/lang/sr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
                     <img v-if="$i18n.locale == 'pl'" src="~@/assets/img/lang/pl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
@@ -77,6 +78,12 @@
             <a class="" @click="updateLanguage('ru')">
               <img src="~@/assets/img/lang/ru.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
+            <a class="" @click="updateLanguage('es')">
+              <img src="~@/assets/img/lang/es.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
+            <a class="" @click="updateLanguage('tr')">
+              <img src="~@/assets/img/lang/tr.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
+            </a>
             <a class="" @click="updateLanguage('nl')">
               <img src="~@/assets/img/lang/nl.png" class="br-100 ba b--black-10 h2 w2 mh2" alt="avatar">
             </a>
@@ -115,7 +122,7 @@ export default {
   data() {
     return {
       open: false,
-      langs: ['en', 'fr', 'ru', 'pl', 'zh', 'nl', 'az', 'pt', 'sr', 'fil'], // 'es', 'el',
+      langs: ['en', 'fr', 'ru', 'es', 'tr', 'pl', 'zh', 'nl', 'az', 'pt', 'sr', 'fil'], // 'el',
       showDropDownOptions: true,
       showDropDownLanguage: true,
       showDropDownOptionsChildren: false,
