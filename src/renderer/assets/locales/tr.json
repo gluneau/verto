@@ -45,15 +45,15 @@
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Anahtarlarınızı Güvende Tutun",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
-        "back": "Back"
+        "before": "Devam etmeden önce, özel anahtarınızın yönetiminden, güvenliğinden, korunmasından, ve kurtarılmasından tamamen sizin sorumlu olduğunuzu not etmeniz önemlidir. Volentix ekosisteminin ortakları dahil başka kimse yok.",
+        "choices": "Özel anahtarınızı sürdürmek  için 2 seçeneğiniz var. Her iki yöntem de özel anahtarınızın güvende olmasını sağlamak için tasarlanmıştır.",
+        "first": "Anahtarınızı bir yere yazın.",
+        "second": "Veya, şifre korumalı bir dosyada anahtarınızı şifreleyin.",
+        "next": "Sonraki",
+        "back": "Geri"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Özel anahtarınızın fiziksel muhafazası için bir strateji planlayın. Bu muhafaza stratejisi aşağıdakileri de dahil eden uzun vadeli düşünmeyi içermelidir:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
