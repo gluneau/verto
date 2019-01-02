@@ -58,14 +58,14 @@
         "legacy": "<b>Miras:</b> Bir şeyler olur. Hayat biter. Cüzdanınızın başka birine transferi için plan yapmalısınız. İsteğe bağlı olabilecek bazı durumlarda, lütfen seçeneklerinizi dikkatlice düşünün. Seçim sizindir.",
         "agree": "Şartları & Koşulları kabul ediyorum",
         "responsible": "Özel anahtarımın güvenlik yönetiminden tamamen ben sorumluyum",
-        "access": "I understand that Volentix and/or partners never have access to my private key",
-        "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "create": "Create",
-        "save_keys": "Save File"
+        "access": "Volentix ve/veya ortaklarının asla özel anahtarıma erişmeyeceğini anlıyorum",
+        "wifi": "Anahtarların oluşturulması sırasında WIFI'in geçici olarak devre dışı bırakılacağını anlıyorum",
+        "create": "Oluştur",
+        "save_keys": "Dosyayı Kaydet"
     },
     "DisplayKey": {
-        "header": "Write It Down",
-        "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
+        "header": "Yaz",
+        "understand": "Özel anaharın Verto'da saklanmayacağını ve kurtarılamayacağını anlıyorum.",
         "showPrivate": "Show Private",
         "hidePrivate": "Hide Private",
         "showPublic": "Show Public",
