@@ -54,7 +54,7 @@
     },
     "SaveYourKeys": {
         "strategy": "Özel anahtarınızın fiziksel muhafazası için bir strateji planlayın. Bu muhafaza stratejisi aşağıdakileri de dahil eden uzun vadeli düşünmeyi içermelidir:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "physical": "<b>Fiziksel Güvenlik:</b> Aradığınız korumayı sağlayan kasa daireleri. Hırsızlık gibi faktörlerden tehlikesiz olduğunu bildiğiniz bir yer düşünün. bir ev veya banka güvenliği veya avukat bazı örneklerdir. anahtarlarınızı korumak için kopyalarını birden çok yerde saklayabilirsiniz.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
