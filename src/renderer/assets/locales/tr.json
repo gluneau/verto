@@ -1,12 +1,12 @@
 {
     "Welcome": {
-        "welcometo": "WELCOME TO",
-        "welcomeback": "Welcome Back!",
-        "password": "Password",
-        "nopassword": "No Password Has Been Set For The Wallet. Please Create A Password First.",
-        "incorrect": "The Verto Password Is Incorrect.",
-        "login": "Login",
-        "create": "Begin",
+        "welcometo": "HOŞ GELDİNİZ",
+        "welcomeback": "Yeniden Hoş Geldiniz!",
+        "password": "Şifre",
+        "nopassword": "Bu Cüzdan İçin Hiç Şifre Ayarlanmadı. Lütfen Önce Bir Şifre Oluşturun.",
+        "incorrect": "Verto Şifresi Yanlış.",
+        "login": "Giriş",
+        "create": "Başlangıç",
         "subtitle_message": "Verto is your gateway into Volentix.",
         "join_message": "We're glad you've joined us."
     },
