@@ -105,9 +105,9 @@
     "TransactionHistory": {
         "history": "إحصل على سجل في تي أكس",
         "native": "العملة المحليّة",
-        "amount": "Amount",
-        "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "amount": "مبلغ",
+        "ratio": "معدل التحويل",
+        "confirmation": "تصديق",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
         "phase": "Phase Bonus",
