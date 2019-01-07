@@ -135,24 +135,24 @@
         "language": "لغة",
         "help": "مساعدة",
         "optionsdd": " خيارات",
-        "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "vespucci_open": "فسبوتشي مفتوح",
+        "current_wallet": "محفظة حالية"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "اسم مستخدم بلوكتوبوس",
+        "password": "كلمة مرور بلوكتوبوس"
     },
     "GetVtx": {
-        "vtxsold": "VTX Sold",
-        "round": "Bonus Round",
-        "amount": "Bonus Amount",
-        "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
-        "bonus": "Bonus",
-        "soon": "Coming Soon",
-        "getvtx": "Get VTX With",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
+        "vtxsold": "في تي أكس التي بيعت",
+        "round": "جولة المكافأة",
+        "amount": "مبلغ المكافأة",
+        "current": "السعر الحالي لفي تي أكس",
+        "additional": "مافآت إضافية",
+        "bonus": "مكافأة",
+        "soon": "سيأتي قريباً",
+        "getvtx": "إحصل على في تي أكس مع",
+        "native_chain_address": "العنوان الأصلي للسلسلة",
+        "available_for": "العنوان متاح إلى أن",
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
