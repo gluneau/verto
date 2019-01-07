@@ -126,15 +126,15 @@
         "whitelist": "القائمة البيضاء",
         "blocktopus": "التعاون مع بلوكتوبوس",
         "manager": "مدير المحفظة",
-        "change": "Password",
-        "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
-        "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options",
+        "change": "كلمة مرور",
+        "backup": "محفظة بديلة",
+        "gettrans": "الحصول على سجل عمليات في تي أكس",
+        "logout": "تسجيل خروج",
+        "telegram": "تلغرام",
+        "sendmail": "ارسال بريد",
+        "language": "لغة",
+        "help": "مساعدة",
+        "optionsdd": " خيارات",
         "vespucci_open": "Vespucci Open",
         "current_wallet": "Current Wallet"
     },
@@ -231,6 +231,6 @@
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
         "verto_address_not_unique": "لقد تم نسبقاً تكليف مستخدم آخر بالعنوان.",
-        "user_deactivated": "This user is no longer active."
+        "user_deactivated": "هذا المستخدم لم يعد فعال."
     }
 }
