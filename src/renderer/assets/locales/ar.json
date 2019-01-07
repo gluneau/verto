@@ -27,15 +27,15 @@
         "wallets": "محافظ",
         "choose": "اختر فتح محفظة عبر الضغط على اسمها فحسب.",
         "delete": "حذف محفظة",
-        "trash": "Click on the 'Trash' icon",
-        "enter": "Enter your password.",
-        "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets.",
-        "save": "Save"
+        "trash": "إضغط على رمز 'سلة المهملات'",
+        "enter": "أدخل كلمة المرور الخاصة بك.",
+        "note": "<b>NOTE:</b> فيرتو غير قادر على استرجاع المحافظ المحذوفة.",
+        "save": "حفظ"
     },
     "WalletManager": {
-        "used": "The name or the wallet has already been used.",
-        "both": "You must supply both a name and the public key for the wallet.",
-        "submit": "Submit",
+        "used": "لقد تم استخدام الإسم أو المحفظة سابقاً.",
+        "both": "يجب عليك توفير الإسم و المفتاح العام معاً لأجل المحفظة.",
+        "submit": "إرسال",
         "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
         "cancel": "Cancel",
         "delete": "Delete",
