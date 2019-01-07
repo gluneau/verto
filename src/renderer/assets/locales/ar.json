@@ -212,8 +212,8 @@
         "click_venue": "فينيو"
     },
     "KycAlreadyAssociated": {
-        "header": "تم رصد إعرف عميلك",
-        "first_p": "تم رصد عنوان فيرتو العام للحساب الذي يمتلك إعرف عميلك."
+        "header": "تم تخصيص إعرف عميلك",
+        "first_p": "تم تخصيص عنوان عام فيرتو للحساب الذي حصل على إعرف عميلك."
     },
     "BeginGetVtx": {
         "header": "التدقيق في حالة المحفظة"
@@ -224,7 +224,7 @@
         "seconds": "ثوان"
     },
     "VenueAssignAddress": {
-        "header": "العنوان المعين لفينيو",
+        "header": "Venue Assign Address",
         "venue_username": "اسم مستخدم فينيو",
         "venue_password": "كلمة مرور فينيو",
         "bad_credentials": "الإعتمادات المتوفرة غير صحيحة.",
