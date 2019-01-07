@@ -194,9 +194,9 @@
         "first_p": "القواعد التالية تطبق:",
         "second_p": "1. العنوان الذي استلمته صالح فقط لقترة محدودة من الزمن.",
         "second_p_point_1": "2. أي معاملة ترسلها بعد فترة التوزيع من الممكن أن تضيع.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
-        "access": "I understand and agree",
-        "select_currency": "Select A Native Chain",
+        "third_p": "3. بإستطاعتك فقط طلب عنوان متسلسل أصلي واحد كل ساعة.",
+        "access": "أنا أفهم وأوافق",
+        "select_currency": "إختر سلسلة أصلية",
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
