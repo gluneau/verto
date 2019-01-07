@@ -81,21 +81,21 @@
         "goodpaper": "استخدم ورقة جيدة بحيث أنها تدوم.",
         "polaroid": "إذا أردت إلتقاط صورة، استخدم منصة غير رقمية مثل 35 ملم أو صورة فورية.",
         "once": "عند الإنتهاء",
-        "look": "Look for a warm, safe, secure, dry place such as a bank safety deposit box.",
-        "provisions": "Add provisions to your will on who and how the transfer of your wallet will be conducted.",
-        "donot": "Do Not",
-        "fold": "Fold the paper.",
-        "share": "Share with anyone.",
-        "picture": "Take a picture with your cell phone.",
-        "screenshot": "Take a screenshot.",
-        "copied": "Key copied"
+        "look": "إبحث عن مكان دافئ، أمن، مضمون، جاف مثل صندوق ودائع مصرفي.",
+        "provisions": "أضف نصوص لوصيتك حول من و كيف سيتم إجاء عملية تحويل محفظتك.",
+        "donot": "لا",
+        "fold": "أطوي الورقة.",
+        "share": "شارك مع أي شخص.",
+        "picture": "إلتقط صورة من خلال هاتفك الخلوي.",
+        "screenshot": "خذ لقطة للشاشة.",
+        "copied": "تم نسخ المفتاح"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "واصل"
     },
     "Main": {
-        "address": "Wallet address",
-        "loading": "Loading data",
+        "address": "عنوان المحفظة",
+        "loading": "تحميل البيانات",
         "history": "Transaction History",
         "transactions": "You have no transactions",
         "getvtx": "Get VTX",
