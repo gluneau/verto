@@ -96,15 +96,15 @@
     "Main": {
         "address": "عنوان المحفظة",
         "loading": "تحميل البيانات",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
-        "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "history": "سجل المعاملات",
+        "transactions": "ليس لديك معاملات",
+        "getvtx": "إحصل على في تي أكس",
+        "number": "ن<sup>o</sup>",
+        "copied": "منسوخ"
     },
     "TransactionHistory": {
-        "history": "Get VTX History",
-        "native": "Native Currency",
+        "history": "إحصل على سجل في تي أكس",
+        "native": "العملة المحليّة",
         "amount": "Amount",
         "ratio": "Conversion Ratio",
         "confirmation": "Confirmation",
@@ -163,12 +163,12 @@
         "required": "All fields are required.",
         "change": "Change Verto Password",
         "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "here": "هنا",
+        "access": "غير كلمة المرور للدخول إلى فيرتو. فور الإختيار، سيتم تشفير جميع التشكيلات باستخدام كلمة المرور الجديدة."
     },
     "BackupWallet": {
-        "folder": "Select Folder",
-        "backup": "Backup",
+        "folder": "اختر ملف",
+        "backup": "إحتياطي",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
         "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
