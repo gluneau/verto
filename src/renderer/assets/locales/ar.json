@@ -153,16 +153,16 @@
         "getvtx": "إحصل على في تي أكس مع",
         "native_chain_address": "العنوان الأصلي للسلسلة",
         "available_for": "العنوان متاح إلى أن",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "العنوان الأصلي للسلسلة"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
-        "confirm": "Confirm New Verto Password",
-        "required": "All fields are required.",
-        "change": "Change Verto Password",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
+        "header": "تغيير كلمة المرور",
+        "current": "كلمة مرور فيرتو الحالية",
+        "new": "كلمة مرور فيرتو الجديدة",
+        "confirm": "تأكيد كلمة مرور فيرتو الجديدة",
+        "required": "كافة الحقول إلزامية.",
+        "change": "تغيير كلمة مرور فيرتو",
+        "recommended": "الموصى به أن تقوم أولاً بتعزيز تشكيلات فيرتو الحالية قبل تغيير كلمة المرور. يمكنك دعم فيرتو ",
         "here": "هنا",
         "access": "غير كلمة المرور للدخول إلى فيرتو. فور الإختيار، سيتم تشفير جميع التشكيلات باستخدام كلمة المرور الجديدة."
     },
