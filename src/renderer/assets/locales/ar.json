@@ -224,12 +224,12 @@
         "seconds": "ثوان"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
+        "header": "تعيين عنوان فينيو",
         "venue_username": "اسم مستخدم فينيو",
         "venue_password": "كلمة مرور فينيو",
-        "bad_credentials": "الإعتمادات المتوفرة غير صحيحة.",
-        "important_info": "هذه المعلومة لم يتم تخزينها صمن فيرتو.",
-        "email_verification_required": "يجب عليك أولاً التأكد من بريدك الإلكتروني مع فينيو قبل الربط مع المحفظة.",
+        "bad_credentials": "الإعتمادات المقدمة غير صحيحة.",
+        "important_info": "لم يتم تخزين هذه المعلومة ضمن فيرتو.",
+        "email_verification_required": "يجب عليك أولاً تأكيد بريدك الإلكتروني مع فينيو قبل إشراك المحفظة.",
         "verto_address_not_unique": "لقد تم نسبقاً تكليف مستخدم آخر بالعنوان.",
         "user_deactivated": "هذا المستخدم لم يعد فعال."
     }
