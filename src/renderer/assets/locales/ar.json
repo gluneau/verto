@@ -55,9 +55,9 @@
     "SaveYourKeys": {
         "strategy": "كوّن خطّة استراتيجية للتخزين الفعلي لمفتاحك الخاص. خطّة التخزين هذه يجب أن تتضمن تفكير طويل الأمد، بما في ذلك:",
         "physical": "<b>Physical Security:</b> أي نوع من الخزائن التي تؤمن الحماية التي تطلبها. فكّر في مكان و عناصر تعلم أنها بمأمن من السرقة. من الأمثلة هي المنزل أو خزنة المصرف، لأو محامي. يمكنك اختيار حماية مفاتيحك عبر تخزين نسخ عنها في أماكن متعددة.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
-        "agree": "I agree with the Terms & Conditions",
-        "responsible": "I am entirely responsible for the security managment of my private key",
+        "legacy": "<b>Legacy:</b> تحدث أشياء. تنتهي الحياة. يجب عليك أن تخطط لتحويل محفظتك لشخص آخر. في بعض الحالات من الممكن أن تكون هذه وصيّة، الرجاء أنظر في خياراتك بعناية. الخيار لك.",
+        "agree": "أنا أوافق على الشروط والأحكام",
+        "responsible": "أنا مسؤول كلياً عن الإدارة الأمنية لمفتاحي الخاص",
         "access": "I understand that Volentix and/or partners never have access to my private key",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
         "create": "Create",
