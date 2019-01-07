@@ -12,7 +12,7 @@
     },
     "CreateVertoPassword": {
         "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "important": "WICHTIG",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
