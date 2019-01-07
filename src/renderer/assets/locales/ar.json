@@ -118,14 +118,14 @@
         "pending": "قيد النظر",
         "confirmed": "تم تأكيده",
         "approved": "موافق عليه",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "6 قطع تم تأكيدها"
     },
     "SettingsView": {
-        "settings": "Settings",
-        "updates": "Check for Updates",
-        "whitelist": "Whitelist",
-        "blocktopus": "Associate with Blocktopus",
-        "manager": "Wallet Manager",
+        "settings": "الإعدادات",
+        "updates": "البحث عن تحديثات",
+        "whitelist": "القائمة البيضاء",
+        "blocktopus": "التعاون مع بلوكتوبوس",
+        "manager": "مدير المحفظة",
         "change": "Password",
         "backup": "Backup Wallet",
         "gettrans": "Get VTX Transaction History",
@@ -230,7 +230,7 @@
         "bad_credentials": "The credentials provided are invalid.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
+        "verto_address_not_unique": "لقد تم نسبقاً تكليف مستخدم آخر بالعنوان.",
         "user_deactivated": "This user is no longer active."
     }
 }
