@@ -6,13 +6,13 @@
         "nopassword": "Es wurde noch kein Passwort für die Wallet erstellt. Bitte erstelle zuerst ein Passwort.",
         "incorrect": "Das Verto-Passwort ist nicht korrekt.",
         "login": "Login",
-        "create": "Begin",
+        "create": "Los gehts",
         "subtitle_message": "Verto is your gateway into Volentix.",
         "join_message": "Wir sind froh, dass Sie uns beigetreten sind."
     },
     "CreateVertoPassword": {
         "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "important": "WICHTIG",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",

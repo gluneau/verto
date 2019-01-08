@@ -4,6 +4,7 @@ import en from '../assets/locales/en.json'
 import fr from '../assets/locales/fr.json'
 import ru from '../assets/locales/ru.json'
 import es from '../assets/locales/es.json'
+import ar from '../assets/locales/ar.json'
 import tr from '../assets/locales/tr.json'
 import sr from '../assets/locales/sr.json'
 import pl from '../assets/locales/pl.json'
@@ -19,5 +20,5 @@ Vue.use(VueI18n)
 export const i18n = new VueI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
-  messages: { en, fr, ru, es, tr, sr, pl, el, zh, nl, az, pt, fil } // set locale messages
+  messages: { en, fr, ru, es, ar, tr, sr, pl, el, zh, nl, az, pt, fil } // set locale messages
 })
