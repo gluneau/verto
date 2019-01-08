@@ -21,7 +21,7 @@
         "fillall": "Παρακαλώ συμπληρώστε όλα τα παραπάνω πεδία",
         "done": "Ολοκλήρωση",
         "addwallet": "Προσθήκη Πορτοφολιού",
-        "onlysupport": "For now, Verto only supports the ability to add public keys. To add a wallet, simply provide a name, the wallet address, and the Verto password.",
+        "onlysupport": "Προς το παρόν, το Verto υποστηρίζει μόνο την προσθήκη δημοσίων κλειδιών. Για να προσθέσετε ένα πορτοφόλι, παρακαλώ εισάγετε ένα όνομα, τη διεύθυνση του πορτοφολιού, και τον κωδικό Verto.",
         "createwallet": "Δημιουργία Πορτοφολιού",
         "createkey": "Δημιουργήστε ζεύγη δημόσιων/ιδιωτικών κλειδιών για ένα νέο πορτοφόλι. Σημειώστε πως <b>ΜΟΝΟ</b> το δημόσιο κλειδί αποθηκεύεται στο Verto. Είστε υπεύθυνοι για την διαχείριση των ιδιωτικών κλειδιών σας, την αποθήκευση και την ασφάλειά τους.",
         "wallets": "Πορτοφόλια",
@@ -40,39 +40,39 @@
         "cancel": "Άκυρο",
         "delete": "Διαγραφή",
         "keyhere": "Δημόσιο Κλειδί Πορτοφολιού Εδώ",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "header": "Διαχειριστής Πορτοφολιού",
+        "wallets": "Πορτοφόλια"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Κρατήστε τα κλειδιά σας ασφαλή",
         "before": "Πριν συνεχίσετε, είναι σημαντικό να σημειώσουμε πως είστε εξ ολοκλήρου υπεύθυνοι για τη διαχείριση, την ασφάλεια, την προστασία, και την ανάκτηση του ιδιωτικού σας κλειδιού. Κανένας άλλος, συμπεριλαμβανομένων των συνεργατών του Volentix.",
         "choices": "Έχετε 2 επιλογές για την αποθήκευση του ιδιωτικού σας κλειδιού. Και οι 2 μέθοδοι έχουν σχεδιαστεί για την εξασφάλιση του ιδιωτικού σας κλειδιού.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "first": "Γράψτε το κλειδί σας.",
+        "second": "Ή, κρυπτογραφήστε το κλειδί σας σε ένα αρχείο με κωδικό πρόσβασης.",
         "next": "Επόμενο",
         "back": "Επιστροφή"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "strategy": "Σχεδιάστε μια στρατηγική για την φυσική αποθήκευση του ιδιωτικού σας κλειδιού. Αυτή η στρατηγική πρέπει να είναι σχεδιασμένη με μακροπρόθεσμο σκοπό, όπως:",
+        "physical": "<b>Φυσική Ασφάλεια:</b> Θησαυροφυλάκια οποιουδήποτε είδους που προσφέρουν την ασφάλεια που επιθυμείτε. Σκεφτείτε ένα σημείο που είναι ασφαλές από κλοπές, καθώς και άλλα θέματα. Κάποια παραδείγματα είναι ένα σπίτι ή ένα χρηματοκιβώτιο τράπεζας, ή ένας δικηγόρος. Μπορείτε να επιλέξετε να προστατεύστε τα κλειδιά σας αποθηκεύοντας αντίγραφα σε πολλά μέρη.",
+        "legacy": "<b>Κληρονομιά:</b> Συμβαίνουν διάφορα πράγματα. Π.χ. η ζωή τελειώνει. Θα πρέπει να σχεδιάσετε ένα σχέδιο για τη μεταβίβαση του πορτοφολιού σας σε κάποιον τρίτο. Σε κάποιες περιπτώσεις, μπορεί να είναι μια διαθήκη, παρακαλούμε εξετάστε τις επιλογές σας προσεκτικά. Η επιλογή είναι δική σας.",
         "agree": "Αποδέχομαι τους Όρους και τις Προϋποθέσεις",
         "responsible": "Είμαι εξ ολοκλήρου υπεύθυνος για την ασφάλεια του ιδιωτικού μου κλειδιού",
         "access": "Κατανοώ ότι η Volentix και οι συνεργάτες της δεν έχουν πρόσβαση στο ιδιωτικό μου κλειδί",
         "wifi": "Κατανοώ ότι το WiFi θα απενεργοποιηθεί προσωρινά, όσο δημιουργούνται τα κλειδιά",
-        "create": "Create",
-        "save_keys": "Save File"
+        "create": "Δημιουργία",
+        "save_keys": "Αποθήκευση Αρχείου"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Γράψτε τα στοιχεία σε χαρτί",
         "understand": "Κατανοώ ότι το ιδιωτικό κλειδί δεν αποθηκεύεται στο Verto και ότι δε μπορεί να ανακτηθεί.",
-        "showPrivate": "Show Private",
-        "hidePrivate": "Hide Private",
-        "showPublic": "Show Public",
-        "hidePublic": "Hide Public",
+        "showPrivate": "Εμφάνιση Ιδιωτικού Κλειδιού",
+        "hidePrivate": "Απόκρυψη Ιδιωτικού Κλειδιού",
+        "showPublic": "Εμφάνιση Δημόσιου Κλειδιού",
+        "hidePublic": "Απόκρυψη Δημόσιου Κλειδιού",
         "already": "Το όνομα ή το κλειδί έχει ήδη χρησιμοποιηθεί.",
         "mustname": "Πρέπει να δώσετε ένα όνομα για το κλειδί σας.",
-        "walletname": "Give Wallet Name: ie Savings",
+        "walletname": "Ονομάστε το Πορτοφόλι: πχ Οικονομίες",
         "writedown": "Σημειώστε τα κλειδιά σας.",
         "privkey": "Ιδιωτικό Κλειδί",
         "pubkey": "Δημόσιο κλειδί",
@@ -113,12 +113,12 @@
         "phase": "Φάση Μπόνους",
         "additional": "Πρόσθετο Μπόνους",
         "total": "Σύνολο",
-        "received": "Received",
+        "received": "Εισερχόμενα",
         "converted": "Μετατράπηκαν",
         "pending": "Σε Εκκρεμότητα",
         "confirmed": "Επιβεβαιώθηκαν",
         "approved": "Εγκρίθηκαν",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/6 Επιβεβαιωμένα Block"
     },
     "SettingsView": {
         "settings": "Ρυθμίσεις",
@@ -135,8 +135,8 @@
         "language": "Γλώσσα",
         "help": "Βοήθεια",
         "optionsdd": " Επιλογές",
-        "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "vespucci_open": "Άνοιγμα Vespucci",
+        "current_wallet": "Τρέχον Πορτοφόλι"
     },
     "AssociateView": {
         "username": "Όνομα Χρήστη Blocktopus",
@@ -150,13 +150,13 @@
         "additional": "Πρόσθετα Μπόνους",
         "bonus": "Μπόνους",
         "soon": "Σύντομα Διαθέσιμο",
-        "getvtx": "Get VTX With",
+        "getvtx": "Αποκτήστε VTX Με",
         "native_chain_address": "Διεύθυνση Μητρικής Αλυσίδας",
         "available_for": "Διεύθυνση Διαθέσιμη Μέχρι",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Διεύθυνση Μητρικής Αλυσίδας"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
+        "header": "Αλλαγή Κωδικού Πρόσβασης",
         "current": "Τρέχων κωδικός Verto",
         "new": "Νέος Κωδικός Verto",
         "confirm": "Επιβεβαίωση Κωδικού Verto",
@@ -164,7 +164,7 @@
         "change": "Αλλαγή Κωδικού Verto",
         "recommended": "Συνίσταται να κάνετε αντίγραφο ασφαλείας της τρέχουσας ρύθμισης του Verto, πριν αλλάξετε τον κωδικό. Μπορείτε να κάνετε αντίγραφο ασφαλείας του Verto ",
         "here": "εδώ",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Αλλάζει τον κωδικό πρόσβασης του Verto. Μόλις επιλεχθεί, η διαμόρφωση κρυπτογραφείται με τον νέο κωδικό."
     },
     "BackupWallet": {
         "folder": "Επιλογή Φακέλου",
@@ -175,7 +175,7 @@
         "select": "Επιλέξτε \"Αντίγραφο Ασφαλείας Πορτοφολιού\""
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Αποθήκευση Αρχείου",
         "file": "Επιλογή αρχείου",
         "choose": "Επιλέξτε κωδικό Πορτοφολιού",
         "confirm": "Επιβεβαίωση κωδικού πορτοφολιού",
@@ -183,7 +183,7 @@
         "storeloc": "Αποθήκευση στον τοπικό δίσκο του υπολογιστή.",
         "emailit": "Αποστολή με Email.",
         "cloud": "Αποθήκευση στο cloud.",
-        "save": "Save"
+        "save": "Αποθήκευση"
     },
     "RequestNativeChainAddress": {
         "header": "Αίτηση Διεύθυνσης",
@@ -191,16 +191,16 @@
         "err_noAddressAvailable": "Δεν υπάρχουν διαθέσιμες διευθύνσεις σε αυτό το chain. Προσπαθήστε ξανά.",
         "err_pendingTransactionsExist": "Υπάρχουν συναλλαγές σε αναμονή",
         "err_investor_must_wait": "Θα πρέπει να περιμένετε μια ώρα, πριν ζητήσετε πάλι νέα διεύθυνση.",
-        "first_p": "The following rules apply:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "first_p": "Ισχύουν οι παρακάτω κανόνες:",
+        "second_p": "1. Η διεύθυνση που λαμβάνετε είναι έγκυρη μόνο για ένα περιορισμένο χρονικό διάστημα.",
+        "second_p_point_1": "2. Κάθε συναλλαγή που στέλνετε μετά από την περίοδο κατανομής μπορεί να χαθεί.",
+        "third_p": "3. Μπορείτε να ζητάτε μόνο μια διεύθυνση μητρική αλυσίδας ανά ώρα.",
         "access": "Καταλαβαίνω και συμφωνώ",
         "select_currency": "Επιλέξτε μια Μητρική Αλυσίδα",
         "time_remaining": "Διαθέσιμο σε"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "Αποκτήστε VTX",
         "kyc": "KYC",
         "whitelist": "White List",
         "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
