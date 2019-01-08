@@ -202,13 +202,13 @@
     "NotWhitelisted": {
         "header": "Αποκτήστε VTX",
         "kyc": "KYC",
-        "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "whitelist": "Λευκή Λίστα",
+        "kyc_1": "Για να αποκτήσετε VTX, οι επενδυτές θα πρέπει να περάσουν από διαδικασία KYC (Έλεγχος Στοιχείων Πελάτη) με έναν από τους αξιόπιστους συνεργάτες μας. Η διαδικασία μας είναι για να πληρούμε τις προδιαγραφές των ρυθμιστικών αρχών στην περιοχή σας. Σημειώστε ότι η διαδικασία πρέπει να ολοκληρωθεί μόνο μια φορά πριν γίνετε δεκτός ως πιθανός συνεργάτης. Σημειώστε ότι αυτή η επιλογή θα συνδέσει το πορτοφόλι σας με την διαδικασία KYC που θα ολοκληρώσετε.",
+        "link_associate": "Έχω ήδη περάσει από KYC",
+        "second_p": "Αν έχετε ήδη περάσει από διαδικασία KYC, αλλά δεν έχετε συνδέσει αυτό το πορτοφόλι με το λογαριασμό σας, παρακαλούμε συνδεθείτε στον πάροχο KYC για να το κάνετε. Αυτό το βήμα είναι απαραίτητο για να μπορέσετε να πάρετε VTC. Σημειώστε ότι αν έχετε κάνει την διαδικασία KYC μέσα από το πορτοφόλι, δεν απαιτείται να κάνετε αυτό το βήμα.",
+        "link_kyc": "Εκκίνηση Διαδικασίας Επαλήθευσης KYC",
+        "assign_verto_to_venue": "Αντιστοιχήστε το Verto στο Venue",
+        "assign_verto_to_venue_desc": "Αν είστε μέλος του Venue, πρέπει να αντιστοιχίστε το πορτοφόλι σας για να διεκδικήσετε τα VTX σας. Σημειώστε ότι θα πρέπει επίσης να ολοκληρώσετε την διαδικασία KYC. Όταν ολοκληρωθούν όλες οι ενέργειες, τα VTX σας θα διατεθούν στο πορτοφόλι σας.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
@@ -224,13 +224,13 @@
         "seconds": "δευτερόλεπτα"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "header": "Αντιστοίχηση Διεύθυνσης Venue",
+        "venue_username": "Όνομα Χρήστη Venue",
+        "venue_password": "Κωδικός Πρόσβασης Venue",
+        "bad_credentials": "Τα στοιχεία που εισάγατε είναι άκυρα.",
+        "important_info": "Αυτές οι πληροφορίες δεν αποθηκεύονται ποτέ στο Verto.",
+        "email_verification_required": "Θα πρέπει πρώτα να επιβεβαιώσετε το email σας με το Venue πριν την συσχετίσετε με το πορτοφόλι σας.",
+        "verto_address_not_unique": "Η διεύθυνση έχει αντιστοιχιστεί σε κάποιον άλλο χρήστη.",
+        "user_deactivated": "Αυτός ο χρήστης δεν είναι πλέον ενεργός."
     }
 }
