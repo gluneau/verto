@@ -227,10 +227,10 @@
         "header": "Venue Adres Atamak",
         "venue_username": "Venue Kullanıcı Adı",
         "venue_password": "Venue Şifre",
-        "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "bad_credentials": "Verilen kimlik bilgileri geçersiz.",
+        "important_info": "Bu bilgi asla Verto içinde depolanmaz.",
+        "email_verification_required": "Cüzdanınızı ilişkilendirmeden önce eposta'nızı Venue ile doğrulamalısınız.",
+        "verto_address_not_unique": "Adres zaten başka bir kullanıcı için atanmış.",
+        "user_deactivated": "Bu kullanıcı adı artık aktif değil."
     }
 }
