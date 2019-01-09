@@ -54,7 +54,7 @@
     },
     "SaveYourKeys": {
         "strategy": "Schmieden Sie einen Plan für die physische Speicherung ihrer privaten Keys. Dieser Plan beinhaltet langfristiges Denken, einschließlich:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
+        "physical": "<b>Physische Sicherheit:</b> Sichere Plätze jeglicher Art können Ihre Keys schützen. Denken Sie an Plätze die sicher vor Diebstahl, Umwelteinwirkungen sind. Als Beispiel können Sie einen Safe benutzen, ein Dokument bei einem Anwalt hinterlegen oder ihre Keys an verschiedenen Orten aufbewahren.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "Ich stimme den Allgemeinen Geschäftsbedingungen zu",
         "responsible": "I am entirely responsible for the security managment of my private key",
