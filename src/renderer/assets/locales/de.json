@@ -11,7 +11,7 @@
         "join_message": "Wir sind froh, dass Sie uns beigetreten sind."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
+        "header": "Verto Passwort erstellen",
         "important": "WICHTIG",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
