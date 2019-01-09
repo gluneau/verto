@@ -44,16 +44,16 @@
         "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
+        "keepsafe": "Halte deine Schlüssel sicher",
+        "before": "Bevor Sie fortfahren ist es wichtig zu beachten, dass Sie die volle Verantwortung für die Verwaltung, Sicherheit, Schutz und Wiederherstellung Ihres privaten Schlüssels tragen. Niemand sonst, auch keine Partner des Volentix-Ecosystems haben Zugriff auf deine Daten.",
         "choices": "Sie haben 2 Möglichkeiten, Ihren privaten Schlüssel zu behalten. Beide Methoden sind entworfen, um sicherzustellen, dass Ihr privater Schlüssel sicher bleibt.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "first": "Schreiben Sie ihre Keys auf.",
+        "second": "Oder verschlüsseln Sie ihre Keys in einer Passwort-gesicherten Datei.",
         "next": "Nächste",
         "back": "Zurück"
     },
     "SaveYourKeys": {
-        "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
+        "strategy": "Schmieden Sie einen Plan für die physische Speicherung ihrer privaten Keys. Dieser Plan beinhaltet langfristiges Denken, einschließlich:",
         "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
         "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
         "agree": "Ich stimme den Allgemeinen Geschäftsbedingungen zu",
