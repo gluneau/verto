@@ -103,7 +103,7 @@
         "copied": "Kopiert"
     },
     "TransactionHistory": {
-        "history": "Get VTX History",
+        "history": "VTX-Historie abrufen",
         "native": "Native Currency",
         "amount": "Betrag",
         "ratio": "Conversion Ratio",
