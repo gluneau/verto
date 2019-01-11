@@ -72,7 +72,7 @@
         "hidePublic": "Öffentliche Schlüssel ausblenden",
         "already": "Der Name oder der Schlüssel wurde bereits verwendet.",
         "mustname": "Sie müssen einen Namen für Ihren Schlüssel angeben.",
-        "walletname": "Give Wallet Name: ie Savings",
+        "walletname": "Geben Sie dem Wallet einen Namen: z. B. Ersparnisse",
         "writedown": "Schreiben Sie Ihren Schlüssel auf.",
         "privkey": "Privater Schlüssel",
         "pubkey": "Öffentlicher Schlüssel",
@@ -91,14 +91,14 @@
         "copied": "Schlüssel kopiert"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "Weiter"
     },
     "Main": {
         "address": "Wallet-Adresse",
-        "loading": "Loading data",
+        "loading": "Wird geladen",
         "history": "Transaktionsverlauf",
-        "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
+        "transactions": "Sie haben keine Transaktionen",
+        "getvtx": "VTX kaufen",
         "number": "N<sup>o</sup>",
         "copied": "Kopiert"
     },
