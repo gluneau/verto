@@ -203,31 +203,31 @@
         "header": "VTX kaufen",
         "kyc": "KYC",
         "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "kyc_1": "Um VTX zu erhalten, müssen Investoren KYC (Know Your Customer) mit einem unserer vertrauenswürdigen Partner zusammenarbeiten. Dieser Prozess soll sicherstellen, dass wir in Übereinstimmung mit den Regulierungsbehörden in Ihrer Region bleiben. Beachten Sie, dass dieser Prozess nur einmal abgeschlossen werden muss, bevor er als potenzieller Mitwirkender akzeptiert wird. Beachten Sie, dass diese Auswahl diese Wallet mit Ihrer KYC-Anwendung verknüpft.",
+        "link_associate": "Bereits KYC'd",
+        "second_p": "Wenn Sie bereits KYC'd haben, diese Wallet jedoch nicht mit Ihrem Konto verknüpft haben, melden Sie sich bitte beim KYC-Anbieter an. Dieser Schritt ist erforderlich, bevor Sie VTX erhalten können. Beachten Sie, dass Sie, wenn Sie KYC'd in der Wallet haben, nicht verpflichtet sind, diesen Schritt durchzuführen.",
+        "link_kyc": "KYC-Prozess starten",
+        "assign_verto_to_venue": "Verto dem Venue zuweisen",
+        "assign_verto_to_venue_desc": "Wenn Sie Mitglied bei Venue sind, müssen Sie eine Wallet zuordnen, um Ihre VTX zu erhalten. Beachten Sie, dass Sie auch den KYC-Prozess abschließen müssen. Sobald beide Aktionen abgeschlossen sind, wird Ihr VTX dieser Wallet zugeordnet.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC bereits zugeordnet",
+        "first_p": "Dem KYC'd-Konto wurde bereits eine Verto Public Address zugewiesen."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "Überprüfen des Wallet-Status"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "Verbleibende Zeit",
+        "mins": "Minuten",
+        "seconds": "Sekunden"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
+        "header": "Venue Adresse zuweisen",
+        "venue_username": "Venue Benutzername",
+        "venue_password": "Venue Passwort",
+        "bad_credentials": "Die angegebenen Anmeldeinformationen sind ungültig.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
         "verto_address_not_unique": "The address is already assigned to another user.",
