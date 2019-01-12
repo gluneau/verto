@@ -104,21 +104,21 @@
     },
     "TransactionHistory": {
         "history": "VTX-Historie abrufen",
-        "native": "Native Currency",
+        "native": "Ursprüngliche Währung",
         "amount": "Betrag",
         "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "confirmation": "Bestätigung",
         "transid": "Ledger Trans. ID",
-        "pre": "Pre Bonus",
-        "phase": "Phase Bonus",
-        "additional": "Additional Bonus",
-        "total": "Total",
-        "received": "Received",
-        "converted": "Converted",
+        "pre": "Vorab-Bonus",
+        "phase": "Phasenbonus",
+        "additional": "Zusätzlicher Bonus",
+        "total": "Gesamt",
+        "received": "Empfangen",
+        "converted": "Konvertiert",
         "pending": "Ausstehend",
-        "confirmed": "Confirmed",
+        "confirmed": "Bestätigt",
         "approved": "Genehmigt",
-        "number_of_approved_blocks": "/6 Confirmed Blocks"
+        "number_of_approved_blocks": "/ 6 bestätigten Blöcken"
     },
     "SettingsView": {
         "settings": "Einstellungen",
@@ -127,20 +127,20 @@
         "blocktopus": "Associate with Blocktopus",
         "manager": "Wallet Manager",
         "change": "Passwort",
-        "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
+        "backup": "Wallet sichern",
+        "gettrans": "VTX-Transaktionsverlauf abrufen",
+        "logout": "Abmelden",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
-        "language": "Language",
-        "help": "Help",
-        "optionsdd": " Options",
+        "sendmail": "E-Mail Senden",
+        "language": "Sprache",
+        "help": "Hilfe",
+        "optionsdd": " Optionen",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Aktuelles Wallet"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Blocktopus Benutzername",
+        "password": "Blocktopus Passwort"
     },
     "GetVtx": {
         "vtxsold": "VTX Sold",
