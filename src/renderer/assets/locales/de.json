@@ -150,21 +150,21 @@
         "additional": "Zusätzlicher Bonus",
         "bonus": "Bonus",
         "soon": "Demnächst verfügbar",
-        "getvtx": "Get VTX With",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
-        "native_chain_header": "Native Chain Address"
+        "getvtx": "Erhalten Sie VTX mit",
+        "native_chain_address": "Native Kettenadresse",
+        "available_for": "Adresse verfügbar bis",
+        "native_chain_header": "Native Kettenadresse"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
+        "header": "Passwort ändern",
+        "current": "Aktuelles Verto Passwort",
+        "new": "Neues Verto Passwort",
         "confirm": "Neues Verto-Passwort bestätigen",
         "required": "Alle Felder müssen ausgefüllt werden.",
         "change": "Verto-Passwort ändern",
         "recommended": "Es wird empfohlen, zuerst die aktuelle Konfiguration von Verto zu sichern, bevor Sie das Passwort ändern. Sie können Verto sichern ",
         "here": "hier",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "Ändert das Passwort, um auf Verto zuzugreifen. Einmal ausgewählt, wird die gesamte Konfiguration mit dem neuen Passwort verschlüsselt."
     },
     "BackupWallet": {
         "folder": "Ordner auswählen",
@@ -175,7 +175,7 @@
         "select": "Wählen Sie 'Backup-Wallet'"
     },
     "ChoosePassword": {
-        "header": "Save File",
+        "header": "Datei speichern",
         "file": "Datei auswählen",
         "choose": "Wallet Passwort wählen",
         "confirm": "Wallet Passwort bestätigen",
@@ -183,7 +183,7 @@
         "storeloc": "Speichern Sie es auf dem lokalen Laufwerk Ihres Computers.",
         "emailit": "Schicken Sie es per E-Mail.",
         "cloud": "Speichern in der Cloud.",
-        "save": "Save"
+        "save": "Speichern"
     },
     "RequestNativeChainAddress": {
         "header": "Adresse anfordern",
@@ -191,7 +191,7 @@
         "err_noAddressAvailable": "Keine Adresse für diese Kette verfügbar. Bitte versuchen Sie es erneut.",
         "err_pendingTransactionsExist": "Ausstehende Transaktionen sind vorhanden",
         "err_investor_must_wait": "Sie müssen eine Stunde warten, bevor Sie eine neue Adresse anfordern können.",
-        "first_p": "The following rules apply:",
+        "first_p": "Es gelten die folgenden Regeln:",
         "second_p": "1. Die Adresse, die Sie erhalten, ist nur für einen begrenzten Zeitraum gültig.",
         "second_p_point_1": "2. Jede Transaktion, die Sie nach dem Zuteilungszeitraum senden, kann verloren gehen.",
         "third_p": "3. Sie können nur eine native Kettenadresse pro Stunde anfordern.",
@@ -228,9 +228,9 @@
         "venue_username": "Venue Benutzername",
         "venue_password": "Venue Passwort",
         "bad_credentials": "Die angegebenen Anmeldeinformationen sind ungültig.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "important_info": "Diese Informationen werden niemals innerhalb von Verto gespeichert.",
+        "email_verification_required": "Sie müssen Ihre E-Mail zuerst mit Venue verifizieren, bevor Sie die Wallet zuordnen können.",
+        "verto_address_not_unique": "Die Adresse ist bereits einem anderen Benutzer zugeordnet.",
+        "user_deactivated": "Dieser Benutzer ist nicht mehr aktiv."
     }
 }
