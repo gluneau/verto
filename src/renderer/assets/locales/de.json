@@ -13,7 +13,7 @@
     "CreateVertoPassword": {
         "header": "Verto Passwort erstellen",
         "important": "WICHTIG",
-        "important_warning": "Aufgepasst! Dein Passwort ist nicht wiederherstellbar. Wenn du dein Passwort verlierst sind deine Wallets ebenfalls verloren.",
+        "important_warning": "Aufgepasst! Dein Passwort ist nicht wiederherstellbar. Wenn du dein Passwort vergisst oder verlierst sind deine Wallets ebenfalls verloren.",
         "vertopassword": "Dein Verto Passwort",
         "i_understand": "Verstanden",
         "confirm": "Verto Passwort bestätigen",
