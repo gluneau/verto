@@ -72,7 +72,7 @@
         "hidePublic": "إخفاء العام",
         "already": "لقد تم استخدام الإسم أو المفتاح سابقاً.",
         "mustname": "يجب عليك تسمية مفتاحك.",
-        "walletname": "أطلق إسم للمحفظة: مثل مدخرات",
+        "walletname": "أعطي إسم للمحفظة: مثل مدخرات",
         "writedown": "دوّن مفاتيحك.",
         "privkey": "مفتاح خاص",
         "pubkey": "مفتاح عام",
@@ -118,7 +118,7 @@
         "pending": "قيد النظر",
         "confirmed": "تم التأكيد",
         "approved": "تمت الموافقة",
-        "number_of_approved_blocks": "6 قطع تم تأكيدها"
+        "number_of_approved_blocks": "/6 كتل تم تأكيدها"
     },
     "SettingsView": {
         "settings": "الإعدادات",
@@ -231,6 +231,6 @@
         "important_info": "لم يتم تخزين هذه المعلومة ضمن فيرتو.",
         "email_verification_required": "يجب عليك أولاً تأكيد بريدك الإلكتروني مع فينيو قبل إشراك المحفظة.",
         "verto_address_not_unique": "لقد تم تكليف مستخدم آخر بالعنوان.",
-        "user_deactivated": "هذا المستخدم لم يعد فعال."
+        "user_deactivated": "هذا المستخدم لم يعد نشط."
     }
 }
