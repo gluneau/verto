@@ -82,7 +82,7 @@
         "polaroid": "Wenn Sie ein Foto machen möchten, verwenden Sie eine nicht-digitale Plattform wie 35mm oder Polaroid.",
         "once": "Nach der Fertigstellung",
         "look": "Suchen Sie einen warmen, sicheren und trockenen Ort, wie beispielsweise ein Bankschließfach.",
-        "provisions": "Ergänzen Sie Ihr Testament um Bestimmungen darüber, wer und wie die Übertragung Ihrer Wallet durchgeführt wird.",
+        "provisions": "Ergänzen Sie Ihr Testament um Bestimmungen darüber, durch wen und wie die Übertragung Ihrer Wallet durchgeführt wird.",
         "donot": "Nicht tun",
         "fold": "Falten Sie das Papier.",
         "share": "Teilen Sie es mit anderen.",
@@ -118,25 +118,25 @@
         "pending": "Ausstehend",
         "confirmed": "Bestätigt",
         "approved": "Genehmigt",
-        "number_of_approved_blocks": "/ 6 bestätigten Blöcken"
+        "number_of_approved_blocks": "/6 bestätigte Blöcke"
     },
     "SettingsView": {
         "settings": "Einstellungen",
-        "updates": "Nach Update suchen",
+        "updates": "Nach Updates suchen",
         "whitelist": "Whitelist",
         "blocktopus": "Mitarbeiter bei Blocktopus",
-        "manager": "Wallet Manager",
+        "manager": "Wallet-Manager",
         "change": "Passwort",
         "backup": "Wallet sichern",
         "gettrans": "VTX-Transaktionsverlauf abrufen",
         "logout": "Abmelden",
         "telegram": "Telegram",
-        "sendmail": "E-Mail Senden",
+        "sendmail": "E-Mail senden",
         "language": "Sprache",
         "help": "Hilfe",
         "optionsdd": " Optionen",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Aktuelles Wallet"
+        "current_wallet": "Aktuelle Wallet"
     },
     "AssociateView": {
         "username": "Blocktopus Benutzername",
@@ -205,7 +205,7 @@
         "whitelist": "White List",
         "kyc_1": "Um VTX zu erhalten, müssen Investoren KYC (Know Your Customer) mit einem unserer vertrauenswürdigen Partner zusammenarbeiten. Dieser Prozess soll sicherstellen, dass wir in Übereinstimmung mit den Regulierungsbehörden in Ihrer Region bleiben. Beachten Sie, dass dieser Prozess nur einmal abgeschlossen werden muss, bevor er als potenzieller Mitwirkender akzeptiert wird. Beachten Sie, dass diese Auswahl diese Wallet mit Ihrer KYC-Anwendung verknüpft.",
         "link_associate": "Bereits KYC'd",
-        "second_p": "Wenn Sie bereits KYC'd haben, diese Wallet jedoch nicht mit Ihrem Konto verknüpft haben, melden Sie sich bitte beim KYC-Anbieter an. Dieser Schritt ist erforderlich, bevor Sie VTX erhalten können. Beachten Sie, dass Sie, wenn Sie KYC'd in der Wallet haben, nicht verpflichtet sind, diesen Schritt durchzuführen.",
+        "second_p": "Wenn Sie bereits KYC'd haben, diese Wallet jedoch nicht mit Ihrem Konto verknüpft haben, melden Sie sich bitte beim KYC-Anbieter an. Dieser Schritt ist erforderlich, bevor Sie VTX erhalten können. Beachten Sie, dass Sie, wenn Sie in der Wallet KYC'd haben, nicht verpflichtet sind, diesen Schritt durchzuführen.",
         "link_kyc": "KYC-Prozess starten",
         "assign_verto_to_venue": "Verto dem Venue zuweisen",
         "assign_verto_to_venue_desc": "Wenn Sie Mitglied bei Venue sind, müssen Sie eine Wallet zuordnen, um Ihre VTX zu erhalten. Beachten Sie, dass Sie auch den KYC-Prozess abschließen müssen. Sobald beide Aktionen abgeschlossen sind, wird Ihr VTX dieser Wallet zugeordnet.",
