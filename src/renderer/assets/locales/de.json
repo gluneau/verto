@@ -3,7 +3,7 @@
         "welcometo": "WILLKOMMEN ZU",
         "welcomeback": "Willkommen zurück!",
         "password": "Passwort",
-        "nopassword": "Es wurde noch kein Passwort für die Wallet erstellt. Bitte erstelle zuerst ein Passwort.",
+        "nopassword": "Es wurde noch kein Passwort für die Wallet erstellt. Bitte erstellen Sie zuerst ein Passwort.",
         "incorrect": "Das Verto-Passwort ist nicht korrekt.",
         "login": "Login",
         "create": "Los gehts",
@@ -11,9 +11,9 @@
         "join_message": "Wir sind froh, dass Sie uns beigetreten sind."
     },
     "CreateVertoPassword": {
-        "header": "Verto Passwort erstellen",
+        "header": "Verto-Passwort erstellen",
         "important": "WICHTIG",
-        "important_warning": "Aufgepasst! Dein Passwort ist nicht wiederherstellbar. Wenn du dein Passwort vergisst oder verlierst sind deine Wallets ebenfalls verloren.",
+        "important_warning": "Aufgepasst! Ihr Passwort ist nicht wiederherstellbar. Wenn Sie Ihr Passwort vergessen oder verlieren, sind Ihre Wallets ebenfalls verloren.",
         "vertopassword": "Verto Haupt-Passwort",
         "i_understand": "Verstanden",
         "confirm": "Verto-Passwort bestätigen",
@@ -21,14 +21,14 @@
         "fillall": "Bitte alle Felder ausfüllen",
         "done": "Fertig",
         "addwallet": "Wallet hinzufügen",
-        "onlysupport": "Im Moment unterstützt Verto nur die Möglichkeit, öffentliche Schlüssel hinzuzufügen. Um ein Wallet hinzuzufügen, gib einfach einen Namen, die Wallet-Adresse und das Verto-Passwort an.",
+        "onlysupport": "Im Moment unterstützt Verto nur die Möglichkeit, öffentliche Schlüssel hinzuzufügen. Um ein Wallet hinzuzufügen, geben Sie einfach einen Namen, die Wallet-Adresse und das Verto-Passwort an.",
         "createwallet": "Wallet erstellen",
-        "createkey": "Erstelle öffentliche/private Schlüsselpaare für eine neue Wallet. Beachte, dass <b>NUR</b> der öffentliche Schlüssel in Verto gespeichert ist. Du bist für die Verwaltung deines eigenen privaten Schlüssels, dessen Speicherung und Sicherheit verantwortlich.",
+        "createkey": "Erstellen Sie öffentliche/private Schlüsselpaare für eine neue Wallet. Beachten Sie, dass <b>NUR</b> der öffentliche Schlüssel in Verto gespeichert ist. Sie sind für die Verwaltung Ihres eigenen privaten Schlüssels, dessen Speicherung und Sicherheit verantwortlich.",
         "wallets": "Wallets",
-        "choose": "Um ein Wallet zu öffnen, klicke einfach auf den Namen.",
+        "choose": "Um ein Wallet zu öffnen, klicken Sie einfach auf den Namen.",
         "delete": "Wallet löschen",
-        "trash": "Klicke auf das 'Papierkorb'-Icon",
-        "enter": "Gib dein Passwort ein.",
+        "trash": "Klicken Sie auf das 'Papierkorb'-Icon",
+        "enter": "Geben Sie Ihr Passwort ein.",
         "note": "<b>HINWEIS:</b> Verto kann gelöschte Wallets nicht wiederherstellen.",
         "save": "Speichern"
     },
@@ -72,8 +72,8 @@
         "hidePublic": "Öffentliche Schlüssel ausblenden",
         "already": "Der Name oder der Schlüssel wurde bereits verwendet.",
         "mustname": "Sie müssen einen Namen für Ihren Schlüssel angeben.",
-        "walletname": "Geben Sie dem Wallet einen Namen: z. B. Ersparnisse",
-        "writedown": "Schreiben Sie Ihren Schlüssel auf.",
+        "walletname": "Geben Sie der Wallet einen Namen: z. B. Ersparnisse",
+        "writedown": "Schreiben Sie Ihre Schlüssel auf.",
         "privkey": "Privater Schlüssel",
         "pubkey": "Öffentlicher Schlüssel",
         "recommended": "Empfohlen",
@@ -139,8 +139,8 @@
         "current_wallet": "Aktuelle Wallet"
     },
     "AssociateView": {
-        "username": "Blocktopus Benutzername",
-        "password": "Blocktopus Passwort"
+        "username": "Blocktopus-Benutzername",
+        "password": "Blocktopus-Passwort"
     },
     "GetVtx": {
         "vtxsold": "VTX verkauft",
@@ -213,7 +213,7 @@
     },
     "KycAlreadyAssociated": {
         "header": "KYC bereits zugeordnet",
-        "first_p": "Dem KYC'd-Konto wurde bereits eine Verto Public Address zugewiesen."
+        "first_p": "Dem KYC'd-Konto wurde bereits eine Verto-Public-Address zugewiesen."
     },
     "BeginGetVtx": {
         "header": "Überprüfen des Wallet-Status"
@@ -224,13 +224,13 @@
         "seconds": "Sekunden"
     },
     "VenueAssignAddress": {
-        "header": "Venue Adresse zuweisen",
-        "venue_username": "Venue Benutzername",
-        "venue_password": "Venue Passwort",
+        "header": "Venue-Adresse zuweisen",
+        "venue_username": "Venue-Benutzername",
+        "venue_password": "Venue-Passwort",
         "bad_credentials": "Die angegebenen Anmeldeinformationen sind ungültig.",
         "important_info": "Diese Informationen werden niemals innerhalb von Verto gespeichert.",
         "email_verification_required": "Sie müssen Ihre E-Mail zuerst mit Venue verifizieren, bevor Sie die Wallet zuordnen können.",
-        "verto_address_not_unique": "Die Adresse ist bereits einem anderen Benutzer zugeordnet.",
+        "verto_address_not_unique": "Diese Adresse ist bereits einem anderen Benutzer zugeordnet.",
         "user_deactivated": "Dieser Benutzer ist nicht mehr aktiv."
     }
 }
