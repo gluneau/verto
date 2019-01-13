@@ -39,21 +39,21 @@
         "cannotrecover": "Verto kann die einmal gelöschte Wallet nicht mehr wiederherstellen. Drücke die Löschtaste erneut, um sie endgültig zu löschen.",
         "cancel": "Abbrechen",
         "delete": "Löschen",
-        "keyhere": "Öffentlicher Wallet Key hier",
-        "header": "Wallet Manager",
+        "keyhere": "Öffentlicher Wallet-Key hier",
+        "header": "Wallet-Manager",
         "wallets": "Wallets"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Halte deine Schlüssel sicher",
-        "before": "Bevor Sie fortfahren ist es wichtig zu beachten, dass Sie die volle Verantwortung für die Verwaltung, Sicherheit, Schutz und Wiederherstellung Ihres privaten Schlüssels tragen. Niemand sonst, auch keine Partner des Volentix-Ecosystems haben Zugriff auf deine Daten.",
-        "choices": "Sie haben 2 Möglichkeiten, Ihren privaten Schlüssel zu behalten. Beide Methoden sind entworfen, um sicherzustellen, dass Ihr privater Schlüssel sicher bleibt.",
-        "first": "Schreiben Sie ihre Keys auf.",
-        "second": "Oder verschlüsseln Sie ihre Keys in einer Passwort-gesicherten Datei.",
+        "before": "Bevor du fortfährst, ist es wichtig zu beachten, dass du die volle Verantwortung für die Verwaltung, Sicherheit, Schutz und Wiederherstellung deines privaten Schlüssels trägst. Niemand sonst, auch keine Partner des Volentix-Ecosystems haben Zugriff auf deine Daten.",
+        "choices": "Du hast 2 Möglichkeiten, deinen privaten Schlüssel zu behalten. Beide Methoden wurden entworfen, um sicherzustellen, dass dein privater Schlüssel sicher bleibt.",
+        "first": "Schreibe deine Keys auf.",
+        "second": "Oder verschlüssele deine Keys in einer passwortgeschützten Datei.",
         "next": "Nächste",
         "back": "Zurück"
     },
     "SaveYourKeys": {
-        "strategy": "Schmieden Sie einen Plan für die physische Speicherung ihrer privaten Keys. Dieser Plan beinhaltet langfristiges Denken, einschließlich:",
+        "strategy": "Schmiede einen Plan für die physische Speicherung deiner privaten Keys. Diese Speicherstrategie beinhaltet langfristiges Denken, einschließlich:",
         "physical": "<b>Physische Sicherheit:</b> Sichere Plätze jeglicher Art können Ihre Keys schützen. Denken Sie an Plätze die sicher vor Diebstahl, Umwelteinwirkungen sind. Als Beispiel können Sie einen Safe benutzen, ein Dokument bei einem Anwalt hinterlegen oder ihre Keys an verschiedenen Orten aufbewahren.",
         "legacy": "<b>Erbschaft:</b> Dinge passieren. Das Leben endet. Sie müssen für die Übertragung Ihrer Wallet auf jemand anderen planen. In einigen Fällen, die ein Testament sein können, überlegen Sie sich bitte sorgfältig Ihre Möglichkeiten. Sie haben die Wahl.",
         "agree": "Ich stimme den Allgemeinen Geschäftsbedingungen zu",
