@@ -99,7 +99,7 @@
         "history": "سجل المعاملات",
         "transactions": "ليس لديك معاملات",
         "getvtx": "إحصل على في تي أكس",
-        "number": "ن<sup>o</sup>",
+        "number": "N<sup>o</sup>",
         "copied": "منسوخ"
     },
     "TransactionHistory": {
@@ -124,7 +124,7 @@
         "settings": "الإعدادات",
         "updates": "التحقق من وجود تحديثات",
         "whitelist": "القائمة البيضاء",
-        "blocktopus": "التعاون مع بلوكتوبوس",
+        "blocktopus": "الربط مع بلوكتوبوس",
         "manager": "مدير المحفظة",
         "change": "كلمة مرور",
         "backup": "محفظة احتياطية",
