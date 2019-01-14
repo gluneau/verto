@@ -16,5 +16,17 @@ class ConfigManager {
             router.replace('keepYourKeysafe')
         });
     }
+
+    hasWallets() {
+        console.log("has wallet.")
+        if (this.currentConfig.keys && this.currentConfig.keys.length > 0) {
+            return true
+        }
+        return false
+    }
+
+    hasCurrentWallet() {
+        return this.currentWallet
+    }
   }
   export default new ConfigManager()
