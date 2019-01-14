@@ -1,6 +1,6 @@
 <template>
   <div class="fit text-white text-center bg-primary">
-    <div class="q-pa-xl" v-if="hasCurrentWallet()">
+    <div class="q-pa-xl" v-if="!showingCurrentWallet()">
       <q-icon name="account_balance_wallet" size="2rem"/>
       <div class="q-headline">Current Wallet</div>
     </div>
@@ -34,10 +34,11 @@ export default {
   },
   methods: {
     hasWallets: function() {
+      console.log('sdfadfa ' + this.$router.currentRoute.path)
       return configManager.hasWallets()
     },
-    hasCurrentWallet: function() {
-      return configManager.hasCurrentWallet()
+    showingCurrentWallet: function() {
+      return this.$router.currentRoute.path === '/wallet'
     }
   }
 }

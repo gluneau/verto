@@ -1,5 +1,5 @@
 <template>
-  <div>My component</div>
+  <div>Write It Down</div>
 </template>
 
 <script>

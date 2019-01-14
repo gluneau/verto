@@ -24,7 +24,8 @@ export default {
   },
   methods: {
     createUser () {
-      this.$router.push({path: 'createPassword'})
+      // createPassword
+      this.$router.push({path: 'wallet'})
     }
   }
 }

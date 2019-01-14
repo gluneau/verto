@@ -1,21 +1,46 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import example from './module-example'
+// import modules from './modules'
 
 Vue.use(Vuex)
 
-/*
- * If not building with SSR mode, you can
- * directly export the Store instantiation
- */
-
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      example
+export default new Vuex.Store({
+  // strict: process.env.NODE_ENV !== 'production',
+  state: {
+    userKey: "",
+    loggedin: false,
+    keys: [],
+    currentWallet: {}
+  },
+  actions: {
+    save({
+      commit
+    }, key) {
+      commit("save", key);
+    },
+    login(context, bool) {
+      context.commit("LOGIN", bool);
+    },
+    setKeys(context, newkeys) {
+      context.commit("KEYS", newkeys);
+    },
+    setCurrentWallet(context, newWallet) {
+      context.commit("CURRENTWALLET", newWallet);
     }
-  })
-
-  return Store
-}
+  },
+  mutations: {
+    save(state, key) {
+      state.userKey = key;
+    },
+    LOGIN(state, bool) {
+      state.loggedin = bool;
+    },
+    KEYS(state, newkeys) {
+      state.keys = newkeys;
+    },
+    CURRENTWALLET(state, newKey) {
+      state.currentWallet = newKey
+    }
+  }
+})

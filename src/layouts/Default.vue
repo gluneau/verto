@@ -11,6 +11,7 @@
           dense
           icon="menu"
           @click="optionsDrawer = !optionsDrawer"
+          v-if="hasCurrentWallet()"
         />
         <q-toolbar-title>
           Verto
@@ -31,6 +32,7 @@
         side="left"
         v-model="optionsDrawer"
         behavior="desktop" content-class="row"
+        v-if="hasCurrentWallet()"
       >
         <div class="col-12 column bg-secondary q-pa-sm">
           <options-drawer/>
@@ -54,6 +56,7 @@
 </template>
 
 <script>
+import configManager from '../util/ConfigManager'
 import LangDrawer from '../components/layout/LangDrawer'
 import OptionsDrawer from '../components/layout/OptionsDrawer'
 
@@ -64,6 +67,14 @@ export default {
     return {
       optionsDrawer: true,
       langDrawer: false
+    }
+  },
+  methods: {
+    hasWallets: function() {
+      return configManager.hasWallets()
+    },
+    hasCurrentWallet: function() {
+      return configManager.hasCurrentWallet()
     }
   }
 }

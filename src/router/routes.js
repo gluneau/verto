@@ -16,13 +16,25 @@ const routes = [
     path: '/keepYourKeysafe',
     component: () => import('layouts/Default.vue'),
     children: [
-      { path: '', component: () => import('components/vertoManager/KeepYourKeysSafe.vue') }
+      { path: '', component: () => import('components/createwallet/KeepYourKeysSafe.vue') }
     ]
   },{
-    path: '/walletBalance',
+    path: '/saveToFile',
     component: () => import('layouts/Default.vue'),
     children: [
-      { path: '', component: () => import('components/WalletBalance.vue') }
+      { path: '', component: () => import('components/createwallet/SaveToFile.vue') }
+    ]
+  },{
+    path: '/writeItDown',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/createwallet/WriteItDown.vue') }
+    ]
+  },{
+    path: '/wallet',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/Wallet.vue') }
     ]
   },{
     path: '/one',

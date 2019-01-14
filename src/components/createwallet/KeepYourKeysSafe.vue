@@ -37,10 +37,10 @@
           </q-list>
           <div class="q-pa-sm">
             <div class="q-pa-sm">
-              <q-checkbox v-model="checkOne" native-value="first" color="yellow">&nbsp;{{ $t('SaveYourKeys.agree') }}</q-checkbox>
-              <q-checkbox v-model="checkTwo" native-value="second" color="yellow">&nbsp;{{ $t('SaveYourKeys.responsible') }}</q-checkbox>
-              <q-checkbox v-model="checkThree" native-value="second" color="yellow">&nbsp;{{ $t('SaveYourKeys.access') }}</q-checkbox>
-              <q-checkbox v-model="checkFour" native-value="second" color="yellow">&nbsp;{{ $t('SaveYourKeys.wifi') }}</q-checkbox>
+              <q-checkbox v-model="checkOne" color="yellow">&nbsp;{{ $t('SaveYourKeys.agree') }}</q-checkbox>
+              <q-checkbox v-model="checkTwo" color="yellow">&nbsp;{{ $t('SaveYourKeys.responsible') }}</q-checkbox>
+              <q-checkbox v-model="checkThree" color="yellow">&nbsp;{{ $t('SaveYourKeys.access') }}</q-checkbox>
+              <q-checkbox v-model="checkFour" color="yellow">&nbsp;{{ $t('SaveYourKeys.wifi') }}</q-checkbox>
             </div>
           </div>
           <div class="q-pa-sm">
@@ -55,7 +55,7 @@
             </div>
 
             <div class="text-right q-pa-lg">
-              <q-btn color="yellow" outline rounded @click="submit">{{ $t('SaveYourKeys.create') }}</q-btn>
+              <q-btn  color="yellow" outline rounded @click="submit">{{ $t('SaveYourKeys.create') }}</q-btn>
             </div>
           </div>
       </q-card>
@@ -94,22 +94,21 @@ export default {
     }
   },
   methods: {
-    disableWiFi() {
-      if (!this.buttonsAreDisabled) {
+    isDisabled: function() {
+      return !this.checkOne || !this.checkTwo || !this.checkThree || !this.checkFour
+    },
+    submit() {
+      // if (this.checkOne && this.checkTwo && this.checkThree && this.checkFour) {
         let command = "networksetup -setairportpower airport off";
         let exec = require("child_process").exec;
         exec(command);
         if (this.createtype === 'FILE') {
-          this.$router.push('/choosepassword');
+          this.$router.push('/saveToFile');
         } else {
-          this.$router.push('/displaykey');
+          this.$router.push('/writeItDown');
         }
-      }
-    },
-    submit: function() {
-      console.log("Submitting...")
-    }
-    
+      //}
+    }    
   }
 }
 </script>

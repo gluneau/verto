@@ -1,5 +1,5 @@
 <template>
-  <q-layout> <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout class="full-height"> <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <q-layout-header>
@@ -47,7 +47,7 @@
       </q-scroll-area>
     </q-layout-drawer>
 
-    <q-page-container>
+    <q-page-container >
       <!-- This is where pages get injected -->
       <router-view />
     </q-page-container>
