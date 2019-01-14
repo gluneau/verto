@@ -1,14 +1,16 @@
 <template>
-  <div class="flex flex-center">
-    <q-jumbotron class="flex-center">
-      <div class="q-display-3">Transalated Property-&gt; {{ $t('success') }}</div>
-      <div class="q-subheading">
-        This is a simple hero unit, a simple jumbotron-style component for calling extra
-        attention to featured content or information.
+  <div class=" ">
+    <q-jumbotron class="text-center bg-primary text-white">
+      <div class="logo-welcome">
+        <img src="../assets/img/white-logo-with-text.png" >
       </div>
-      <hr class="q-hr q-my-lg">
-      <div class="q-title q-mb-md">Check out Quasar Framework components.</div>
-      <q-btn color="primary" label="New item" @click="createUser"/>
+      <div class="q-pa-lg">
+        <small>{{ $t('Welcome.subtitle_message') }}</small>
+      </div>
+      <div class="text-weight-bold uppercase q-pa-lg">
+        <big>{{ $t('Welcome.join_message') }}</big>
+      </div>
+      <q-btn outline rounded  @click="createUser">{{ $t('Welcome.create') }}</q-btn>
     </q-jumbotron>
   </div>
   
@@ -29,4 +31,8 @@ export default {
 </script>
 
 <style>
+.logo-welcome img {
+  width: 100%;
+  max-width: 320px;
+}
 </style>

@@ -10,7 +10,13 @@ const routes = [
     path: '/createPassword',
     component: () => import('layouts/NoWallet.vue'),
     children: [
-      { path: '', component: () => import('components/CreatePassword.vue') }
+      { path: '', component: () => import('components/vertoManager/CreatePassword.vue') }
+    ]
+  },{
+    path: '/keepYourKeysafe',
+    component: () => import('layouts/NoWallet.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/KeepYourKeysSafe.vue') }
     ]
   },{
     path: '/walletBalance',

@@ -59,7 +59,8 @@ module.exports = function (ctx) {
         'QJumbotron',
         'QField',
         'QInput',
-        'QItemTile'
+        'QItemTile',
+        'QCheckbox'
       ],
       directives: [
         'Ripple'
