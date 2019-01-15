@@ -1,5 +1,6 @@
 import sjcl from 'sjcl'
 import router from '../router'
+import store from '../store'
 import axios from 'axios'
 const fs = require("fs");
 const path = require("path")
@@ -17,6 +18,31 @@ class ConfigManager {
         });
     }
 
+    login(password) {
+        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
+        const databack = fs.readFileSync(filePath, 'utf-8');
+        let config = {};
+        try {
+            config = JSON.parse(sjcl.decrypt(password, databack));
+        } catch (error) {
+            return {success: false, message: 'bad_password'}
+        }
+        store.commit('currentwallet/updateConfig', config)
+        let i;
+        for (i = 0; i < config.keys.length; i++) {
+            const key = config.keys[i];
+            if (key.defaultKey) {
+                store.commit('currentwallet/updateCurrentWallet', key)
+                return {success: true, message: 'success'}
+            }
+        }
+        return {success: false, message: 'no_default_key'}
+    }
+
+    hasVertoConfig() {
+        return fs.existsSync(path.join(electron.remote.app.getPath('userData'), '/verto.config'))
+    }
+
     hasWallets() {
         console.log("has wallet.")
         if (this.currentConfig.keys && this.currentConfig.keys.length > 0) {
@@ -26,7 +52,31 @@ class ConfigManager {
     }
 
     hasCurrentWallet() {
-        return this.currentWallet
+        return store.state.currentwallet.wallet
+    }
+
+    addWallet(keyname, vertoPassword, publicAddress) {
+        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
+        const databack = fs.readFileSync(filePath, 'utf-8');
+        let config = {};
+        try {
+            config = JSON.parse(sjcl.decrypt(vertoPassword, databack));
+        } catch (error) {
+            return {success: false, message: 'bad_password'}
+        }
+        let i;
+        for (i = 0; i < config.keys.length; i++) {
+            const key = config.keys[i];
+            if (key.name.toLowerCase() === keyname.toLowerCase()) {
+                return {success: false, message: 'name_already_used'}
+            }
+        }
+        const key = {name: keyname, key: publicAddress, defaultKey: false}
+        config.keys.push(key);
+        fs.writeFileSync(filePath, sjcl.encrypt(vertoPassword, JSON.stringify(config)), 'utf-8')
+        store.commit('currentwallet/updateCurrentWallet', key)
+        store.commit('currentwallet/updateConfig', config)
+        return {success: true}
     }
 
     saveWalletAndKey(keyname, vertoPassword, privateKeyPassword, publicAddress, privateAddress, savePath) {
@@ -58,6 +108,8 @@ class ConfigManager {
         const privateWallet = JSON.stringify({name: keyname, publickey: publicAddress, privatekey: privateAddress})
         fs.writeFileSync(savePath, sjcl.encrypt(privateKeyPassword, privateWallet), 'utf-8')
         fs.writeFileSync(filePath, sjcl.encrypt(vertoPassword, JSON.stringify(config)), 'utf-8');
+        store.commit('currentwallet/updateCurrentWallet', key)
+        store.commit('currentwallet/updateConfig', config)
         return {success: true}
     }
   }

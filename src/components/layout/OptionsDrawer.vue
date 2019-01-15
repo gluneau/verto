@@ -1,11 +1,11 @@
 <template>
   <div class="fit text-white text-center bg-primary">
-    <div class="q-pa-xl" v-if="!showingCurrentWallet()">
+    <div class="q-pa-xl" v-if="showCurrentWallet" @click="route('wallet')">
       <q-icon name="account_balance_wallet" size="2rem"/>
       <div class="q-headline">Current Wallet</div>
     </div>
     <div v-if="hasWallets()">
-      <div class="q-pa-xl">
+      <div class="q-pa-xl" v-if="showWalletManager" @click="route('vertomanager')">
         <q-icon name="all_inbox" size="2rem"/>
         <div class="q-headline">Wallet Manger</div>
       </div>
@@ -30,15 +30,32 @@ import configManager from '../../util/ConfigManager'
 export default {
   name: 'OptionsDrawer',
   data () {
-    return {}
+    return {
+      showCurrentWallet: false,
+      showWalletManager: false
+    }
+  },
+  mounted() {
+    this.showCurrentWallet = this.$router.currentRoute.path === '/wallet'
+    this.showWalletManager = this.$router.currentRoute.path === '/vertomanager'
   },
   methods: {
     hasWallets: function() {
-      console.log('sdfadfa ' + this.$router.currentRoute.path)
-      return configManager.hasWallets()
+      return this.$store.state.currentwallet.wallet
     },
     showingCurrentWallet: function() {
       return this.$router.currentRoute.path === '/wallet'
+    },
+    route: function(route) {
+      this.showCurrentWallet = true
+      this.showWalletManager = true
+      if (route === 'wallet') {
+        this.showCurrentWallet = false
+      }
+      if (route === 'vertomanager') {
+        this.showWalletManager = false
+      }
+      this.$router.push({path: route})
     }
   }
 }

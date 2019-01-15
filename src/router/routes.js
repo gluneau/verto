@@ -37,6 +37,12 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/Wallet.vue') }
     ]
   },{
+    path: '/vertomanager',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/VertoManager.vue') }
+    ]
+  },{
     path: '/one',
     component: () => import('layouts/NoWallet.vue'),
     children: [

@@ -68,8 +68,8 @@ export default {
   data () {
     return {
       walletName: '',
-       columns: [
-         {
+      columns: [
+        {
         name: 'date',
         required: true,
         label: 'Date',
@@ -127,9 +127,7 @@ export default {
     }
   },
   mounted() {
-    console.log('lll: ' + configManager.currentWallet)
-    const currentWallet = { "name": "HARDCODED", "key": "EOS4V5VUFEKPP1HZTPNO1UVRF195JDFBRNBMVMSB8SEIT4DZR1TBF", "defaultkey": true }
-    this.walletName = currentWallet.name
+    this.walletName = this.$store.state.currentwallet.wallet.name
   },
   methods: {
 

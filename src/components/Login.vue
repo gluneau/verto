@@ -10,22 +10,60 @@
       <div class="text-weight-bold uppercase q-pa-lg">
         <big>{{ $t('Welcome.join_message') }}</big>
       </div>
-      <q-btn outline rounded  @click="createUser">{{ $t('Welcome.create') }}</q-btn>
+      <div v-if="hasConfig">
+        <q-field
+          :error="passHasError"
+          error-label="Password Is Incorrect"
+          :count="100"
+        >
+          <q-input type="password" dark v-model="password" color="yellow" float-label="Verto Password"/>
+        </q-field>
+        <q-btn outline rounded  @click="login">{{ $t('Welcome.login') }}</q-btn>
+      </div>
+      <div v-else>
+        <q-btn outline rounded  @click="createUser">{{ $t('Welcome.create') }}</q-btn>
+      </div>
     </q-jumbotron>
   </div>
   
 </template>
 
 <script>
+import configManager from '../util/ConfigManager'
+
 export default {
   name: 'Login',
   data () {
-    return {}
+    return {
+      hasConfig: '',
+      passHasError: false,
+      password: '' 
+    }
+  },
+  mounted() {
+    this.hasConfig = configManager.hasVertoConfig()
   },
   methods: {
+    login() {
+      this.passHasError = false
+      if (!this.password) {
+        this.passHasError = true
+        return
+      }
+      const results = configManager.login(this.password)
+      if (results.success) {
+        this.$router.push({path: 'wallet'})
+      } else {
+        if (results.message === 'no_default_key') {
+          this.$router.push({path: 'vertomanager'})
+        } else {
+          this.passHasError = true
+        }
+      }
+    },
     createUser () {
       // createPassword
-      this.$router.push({path: 'wallet'})
+      this.$router.push({path: 'createPassword'})
     }
   }
 }
