@@ -9,7 +9,7 @@
         <q-icon name="all_inbox" size="2rem"/>
         <div class="q-headline">Wallet Manger</div>
       </div>
-      <div class="q-pa-xl">
+      <div class="q-pa-xl" @click="route('beginGetVtx')">
         <q-icon name="add_shopping_cart" size="2rem"/>
         <div class="q-headline">Get VTX</div>
       </div>

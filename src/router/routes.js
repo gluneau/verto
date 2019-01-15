@@ -43,10 +43,10 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/VertoManager.vue') }
     ]
   },{
-    path: '/one',
-    component: () => import('layouts/NoWallet.vue'),
+    path: '/beginGetVtx',
+    component: () => import('layouts/Default.vue'),
     children: [
-      { path: '', component: () => import('pages/One.vue') }
+      { path: '', component: () => import('components/getvtx/BeginGetVtx.vue') }
     ]
   },{
     path: '/two',

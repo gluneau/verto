@@ -1,4 +1,9 @@
 // Configuration for your app
+const webpack = require('webpack')
+const path = require('path')
+
+// Get our env variables
+const envparser = require('./src/util/envparser')
 
 module.exports = function (ctx) {
   return {
@@ -20,6 +25,7 @@ module.exports = function (ctx) {
     supportIE: false,
     build: {
       scopeHoisting: true,
+      env: envparser(),
       // vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,

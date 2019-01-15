@@ -13,12 +13,14 @@
       <div v-if="hasConfig">
         <q-field
           :error="passHasError"
-          error-label="Password Is Incorrect"
+          v-bind:error-label="$t('Welcome.incorrect')"
           :count="100"
         >
-          <q-input type="password" dark v-model="password" color="yellow" float-label="Verto Password"/>
+          <q-input type="password" dark v-model="password" color="yellow" v-bind:float-label="$t('Welcome.password')"/>
         </q-field>
-        <q-btn outline rounded  @click="login">{{ $t('Welcome.login') }}</q-btn>
+        <div class="q-pa-lg">
+          <q-btn outline rounded  @click="login">{{ $t('Welcome.login') }}</q-btn>
+        </div>
       </div>
       <div v-else>
         <q-btn outline rounded  @click="createUser">{{ $t('Welcome.create') }}</q-btn>
@@ -42,6 +44,7 @@ export default {
   },
   mounted() {
     this.hasConfig = configManager.hasVertoConfig()
+    console.info(process.env)
   },
   methods: {
     login() {

@@ -75,7 +75,6 @@
 </template>
 
 <script>
-import sjcl from "sjcl";
 import configManager from '../../util/ConfigManager'
 
 export default {

@@ -75,28 +75,28 @@
               <div class="q-pa-sm">
                 <q-field
                   :error="addWallet.walletNameEmpty"
-                  error-label="Wallet Name Is Required and Must Be Unique"
+                  v-bind:error-label="$t('WalletManager.used')"
                   :count="100"
                 >
-                  <q-input v-model="addWallet.walletName" :error="addWallet.walletNameEmpty" color="blue" float-label="Give Wallet A Name. ie: Savings"  />
+                  <q-input v-model="addWallet.walletName" :error="addWallet.walletNameEmpty" color="blue" v-bind:float-label="$t('DisplayKey.walletname')"  />
                 </q-field>
               </div>
               <div class="q-pa-sm">
                 <q-field
                   :error="addWallet.addressEmpty"
-                  error-label="Wallet Address Is Required"
+                  v-bind:error-label="$t('WalletManager.both')"
                   :count="100"
                 >
-                  <q-input v-model="addWallet.address" :error="addWallet.addressEmpty" color="blue" float-label="Public Key"  />
+                  <q-input v-model="addWallet.address" :error="addWallet.addressEmpty" color="blue" v-bind:float-label="$t('WalletManager.keyhere')"  />
                 </q-field>
               </div>
               <div class="q-pa-sm">
                 <q-field
                   :error="addWallet.vertoPasswordEmpty"
-                  error-label="Verto Password Is Incorrect"
+                  v-bind:error-label="$t('Welcome.incorrect')"
                   :count="100"
                 >
-                  <q-input v-model="addWallet.vertoPassword" :error="addWallet.vertoPasswordEmpty" color="blue" float-label="Verto Password"  />
+                  <q-input v-model="addWallet.vertoPassword" :error="addWallet.vertoPasswordEmpty" color="blue" v-bind:float-label="$t('CreateVertoPassword.vertopassword')"  />
                 </q-field>
               </div>
               <div class="row text-right q-pa-lg">
@@ -169,6 +169,7 @@ export default {
   },
   mounted() {
     this.tableData = this.$store.state.currentwallet.config.keys
+    console.log("Mounted.")
   },
   methods: {
     changeDefault: function(row) {
