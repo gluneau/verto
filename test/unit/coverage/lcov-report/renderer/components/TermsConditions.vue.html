@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for renderer/components/TermsConditions.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">renderer/components/</a> TermsConditions.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;section class="hero is-fullheight is-light is-bold"&gt;
+    &lt;div class="hero-head"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="navbar-brand p-l-xl p-t-lg"&gt;
+          &lt;img src="~@/assets/img/verto-dark.png" alt="Logo"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="hero-body is-paddingless"&gt;
+      &lt;div class="container p-l-lg p-r-lg"&gt;
+        &lt;h3 class="subtitle is-marginless font-gibson"&gt;
+          Terms &amp; Conditions
+        &lt;/h3&gt;
+        &lt;div class="box terms-box m-t-sm is-size-6 font-gibson"&gt;
+          &lt;article&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Placeholder US citizens Warning&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Vestibulum volutpat fermentum elit eget consectetur. Curabitur interdum tincidunt tincidunt. Nam non mi libero. integer congue lorem vestibulum ante mattis fringilla.&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Elit eget consectetur. Curabitur interdum&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Placeholder US citizens Warning&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Vestibulum volutpat fermentum elit eget consectetur. Curabitur interdum tincidunt tincidunt. Nam non mi libero. integer congue lorem vestibulum ante mattis fringilla.&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Elit eget consectetur. Curabitur interdum&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Placeholder US citizens Warning&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Vestibulum volutpat fermentum elit eget consectetur. Curabitur interdum tincidunt tincidunt. Nam non mi libero. integer congue lorem vestibulum ante mattis fringilla.&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Elit eget consectetur. Curabitur interdum&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Placeholder US citizens Warning&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Vestibulum volutpat fermentum elit eget consectetur. Curabitur interdum tincidunt tincidunt. Nam non mi libero. integer congue lorem vestibulum ante mattis fringilla.&lt;/p&gt;
+            &lt;p class="m-t-md m-b-md" &gt;Elit eget consectetur. Curabitur interdum&lt;/p&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="hero-foot"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="level is-mobile p-lg"&gt;
+          &lt;div class="level-item has-text-centered is-marginless font-gibson-semibold"&gt;
+            &lt;a class="p-t-lg p-b-lg button is-fullwidth is-light m-r-sm deny-btn"&gt;Deny&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class="level-item has-text-centered is-marginless font-gibson-semibold"&gt;
+            &lt;a class="p-t-lg p-b-lg button is-fullwidth is-primary m-l-sm"&gt;Agree&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+export default {
+  data() {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      messages: "",
+      wallet: null, // { name: "wallet_xxx", publicKey: "EOS..."" }
+      eosUrl: null
+    };
+  }
+};
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.terms-box {
+  padding: 0.75rem;
+}
+.terms-box article {
+  height: 55vh;
+  overflow-y: scroll;
+}
+.button {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+.deny-btn {
+  background-color: rgba(120, 132, 158, 0.16);
+}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 21:10:01 GMT-0500 (GMT-05:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

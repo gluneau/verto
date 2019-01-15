@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for renderer/components/Welcome.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">renderer/components/</a> Welcome.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.88% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;section class="hero is-fullheight wallet-background"&gt;
+    &lt;div class="hero-body"&gt;
+      &lt;div class="container has-text-centered"&gt;
+        &lt;div class="box has-text-white is-radiusless is-shadowless"&gt;
+          &lt;div class="is-size-3"&gt;{{ $t('Welcome.welcometo') }}&lt;/div&gt;
+          &lt;div class="logo-welcome p-l-lg p-r-lg"&gt;
+            &lt;!-- warning image translation needed --&gt;
+            &lt;img src="~@/assets/img/white-logo-with-text.png" &gt;
+          &lt;/div&gt;
+          &lt;div class="m-t-md is-size-5"&gt;{{ subtitle_message }}&lt;/div&gt;
+          &lt;div v-if="hasPassword"&gt;
+            &lt;div class="is-size-6 m-t-md"&gt;{{ $t('Welcome.welcomeback') }}&lt;/div&gt;
+            &lt;div v-if="nopassword"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('Welcome.nopassword') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div v-if="incorrectPassword"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('Welcome.incorrect') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;form&gt;
+              &lt;input  v-model="password" class="input m-b-sm" type="password" :placeholder="$t('Welcome.password')"&gt;
+              &lt;div class="level-item has-text-centered m-t-sm"&gt;
+                &lt;a class="p-t-lg button is-success" @click="login"&gt; {{ $t('Welcome.login') }} &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+          &lt;div v-if="!hasPassword"&gt;
+            &lt;div class="is-size-6 m-t-md"&gt;{{ join_message }}&lt;/div&gt;
+            &lt;br&gt;
+            &lt;a class="p-t-lg button is-primary is-normal" @click="createvertopassword"&gt;
+              {{ $t('Welcome.create') }}
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+import sjcl from "sjcl";
+&nbsp;
+const {ipcRenderer} = require('electron');
+ipcRenderer.on('message', function(event, text) <span class="fstat-no" title="function not covered" >{</span>
+  var container = <span class="cstat-no" title="statement not covered" >document.getElementById('messages');</span>
+  var message = <span class="cstat-no" title="statement not covered" >document.createElement('div');</span>
+<span class="cstat-no" title="statement not covered" >  message.innerHTML = text;</span>
+<span class="cstat-no" title="statement not covered" >  container.appendChild(message);</span>
+})
+&nbsp;
+export default {
+  // name: 'locale-changer',
+  data() {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      // langs: ['en', 'fr'],
+      subtitle_message: this.$t('Welcome.subtitle_message'),
+      join_message: this.$t('Welcome.join_message'),
+      publicKey: "",
+      password: "",
+      nopassword: false,
+      incorrectPassword: false,
+      hasPassword: false
+    };
+  },
+  mounted() {
+    let fs = <span class="cstat-no" title="statement not covered" >require("fs");</span>
+    let path = <span class="cstat-no" title="statement not covered" >require("path")</span>
+    let electron = <span class="cstat-no" title="statement not covered" >require("electron")</span>
+    let filePath = <span class="cstat-no" title="statement not covered" >path.join(electron.remote.app.getPath('userData'), '/verto.temp');</span>
+<span class="cstat-no" title="statement not covered" >    if (fs.existsSync(filePath)) {</span>
+<span class="cstat-no" title="statement not covered" >      fs.unlinkSync(filePath);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (fs.existsSync(path.join(electron.remote.app.getPath('userData'), '/verto.config'))) {</span>
+<span class="cstat-no" title="statement not covered" >      this.hasPassword = true;</span>
+<span class="cstat-no" title="statement not covered" >      console.log("You are here.")</span>
+    }
+  },
+  methods: {
+    login: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.incorrectPassword = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.nopassword = false;</span>
+      let fs = <span class="cstat-no" title="statement not covered" >require("fs");</span>
+      let path = <span class="cstat-no" title="statement not covered" >require("path")</span>
+      let electron = <span class="cstat-no" title="statement not covered" >require("electron")</span>
+      let filePath = <span class="cstat-no" title="statement not covered" >path.join(electron.remote.app.getPath('userData'), '/verto.config');</span>
+<span class="cstat-no" title="statement not covered" >      if (!fs.existsSync(filePath)) {</span>
+<span class="cstat-no" title="statement not covered" >        this.nopassword = true;</span>
+      } else {
+        const databack = <span class="cstat-no" title="statement not covered" >fs.readFileSync(filePath, 'utf-8');</span>
+<span class="cstat-no" title="statement not covered" >        try {</span>
+          const config = <span class="cstat-no" title="statement not covered" >JSON.parse(sjcl.decrypt(this.password, databack));</span>
+<span class="cstat-no" title="statement not covered" >          this.$store.dispatch("setKeys", config.keys);</span>
+<span class="cstat-no" title="statement not covered" >          this.$store.dispatch("login", true);</span>
+          let foundDefault = <span class="cstat-no" title="statement not covered" >false;</span>
+          let i;
+<span class="cstat-no" title="statement not covered" >          for (i = 0; i &lt; config.keys.length; i++) {</span>
+            const key = <span class="cstat-no" title="statement not covered" >config.keys[i];</span>
+<span class="cstat-no" title="statement not covered" >            if (key.defaultKey) {</span>
+<span class="cstat-no" title="statement not covered" >              this.$store.commit("save", key.address);</span>
+<span class="cstat-no" title="statement not covered" >              this.$store.dispatch("setCurrentWallet", key);</span>
+<span class="cstat-no" title="statement not covered" >              foundDefault = true;</span>
+            }
+          }
+<span class="cstat-no" title="statement not covered" >          if (foundDefault) {</span>
+<span class="cstat-no" title="statement not covered" >            this.$router.push({ path: "main" });</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            this.$router.push({ path: "walletmanager" });</span>
+          }
+        } catch (error) {
+<span class="cstat-no" title="statement not covered" >          this.incorrectPassword = true</span>
+        }
+      }
+    },
+    createvertopassword: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push({ path: "createvertopassword" });</span>
+    }
+  }
+};
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.container {
+  max-width: 30rem;
+}
+.wallet-background {
+  height: 100vh;
+  background-image: url(~@/assets/img/wallet-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.button {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+.logo-welcome img {
+  width: 100%;
+  max-width: 320px;
+}
+.logger {
+  overflow: scroll;
+  background-color: white;
+  color: #000000;
+  height: 150px;
+}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 21:10:01 GMT-0500 (GMT-05:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
