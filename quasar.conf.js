@@ -132,7 +132,7 @@ module.exports = function (ctx) {
       // id: 'org.cordova.quasar.app'
     },
     electron: {
-      // bundler: 'builder', // or 'packager'
+      bundler: 'builder', // or 'packager'
       extendWebpack (cfg) {
         // do something with Electron process Webpack cfg
       },
@@ -152,6 +152,78 @@ module.exports = function (ctx) {
         // https://www.electron.build/configuration/configuration
 
         // appId: 'quasar-app'
+        "productName": "Verto",
+        "appId": "io.volentix.verto",
+        // "directories": {
+        //   "output": "build"
+        // },
+        // "files": [
+        //   "dist/electron/**/*"
+        // ],
+        "extraResources": [
+          "resources/**"
+        ],
+        "dmg": {
+          "contents": [{
+              "x": 410,
+              "y": 150,
+              "type": "link",
+              "path": "/Applications"
+            },
+            {
+              "x": 130,
+              "y": 150,
+              "type": "file"
+            }
+          ]
+        },
+        "mac": {
+          "icon": "icons/mac/icon.icns",
+          "target": [
+            "zip",
+            "dmg"
+          ],
+          "extendInfo": {
+            "NSAppTransportSecurity": {
+              "NSAllowsArbitraryLoads": true
+            },
+            "NSExceptionDomains": {
+              "localhost": {
+                "NSTemporaryExceptionAllowsInsecureHTTPSLoads": false,
+                "NSIncludesSubdomains": false,
+                "NSTemporaryExceptionAllowsInsecureHTTPLoads": true,
+                "NSTemporaryExceptionMinimumTLSVersion": "1.0",
+                "NSTemporaryExceptionRequiresForwardSecrecy": false
+              }
+            }
+          }
+        },
+        "win": {
+          "icon": "icons/windows/icon.ico",
+          "target": "nsis",
+          "publisherName": "Volentix Labs, Inc."
+        },
+        "linux": {
+          "category": "Network",
+          "description": "A multi-currency crypto wallet with initial support for EOS & VTX",
+          "desktop": {
+            "Name": "Verto",
+            "GenericName": "Verto Wallet",
+            "X-GNOME-FullName": "Verto",
+            "Comment": "A multi-currency crypto wallet with initial support for EOS & VTX",
+            "Type": "Application",
+            "Terminal": "false",
+            "StartupNotify": "false",
+            "Categories": "Network;"
+          },
+          "icon": "icons/linux",
+          "target": "deb"
+        },
+        "publish": [{
+          "owner": "Volentix",
+          "provider": "github",
+          "releaseType": "draft"
+        }]
       }
     }
   }

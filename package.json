@@ -1,11 +1,19 @@
 {
-  "name": "verto",
+  "name": "Verto",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "A multi-currency crypto wallet with initial support for EOS & VTX",
   "cordovaId": "org.cordova.quasar.app",
-  "author": "",
+  "author": "Volentix Labs <volentix.io>",
   "private": true,
+  "homepage": "https://github.com/Volentix/verto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Volentix/verto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Volentix/verto/issues"
+  },
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -16,12 +24,16 @@
     "vue-i18n": "^7.3.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.5",
     "devtron": "1.4.0",
-    "electron": "^4.0.0",
+    "electron": "^3.0.13",
+    "electron-builder": "^20.38.4",
     "electron-debug": "2.0.0",
     "electron-devtools-installer": "2.2.4",
+    "file-loader": "^3.0.1",
     "quasar-cli": "^0.17.0",
-    "strip-ansi": "=3.0.1"
+    "strip-ansi": "=3.0.1",
+    "webpack": "^4.28.4"
   },
   "engines": {
     "node": ">= 8.9.0",

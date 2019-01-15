@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for renderer/components/WalletManager/WalletManager.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">renderer/components/WalletManager/</a> WalletManager.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/108</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/108</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;section&gt;
+  &lt;div class="hero is-fullheight is-paddingless has-blur-background "&gt;
+    &lt;div class="hero-head p-t-sm p-l-lg p-r-md "&gt;
+      &lt;nav class="navbar is-dark is-logo"&gt;
+        &lt;div class="navbar-brand"&gt;
+          &lt;div class="navbar-item header has-text-centered is-centered  has-text-white"&gt;
+            {{ $t('WalletManager.header') }}
+          &lt;/div&gt;
+          &lt;a class="navbar-burger  is-white" @click="open = !open"&gt;
+            &lt;span aria-hidden="true" &gt;&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="navbar-menu" :class="{'is-active': open}"&gt;
+          &lt;div class="navbar-end"&gt;
+            &lt;div class="justify-center"&gt;
+              &lt;a class="has-text-white mr2 f6 link br1 bw1  ph3 pv1 dib white-40 items-center justify-center w4" @click="showAddKey = !showAddKey"&gt;
+                  {{ $t('CreateVertoPassword.addwallet') }}
+              &lt;/a&gt;
+              &lt;a class="has-text-white mr2 f6 link br1 bw1  ph3 pv1 dib white-40 items-center justify-center w4" @click="generateKey"&gt;
+                  {{ $t('CreateVertoPassword.createwallet') }}
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+        &lt;div v-if="showAddKey" class="container has-text-centered add-wallet"&gt;
+          &lt;div class="header has-text-white has-text-centered m-t-lg"&gt;
+          {{ $t('CreateVertoPassword.addwallet') }}
+          &lt;/div&gt;
+          &lt;form&gt;
+            &lt;div v-if="keyalreadysaved"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('WalletManager.used') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div v-if="missingInput"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('WalletManager.both') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;input v-model="keyname" class="input m-b-sm" type="text" :placeholder="$t('DisplayKey.walletname')"&gt;
+            &lt;input v-model="publicKey" class="input m-b-sm" type="text" :placeholder="$t('WalletManager.keyhere')"&gt;
+            &lt;input v-model="walletpassword" class="input m-b-sm" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')"&gt;
+            &lt;div v-if="incorrectPassword"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('Welcome.incorrect') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="level is-mobile m-t-md"&gt;
+              &lt;div class="has-text-dark level-left"&gt;
+                &lt;a class="button  is-primary m-t-md green is-centered has-text-white" @click="cancelAddPublicKey"&gt;
+                  &lt;p class="is-size-6"&gt;
+                    {{ $t('WalletManager.cancel') }}
+                  &lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="has-text-dark level-right"&gt;
+                &lt;a class="button m-t-md green is-primary is-centered has-text-white" @click="addpublickey"&gt;
+                  &lt;p&gt;
+                    {{ $t('WalletManager.submit') }}
+                  &lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div v-if="existingKeys.length &gt; 0 &amp;&amp; !showAddKey"&gt;
+          &lt;div v-if="showdeletekeypassword" class="has-text-centered container delete-key"&gt;
+&nbsp;
+            &lt;input v-model="deletekeypassword" class="input m-b-sm" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')"&gt;
+            &lt;div v-if="lastwarningBeforeDelete"&gt;
+              &lt;p class="has-text-danger"&gt;
+                {{ $t('WalletManager.cannotrecover') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div v-if="incorrectdeletekeypassword"&gt;
+              &lt;p class="has-text-danger"&gt;
+                {{ $t('Welcome.incorrect') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="level is-mobile m-t-md"&gt;
+              &lt;div class="has-text-dark level-left"&gt;
+                &lt;a class="button  is-primary m-t-md green is-centered has-text-white" @click="cancelDeleteKey"&gt;
+                  &lt;p class="is-size-6"&gt;
+                    {{ $t('WalletManager.cancel') }}
+                  &lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="has-text-dark level-right"&gt;
+                &lt;a class="button m-t-md green is-primary is-centered has-text-white" @click="removeKey"&gt;
+                  &lt;p&gt;
+                    {{ $t('WalletManager.delete') }}
+                  &lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="keys-container container" v-if="!showdeletekeypassword"&gt;
+            &lt;div class="header has-text-centered is-centered  has-text-white has-text-centered"&gt;
+              {{ $t('CreateVertoPassword.wallets') }}
+            &lt;/div&gt;
+            &lt;div v-for="key in existingKeys" class="keys-list m-t-md"&gt;
+              &lt;nav class="level is-mobile"&gt;
+                &lt;div class="level-item has-text-centered"&gt;
+                  &lt;font-awesome-icon icon="key" class="fa-sm has-text-primary m-l-sm"/&gt;
+                &lt;/div&gt;
+                &lt;div class="level-item has-text-centered"&gt;
+                  &lt;a class="is-size-6 m-md key has-text-white" @click="openMain(key)"&gt; {{ key.name }} &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="level-item has-text-centered"&gt;
+                  &lt;b-checkbox v-model="key.defaultKey" @change.native="chooseDefault(key)"&gt;
+                    &lt;/b-checkbox&gt;
+                &lt;/div&gt;
+                &lt;div class="level-item has-text-centered"&gt;
+                  &lt;a @click="deleteKey(key.name)"&gt;
+                    &lt;font-awesome-icon icon="trash" class="fa-md has-text-grey-light m-l-sm trash-bin is-pulled-right m-r-sm"/&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+&nbsp;
+          &lt;/div&gt;
+            &lt;br&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;b-modal :active.sync="isInstructionsActive"&gt;
+        &lt;div class="card"&gt;
+          &lt;div class="card-content"&gt;
+            &lt;div class="modal-header"&gt;
+              &lt;slot name="header"&gt;
+                {{ $t('CreateVertoPassword.addwallet') }}
+              &lt;/slot&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              {{ $t('CreateVertoPassword.onlysupport') }}
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div class="modal-header"&gt;
+              &lt;slot name="header"&gt;
+                {{ $t('CreateVertoPassword.createwallet') }}
+              &lt;/slot&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;p v-html="$t('CreateVertoPassword.createkey')"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div class="modal-header"&gt;
+              &lt;slot name="header"&gt;
+                {{ $t('CreateVertoPassword.wallets') }}
+              &lt;/slot&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              {{ $t('CreateVertoPassword.choose') }}
+            &lt;/div&gt;
+            &lt;div class="modal-header"&gt;
+              &lt;slot name="header"&gt;
+                {{ $t('CreateVertoPassword.delete') }}
+              &lt;/slot&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
+                  {{ $t('CreateVertoPassword.trash') }} &lt;font-awesome-icon icon="trash" class="fa-md has-text-grey-light m-l-sm trash-bin is-pulled-right m-r-sm"/&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  {{ $t('CreateVertoPassword.enter') }}
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;p v-html="$t('CreateVertoPassword.note')"&gt;&lt;/p&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/b-modal&gt;
+      &lt;b-modal :active.sync="isChangingDefault"&gt;
+        &lt;div class="card has-text-centered has-background-black has-text-white"&gt;
+          &lt;div class="card-content"&gt;
+            &lt;div class="modal-header is-size-1"&gt;
+              &lt;slot name="header"&gt;
+                {{ newDefaultKey.name }} As Default
+              &lt;/slot&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;input v-model="walletpassword" class="input m-b-sm" type="password" :placeholder="$t('CreateVertoPassword.vertopassword')"&gt;
+            &lt;/div&gt;
+            &lt;div v-if="changeDefaultMissingPassword"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                You must provide a password
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div v-if="incorrectDefaultChangePassword"&gt;
+              &lt;p class="has-text-danger m-t-md"&gt;
+                {{ $t('Welcome.incorrect') }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="has-text-dark"&gt;
+                &lt;a class="button m-t-md green is-primary is-centered has-text-white" @click="changeDefault"&gt;
+                  &lt;p&gt;
+                    {{ $t('WalletManager.submit') }}
+                  &lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;br&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/b-modal&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+import sjcl from "sjcl";
+&nbsp;
+export default {
+  data() {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      open: false,
+      userPassword: "",
+      checkPassword: "",
+      notMatchingPass: false,
+      fillAllFields: false,
+      keyname: "",
+      publicKey: "",
+      showAddKey: false,
+      missingInput: false,
+      keyalreadysaved: false,
+      existingKeys: [],
+      incorrectPassword: false,
+      walletpassword: "",
+      showdeletekeypassword: false,
+      deletekeypassword: "",
+      keyfordelete: "",
+      incorrectdeletekeypassword: false,
+      isInstructionsActive: false,
+      lastwarningBeforeDelete: false,
+      showParentNavOptions: false,
+      showDeleteKey: false,
+      isChangingDefault: false,
+      newDefaultKey: {},
+      changeDefaultMissingPassword: false,
+      incorrectDefaultChangePassword: false
+    };
+  },
+  mounted() {
+<span class="cstat-no" title="statement not covered" >    this.existingKeys = this.$store.state.keys;</span>
+<span class="cstat-no" title="statement not covered" >    if (!this.existingKeys || this.existingKeys.length &lt;= 0) {</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push({ path: "keepyourkeyssafe" });</span>
+    }
+  },
+  methods: {
+    showChildren: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.showParentNavOptions = false;</span>
+    },
+    showParents: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.showParentNavOptions = true;</span>
+    },
+    chooseDefault: function(key) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      console.log("choose default=" + JSON.stringify(key))</span>
+<span class="cstat-no" title="statement not covered" >      this.newDefaultKey = key;</span>
+<span class="cstat-no" title="statement not covered" >      this.walletpassword = "";</span>
+<span class="cstat-no" title="statement not covered" >      this.isChangingDefault = true;</span>
+    },
+    changeDefault: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.changeDefaultMissingPassword = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.incorrectDefaultChangePassword = false;</span>
+<span class="cstat-no" title="statement not covered" >      if (this.walletpassword === "") {</span>
+<span class="cstat-no" title="statement not covered" >        this.changeDefaultMissingPassword = true;</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      let fs = <span class="cstat-no" title="statement not covered" >require("fs");</span>
+      let path = <span class="cstat-no" title="statement not covered" >require("path")</span>
+      let electron = <span class="cstat-no" title="statement not covered" >require("electron")</span>
+      let filePath = <span class="cstat-no" title="statement not covered" >path.join(electron.remote.app.getPath('userData'), '/verto.config');</span>
+      const databack = <span class="cstat-no" title="statement not covered" >fs.readFileSync(filePath, 'utf-8');</span>
+      let config = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        config = JSON.parse(sjcl.decrypt(this.walletpassword, databack));</span>
+      } catch (error) {
+<span class="cstat-no" title="statement not covered" >        this.incorrectDefaultChangePassword = true</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      let i;
+<span class="cstat-no" title="statement not covered" >      for (i = 0; i &lt; config.keys.length; i++) {</span>
+        const key = <span class="cstat-no" title="statement not covered" >config.keys[i];</span>
+<span class="cstat-no" title="statement not covered" >        if (key.name.toLowerCase() === this.newDefaultKey.name.toLowerCase()) {</span>
+<span class="cstat-no" title="statement not covered" >          key.defaultKey = true;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          key.defaultKey = false;</span>
+        }
+      }
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("setKeys", config.keys);</span>
+<span class="cstat-no" title="statement not covered" >      this.existingKeys = this.$store.state.keys;</span>
+<span class="cstat-no" title="statement not covered" >      fs.writeFileSync(filePath, sjcl.encrypt(this.walletpassword, JSON.stringify(config)), 'utf-8');</span>
+<span class="cstat-no" title="statement not covered" >      this.walletpassword = "";</span>
+<span class="cstat-no" title="statement not covered" >      this.existingKeys = config.keys;</span>
+<span class="cstat-no" title="statement not covered" >      this.isChangingDefault = false;</span>
+    },
+    openvideo: function() <span class="fstat-no" title="function not covered" >{</span>
+      var open = <span class="cstat-no" title="statement not covered" >require("open");</span>
+<span class="cstat-no" title="statement not covered" >      open("https://www.youtube.com/embed/u8qDkInJHaI");</span>
+    },
+    openMain: function(key) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.commit("save", key.address);</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("setCurrentWallet", key);</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push({ path: "main" });</span>
+    },
+    addpublickey: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.incorrectPassword = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.keyalreadysaved = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.missingInput = false;</span>
+<span class="cstat-no" title="statement not covered" >      if (this.keyname === "" || this.publicKey === "") {</span>
+<span class="cstat-no" title="statement not covered" >        this.missingInput = true;</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      let fs = <span class="cstat-no" title="statement not covered" >require("fs");</span>
+      let path = <span class="cstat-no" title="statement not covered" >require("path")</span>
+      let electron = <span class="cstat-no" title="statement not covered" >require("electron")</span>
+      let filePath = <span class="cstat-no" title="statement not covered" >path.join(electron.remote.app.getPath('userData'), '/verto.config');</span>
+      const databack = <span class="cstat-no" title="statement not covered" >fs.readFileSync(filePath, 'utf-8');</span>
+      let config = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        config = JSON.parse(sjcl.decrypt(this.walletpassword, databack));</span>
+      } catch (error) {
+<span class="cstat-no" title="statement not covered" >        this.incorrectPassword = true</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      let i;
+<span class="cstat-no" title="statement not covered" >      for (i = 0; i &lt; config.keys.length; i++) {</span>
+        const key = <span class="cstat-no" title="statement not covered" >config.keys[i];</span>
+<span class="cstat-no" title="statement not covered" >        if (key.name.toLowerCase() === this.keyname.toLowerCase() || key.key === this.publicKey) {</span>
+<span class="cstat-no" title="statement not covered" >          this.keyalreadysaved = true;</span>
+<span class="cstat-no" title="statement not covered" >          return;</span>
+        }
+      }
+      let defaultKey = <span class="cstat-no" title="statement not covered" >false;</span>
+<span class="cstat-no" title="statement not covered" >      if (config.keys.length &lt;= 0) {</span>
+<span class="cstat-no" title="statement not covered" >        defaultKey = true;</span>
+      }
+      const key = <span class="cstat-no" title="statement not covered" >{name: this.keyname, key: this.publicKey, defaultKey: defaultKey};</span>
+<span class="cstat-no" title="statement not covered" >      config.keys.push(key);</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("setKeys", config.keys);</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("setCurrentWallet", key);</span>
+<span class="cstat-no" title="statement not covered" >      this.existingKeys = this.$store.state.keys;</span>
+<span class="cstat-no" title="statement not covered" >      fs.writeFileSync(filePath, sjcl.encrypt(this.walletpassword, JSON.stringify(config)), 'utf-8');</span>
+<span class="cstat-no" title="statement not covered" >      this.walletpassword = "";</span>
+<span class="cstat-no" title="statement not covered" >      this.existingKeys = config.keys;</span>
+<span class="cstat-no" title="statement not covered" >      this.showAddKey = false;</span>
+    },
+    cancelAddPublicKey: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.showAddKey = false;</span>
+    },
+    generateKey: function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push({ path: "keepyourkeyssafe" });</span>
+    },
+    deleteKey(key) {
+<span class="cstat-no" title="statement not covered" >      this.keyfordelete = key;</span>
+<span class="cstat-no" title="statement not covered" >      this.showdeletekeypassword = true;</span>
+<span class="cstat-no" title="statement not covered" >      this.lastwarningBeforeDelete = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.showDeleteKey = true;</span>
+    },
+    cancelDeleteKey() {
+<span class="cstat-no" title="statement not covered" >      this.keyfordelete = "";</span>
+<span class="cstat-no" title="statement not covered" >      this.deletekeypassword = "";</span>
+<span class="cstat-no" title="statement not covered" >      this.showdeletekeypassword = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.lastwarningBeforeDelete = false;</span>
+    },
+    removeKey() {
+<span class="cstat-no" title="statement not covered" >      this.incorrectdeletekeypassword = false;</span>
+      let fs = <span class="cstat-no" title="statement not covered" >require("fs");</span>
+      let path = <span class="cstat-no" title="statement not covered" >require("path")</span>
+      let electron = <span class="cstat-no" title="statement not covered" >require("electron")</span>
+      let filePath = <span class="cstat-no" title="statement not covered" >path.join(electron.remote.app.getPath('userData'), '/verto.config');</span>
+      const databack = <span class="cstat-no" title="statement not covered" >fs.readFileSync(filePath, 'utf-8');</span>
+      let config = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        config = JSON.parse(sjcl.decrypt(this.deletekeypassword, databack));</span>
+      } catch (error) {
+<span class="cstat-no" title="statement not covered" >        this.incorrectdeletekeypassword = true</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (this.lastwarningBeforeDelete) {</span>
+        let keyIndex;
+        let newKeysArray = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >        for (let i = 0; i &lt; config.keys.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >          if (config.keys[i].name !== this.keyfordelete) {</span>
+<span class="cstat-no" title="statement not covered" >            newKeysArray.push({name: config.keys[i].name, key: config.keys[i].key});</span>
+          }
+        }
+<span class="cstat-no" title="statement not covered" >        console.log(newKeysArray);</span>
+<span class="cstat-no" title="statement not covered" >        config.keys = newKeysArray;</span>
+<span class="cstat-no" title="statement not covered" >        fs.writeFileSync(filePath, sjcl.encrypt(this.deletekeypassword, JSON.stringify(config)), 'utf-8');</span>
+<span class="cstat-no" title="statement not covered" >        this.existingKeys = newKeysArray;</span>
+<span class="cstat-no" title="statement not covered" >        this.keyfordelete = "";</span>
+<span class="cstat-no" title="statement not covered" >        this.deletekeypassword = "";</span>
+<span class="cstat-no" title="statement not covered" >        this.showdeletekeypassword = false;</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.lastwarningBeforeDelete = true;</span>
+      }
+    }
+  }
+};
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.navbar-menu.is-active {
+  background-color: transparent !important;
+}
+.navbar-burger{
+  color: #ffffff !important;
+}
+.hero-body.select-key {
+  background-color: #f7f7fa !important;
+}
+.modal-header {
+  margin-top: 0;
+  color: #42b983;
+}
+.hero-body.select-key .font-gibson-semibold {
+  color: #454f63;
+}
+.hero-body.select-key .font-gibson {
+  color: #78849e;
+  font-size: 11pt;
+}
+.header {
+  color: #78849e;
+  font-size: 20pt;
+}
+.hero-body.select-key .keys-list {
+  border-bottom: solid 1px hsl(0, 0%, 86%);
+  padding: 0.5rem !important;
+}
+.keys-container {
+  max-width: 40rem;
+  overflow-y: scroll;
+}
+.hero-body.select-key .key:hover {
+  color: hsl(171, 100%, 41%) !important;
+}
+.hero-body.select-key .trash-bin:hover {
+  color: hsl(171, 100%, 41%) !important;
+  cursor: pointer;
+}
+.hero-body.select-key .button.green {
+  background-color: #00a6a6 !important;
+  border: solid #00a6a6 1pt !important;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+}
+.hero-body.select-key .button.is-primary {
+  height: 3rem;
+}
+.hero-body.select-key .choose-file {
+  border-radius: 0.5rem;
+}
+.hero-body.select-key .button.green p {
+  color: #ffffff !important;
+}
+.b-checkbox {
+  margin-top: 0.6rem;
+}
+.hero-body.select-key input {
+  border-radius: 0.5rem;
+}
+.add-wallet {
+  max-width: 35rem;
+}
+.hero.is-fullheight {
+  min-height: 80vh !important;
+}
+.delete-key {
+  max-width: 30rem;
+}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 21:10:01 GMT-0500 (GMT-05:00)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
