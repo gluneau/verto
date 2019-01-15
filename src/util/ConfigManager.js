@@ -79,6 +79,11 @@ class ConfigManager {
         return {success: true}
     }
 
+    logout() {
+        store.commit('currentwallet/updateCurrentWallet', null)
+        store.commit('currentwallet/updateConfig', null)
+    }
+
     saveWalletAndKey(keyname, vertoPassword, privateKeyPassword, publicAddress, privateAddress, savePath) {
         let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
         const databack = fs.readFileSync(filePath, 'utf-8');

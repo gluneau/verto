@@ -18,7 +18,7 @@
         <div class="q-headline">Password</div>
       </div>
     </div>
-    <div class="q-pa-xl">
+    <div class="q-pa-xl" @click="logout()">
       <q-icon name="exit_to_app" size="2rem"/>
       <div class="q-headline">Logout</div>
     </div>
@@ -56,6 +56,11 @@ export default {
         this.showWalletManager = false
       }
       this.$router.push({path: route})
+    },
+    logout: function() {
+      console.log('Logout')
+      configManager.logout()
+      this.$router.push({path: '/'})
     }
   }
 }
