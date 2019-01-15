@@ -77,10 +77,12 @@ module.exports = function (ctx) {
         'QSelect',
         'QTable',
         'QTr',
-        'QTd'
+        'QTd',
+        'QModal'
       ],
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseOverlay'
       ],
       // Quasar plugins
       plugins: [

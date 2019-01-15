@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div class="layout-padding">
       <q-jumbotron class=" bg-white text-primary">
         <div class="text-left text-weight-bold uppercase q-pa-lg">

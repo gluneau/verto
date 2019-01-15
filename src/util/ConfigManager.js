@@ -9,6 +9,42 @@ const electron = require("electron")
 class ConfigManager {
     currentConfig
     currentWallet
+
+    /*
+     *
+     * Private methods start
+     * 
+     */
+    getConfig(password) {
+        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
+        const databack = fs.readFileSync(filePath, 'utf-8');
+        let config = {};
+        try {
+            config = JSON.parse(sjcl.decrypt(password, databack));
+            return {success: true, config: config}
+        } catch (error) {
+            return {success: false, message: 'bad_password'}
+        }
+    }
+
+    saveConfig(password, currentWallet, config) {
+        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
+        fs.writeFileSync(filePath, sjcl.encrypt(password, JSON.stringify(config)), 'utf-8')
+        store.commit('currentwallet/updateCurrentWallet', currentWallet)
+        store.commit('currentwallet/updateConfig', config)
+        return {success: true}
+    }
+    /*
+     *
+     * Private methods end
+     * 
+     */
+    
+    updateCurrentWallet(wallet) {
+        this.currentWallet = wallet
+        store.commit('currentwallet/updateCurrentWallet', wallet)
+    }
+
     createWallet(router, password) {
         this.currentConfig = {keys: []}
         let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');  
@@ -27,6 +63,8 @@ class ConfigManager {
         } catch (error) {
             return {success: false, message: 'bad_password'}
         }
+console.log(JSON.stringify(config, null, 4))
+
         store.commit('currentwallet/updateConfig', config)
         let i;
         for (i = 0; i < config.keys.length; i++) {
@@ -39,12 +77,36 @@ class ConfigManager {
         return {success: false, message: 'no_default_key'}
     }
 
+    addAssociationToWallet(address, password, associationName, data){
+        const configInfo = this.getConfig(password)
+        if (!configInfo.success) {
+            return configInfo;
+        }
+        const config = configInfo.config
+        let wallet = null
+        let i = 0
+        for (i = 0; i < config.keys.length; i++) {
+            const key = config.keys[i];
+            if (key.key === address) {
+                wallet = key
+            }
+        }
+        if (!wallet) {
+            return {success: false, message: 'key_not_found'}
+        }
+        if (!wallet.associations) {
+            wallet.associations = []
+        }
+        wallet.associations.push({name: associationName, createTime: new Date(), data: data})
+        return this.saveConfig(password, wallet, config)
+
+    }
+
     hasVertoConfig() {
         return fs.existsSync(path.join(electron.remote.app.getPath('userData'), '/verto.config'))
     }
 
     hasWallets() {
-        console.log("has wallet.")
         if (this.currentConfig.keys && this.currentConfig.keys.length > 0) {
             return true
         }

@@ -40,7 +40,7 @@
               :props="props"
             >
               <div v-if="col.name === 'name'" class="text-right uppercase">
-                {{ col.value }}
+                <q-btn outline rounded @click="changeWallet(props.row)">{{ col.value }}</q-btn>
               </div>
               <div v-if="col.name === 'default'" class="text-left">
                 <div v-if="col.value" class="q-pa-lg">
@@ -56,6 +56,9 @@
                 <div v-if="props.row.defaultKey" class="q-pa-lg">
                   Default Wallet
                 </div>
+              </div>
+              <div v-if="col.name === 'associations'" class="text-right">
+                  <q-btn outline rounded @click="showAssociations(props.row)">Associations</q-btn>
               </div>
               <div v-if="col.name === 'delete'" class="text-right" @click="deleteWallet(props.row)">
                 <q-icon name="delete_forever" size="2rem" color='red'/>
@@ -112,6 +115,21 @@
         </q-card>
       </div>
     </q-jumbotron>
+    <q-modal v-model="associations.showModal" minimized ref="modalRef">
+      <div style="padding: 50px" class="text-center">
+        <div v-if="associations.walletToShow.associations">
+          <div v-for="association in associations.walletToShow.associations">
+            {{ association.name }}
+          </div>
+        </div>
+        <div v-if="!associations.walletToShow.associations">
+          No Associations
+        </div>
+        <div class="q-pa-sm">
+          <q-btn outline rounded  @click="ok">OK</q-btn>
+        </div>
+      </div>
+    </q-modal>
   </div>
 </template>
 
@@ -147,6 +165,13 @@ export default {
           classes: 'my-class',
           style: 'width: 100px'
         },{
+          name: 'associations',
+          required: false,
+          align: 'center',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 50px'
+        },{
           name: 'delete',
           required: false,
           align: 'center',
@@ -164,14 +189,32 @@ export default {
         address: '',
         vertoPasswordEmpty: false,
         vertoPassword: ''
+      },
+      associations: {
+        showModal: false,
+        walletToShow: {}
       }
     }
   },
   mounted() {
     this.tableData = this.$store.state.currentwallet.config.keys
-    console.log("Mounted.")
   },
   methods: {
+    ok: function() {
+      this.associations.walletToShow = {}
+      this.associations.showModal = false
+    },
+    changeWallet:function(row) {
+      configManager.updateCurrentWallet(row)
+      this.$router.push({path: '/wallet'})
+    },
+    showAssociations:function(row) {
+      this.associations.walletToShow = row
+      this.associations.showModal = true
+    },
+    viewAssociations: function(row) {
+      console.log('associations ' + JSON.stringify(row))
+    },
     changeDefault: function(row) {
       console.log('Coolll ' + JSON.stringify(row))
     },
