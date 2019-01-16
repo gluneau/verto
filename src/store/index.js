@@ -1,46 +1,26 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-// import modules from './modules'
-
+// we first import the module
+import currentwallet from './currentwallet'
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  // strict: process.env.NODE_ENV !== 'production',
-  state: {
-    userKey: "",
-    loggedin: false,
-    keys: [],
-    currentWallet: {}
-  },
-  actions: {
-    save({
-      commit
-    }, key) {
-      commit("save", key);
-    },
-    login(context, bool) {
-      context.commit("LOGIN", bool);
-    },
-    setKeys(context, newkeys) {
-      context.commit("KEYS", newkeys);
-    },
-    setCurrentWallet(context, newWallet) {
-      context.commit("CURRENTWALLET", newWallet);
-    }
-  },
-  mutations: {
-    save(state, key) {
-      state.userKey = key;
-    },
-    LOGIN(state, bool) {
-      state.loggedin = bool;
-    },
-    KEYS(state, newkeys) {
-      state.keys = newkeys;
-    },
-    CURRENTWALLET(state, newKey) {
-      state.currentWallet = newKey
-    }
+const store = new Vuex.Store({
+  modules: {
+    // then we reference it
+    currentwallet
   }
 })
+
+// if we want some HMR magic for it, we handle
+// the hot update like below. Notice we guard this
+// code with "process.env.DEV" -- so this doesn't
+// get into our production build (and it shouldn't).
+if (process.env.DEV && module.hot) {
+  module.hot.accept(['./currentwallet'], () => {
+    const newCurrentwallet = require('./currentwallet').default
+    store.hotUpdate({ modules: { currentwallet: newCurrentwallet } })
+  })
+}
+
+export default store

@@ -19,8 +19,8 @@
                 </div>
                 <div class="q-pa-sm">
                   <q-field
-                    :error="errors.vertoPasswordEmpty"
-                    error-label="Password Is Required"
+                    :error="errors.walletNameEmpty"
+                    error-label="Wallet Name is Required"
                     :count="100"
                   >
                     <q-input v-model="walletName" :error="errors.walletNameEmpty" dark color="yellow" float-label="Give Wallet A Name. ie: Savings"  />
@@ -75,7 +75,6 @@
 </template>
 
 <script>
-import sjcl from "sjcl";
 import configManager from '../../util/ConfigManager'
 
 export default {

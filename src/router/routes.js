@@ -37,16 +37,46 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/Wallet.vue') }
     ]
   },{
-    path: '/one',
-    component: () => import('layouts/NoWallet.vue'),
-    children: [
-      { path: '', component: () => import('pages/One.vue') }
-    ]
-  },{
-    path: '/two',
+    path: '/vertomanager',
     component: () => import('layouts/Default.vue'),
     children: [
-      { path: '', component: () => import('pages/Two.vue') }
+      { path: '', component: () => import('components/vertoManager/VertoManager.vue') }
+    ]
+  },{
+    path: '/beginGetVtx',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/getvtx/BeginGetVtx.vue') }
+    ]
+  },{
+    path: '/requestNativeChainAddress',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/getvtx/RequestNativeChainAddress.vue') }
+    ]
+  },{
+    path: '/blocktopusCreate',
+    component: () => import('layouts/NoWallet.vue'),
+    children: [
+      { path: '', component: () => import('components/blocktopus/Create.vue') }
+    ]
+  },{
+    path: '/blocktopusAssociate',
+    component: () => import('layouts/NoWallet.vue'),
+    children: [
+      { path: '', component: () => import('components/blocktopus/Associate.vue') }
+    ]
+  },{
+    path: '/kycError',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/blocktopus/KycError.vue') }
+    ]
+  },{
+    path: '/blocktopusSuccess',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/blocktopus/Success.vue') }
     ]
   }
 ]
