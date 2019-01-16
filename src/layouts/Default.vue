@@ -29,7 +29,6 @@
 
       <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
       <q-layout-drawer
-        width=150
         side="left"
         v-model="optionsDrawer"
         behavior="desktop" content-class="row"

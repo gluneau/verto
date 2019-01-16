@@ -7,11 +7,11 @@
         <div class="row gutter wrap justify-stretch content-center ">
           <div class="col-2 text-center">
             <p class="q-caption">VTX Balance</p>
-            <p class="q-title">0.00</p>
+            <p class="q-title"> {{ balance }} </p>
           </div>
           <div class="col-2 text-center">
             <p class="q-caption">Value In BTC</p>
-            <p class="q-title">0.00</p>
+            <p class="q-title">0.0</p>
           </div>
           <div class="col-8 text-right">
             <q-btn outline style="color: dark;" label="Scan QR"/>
@@ -62,6 +62,12 @@
 
 <script>
 import configManager from '../../util/ConfigManager'
+import Ledger from "volentix-ledger"
+
+const chainId = process.env.CHAIN_ID
+const httpEndpoint = process.env.HTTP_ENDPOINT
+const myaccount = process.env.ACCOUNT_NAME
+let ledger = {}
 
 export default {
   // name: 'ComponentName',
@@ -105,30 +111,53 @@ export default {
         style: 'width: 500px'
       }
     ],
-    tableData: []
+    tableData: [],
+    balance: 0
     }
   },
   mounted() {
     this.walletName = this.$store.state.currentwallet.wallet.name
-    // web service call.
-    this.tableData = [
-      {
-        name: 'Tranascation 1 details',
-        date: 'AUG 1',
-        calories: 159,
-        type: 'SEND'
-
-      },
-      {
-        name: 'Tranascation 2 Details',
-        date: 'AUG 1',
-        calories: 159,
-        type: 'RECEIVE'
-      }
-    ]
+    ledger = new Ledger({
+      httpEndpoint: httpEndpoint,
+      chainId: chainId
+    },
+    process.env.LEDGER_ACCOUNT_NAME)
+    this.retrieveBalance()
+    this.getTransactionHistory()
   },
   methods: {
-
+    async retrieveBalance() {
+      try {
+        // TODO: Remove the hardcoding of vltxtgevtxtr
+        const balance = await ledger.retrieveBalance({
+          account: myaccount,
+          wallet: this.wallet
+        },
+        "vltxtgevtxtr");
+        this.balance = parseFloat(balance.amount).toFixed(2);
+        if (this.balance > 0) {
+          let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/summary/");
+          this.currentBtcValue = ((results.data.current_price * this.balance) / 100000000)
+        }
+        console.log(this.balance);
+      } catch (error) {
+        console.log("Can't retrieve the balance");
+      }
+    },
+    async getTransactionHistory() {
+      try {
+        const userTransactions = await ledger.retrieveTransactions({
+          account: myaccount,
+          wallet: this.wallet
+        });
+        if (userTransactions.transactions.length > 0) {
+          this.transactions = userTransactions.transactions;
+          this.getDate();
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    },
   }
 }
 </script>
