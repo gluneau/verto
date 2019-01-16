@@ -12,7 +12,7 @@
         <q-btn outline rounded  @click="$router.push({path: 'viewPendingTransactions'})">View Pending Transactions</q-btn>
       </div>
 
-      <div class="row gutter justify-stretch content-center q-pa-sm" v-if="doneCountdown">
+      <div class="row gutter justify-stretch content-center q-pa-sm" v-if="!doneCountdown">
           <div class="col-9 text-left q-pa-sm">
               <q-list>
                 <q-item>
@@ -44,7 +44,7 @@
               </q-list>
           </div>
       </div>
-      <div class="row gutter round-borders bg-primary justify-stretch content-center q-pa-lg" v-if="!doneCountdown">
+      <div class="row gutter round-borders bg-primary justify-stretch content-center q-pa-lg" v-if="doneCountdown">
         <div class="col-12 text-center text-white q-pa-sm q-display-4">
           <q-icon name="av_timer" size="8rem"/>
           Times Up

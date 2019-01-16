@@ -29,7 +29,6 @@
 
       <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
       <q-layout-drawer
-        width=150
         side="left"
         v-model="optionsDrawer"
         behavior="desktop" content-class="row"
@@ -44,7 +43,7 @@
         v-model="langDrawer"
         behavior="desktop" content-class="row"
       >
-        <div class="col-8 column bg-primary">
+        <div class="col-12 column bg-primary">
           <lang-drawer/>
         </div>
       </q-layout-drawer>
