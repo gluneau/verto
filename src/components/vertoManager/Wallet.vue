@@ -72,36 +72,32 @@ export default {
         {
         name: 'date',
         required: true,
-        label: 'Date',
         align: 'center',
         field: 'date',
-        sortable: true,
+        sortable: false,
         classes: 'my-class',
         style: 'width: 500px'
       },{
         name: 'icon',
         required: true,
-        label: 'Type',
         align: 'center',
         field: 'type',
-        sortable: true,
+        sortable: false,
         classes: 'my-class',
         style: 'width: 10px'
       },
       {
         name: 'desc',
         required: true,
-        label: 'Dessert (100g serving)',
         align: 'center',
         field: 'name',
-        sortable: true,
+        sortable: false,
         classes: 'my-class',
         style: 'width: 500px'
       },
       {
         name: 'vtx',
         required: true,
-        label: 'VTX',
         align: 'center',
         field: 'calories',
         sortable: true,
@@ -109,7 +105,13 @@ export default {
         style: 'width: 500px'
       }
     ],
-    tableData: [
+    tableData: []
+    }
+  },
+  mounted() {
+    this.walletName = this.$store.state.currentwallet.wallet.name
+    // web service call.
+    this.tableData = [
       {
         name: 'Tranascation 1 details',
         date: 'AUG 1',
@@ -124,10 +126,6 @@ export default {
         type: 'RECEIVE'
       }
     ]
-    }
-  },
-  mounted() {
-    this.walletName = this.$store.state.currentwallet.wallet.name
   },
   methods: {
 

@@ -56,11 +56,10 @@ const routes = [
     ]
   },{
     path: '/getvtx',
-    name: 'GetVtx',
-    component: require('components/getvtx/GetVtx').default,
-    meta: {
-      requiresAuth: true
-    }
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/getvtx/GetVtx.vue') }
+    ]
   },{
     path: '/blocktopusCreate',
     component: () => import('layouts/NoWallet.vue'),

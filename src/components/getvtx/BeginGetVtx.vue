@@ -14,11 +14,26 @@ export default {
   },
   mounted() {
     const self = this
+    const router = this.$router
     getVtxHelper.getWalletStatus(this.$store.state.currentwallet.wallet.key, function(response){
       console.log(response.message)
       if (response.success) {
-        console.log('success')
-        self.$router.push({path: '/requestNativeChainAddress'})
+
+        if (response.message === 'wallet_not_whitelisted') {
+          router.push({ path: "whitelist" })
+        } else if (response.message === 'wallet_not_allocated') {
+          router.push({ path: "requestnativechainaddress" })
+        } else if (response.message === 'wallet_allocated') {4
+          console.log("RESPONSE DATA: " + JSON.stringify(response.data))
+          router.push(
+            "/getvtx?native_chain_address=" + response.data.data.native_chain_address +
+            "&valid_until=" + response.data.data.valid_until +
+            "&native_chain_name=" + response.data.data.native_chain_name +
+            "&server_time=" + response.data.data.server_time
+          )
+        } else if (response.data.message === 'purchase_not_allowed') {
+          router.push({ path: "notapprovedforpurchase" })
+        }
       } else {
         console.log('fail')
       }
