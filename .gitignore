@@ -4,6 +4,7 @@
 node_modules
 /dist
 /build
+.nuxt.
 /src-cordova/node_modules
 /src-cordova/platforms
 /src-cordova/plugins
@@ -19,3 +20,9 @@ test
 *.ntvs*
 *.njsproj
 *.sln
+.env
+# binaries
+src/renderer/resources/*
+
+#Config for releases
+electron-builder.yml
