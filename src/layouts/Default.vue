@@ -15,7 +15,7 @@
         />
         <q-toolbar-title>
           Verto
-          <span slot="subtitle">Subtile</span>
+          <!-- <span slot="subtitle">Subtile</span> -->
         </q-toolbar-title>
         <q-btn
           flat
@@ -34,7 +34,7 @@
         behavior="desktop" content-class="row"
         v-if="hasCurrentWallet()"
       >
-        <div class="col-12 column bg-secondary q-pa-sm">
+        <div class="col-8 column bg-secondary">
           <options-drawer/>
         </div>
       </q-layout-drawer>
@@ -43,7 +43,7 @@
         v-model="langDrawer"
         behavior="desktop" content-class="row"
       >
-        <div class="col-12 column bg-secondary q-pa-sm">
+        <div class="col-8 column bg-secondary">
           <lang-drawer/>
         </div>
       </q-layout-drawer>
@@ -51,7 +51,7 @@
         <!-- This is where pages get injected -->
         <router-view />
       </q-page-container>
-    
+
   </q-layout>
 </template>
 
