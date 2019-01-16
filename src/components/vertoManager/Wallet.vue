@@ -11,10 +11,10 @@
           </div>
           <div class="col-2 text-center">
             <p class="q-caption">Value In BTC</p>
-            <p class="q-title">0.0</p>
+            <p class="q-title"> {{ currentBtcValue }} </p>
           </div>
           <div class="col-8 text-right">
-            <q-btn outline style="color: dark;" label="Scan QR"/>
+            <q-btn outline style="color: dark;" label="Scan QR" @click="isCardModalActive = true"/>
           </div>
         </div>
         <br>
@@ -56,6 +56,12 @@
           </q-tr>
         </q-table>
         </div>
+        <q-modal v-model="isCardModalActive">
+          <div class="content-center text-center">
+            <h5>Qr code</h5>
+            <qrcode :value="walletKey" :options="{ size: 200 }"></qrcode>
+          </div>
+        </q-modal>
       </q-jumbotron>
   </div>
 </template>
@@ -63,6 +69,9 @@
 <script>
 import configManager from '../../util/ConfigManager'
 import Ledger from "volentix-ledger"
+import VueQrcode from '@xkeshi/vue-qrcode';
+import Vue from 'vue';
+Vue.component(VueQrcode.name, VueQrcode);
 
 const chainId = process.env.CHAIN_ID
 const httpEndpoint = process.env.HTTP_ENDPOINT
@@ -74,6 +83,7 @@ export default {
   data () {
     return {
       walletName: '',
+      walletKey: '',
       columns: [
         {
         name: 'date',
@@ -105,18 +115,22 @@ export default {
         name: 'vtx',
         required: true,
         align: 'center',
-        field: 'calories',
+        field: 'amount',
         sortable: true,
         classes: 'my-class',
         style: 'width: 500px'
       }
     ],
     tableData: [],
-    balance: 0
+    transactions: [],
+    balance: 0,
+    currentBtcValue: 0,
+    isCardModalActive: false
     }
   },
   mounted() {
     this.walletName = this.$store.state.currentwallet.wallet.name
+    this.walletKey = this.$store.state.currentwallet.wallet.key
     ledger = new Ledger({
       httpEndpoint: httpEndpoint,
       chainId: chainId
@@ -131,9 +145,10 @@ export default {
         // TODO: Remove the hardcoding of vltxtgevtxtr
         const balance = await ledger.retrieveBalance({
           account: myaccount,
-          wallet: this.wallet
+          wallet: this.walletKey
         },
         "vltxtgevtxtr");
+        console.log(balance)
         this.balance = parseFloat(balance.amount).toFixed(2);
         if (this.balance > 0) {
           let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/summary/");
@@ -148,16 +163,24 @@ export default {
       try {
         const userTransactions = await ledger.retrieveTransactions({
           account: myaccount,
-          wallet: this.wallet
+          wallet: this.walletKey
         });
+        console.log(userTransactions)
         if (userTransactions.transactions.length > 0) {
           this.transactions = userTransactions.transactions;
           this.getDate();
+          this.tableData = this.transactions
         }
       } catch (error) {
         console.log(error)
       }
     },
+    getDate() {
+      for (let i = 0; i < this.transactions.length; i++) {
+        this.transactions[i].timestamp =
+          parseInt(this.transactions[i].timestamp) / 1000;
+      }
+    }
   }
 }
 </script>
