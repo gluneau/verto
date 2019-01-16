@@ -55,6 +55,13 @@ const routes = [
       { path: '', component: () => import('components/getvtx/RequestNativeChainAddress.vue') }
     ]
   },{
+    path: '/getvtx',
+    name: 'GetVtx',
+    component: require('@/components/getvtx/GetVtx').default,
+    meta: {
+      requiresAuth: true
+    }
+  },{
     path: '/blocktopusCreate',
     component: () => import('layouts/NoWallet.vue'),
     children: [
@@ -81,7 +88,6 @@ const routes = [
   }
 ]
 
-// Always leave this as last one
 if (process.env.MODE !== 'ssr') {
   routes.push({
     path: '*',
