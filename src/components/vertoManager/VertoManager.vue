@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-padding">
+  <div>
     <q-jumbotron class=" bg-white text-primary">
       <div class="text-left text-weight-bold uppercase q-pa-lg">
         <big>{{ $t('WalletManager.header') }}</big>
@@ -45,7 +45,7 @@
               <div v-if="col.name === 'default'" class="text-left">
                 <div v-if="col.value" class="q-pa-lg">
                   <q-checkbox v-model="props.row.defaultKey" color="blue" disable>
-                    
+
                   </q-checkbox>
                 </div>
                 <div v-else class="q-pa-lg">
@@ -232,7 +232,7 @@ export default {
       if (!this.addWallet.walletName) {
         this.addWallet.walletNameEmpty = true
         return
-      } 
+      }
       if (!this.addWallet.address) {
         this.addWallet.addressEmpty = true
         return

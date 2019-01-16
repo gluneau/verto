@@ -1,37 +1,37 @@
 <template>
   <div class="fit text-white text-center bg-primary">
-    <div class="q-pa-xl" v-if="showCurrentWallet" @click="route('wallet')">
+    <div class="q-pa-lg" v-if="showCurrentWallet" @click="route('wallet')">
       <q-icon name="account_balance_wallet" size="2rem"/>
-      <div class="q-headline">Current Wallet</div>
+      <div>Current Wallet</div>
     </div>
     <div v-if="showWalletManager">
-      <div class="q-pa-xl" @click="route('vertomanager')">
+      <div class="q-pa-lg" @click="route('vertomanager')">
         <q-icon name="all_inbox" size="2rem"/>
-        <div class="q-headline">Wallet Manger</div>
+        <div>Wallet Manger</div>
       </div>
-      <div class="q-pa-xl" @click="route('beginGetVtx')" v-if="showGetVtx">
+      <div class="q-pa-lg" @click="route('beginGetVtx')" v-if="showGetVtx">
         <q-icon name="add_shopping_cart" size="2rem"/>
-        <div class="q-headline">Get VTX {{ getvtxmessage }}</div>
+        <div>Get VTX {{ getvtxmessage }}</div>
       </div>
-      <div class="q-pa-xl" @click="minimizedModal = !minimizedModal" v-if="!showGetVtx">
+      <div class="q-pa-lg" @click="minimizedModal = !minimizedModal" v-if="!showGetVtx">
         <q-icon name="add_shopping_cart" size="2rem"/>
-        <div class="q-headline">KYC</div>
+        <div>KYC</div>
       </div>
-      <div class="q-pa-xl" @click="route('beginGetVtx')">
+      <div class="q-pa-lg" @click="route('beginGetVtx')">
         <q-icon name="compare_arrows" size="2rem"/>
-        <div class="q-headline">Associate Wallet</div>
-        
+        <div>Associate Wallet</div>
+
       </div>
       </div>
       <div>
-      <div class="q-pa-xl">
+      <div class="q-pa-lg">
         <q-icon name="security" size="2rem"/>
-        <div class="q-headline">Password</div>
+        <div>Password</div>
       </div>
     </div>
-    <div class="q-pa-xl" @click="logout()">
+    <div class="q-pa-lg" @click="logout()">
       <q-icon name="exit_to_app" size="2rem"/>
-      <div class="q-headline">Logout</div>
+      <div>Logout</div>
     </div>
 
     <q-modal v-model="minimizedModal" minimized ref="modalRef">
@@ -87,7 +87,7 @@ export default {
 
   //blocktopusCreate
   //blocktopusAssociate
-    
+
     /*
     if (message === 'wallet_not_allocated' || message === 'wallet_allocated') {
         this.approvedToBuyVtx = true;

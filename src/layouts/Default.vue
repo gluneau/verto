@@ -1,5 +1,5 @@
 <template>
-  <q-layout class=" bg-secondary"
+  <q-layout class=" bg-primary"
   > <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
@@ -29,12 +29,13 @@
 
       <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
       <q-layout-drawer
+        width=150
         side="left"
         v-model="optionsDrawer"
         behavior="desktop" content-class="row"
         v-if="hasCurrentWallet()"
       >
-        <div class="col-8 column bg-secondary">
+        <div class="col-12 column bg-primary">
           <options-drawer/>
         </div>
       </q-layout-drawer>
@@ -43,11 +44,11 @@
         v-model="langDrawer"
         behavior="desktop" content-class="row"
       >
-        <div class="col-8 column bg-secondary">
+        <div class="col-8 column bg-primary">
           <lang-drawer/>
         </div>
       </q-layout-drawer>
-      <q-page-container class=" bg-secondary">
+      <q-page-container class=" bg-primary">
         <!-- This is where pages get injected -->
         <router-view />
       </q-page-container>

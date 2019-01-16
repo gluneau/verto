@@ -1,21 +1,21 @@
 <template>
-  <div class="layout-padding">
+  <div>
       <q-jumbotron class=" bg-white text-primary">
         <div class="text-left text-weight-bold uppercase q-pa-lg">
           <big>Wallet / {{ walletName }}</big>
         </div>
         <div class="row gutter wrap justify-stretch content-center ">
-          <div class="col-1 text-center">
-            <label>VTX Balance</label>
-            <br>
-            <label>0.0</label>
+          <div class="col-2 text-center">
+            <p class="q-caption">VTX Balance</p>
+            <p class="q-title">0.00</p>
           </div>
-          <div class="col-1 text-center">
-            <label>Value In BTC</label>
-            <br>
-            <label>0.0</label>
+          <div class="col-2 text-center">
+            <p class="q-caption">Value In BTC</p>
+            <p class="q-title">0.00</p>
           </div>
-          <div class="col-10 text-right">Scan QR Code</div>
+          <div class="col-8 text-right">
+            <q-btn outline style="color: dark;" label="Scan QR"/>
+          </div>
         </div>
         <br>
         <div class="row items-center">
@@ -24,7 +24,7 @@
           :data="tableData"
           :columns="columns"
           row-key="name"
-          
+
         >
           <q-tr  :id="props.row.id" slot="body" slot-scope="props" :props="props" class="cursor-pointer">
             <q-td
@@ -47,7 +47,7 @@
                 <div v-else>
                   + {{ col.value }} VTX
                 </div>
-                
+
               </div>
               <div v-else>
                 {{ col.value }}

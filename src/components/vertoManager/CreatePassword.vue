@@ -1,5 +1,5 @@
 <template>
-  <div class="flex fit bg-secondary flex-center q-pa-sm">
+  <div class="flex fit bg-primary flex-center q-pa-sm">
 
     <q-jumbotron class="text-center bg-primary text-white">
       <div class="text-weight-bold uppercase q-pa-lg">
@@ -27,7 +27,7 @@
               >
                 <q-input type="password" dark v-model="password" color="yellow" float-label="Verto Password"/>
               </q-field>
-              <q-field  
+              <q-field
                 :error="doesNotMatch"
                 error-label="Passwords do not match"
                 :count="100"

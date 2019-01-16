@@ -1,20 +1,18 @@
 <template>
-  <div class="flex fit bg-secondary flex-center q-pa-sm">
-
-    <q-jumbotron class="text-center bg-secondary text-white">
+  <div class="flex fit bg-primary flex-center q-pa-sm">
+    <q-jumbotron class="text-center bg-primary text-white">
       <div class="text-weight-bold uppercase q-pa-lg">
-        <big>{{ $t('KeepYourKeysSafe.keepsafe') }}</big>
+        <big>{{ $t('KeepYourKeysSafe.keepsafe') }} hello</big>
       </div>
-
       <q-card inline style="width: 700px" class="text-left">
         <q-card-separator />
-        
+
           <q-list>
             <div class="q-pa-sm">
                 {{ $t('KeepYourKeysSafe.before') }}
               </div>
             <q-collapsible icon="explore" label="Know More">
-              
+
               <div class="q-pa-sm">
                 {{ $t('KeepYourKeysSafe.choices') }}
               </div>
@@ -60,7 +58,7 @@
           </div>
       </q-card>
 
-      
+
     </q-jumbotron>
   </div>
 </template>
@@ -81,7 +79,7 @@ export default {
       quizOptions: 0,
       select: 'FILE',
       options: [
-        { 
+        {
           label: 'Save To File',
           value: 'FILE'
         },
@@ -90,7 +88,7 @@ export default {
           value: 'WRITTEN'
         }
       ]
-      
+
     }
   },
   methods: {
@@ -109,7 +107,7 @@ export default {
     submit: function() {
       console.log("Submitting...")
     }
-    
+
   }
 }
 </script>

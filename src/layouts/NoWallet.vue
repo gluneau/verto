@@ -6,7 +6,6 @@
       <q-toolbar>
         <q-toolbar-title>
           Verto
-          <span slot="subtitle">Subtile</span>
         </q-toolbar-title>
         <q-btn
           flat
@@ -43,7 +42,7 @@
               label="French "
             />
           </q-tabs>
-      
+
       </q-scroll-area>
     </q-layout-drawer>
 
