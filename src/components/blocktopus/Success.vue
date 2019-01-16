@@ -66,7 +66,6 @@ export default {
       ok: function() {
         this.$router.push({path: '/wallet'})
     }
-
   }
 }
 </script>

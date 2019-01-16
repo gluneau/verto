@@ -13,15 +13,16 @@ export default {
     };
   },
   mounted() {
+    const self = this
     getVtxHelper.getWalletStatus(this.$store.state.currentwallet.wallet.key, function(response){
       console.log(response.message)
       if (response.success) {
         console.log('success')
+        self.$router.push({path: '/requestNativeChainAddress'})
       } else {
         console.log('fail')
       }
     })
-    
   }
 };
 </script>

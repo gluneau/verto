@@ -49,6 +49,12 @@ const routes = [
       { path: '', component: () => import('components/getvtx/BeginGetVtx.vue') }
     ]
   },{
+    path: '/requestNativeChainAddress',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/getvtx/RequestNativeChainAddress.vue') }
+    ]
+  },{
     path: '/blocktopusCreate',
     component: () => import('layouts/NoWallet.vue'),
     children: [
