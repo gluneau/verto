@@ -15,10 +15,13 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    width: 1000,
-    height: 600,
-    useContentSize: true
+    useContentSize: true,
+    resizable: true,
+    title: "Verto wallet",
+
   })
+
+  mainWindow.maximize();
 
   mainWindow.loadURL(process.env.APP_URL)
 

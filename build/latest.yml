@@ -1,0 +1,8 @@
+version: 0.6.1
+files:
+  - url: Verto-Setup-0.6.1.exe
+    sha512: zZBWFkC7jxIxauMSMiYpTcSZR55oz9UD2qn77nWzoKA3UdV/x3AbtWX3T2XuzniVqOzq9N5uVnH+wkezmsmYPA==
+    size: 44449304
+path: Verto-Setup-0.6.1.exe
+sha512: zZBWFkC7jxIxauMSMiYpTcSZR55oz9UD2qn77nWzoKA3UdV/x3AbtWX3T2XuzniVqOzq9N5uVnH+wkezmsmYPA==
+releaseDate: '2019-01-15T01:21:39.207Z'
