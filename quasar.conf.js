@@ -1,6 +1,7 @@
 // Configuration for your app
 const webpack = require('webpack')
 const path = require('path')
+const envparser = require('./src/util/envparser')
 
 module.exports = function (ctx) {
 
