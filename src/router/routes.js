@@ -57,7 +57,7 @@ const routes = [
   },{
     path: '/getvtx',
     name: 'GetVtx',
-    component: require('@/components/getvtx/GetVtx').default,
+    component: require('components/getvtx/GetVtx').default,
     meta: {
       requiresAuth: true
     }
