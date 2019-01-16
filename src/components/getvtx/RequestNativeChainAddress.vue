@@ -96,13 +96,13 @@ export default {
         let hashResult = await axios.post(
         process.env.CROWDFUND_URL + "/public/api/initiate-transaction/",
             {
-            verto_public_address: this.$store.state.currentWallet.key,
-            currency: this.currency
+                verto_public_address: this.$store.state.currentwallet.wallet.key,
+                currency: this.currency
             }
         );
         const res = await hashResult;
         if (res.data.success) {
-            this.$router.push({ path: "begingetvtx" })
+            this.$router.push({ path: "beginGetVtx" })
         } else {
             if (res.data.error_code === 'no_address_available') {
                 this.message = $t('RequestNativeChainAddress.err_noAddressAvailable')
