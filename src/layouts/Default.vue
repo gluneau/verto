@@ -43,7 +43,7 @@
         v-model="langDrawer"
         behavior="desktop" content-class="row"
       >
-        <div class="col-8 column bg-primary">
+        <div class="col-12 column bg-primary">
           <lang-drawer/>
         </div>
       </q-layout-drawer>

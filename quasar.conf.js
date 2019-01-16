@@ -1,11 +1,10 @@
 // Configuration for your app
 const webpack = require('webpack')
 const path = require('path')
-
-// Get our env variables
 const envparser = require('./src/util/envparser')
 
 module.exports = function (ctx) {
+
   return {
     // app plugins (/src/plugins)
     plugins: [

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@xkeshi/vue-qrcode": "^1.0.0",
+    "@chenfengyuan/vue-countdown": "^1.1.0",
     "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.6.0",
