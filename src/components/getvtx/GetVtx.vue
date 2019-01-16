@@ -3,16 +3,16 @@
     <q-jumbotron class=" bg-white text-primary">
       <div class="text-left uppercase ">
         <div class="chip label">
-          <img :src="getCryptoLogoUrl(nativeChainName)" width="100"> 
+          <img :src="getCryptoLogoUrl(nativeChainName)" width=100> 
           {{ $t('GetVtx.getvtx') }} {{ nativeChainName }}
         </div>
         
       </div>
-      <div class="text-right uppercase ">
+      <div class="text-right uppercase  q-pa-sm">
         <q-btn outline rounded  @click="$router.push({path: 'viewPendingTransactions'})">View Pending Transactions</q-btn>
       </div>
 
-      <div class="row gutter justify-stretch content-center q-pa-sm">
+      <div class="row gutter justify-stretch content-center q-pa-sm" v-if="doneCountdown">
           <div class="col-9 text-left q-pa-sm">
               <q-list>
                 <q-item>
@@ -27,7 +27,14 @@
                 <q-item>
                   <q-item-main >
                     <div class="text-left">
-                      Countdown
+                      <countdown :time="timeremaining" :transform="transform">
+                        <template slot-scope="props">
+                          <div v-bind:class="{ oneminuteleft: underOneMinuteLeftInTimer, overoneminuteleft: !underOneMinuteLeftInTimer }">
+                            <span v-if="!underOneMinuteLeftInTimer">{{ props.minutes }}:</span>
+                            {{ props.seconds }}
+                          </div>
+                        </template>
+                      </countdown>
                     </div>
                     <div class="text-right">
                       <q-btn outline rounded >Copy</q-btn>
@@ -37,12 +44,20 @@
               </q-list>
           </div>
       </div>
+      <div class="row gutter round-borders bg-primary justify-stretch content-center q-pa-lg" v-if="!doneCountdown">
+        <div class="col-12 text-center text-white q-pa-sm q-display-4">
+          <q-icon name="av_timer" size="8rem"/>
+          Times Up
+        </div>
+      </div>
     </q-jumbotron>
   </div>
 </template>
 
 <script>
-export default {
+import countdown from '@chenfengyuan/vue-countdown'
+
+export default {  
   // name: 'Get VTX',
   data () {
     return {
@@ -52,8 +67,12 @@ export default {
       timeremaining: 0,
       underOneMinuteLeftInTimer: false,
       doneCountdown: false,
+      timeremaining: 0,
       isCardModalActive: false
     }
+  },
+  components: {
+    countdown: countdown
   },
   created() {
     this.nativeChainAddress = this.$route.query.native_chain_address;
@@ -68,6 +87,19 @@ export default {
   methods: {
     getCryptoLogoUrl(chainName) {
       return require('../../assets/img/currencies/' + chainName + '.png')
+    },
+    transform(props) {
+      Object.entries(props).forEach(([key, value]) => {
+        let digits = value < 10 ? `0${value}` : value;
+        if (key === 'totalMinutes' && value <= 0) {
+          this.underOneMinuteLeftInTimer = true;
+        } else if (key === 'totalSeconds' && value <= 0) {
+          this.doneCountdown = true;
+        }
+        props[key] = `${digits}`;
+      });
+
+      return props;
     }
   }
 }
