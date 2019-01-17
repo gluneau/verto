@@ -42,12 +42,12 @@ export default {
       password: ''
     }
   },
-  mounted() {
+  mounted () {
     this.hasConfig = configManager.hasVertoConfig()
     console.info(process.env)
   },
   methods: {
-    login() {
+    login () {
       this.passHasError = false
       if (!this.password) {
         this.passHasError = true

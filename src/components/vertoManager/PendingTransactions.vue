@@ -41,79 +41,79 @@
 </template>
 
 <script>
-import configManager from '../../util/ConfigManager'
+// import configManager from '../../util/ConfigManager'
 import axios from 'axios'
 
 export default {
   // name: 'ComponentName',
   data () {
     return {
-        transactionStatus: 'CONVERTED',
-        hasTransactions: false,
-        options: [
-            { 
-            label: 'Cancelled',
-            value: 'CANCELLED'
-            },
-            {
-            label: 'Pending',
-            value: 'CONVERTED'
-            },
-            {
-            label: 'Accepted',
-            value: 'CONFIRMED'
-            },
-            {
-            label: 'Completed',
-            value: 'COMPLETED'
-            }
-        ],
-        columns: [
-            {
-                name: 'conversionTime',
-                required: true,
-                align: 'center',
-                field: 'conversion_time',
-                label: 'Transaction Received',
-                sortable: false,
-                classes: 'my-class',
-                style: 'width: 500px'
-            },
-            {
-                name: 'confirmationTime',
-                required: true,
-                align: 'center',
-                field: 'confirmation_time',
-                label: 'Confirmation Time',
-                sortable: false,
-                classes: 'my-class',
-                style: 'width: 500px'
-            },
-            {
-                name: 'vtxAmount',
-                required: true,
-                align: 'center',
-                label: 'VTX',
-                field: 'vtx_amount',
-                sortable: false,
-                classes: 'my-class',
-                style: 'width: 500px'
-            }            
-        ],
-        tableData: []
+      transactionStatus: 'CONVERTED',
+      hasTransactions: false,
+      options: [
+        {
+          label: 'Cancelled',
+          value: 'CANCELLED'
+        },
+        {
+          label: 'Pending',
+          value: 'CONVERTED'
+        },
+        {
+          label: 'Accepted',
+          value: 'CONFIRMED'
+        },
+        {
+          label: 'Completed',
+          value: 'COMPLETED'
+        }
+      ],
+      columns: [
+        {
+          name: 'conversionTime',
+          required: true,
+          align: 'center',
+          field: 'conversion_time',
+          label: 'Transaction Received',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 500px'
+        },
+        {
+          name: 'confirmationTime',
+          required: true,
+          align: 'center',
+          field: 'confirmation_time',
+          label: 'Confirmation Time',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 500px'
+        },
+        {
+          name: 'vtxAmount',
+          required: true,
+          align: 'center',
+          label: 'VTX',
+          field: 'vtx_amount',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 500px'
+        }
+      ],
+      tableData: []
     }
   },
-  mounted() {
-      this.getPendingTransactions();
+  mounted () {
+    this.getPendingTransactions()
   },
   methods: {
-    async getPendingTransactions() {
-        console.log("GETTING TRANSACTIONS")
-        let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/investor-transactions?verto_public_address=" + this.$store.state.currentwallet.wallet.key + "&status_code=" + this.transactionStatus);
-        console.log("GETTING TRANSACTIONS2222222222222222")
-        console.log(JSON.stringify(results.data, null, 4))
-        this.tableData = results.data
-        /*
+    async getPendingTransactions () {
+      console.log('GETTING TRANSACTIONS')
+      let results = await axios.get(process.env.CROWDFUND_URL + '/public/api/investor-transactions?verto_public_address=' + this.$store.state.currentwallet.wallet.key + '&status_code=' + this.transactionStatus)
+      console.log('GETTING TRANSACTIONS2222222222222222')
+      console.log(JSON.stringify(results.data, null, 4))
+      this.tableData = results.data
+      /*
         {
             "id": 98,
             "status": "COMPLETED",
@@ -139,11 +139,11 @@ export default {
         }
         */
     },
-    refreshContent() {
-        console.log("Reefresh")
+    refreshContent () {
+      console.log('Reefresh')
       this.hasTransactions = false
       this.transactions = []
-      this.getPendingTransactions();
+      this.getPendingTransactions()
     }
   }
 }
