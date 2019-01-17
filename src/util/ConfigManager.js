@@ -13,7 +13,7 @@ class ConfigManager {
     /*
      *
      * Private methods start
-     * 
+     *
      */
     getConfig(password) {
         let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
@@ -37,9 +37,9 @@ class ConfigManager {
     /*
      *
      * Private methods end
-     * 
+     *
      */
-    
+
     updateCurrentWallet(wallet) {
         this.currentWallet = wallet
         store.commit('currentwallet/updateCurrentWallet', wallet)
@@ -47,7 +47,7 @@ class ConfigManager {
 
     createWallet(router, password) {
         this.currentConfig = {keys: []}
-        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');  
+        let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config');
         const payload = JSON.stringify(this.currentConfig);
         fs.writeFile(filePath, sjcl.encrypt(password, payload), 'utf-8', () => {
             router.replace('keepYourKeysafe')

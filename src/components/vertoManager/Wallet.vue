@@ -32,8 +32,6 @@
               :key="col.name"
               :props="props"
             >
-              <div class="text-center">
-              </div>
               <div v-if="col.name === 'icon'" class="text-center">
                 <div v-if="col.value === 'SEND'">
                   <q-icon name="cloud_upload" size="2rem" color='red'/>
@@ -73,12 +71,25 @@ import configManager from '../../util/ConfigManager'
 import Ledger from "volentix-ledger"
 import VueQrcode from '@xkeshi/vue-qrcode';
 import Vue from 'vue';
+import moment from 'moment'
 Vue.component(VueQrcode.name, VueQrcode);
 
 const chainId = process.env.CHAIN_ID
 const httpEndpoint = process.env.HTTP_ENDPOINT
 const myaccount = process.env.ACCOUNT_NAME
 let ledger = {}
+
+Vue.filter("formatDate", function (value) {
+  if (value) {
+    return moment(value).format("MMM DD, YYYY");
+  }
+});
+
+Vue.filter("formatTime", function (value) {
+  if (value) {
+    return moment(value).format("h:mm A");
+  }
+});
 
 export default {
   // name: 'ComponentName',
@@ -91,7 +102,7 @@ export default {
         name: 'date',
         required: true,
         align: 'center',
-        field: 'date',
+        field: 'timestamp',
         sortable: false,
         classes: 'my-class',
         style: 'width: 500px'
@@ -150,13 +161,11 @@ export default {
           wallet: this.walletKey
         },
         "vltxtgevtxtr");
-        console.log(balance)
         this.balance = parseFloat(balance.amount).toFixed(2);
         if (this.balance > 0) {
           let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/summary/");
           this.currentBtcValue = ((results.data.current_price * this.balance) / 100000000)
         }
-        console.log(this.balance);
       } catch (error) {
         console.log("Can't retrieve the balance");
       }
@@ -167,7 +176,6 @@ export default {
           account: myaccount,
           wallet: this.walletKey
         });
-        console.log(userTransactions)
         if (userTransactions.transactions.length > 0) {
           this.transactions = userTransactions.transactions;
           this.getDate();
@@ -181,6 +189,7 @@ export default {
       for (let i = 0; i < this.transactions.length; i++) {
         this.transactions[i].timestamp =
           parseInt(this.transactions[i].timestamp) / 1000;
+        this.transactions[i].timestamp = moment(this.transactions[i].timestamp).format("MMM DD, YYYY");
       }
     }
   }
