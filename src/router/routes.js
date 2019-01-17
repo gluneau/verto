@@ -13,6 +13,12 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/CreatePassword.vue') }
     ]
   },{
+    path: '/pendingTransactions',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/PendingTransactions.vue') }
+    ]
+  },{
     path: '/keepYourKeysafe',
     component: () => import('layouts/Default.vue'),
     children: [

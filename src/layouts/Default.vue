@@ -40,8 +40,7 @@
       </q-layout-drawer>
       <q-layout-drawer
         side="right"
-        v-model="langDrawer"
-        behavior="desktop" content-class="row"
+        v-model="langDrawer" content-class="row"
       >
         <div class="col-12 column bg-primary">
           <lang-drawer/>
