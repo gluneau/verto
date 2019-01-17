@@ -32,6 +32,8 @@
               :key="col.name"
               :props="props"
             >
+              <div class="text-center">
+              </div>
               <div v-if="col.name === 'icon'" class="text-center">
                 <div v-if="col.value === 'SEND'">
                   <q-icon name="cloud_upload" size="2rem" color='red'/>
