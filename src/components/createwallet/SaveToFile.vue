@@ -1,7 +1,7 @@
 <template>
-  <div class="flex fit bg-secondary flex-center q-pa-sm">
+  <div class="flex fit flex-center q-pa-sm">
 
-    <q-jumbotron class="text-center bg-secondary text-white">
+    <q-jumbotron class="text-center bg-primary text-white">
       <div class="text-weight-bold uppercase q-pa-lg">
         <big>{{ $t('ChoosePassword.header') }}</big>
       </div>

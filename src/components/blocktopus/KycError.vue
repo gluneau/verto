@@ -1,5 +1,5 @@
 <template>
-  <div class="flex fit bg-secondary flex-center q-pa-sm">
+  <div class="flex fit flex-center q-pa-sm">
     &nbsp;
     <q-modal v-model="modal" minimized ref="modalRef">
       <div style="padding: 50px" class="text-center">

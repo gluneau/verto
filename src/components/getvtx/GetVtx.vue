@@ -9,7 +9,7 @@
 
       </div>
       <div class="text-right uppercase  q-pa-sm">
-        <q-btn outline rounded  @click="$router.push({path: 'viewPendingTransactions'})">View Pending Transactions</q-btn>
+        <q-btn outline rounded  @click="$router.push({path: 'pendingTransactions'})">View Pending Transactions</q-btn>
       </div>
 
       <div class="row gutter justify-stretch content-center q-pa-sm" v-if="!doneCountdown">
