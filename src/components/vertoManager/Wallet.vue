@@ -188,4 +188,5 @@ export default {
 <style lang="styl">
 .q-data-table th {
     text-align:right;
-}</style>
+}
+</style>

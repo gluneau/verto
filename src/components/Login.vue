@@ -1,5 +1,5 @@
 <template>
-  <div class=" ">
+  <div>
     <q-jumbotron class="text-center bg-primary text-white">
       <div class="logo-welcome">
         <img src="../assets/img/white-logo-with-text.png" >
@@ -27,7 +27,7 @@
       </div>
     </q-jumbotron>
   </div>
-  
+
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
     return {
       hasConfig: '',
       passHasError: false,
-      password: '' 
+      password: ''
     }
   },
   mounted() {
@@ -75,6 +75,6 @@ export default {
 <style>
 .logo-welcome img {
   width: 100%;
-  max-width: 320px;
+  max-width: 20rem;
 }
 </style>

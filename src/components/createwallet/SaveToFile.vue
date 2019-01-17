@@ -1,13 +1,13 @@
 <template>
-  <div class="flex fit bg-secondary flex-center q-pa-sm">
+  <div class="flex fit flex-center q-pa-sm">
 
-    <q-jumbotron class="text-center bg-secondary text-white">
+    <q-jumbotron class="text-center bg-primary text-white">
       <div class="text-weight-bold uppercase q-pa-lg">
         <big>{{ $t('ChoosePassword.header') }}</big>
       </div>
       <q-card inline style="width: 700px" class="text-left">
         <q-card-separator />
-        
+
           <q-list>
             <div class="text-left q-pa-lg">
                 <q-icon name="warning" size="3rem" color="yellow"/>
@@ -62,7 +62,7 @@
                   >
                      <q-checkbox v-model="iunderstand" :error="errors.iunderstandFalse" dark  color="yellow">&nbsp;{{ $t('DisplayKey.understand') }}</q-checkbox>
                   </q-field>
-                 
+
                 </div>
                 <div class="text-right q-pa-lg">
                   <q-btn  color="yellow" outline rounded @click="submit">{{ $t('SaveYourKeys.create') }}</q-btn>
@@ -146,7 +146,7 @@ export default {
       var savePath = dialog.showSaveDialog({
         title: this.$t('ChoosePassword.file')
       })
-      const result = configManager.saveWalletAndKey(this.walletName, this.vertoPassword, this.password, this.publicKey, this.privateKey, savePath) 
+      const result = configManager.saveWalletAndKey(this.walletName, this.vertoPassword, this.password, this.publicKey, this.privateKey, savePath)
       if (result.success) {
         this.$router.push("wallet");
       } else {

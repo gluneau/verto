@@ -1,6 +1,5 @@
 <template>
-  <q-layout class=" bg-primary"
-  > <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout> <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <q-layout-header>
@@ -46,7 +45,7 @@
           <lang-drawer/>
         </div>
       </q-layout-drawer>
-      <q-page-container class=" bg-primary">
+      <q-page-container class=" bg-main">
         <!-- This is where pages get injected -->
         <router-view />
       </q-page-container>
@@ -80,4 +79,14 @@ export default {
 </script>
 
 <style>
+.bg-main {
+  background-image: url("../assets/img/blue_bg.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 100vh;
+}
+.bg-white {
+  min-height: 90vh;
+}
 </style>
