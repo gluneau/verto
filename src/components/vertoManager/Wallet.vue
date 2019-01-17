@@ -178,6 +178,7 @@ export default {
         });
         if (userTransactions.transactions.length > 0) {
           this.transactions = userTransactions.transactions;
+          this.transactions = this.transactions.reverse();
           this.getDate();
           this.tableData = this.transactions
         }
