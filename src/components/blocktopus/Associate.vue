@@ -7,29 +7,29 @@ import EventBus from '../../bus'
 
 export default {
   // name: 'ComponentName',
-  data() {
+  data () {
     return {
       blocktopusLink: process.env.BLOCKTOPUS_URL + '/token_buyers/sign_in?verto_public_address=' + this.$store.state.currentwallet.wallet.key
-    };
+    }
   },
-  beforeMount() {
+  beforeMount () {
     EventBus.addListener(this.callback)
   },
-  destroyed() {
+  destroyed () {
     EventBus.removeListener(this.callback)
   },
   methods: {
-    signup: function() {
-      this.$router.push("walletmanager")
+    signup: function () {
+      this.$router.push('walletmanager')
     },
-    callback: function(e) {
+    callback: function (e) {
       if (e.data && (typeof e.data === 'string' || e.data instanceof String)) {
         if (e.data.startsWith('success')) {
-          this.$router.push({ path: "blocktopusSuccess" })
+          this.$router.push({ path: 'blocktopusSuccess' })
         } else if (e.data.startsWith('cancel')) {
-          this.$router.push({ path: "wallet" })
+          this.$router.push({ path: 'wallet' })
         } else if (e.data.startsWith('error')) {
-          this.$router.push({ path: "kycError" })
+          this.$router.push({ path: 'kycError' })
         }
       }
     }

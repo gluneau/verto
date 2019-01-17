@@ -51,20 +51,20 @@ export default {
     }
   },
   methods: {
-      submit: function() {
-          console.log('Submitting')
-          this.passHasError = false
-          const result = configManager.addAssociationToWallet(this.$store.state.currentwallet.wallet.key, this.password, "Blocktopus", {})
-          if (result.success) {
-              this.$router.push('/wallet')
-          } else if (result.message === 'bad_password') {
-              this.passHasError = true
-          } else {
-              this.modal = true
-          }
-      },
-      ok: function() {
-        this.$router.push({path: '/wallet'})
+    submit: function () {
+      console.log('Submitting')
+      this.passHasError = false
+      const result = configManager.addAssociationToWallet(this.$store.state.currentwallet.wallet.key, this.password, 'Blocktopus', {})
+      if (result.success) {
+        this.$router.push('/wallet')
+      } else if (result.message === 'bad_password') {
+        this.passHasError = true
+      } else {
+        this.modal = true
+      }
+    },
+    ok: function () {
+      this.$router.push({path: '/wallet'})
     }
   }
 }

@@ -5,7 +5,7 @@
         <big>{{ $t('RequestNativeChainAddress.header') }}</big>
       </div>
       <q-card class="vertical-middle" style="width: 500px">
-  
+
         <q-card-separator />
         <q-card-main>
             <q-list highlight>
@@ -25,8 +25,7 @@
             </q-list>
         </q-card-main>
       </q-card>
-      
-        
+
         <div v-if="agree">
             <div class="q-pa-lg">
                 {{ $t('RequestNativeChainAddress.select_currency') }}
@@ -42,7 +41,7 @@
               <q-btn  outline rounded @click="submit">{{ $t('RequestNativeChainAddress.button') }}</q-btn>
             </div>
         </div>
-        
+
     </q-jumbotron>
     <q-modal v-model="showModal" minimized ref="modalRef">
       <div style="padding: 50px" class="text-center">
@@ -59,75 +58,74 @@
 </template>
 
 <script>
-import getVtxHelper from '../../util/GetVtxHelper';
+// import getVtxHelper from '../../util/GetVtxHelper'
 import axios from 'axios'
 
 export default {
-  data() {
+  data () {
     return {
-        currency: 'BTC',
-        showModal: false,
-        pendingTransactionsExist: false,
-        investorMustWait: false,
-        buttondisabled: true,
-        agree:false,
-        options: [
-            { 
-            label: 'Bitcoin',
-            value: 'BTC'
-            },
-            {
-            label: 'Ethereum',
-            value: 'ETH'
-            },
-            {
-            label: 'EOS',
-            value: 'EOS'
-            }
-        ],
-        errorMessage: 'Default message'
-    };
+      currency: 'BTC',
+      showModal: false,
+      pendingTransactionsExist: false,
+      investorMustWait: false,
+      buttondisabled: true,
+      agree: false,
+      options: [
+        {
+          label: 'Bitcoin',
+          value: 'BTC'
+        },
+        {
+          label: 'Ethereum',
+          value: 'ETH'
+        },
+        {
+          label: 'EOS',
+          value: 'EOS'
+        }
+      ],
+      errorMessage: 'Default message'
+    }
   },
-  mounted() {
+  mounted () {
   },
   methods: {
-    async submit() {
-        this.showModal = false;
-        let hashResult = await axios.post(
-        process.env.CROWDFUND_URL + "/public/api/initiate-transaction/",
-            {
-                verto_public_address: this.$store.state.currentwallet.wallet.key,
-                currency: this.currency
-            }
-        );
-        const res = await hashResult;
-        if (res.data.success) {
-            this.$router.push({ path: "beginGetVtx" })
-        } else {
-            if (res.data.error_code === 'no_address_available') {
-                this.message = $t('RequestNativeChainAddress.err_noAddressAvailable')
-                this.showModal = true;
-            } else if (res.data.error_code === 'pending_transactions_exist') {
-                this.message = $t('RequestNativeChainAddress.err_pendingTransactionsExist')
-                this.showModal = true;
-            } else if (res.data.error_code === 'investor_must_wait') {
-
-                this.message = $t('RequestNativeChainAddress.time_remaining')
-                /*
+    async submit () {
+      this.showModal = false
+      let hashResult = await axios.post(
+        process.env.CROWDFUND_URL + '/public/api/initiate-transaction/',
+        {
+          verto_public_address: this.$store.state.currentwallet.wallet.key,
+          currency: this.currency
+        }
+      )
+      const res = await hashResult
+      if (res.data.success) {
+        this.$router.push({ path: 'beginGetVtx' })
+      } else {
+        if (res.data.error_code === 'no_address_available') {
+          this.message = this.$t('RequestNativeChainAddress.err_noAddressAvailable')
+          this.showModal = true
+        } else if (res.data.error_code === 'pending_transactions_exist') {
+          this.message = this.$t('RequestNativeChainAddress.err_pendingTransactionsExist')
+          this.showModal = true
+        } else if (res.data.error_code === 'investor_must_wait') {
+          this.message = this.$t('RequestNativeChainAddress.time_remaining')
+          /*
                 this.showModal = true;
                 const waitUntil = res.data.data.next_available_time
                 const serverTime = res.data.data.server_time;
                 this.timeremaining = Date.parse(waitUntil) - Date.parse(serverTime)
                 this.investorMustWait = true;
                 */
-            }
         }
+      }
     },
-    ok: function() {
-        this.showModal = false
+    ok: function () {
+      this.showModal = false
     }
   }
-};
+}
 </script>
 <style>
 </style>

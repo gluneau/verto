@@ -1,12 +1,12 @@
 <template>
-  <div class="layout-padding"> 
+  <div class="layout-padding">
     <q-jumbotron class=" bg-white text-primary">
       <div class="text-left uppercase ">
         <div class="chip label">
-          <img :src="getCryptoLogoUrl(nativeChainName)" width=100> 
+          <img :src="getCryptoLogoUrl(nativeChainName)" width=100>
           {{ $t('GetVtx.getvtx') }} {{ nativeChainName }}
         </div>
-        
+
       </div>
       <div class="text-right uppercase  q-pa-sm">
         <q-btn outline rounded  @click="$router.push({path: 'viewPendingTransactions'})">View Pending Transactions</q-btn>
@@ -57,7 +57,7 @@
 <script>
 import countdown from '@chenfengyuan/vue-countdown'
 
-export default {  
+export default {
   // name: 'Get VTX',
   data () {
     return {
@@ -67,39 +67,38 @@ export default {
       timeremaining: 0,
       underOneMinuteLeftInTimer: false,
       doneCountdown: false,
-      timeremaining: 0,
       isCardModalActive: false
     }
   },
   components: {
     countdown: countdown
   },
-  created() {
-    this.nativeChainAddress = this.$route.query.native_chain_address;
-    this.validUntil = this.$route.query.valid_until;
-    this.nativeChainName = this.$route.query.native_chain_name;
-    const serverTime = this.$route.query.server_time;
+  created () {
+    this.nativeChainAddress = this.$route.query.native_chain_address
+    this.validUntil = this.$route.query.valid_until
+    this.nativeChainName = this.$route.query.native_chain_name
+    const serverTime = this.$route.query.server_time
     const potentialTimeRemaining = Date.parse(this.validUntil) - Date.parse(serverTime)
     if (potentialTimeRemaining > 0) {
-      this.timeremaining = potentialTimeRemaining;
+      this.timeremaining = potentialTimeRemaining
     }
   },
   methods: {
-    getCryptoLogoUrl(chainName) {
+    getCryptoLogoUrl (chainName) {
       return require('../../assets/img/currencies/' + chainName + '.png')
     },
-    transform(props) {
+    transform (props) {
       Object.entries(props).forEach(([key, value]) => {
-        let digits = value < 10 ? `0${value}` : value;
+        let digits = value < 10 ? `0${value}` : value
         if (key === 'totalMinutes' && value <= 0) {
-          this.underOneMinuteLeftInTimer = true;
+          this.underOneMinuteLeftInTimer = true
         } else if (key === 'totalSeconds' && value <= 0) {
-          this.doneCountdown = true;
+          this.doneCountdown = true
         }
-        props[key] = `${digits}`;
-      });
+        props[key] = `${digits}`
+      })
 
-      return props;
+      return props
     }
   }
 }

@@ -7,7 +7,7 @@
       </div>
       <q-card inline style="width: 700px" class="text-left">
         <q-card-separator />
-        
+
           <q-list>
             <div class="text-left q-pa-lg">
                 <q-icon name="warning" size="3rem" color="yellow"/>
@@ -62,7 +62,7 @@
                   >
                      <q-checkbox v-model="iunderstand" :error="errors.iunderstandFalse" dark  color="yellow">&nbsp;{{ $t('DisplayKey.understand') }}</q-checkbox>
                   </q-field>
-                 
+
                 </div>
                 <div class="text-right q-pa-lg">
                   <q-btn  color="yellow" outline rounded @click="submit">{{ $t('SaveYourKeys.create') }}</q-btn>
@@ -81,8 +81,8 @@ export default {
   // name: 'ComponentName',
   data () {
     return {
-      privateKey: "",
-      publicKey: "",
+      privateKey: '',
+      publicKey: '',
       walletName: '',
       password: '',
       confirmPassword: '',
@@ -98,23 +98,23 @@ export default {
       iunderstandFalse: false
     }
   },
-  mounted() {
-    const ecc = require("eosjs-ecc");
+  mounted () {
+    const ecc = require('eosjs-ecc')
     ecc.randomKey().then(privateKey => {
-      this.privateKey = privateKey;
+      this.privateKey = privateKey
       this.publicKey = ecc.privateToPublic(privateKey)
-    });
+    })
   },
   methods: {
-    resetErrors() {
+    resetErrors () {
       this.errors.walletNameEmpty = false
       this.errors.passwordEmpty = false
       this.errors.passwordsDontMatch = false
       this.errors.vertoPasswordEmpty = false
       this.errors.iunderstandFalse = false
     },
-    hasError: function() {
-      let hasError = false
+    hasError: function () {
+      // let hasError = false
       if (!this.walletName) {
         this.errors.walletNameEmpty = true
         return true
@@ -136,19 +136,19 @@ export default {
         return true
       }
     },
-    submit: function() {
-      console.log("Submitting")
+    submit: function () {
+      console.log('Submitting')
       this.resetErrors()
       if (this.hasError()) {
-        return;
+        return
       }
-      const { dialog } = require("electron").remote;
+      const { dialog } = require('electron').remote
       var savePath = dialog.showSaveDialog({
         title: this.$t('ChoosePassword.file')
       })
-      const result = configManager.saveWalletAndKey(this.walletName, this.vertoPassword, this.password, this.publicKey, this.privateKey, savePath) 
+      const result = configManager.saveWalletAndKey(this.walletName, this.vertoPassword, this.password, this.publicKey, this.privateKey, savePath)
       if (result.success) {
-        this.$router.push("wallet");
+        this.$router.push('wallet')
       } else {
         console.log(result.message)
       }

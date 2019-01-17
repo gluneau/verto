@@ -16,23 +16,23 @@
 </template>
 
 <script>
-import EventBus from '../../bus'
-import { setInterval } from 'timers';
+// import EventBus from '../../bus'
+// import { setInterval } from 'timers'
 
 export default {
-  data() {
+  data () {
     return {
       modal: true
-    };
+    }
   },
-  mounted() {
+  mounted () {
   },
   methods: {
-    ok: function() {
+    ok: function () {
       this.$router.push({path: '/wallet'})
     }
   }
-};
+}
 </script>
 
 <style>

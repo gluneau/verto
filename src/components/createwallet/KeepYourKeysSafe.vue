@@ -60,13 +60,12 @@
           </div>
       </q-card>
 
-
     </q-jumbotron>
   </div>
 </template>
 
 <script>
-import configManager from '../../util/ConfigManager'
+// import configManager from '../../util/ConfigManager'
 
 export default {
   // name: 'ComponentName',
@@ -76,7 +75,7 @@ export default {
       checkTwo: false,
       checkThree: false,
       checkFour: false,
-      createtype: "FILE",
+      createtype: 'FILE',
       buttonsAreDisabled: true,
       quizOptions: 0,
       select: 'FILE',
@@ -94,20 +93,20 @@ export default {
     }
   },
   methods: {
-    isDisabled: function() {
+    isDisabled: function () {
       return !this.checkOne || !this.checkTwo || !this.checkThree || !this.checkFour
     },
-    submit() {
+    submit () {
       // if (this.checkOne && this.checkTwo && this.checkThree && this.checkFour) {
-        let command = "networksetup -setairportpower airport off";
-        let exec = require("child_process").exec;
-        exec(command);
-        if (this.createtype === 'FILE') {
-          this.$router.push('/saveToFile');
-        } else {
-          this.$router.push('/writeItDown');
-        }
-      //}
+      let command = 'networksetup -setairportpower airport off'
+      let exec = require('child_process').exec
+      exec(command)
+      if (this.createtype === 'FILE') {
+        this.$router.push('/saveToFile')
+      } else {
+        this.$router.push('/writeItDown')
+      }
+      // }
     }
   }
 }

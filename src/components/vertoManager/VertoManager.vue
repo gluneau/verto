@@ -118,7 +118,7 @@
     <q-modal v-model="associations.showModal" minimized ref="modalRef">
       <div style="padding: 50px" class="text-center">
         <div v-if="associations.walletToShow.associations">
-          <div v-for="association in associations.walletToShow.associations">
+          <div v-for="association in associations.walletToShow.associations" :key="association.name">
             {{ association.name }}
           </div>
         </div>
@@ -149,7 +149,7 @@ export default {
           sortable: false,
           classes: 'my-class',
           style: 'width: 110px'
-        },{
+        }, {
           name: 'default',
           required: false,
           align: 'center',
@@ -157,21 +157,21 @@ export default {
           sortable: false,
           classes: 'my-class',
           style: 'width: 200px'
-        },{
+        }, {
           name: 'defaulttxt',
           required: false,
           align: 'center',
           sortable: false,
           classes: 'my-class',
           style: 'width: 100px'
-        },{
+        }, {
           name: 'associations',
           required: false,
           align: 'center',
           sortable: false,
           classes: 'my-class',
           style: 'width: 50px'
-        },{
+        }, {
           name: 'delete',
           required: false,
           align: 'center',
@@ -196,35 +196,35 @@ export default {
       }
     }
   },
-  mounted() {
+  mounted () {
     this.tableData = this.$store.state.currentwallet.config.keys
   },
   methods: {
-    ok: function() {
+    ok: function () {
       this.associations.walletToShow = {}
       this.associations.showModal = false
     },
-    changeWallet:function(row) {
+    changeWallet: function (row) {
       configManager.updateCurrentWallet(row)
       this.$router.push({path: '/wallet'})
     },
-    showAssociations:function(row) {
+    showAssociations: function (row) {
       this.associations.walletToShow = row
       this.associations.showModal = true
     },
-    viewAssociations: function(row) {
+    viewAssociations: function (row) {
       console.log('associations ' + JSON.stringify(row))
     },
-    changeDefault: function(row) {
+    changeDefault: function (row) {
       console.log('Coolll ' + JSON.stringify(row))
     },
-    deleteWallet: function(row) {
-      console.log("Deletenig row: " + row)
+    deleteWallet: function (row) {
+      console.log('Deletenig row: ' + row)
     },
-    createWallet: function() {
+    createWallet: function () {
       this.$router.push('/keepYourKeysafe')
     },
-    addVertoAddress: function() {
+    addVertoAddress: function () {
       this.addWallet.walletNameEmpty = false
       this.addWallet.addressEmpty = false
       this.addWallet.vertoPasswordEmpty = false
@@ -244,13 +244,13 @@ export default {
       const result = configManager.addWallet(this.addWallet.walletName, this.addWallet.vertoPassword, this.addWallet.address)
       if (result.success) {
         this.cancelAddVertoAddress()
-      } else if(result.message === 'bad_password') {
+      } else if (result.message === 'bad_password') {
         this.addWallet.vertoPasswordEmpty = true
       } else {
         this.addWallet.walletNameEmpty = true
       }
     },
-    cancelAddVertoAddress: function() {
+    cancelAddVertoAddress: function () {
       this.addWallet.walletNameEmpty = false
       this.addWallet.addressEmpty = false
       this.addWallet.vertoPasswordEmpty = false

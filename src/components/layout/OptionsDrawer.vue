@@ -51,7 +51,7 @@
 
 <script>
 import configManager from '../../util/ConfigManager'
-import getVtxHelper from '../../util/GetVtxHelper';
+import getVtxHelper from '../../util/GetVtxHelper'
 
 export default {
   name: 'OptionsDrawer',
@@ -64,11 +64,11 @@ export default {
       minimizedModal: false
     }
   },
-  mounted() {
+  mounted () {
     this.showCurrentWallet = this.$router.currentRoute.path === '/wallet'
     this.showWalletManager = this.$router.currentRoute.path === '/vertomanager'
     const self = this
-    getVtxHelper.getWalletStatus(this.$store.state.currentwallet.wallet.key, function(response){
+    getVtxHelper.getWalletStatus(this.$store.state.currentwallet.wallet.key, function (response) {
       self.showGetVtx = true
       if (response.success) {
         if (response.message === 'wallet_not_allocated' || response.message === 'wallet_allocated') {
@@ -85,8 +85,8 @@ export default {
       }
     })
 
-  //blocktopusCreate
-  //blocktopusAssociate
+  // blocktopusCreate
+  // blocktopusAssociate
 
     /*
     if (message === 'wallet_not_allocated' || message === 'wallet_allocated') {
@@ -99,13 +99,13 @@ export default {
       */
   },
   methods: {
-    hasWallets: function() {
+    hasWallets: function () {
       return this.$store.state.currentwallet.wallet
     },
-    showingCurrentWallet: function() {
+    showingCurrentWallet: function () {
       return this.$router.currentRoute.path === '/wallet'
     },
-    route: function(route) {
+    route: function (route) {
       this.showCurrentWallet = true
       this.showWalletManager = true
       if (route === 'wallet') {
@@ -116,7 +116,7 @@ export default {
       }
       this.$router.push({path: route})
     },
-    logout: function() {
+    logout: function () {
       console.log('Logout')
       configManager.logout()
       this.$router.push({path: '/'})

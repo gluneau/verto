@@ -70,10 +70,10 @@ export default {
     }
   },
   methods: {
-    hasWallets: function() {
+    hasWallets: function () {
       return configManager.hasWallets()
     },
-    hasCurrentWallet: function() {
+    hasCurrentWallet: function () {
       return configManager.hasCurrentWallet()
     }
   }

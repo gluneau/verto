@@ -58,7 +58,6 @@
           </div>
       </q-card>
 
-
     </q-jumbotron>
   </div>
 </template>
@@ -74,7 +73,7 @@ export default {
       checkTwo: false,
       checkThree: false,
       checkFour: false,
-      createtype: "FILE",
+      createtype: 'FILE',
       buttonsAreDisabled: true,
       quizOptions: 0,
       select: 'FILE',
@@ -92,20 +91,20 @@ export default {
     }
   },
   methods: {
-    disableWiFi() {
+    disableWiFi () {
       if (!this.buttonsAreDisabled) {
-        let command = "networksetup -setairportpower airport off";
-        let exec = require("child_process").exec;
-        exec(command);
+        let command = 'networksetup -setairportpower airport off'
+        let exec = require('child_process').exec
+        exec(command)
         if (this.createtype === 'FILE') {
-          this.$router.push('/choosepassword');
+          this.$router.push('/choosepassword')
         } else {
-          this.$router.push('/displaykey');
+          this.$router.push('/displaykey')
         }
       }
     },
-    submit: function() {
-      console.log("Submitting...")
+    submit: function () {
+      console.log('Submitting...')
     }
 
   }

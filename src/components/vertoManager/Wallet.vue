@@ -67,11 +67,11 @@
 </template>
 
 <script>
-import configManager from '../../util/ConfigManager'
-import Ledger from "volentix-ledger"
-import VueQrcode from '@xkeshi/vue-qrcode';
-import Vue from 'vue';
-Vue.component(VueQrcode.name, VueQrcode);
+// import configManager from '../../util/ConfigManager'
+import Ledger from 'volentix-ledger'
+import VueQrcode from '@xkeshi/vue-qrcode'
+import Vue from 'vue'
+Vue.component(VueQrcode.name, VueQrcode)
 
 const chainId = process.env.CHAIN_ID
 const httpEndpoint = process.env.HTTP_ENDPOINT
@@ -86,49 +86,49 @@ export default {
       walletKey: '',
       columns: [
         {
-        name: 'date',
-        required: true,
-        align: 'center',
-        field: 'date',
-        sortable: false,
-        classes: 'my-class',
-        style: 'width: 500px'
-      },{
-        name: 'icon',
-        required: true,
-        align: 'center',
-        field: 'type',
-        sortable: false,
-        classes: 'my-class',
-        style: 'width: 10px'
-      },
-      {
-        name: 'desc',
-        required: true,
-        align: 'center',
-        field: 'name',
-        sortable: false,
-        classes: 'my-class',
-        style: 'width: 500px'
-      },
-      {
-        name: 'vtx',
-        required: true,
-        align: 'center',
-        field: 'amount',
-        sortable: true,
-        classes: 'my-class',
-        style: 'width: 500px'
-      }
-    ],
-    tableData: [],
-    transactions: [],
-    balance: 0,
-    currentBtcValue: 0,
-    isCardModalActive: false
+          name: 'date',
+          required: true,
+          align: 'center',
+          field: 'date',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 500px'
+        }, {
+          name: 'icon',
+          required: true,
+          align: 'center',
+          field: 'type',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 10px'
+        },
+        {
+          name: 'desc',
+          required: true,
+          align: 'center',
+          field: 'name',
+          sortable: false,
+          classes: 'my-class',
+          style: 'width: 500px'
+        },
+        {
+          name: 'vtx',
+          required: true,
+          align: 'center',
+          field: 'amount',
+          sortable: true,
+          classes: 'my-class',
+          style: 'width: 500px'
+        }
+      ],
+      tableData: [],
+      transactions: [],
+      balance: 0,
+      currentBtcValue: 0,
+      isCardModalActive: false
     }
   },
-  mounted() {
+  mounted () {
     this.walletName = this.$store.state.currentwallet.wallet.name
     this.walletKey = this.$store.state.currentwallet.wallet.key
     ledger = new Ledger({
@@ -140,45 +140,45 @@ export default {
     this.getTransactionHistory()
   },
   methods: {
-    async retrieveBalance() {
+    async retrieveBalance () {
       try {
         // TODO: Remove the hardcoding of vltxtgevtxtr
         const balance = await ledger.retrieveBalance({
           account: myaccount,
           wallet: this.walletKey
         },
-        "vltxtgevtxtr");
+        'vltxtgevtxtr')
         console.log(balance)
-        this.balance = parseFloat(balance.amount).toFixed(2);
+        this.balance = parseFloat(balance.amount).toFixed(2)
         if (this.balance > 0) {
-          let results = await axios.get(process.env.CROWDFUND_URL + "/public/api/summary/");
+          let results = await this.$axios.get(process.env.CROWDFUND_URL + '/public/api/summary/')
           this.currentBtcValue = ((results.data.current_price * this.balance) / 100000000)
         }
-        console.log(this.balance);
+        console.log(this.balance)
       } catch (error) {
-        console.log("Can't retrieve the balance");
+        console.log("Can't retrieve the balance")
       }
     },
-    async getTransactionHistory() {
+    async getTransactionHistory () {
       try {
         const userTransactions = await ledger.retrieveTransactions({
           account: myaccount,
           wallet: this.walletKey
-        });
+        })
         console.log(userTransactions)
         if (userTransactions.transactions.length > 0) {
-          this.transactions = userTransactions.transactions;
-          this.getDate();
+          this.transactions = userTransactions.transactions
+          this.getDate()
           this.tableData = this.transactions
         }
       } catch (error) {
         console.log(error)
       }
     },
-    getDate() {
+    getDate () {
       for (let i = 0; i < this.transactions.length; i++) {
         this.transactions[i].timestamp =
-          parseInt(this.transactions[i].timestamp) / 1000;
+          parseInt(this.transactions[i].timestamp) / 1000
       }
     }
   }
