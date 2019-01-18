@@ -1,5 +1,4 @@
 // Configuration for your app
-const webpack = require('webpack')
 const path = require('path')
 const envparser = require('./src/util/envparser')
 
@@ -24,7 +23,7 @@ module.exports = function (ctx) {
     build: {
       scopeHoisting: true,
       env: envparser(),
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
