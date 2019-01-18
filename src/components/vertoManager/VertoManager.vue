@@ -222,7 +222,7 @@ export default {
       console.log('Deletenig row: ' + row)
     },
     createWallet: function () {
-      this.$router.push('/keepYourKeysafe')
+      this.$router.push('/keep-your-key-safe')
     },
     addVertoAddress: function () {
       this.addWallet.walletNameEmpty = false

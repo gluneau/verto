@@ -79,13 +79,6 @@ export default {
 </script>
 
 <style>
-.bg-main {
-  background-image: url("../assets/img/blue_bg.jpg"); /* The image used */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 100vh;
-}
 .bg-white {
   min-height: 90vh;
 }

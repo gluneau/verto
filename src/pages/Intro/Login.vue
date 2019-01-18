@@ -1,10 +1,10 @@
 <template>
-<q-page class="flex flex-center bg-blue-grey-10 text-white">
+<q-page class="flex flex-center text-white bg-login">
   <q-card class="bg-dark q-pa-lg">
     <q-card-main>
        <div class="text-center">
         <div class="logo-welcome">
-          <img src="../assets/img/white-logo-with-text.png" >
+          <img src="/assets/img/white-logo-with-text.png" >
         </div>
         <div class="q-mb-lg">
           <small class="titillium" style="letter-spacing 0.2rem">{{ $t('Welcome.subtitle_message') }}</small>
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import configManager from '../util/ConfigManager'
+import configManager from '@/util/ConfigManager'
 
 export default {
   name: 'Login',
@@ -80,5 +80,10 @@ export default {
   margin 0 auto
   img
     width 100%
+.bg-login
+  background-image url("/assets/img/bg.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
 
 </style>

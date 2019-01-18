@@ -1,8 +1,8 @@
 <template>
-  <div class="flex fit flex-center q-pa-sm">
+  <q-page class="flex fit flex-center q-pa-sm bg-main">
     <q-jumbotron class="text-center bg-primary text-white">
       <div class="text-weight-bold uppercase q-pa-lg">
-        <big>{{ $t('KeepYourKeysSafe.keepsafe') }} hello</big>
+        <big>{{ $t('KeepYourKeysSafe.keepsafe') }}</big>
       </div>
       <q-card inline style="width: 700px" class="text-left">
         <q-card-separator />
@@ -59,11 +59,11 @@
       </q-card>
 
     </q-jumbotron>
-  </div>
+  </q-page>
 </template>
 
 <script>
-import configManager from '../../util/ConfigManager'
+// import configManager from '@/util/ConfigManager'
 
 export default {
   // name: 'ComponentName',
@@ -87,26 +87,24 @@ export default {
           value: 'WRITTEN'
         }
       ]
-
     }
   },
   methods: {
-    disableWiFi () {
-      if (!this.buttonsAreDisabled) {
-        let command = 'networksetup -setairportpower airport off'
-        let exec = require('child_process').exec
-        exec(command)
-        if (this.createtype === 'FILE') {
-          this.$router.push('/choosepassword')
-        } else {
-          this.$router.push('/displaykey')
-        }
-      }
+    isDisabled: function () {
+      return !this.checkOne || !this.checkTwo || !this.checkThree || !this.checkFour
     },
-    submit: function () {
-      console.log('Submitting...')
+    submit () {
+      // if (this.checkOne && this.checkTwo && this.checkThree && this.checkFour) {
+      let command = 'networksetup -setairportpower airport off'
+      let exec = require('child_process').exec
+      exec(command)
+      if (this.createtype === 'FILE') {
+        this.$router.push('/saveToFile')
+      } else {
+        this.$router.push('/writeItDown')
+      }
+      // }
     }
-
   }
 }
 </script>

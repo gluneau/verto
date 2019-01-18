@@ -20,10 +20,5 @@ export default {
 </script>
 
 <style>
-.bg-login {
-  background-image: url("../assets/img/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 </style>
