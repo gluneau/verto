@@ -31,7 +31,7 @@ module.exports = function (ctx) {
       extendWebpack (cfg) {
         cfg.resolve.alias = {
           ...cfg.resolve.alias,
-          '@': path.resolve(__dirname, './src')
+          '@': path.resolve(__dirname, './src'),
         }
         cfg.module.rules.push({
           enforce: 'pre',
