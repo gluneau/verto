@@ -23,6 +23,11 @@ const routes = [
         name: 'keep-your-key-safe',
         path: '/keep-your-key-safe',
         component: () => import('pages/Intro/KeepYourKeysSafe.vue')
+      },
+      {
+        name: 'save-to-file',
+        path: '/save-to-file',
+        component: () => import('pages/Intro/SaveToFile.vue')
       }
     ]
   },
@@ -47,13 +52,13 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/PendingTransactions.vue') }
     ]
   },
-  {
-    path: '/saveToFile',
-    component: () => import('layouts/Default.vue'),
-    children: [
-      { path: '', component: () => import('components/createwallet/SaveToFile.vue') }
-    ]
-  },
+  // {
+  //   path: '/saveToFile',
+  //   component: () => import('layouts/Default.vue'),
+  //   children: [
+  //     { path: '', component: () => import('components/createwallet/SaveToFile.vue') }
+  //   ]
+  // },
   {
     path: '/writeItDown',
     component: () => import('layouts/Default.vue'),

@@ -86,7 +86,7 @@ export default {
       let exec = require('child_process').exec
       exec(command)
       if (this.createtype === 'FILE') {
-        this.$router.push('/saveToFile')
+        this.$router.push('save-to-file')
       } else {
         this.$router.push('/writeItDown')
       }
