@@ -7044,7 +7044,7 @@ qs@6.5.2, qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-quasar-cli@^0.17.0:
+quasar-cli@^0.17.23:
   version "0.17.23"
   resolved "https://registry.yarnpkg.com/quasar-cli/-/quasar-cli-0.17.23.tgz#7f581789c72c7a77de2c7b4beabd86e5b4788ffd"
   integrity sha512-ifxhiYXB5PCcm4B6pCO5U1l6EHJ7V3rFfZGlw5W7L3u0nlFuHGPmNX7jMSy+GOvD4uCH4ubDqaVRWBT6CDhf3g==
