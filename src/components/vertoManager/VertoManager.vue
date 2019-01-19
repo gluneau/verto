@@ -5,7 +5,7 @@
         <big>{{ $t('WalletManager.header') }}</big>
       </div>
       <div class="row gutter wrap justify-stretch content-center q-pa-lg">
-          <div class="col-2 text-center q-pa-lg" @click="addingWallet = !addingWallet">
+          <div class="col-auto text-center q-pa-lg" @click="addingWallet = !addingWallet">
             <q-card>
               <q-card-title>
                 <q-icon name="account_balance_wallet" size="2rem"/>
@@ -15,7 +15,7 @@
               </q-card-main>
             </q-card>
           </div>
-          <div class="col-2 text-center q-pa-lg" @click="createWallet()">
+          <div class="col-auto text-center q-pa-lg" @click="createWallet()">
             <q-card >
               <q-card-title>
                 <q-icon name="account_balance_wallet" size="2rem"/>
