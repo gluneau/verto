@@ -7,7 +7,8 @@ module.exports = function (ctx) {
     // app plugins (/src/plugins)
     plugins: [
       'i18n',
-      'axios'
+      'axios',
+      'clipboard'
     ],
     css: [
       'app.styl'
@@ -31,7 +32,7 @@ module.exports = function (ctx) {
       extendWebpack (cfg) {
         cfg.resolve.alias = {
           ...cfg.resolve.alias,
-          '@': path.resolve(__dirname, './src'),
+          '@': path.resolve(__dirname, './src')
         }
         cfg.module.rules.push({
           enforce: 'pre',

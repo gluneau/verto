@@ -78,7 +78,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .bg-white {
   min-height: 90vh;
 }

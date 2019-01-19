@@ -14,7 +14,7 @@
             <p class="q-title"> {{ currentBtcValue }} </p>
           </div>
           <div class="col-8 text-right">
-            <q-btn outline style="color: dark;" label="Scan QR" @click="isCardModalActive = true"/>
+            <q-btn outline label="Scan QR" @click="isCardModalActive = true"/>
           </div>
         </div>
         <br>
@@ -57,9 +57,20 @@
         </q-table>
         </div>
         <q-modal v-model="isCardModalActive">
-          <div class="content-center text-center">
-            <h5>Qr code</h5>
-            <qrcode :value="walletKey" :options="{ size: 200 }"></qrcode>
+          <q-btn flat dense round size="lg" icon="close" color="white" class="close-button" @click="isCardModalActive = false" />
+          <div class="row gutter-sm bg-dark q-pa-lg text-white">
+            <div class="col-auto flex flex-center">
+              <div class="q-pr-md">
+                <qrcode :value="walletKey" :options="{size: 150}"></qrcode>
+              </div>
+            </div>
+            <div class="col flex items-center">
+              <div>
+                <div class="q-headline">{{ $t('Main.address') }}</div>
+                <p class="q-pr-md q-py-md q-ma-none" >{{walletKey}}</p>
+                <q-btn flat class="bg-white text-black" icon="file_copy" label="Copy Key" @click="copyKey(walletKey)" />
+              </div>
+            </div>
           </div>
         </q-modal>
       </q-jumbotron>
@@ -192,13 +203,23 @@ export default {
           parseInt(this.transactions[i].timestamp) / 1000
         this.transactions[i].timestamp = moment(this.transactions[i].timestamp).format('MMM DD, YYYY')
       }
+    },
+    copyKey (key) {
+      this.$clipboardWrite(key)
+      this.$q.notify({
+        message: 'Copied',
+        type: 'positive'
+      })
     }
   }
 }
 </script>
 
-<style lang="styl">
-.q-data-table th {
-    text-align:right;
-}
+<style lang="stylus" scoped>
+.q-data-table th
+  text-align right
+.close-button
+  position absolute
+  right 5px
+  top 5px
 </style>
