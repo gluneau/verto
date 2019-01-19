@@ -158,8 +158,7 @@ export default {
     ledger = new Ledger({
       httpEndpoint: httpEndpoint,
       chainId: chainId
-    },
-    process.env.LEDGER_ACCOUNT_NAME)
+    }, process.env.LEDGER_ACCOUNT_NAME)
     this.retrieveBalance()
     this.getTransactionHistory()
   },
@@ -175,7 +174,7 @@ export default {
         this.balance = parseFloat(balance.amount).toFixed(2)
         if (this.balance > 0) {
           let results = await this.$axios.get(process.env.CROWDFUND_URL + '/public/api/summary/')
-          this.currentBtcValue = ((results.data.current_price * this.balance) / 100000000)
+          this.currentBtcValue = ((+results.data.current_price * +this.balance) / 100000000) || 0
         }
       } catch (error) {
         console.log("Can't retrieve the balance")
