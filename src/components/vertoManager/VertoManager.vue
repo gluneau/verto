@@ -130,6 +130,27 @@
         </div>
       </div>
     </q-modal>
+    <q-modal v-model="changeDefaultInfo.showModal" minimized ref="modalRef">
+      <div style="padding: 50px" class="text-center">
+        Change {{ changeDefaultInfo.keyToMakeDefault.name }} To Default?
+         <div class="q-pa-sm">
+          <q-field
+            :error="changeDefaultInfo.vertoPasswordEmpty"
+            v-bind:error-label="$t('Welcome.incorrect')"
+            :count="100"
+          >
+            <q-input v-model="changeDefaultInfo.vertoPassword" :error="addWallet.vertoPasswordEmpty" color="blue" v-bind:float-label="$t('CreateVertoPassword.vertopassword')"  />
+          </q-field>
+        </div>
+        <div class="q-pa-sm">
+          <q-btn outline rounded  @click="changeDefaultInfo.showModal = false">Cancel</q-btn>
+        </div>
+
+        <div class="q-pa-sm">
+          <q-btn outline rounded  @click="okChangeDefault">OK</q-btn>
+        </div>
+      </div>
+    </q-modal>
   </div>
 </template>
 
@@ -190,6 +211,12 @@ export default {
         vertoPasswordEmpty: false,
         vertoPassword: ''
       },
+      changeDefaultInfo: {
+        showModal: false,
+        keyToMakeDefault: {},
+        vertoPasswordEmpty: false,
+        vertoPassword: ''
+      },
       associations: {
         showModal: false,
         walletToShow: {}
@@ -204,6 +231,25 @@ export default {
       this.associations.walletToShow = {}
       this.associations.showModal = false
     },
+    okChangeDefault: function () {
+      this.changeDefaultInfo.vertoPasswordEmpty = false
+      if (!this.changeDefaultInfo.vertoPassword) {
+        this.changeDefaultInfo.vertoPasswordEmpty = true
+      }
+      const result = configManager.changeToDefault(
+        this.changeDefaultInfo.keyToMakeDefault,
+        this.changeDefaultInfo.vertoPassword
+      )
+      if (result.success) {
+        this.tableData = this.$store.state.currentwallet.config.keys
+        this.changeDefaultInfo.keyToMakeDefault = {}
+        this.changeDefaultInfo.vertoPassword = false
+        this.changeDefaultInfo.vertoPassword = ''
+        this.changeDefaultInfo.showModal = false
+      } else {
+        this.changeDefaultInfo.vertoPasswordEmpty = true
+      }
+    },
     changeWallet: function (row) {
       configManager.updateCurrentWallet(row)
       this.$router.push({path: '/wallet'})
@@ -217,6 +263,9 @@ export default {
     },
     changeDefault: function (row) {
       console.log('Coolll ' + JSON.stringify(row))
+      row.defaultKey = false
+      this.changeDefaultInfo.showModal = true
+      this.changeDefaultInfo.keyToMakeDefault = row
     },
     deleteWallet: function (row) {
       console.log('Deletenig row: ' + row)

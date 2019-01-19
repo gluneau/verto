@@ -41,7 +41,7 @@
 </template>
 
 <script>
-// import configManager from '../../util/ConfigManager'
+// import configManager from '@/util/ConfigManager'
 import axios from 'axios'
 
 export default {
