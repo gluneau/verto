@@ -30,7 +30,7 @@
       <q-layout-drawer
         side="left"
         v-model="optionsDrawer"
-        behavior="desktop" content-class="row"
+        content-class="row"
         v-if="hasCurrentWallet()"
       >
         <div class="col-12 column bg-primary">
@@ -63,7 +63,7 @@ export default {
   components: { LangDrawer, OptionsDrawer },
   data () {
     return {
-      optionsDrawer: true,
+      optionsDrawer: this.$q.platform.is.desktop,
       langDrawer: false
     }
   },
