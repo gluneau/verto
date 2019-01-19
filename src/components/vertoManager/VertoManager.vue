@@ -139,15 +139,17 @@
             v-bind:error-label="$t('Welcome.incorrect')"
             :count="100"
           >
-            <q-input v-model="changeDefaultInfo.vertoPassword" :error="addWallet.vertoPasswordEmpty" color="blue" v-bind:float-label="$t('CreateVertoPassword.vertopassword')"  />
+            <q-input type="password" v-model="changeDefaultInfo.vertoPassword" :error="addWallet.vertoPasswordEmpty" color="blue" v-bind:float-label="$t('CreateVertoPassword.vertopassword')"  />
           </q-field>
         </div>
-        <div class="q-pa-sm">
-          <q-btn outline rounded  @click="changeDefaultInfo.showModal = false">Cancel</q-btn>
-        </div>
+        <div class="row gutter-sm justify-end">
+          <div class="col-auto">
+            <q-btn outline rounded @click="changeDefaultInfo.showModal = false">Cancel</q-btn>
+          </div>
 
-        <div class="q-pa-sm">
-          <q-btn outline rounded  @click="okChangeDefault">OK</q-btn>
+          <div class="col-auto">
+            <q-btn outline rounded @click="okChangeDefault">OK</q-btn>
+          </div>
         </div>
       </div>
     </q-modal>
