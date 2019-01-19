@@ -40,7 +40,7 @@
               :props="props"
             >
               <div v-if="col.name === 'name'" class="text-right uppercase">
-                <q-btn outline rounded @click="changeWallet(props.row)">{{ col.value }}</q-btn>
+                <q-btn outline rounded class="full-width" @click="changeWallet(props.row)">{{ col.value }}</q-btn>
               </div>
               <div v-if="col.name === 'default'" class="text-left">
                 <div v-if="col.value" class="q-pa-lg">
