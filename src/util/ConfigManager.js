@@ -79,6 +79,24 @@ class ConfigManager {
       return {success: false, message: 'no_default_key'}
     }
 
+    changeToDefault (newDefaultWallet, password) {
+      const configInfo = this.getConfig(password)
+      if (!configInfo.success) {
+        return configInfo
+      }
+      const config = configInfo.config
+      let i = 0
+      for (i = 0; i < config.keys.length; i++) {
+        const key = config.keys[i]
+        if (key.name === newDefaultWallet.name) {
+          key.defaultKey = true
+        } else if (key.name !== newDefaultWallet.name && key.defaultKey) {
+          key.defaultKey = false
+        }
+      }
+      return this.saveConfig(password, newDefaultWallet, config)
+    }
+
     addAssociationToWallet (address, password, associationName, data) {
       const configInfo = this.getConfig(password)
       if (!configInfo.success) {
