@@ -11,7 +11,7 @@
           </div>
           <div class="col-2 text-center">
             <p class="q-caption">Value In BTC</p>
-            <p class="q-title"> {{ currentBtcValue }} </p>
+            <p class="q-title"> {{ currentBtcValue.toFixed(4) }} </p>
           </div>
           <div class="col-8 text-right">
             <q-btn outline label="Scan QR" @click="isCardModalActive = true"/>
@@ -172,11 +172,14 @@ export default {
         },
         'vltxtgevtxtr')
         this.balance = parseFloat(balance.amount).toFixed(2)
+        console.log('Balance ' + this.balance)
         if (this.balance > 0) {
           let results = await this.$axios.get(process.env.CROWDFUND_URL + '/public/api/summary/')
-          this.currentBtcValue = ((+results.data.current_price * +this.balance) / 100000000) || 0
+          console.log(' RESULTS: ' + JSON.stringify(results.data.crowdsale.current_price))
+          this.currentBtcValue = ((+results.data.crowdsale.current_price * +this.balance) / 100000000) || 0
         }
       } catch (error) {
+        console.log(error)
         console.log("Can't retrieve the balance")
       }
     },
