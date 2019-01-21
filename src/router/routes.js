@@ -39,6 +39,13 @@ const routes = [
     ]
   },
   {
+    path: '/crowdsale',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/getvtx/Crowdsale.vue') }
+    ]
+  },
+  {
     path: '/writeItDown',
     component: () => import('layouts/Default.vue'),
     children: [

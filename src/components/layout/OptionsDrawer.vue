@@ -4,16 +4,20 @@
       <q-icon name="account_balance_wallet" size="2rem"/>
       <div>Current Wallet</div>
     </div>
-    <div v-if="showWalletManager">
+    <div>
       <div class="q-pa-lg" @click="route('vertomanager')">
         <q-icon name="all_inbox" size="2rem"/>
         <div>Wallet Manger</div>
       </div>
-      <div class="q-pa-lg" @click="route('beginGetVtx')" v-if="showGetVtx">
+      <div class="q-pa-lg" @click="route('beginGetVtx')" >
         <q-icon name="add_shopping_cart" size="2rem"/>
-        <div>Get VTX {{ getvtxmessage }}</div>
+        <div>Get VTX</div>
       </div>
-      <div class="q-pa-lg" @click="minimizedModal = !minimizedModal" v-if="!showGetVtx">
+      <div class="q-pa-lg" @click="route('crowdsale')" >
+        <q-icon name="group" size="2rem"/>
+        <div>Crowdsale</div>
+      </div>
+      <div class="q-pa-lg" @click="minimizedModal = !minimizedModal">
         <q-icon name="add_shopping_cart" size="2rem"/>
         <div>KYC</div>
       </div>
