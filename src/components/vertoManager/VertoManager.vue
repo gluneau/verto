@@ -52,16 +52,16 @@
                   <q-checkbox v-model="props.row.defaultKey" color="blue" @input="changeDefault(props.row)" />
                 </div>
               </div>
-              <div v-if="col.name === 'defaulttxt'" class="text-right">
-                <div v-if="props.row.defaultKey" class="q-pa-lg">
-                  Default Wallet
-                </div>
-              </div>
               <div v-if="col.name === 'associations'" class="text-right">
                   <q-btn outline rounded @click="showAssociations(props.row)">Associations</q-btn>
               </div>
-              <div v-if="col.name === 'delete'" class="text-right" @click="deleteWallet(props.row)">
-                <q-icon name="delete_forever" size="2rem" color='red'/>
+              <div v-if="col.name === 'delete'" class="text-center" @click="deleteWalletOpen(props.row)">
+                <div v-if="props.row.defaultKey" class="q-pa-lg">
+                  Default Wallet
+                </div>
+                <div v-else class="q-pa-lg">
+                  <q-icon name="delete_forever" size="2rem" color='red'/>
+                </div>
               </div>
             </q-td>
           </q-tr>
@@ -153,6 +153,32 @@
         </div>
       </div>
     </q-modal>
+    <q-modal v-model="deleteWalletInfo.showModal" minimized ref="modalRef">
+      <div style="padding: 50px" class="text-center">
+        {{ $t('WalletManager.delete') }} {{ deleteWalletInfo.wallet.name }}?
+      </div>
+      <div v-if="deleteWalletInfo.defaultWallet" class="q-pa-sm text-red text-center">
+          Cannot delete the Default Wallet
+        </div>
+      <div class="q-pa-sm">
+        <q-field
+          :error="deleteWalletInfo.vertoPasswordEmpty"
+          v-bind:error-label="$t('Welcome.incorrect')"
+          :count="100"
+        >
+          <q-input type="password" v-model="deleteWalletInfo.vertoPassword" :error="deleteWalletInfo.vertoPasswordEmpty" color="blue" v-bind:float-label="$t('CreateVertoPassword.vertopassword')"  />
+        </q-field>
+      </div>
+      <div class="row gutter-sm justify-end">
+        <div class="col-auto">
+          <q-btn outline rounded @click="deleteWalletInfo.showModal = false">Cancel</q-btn>
+        </div>
+
+        <div class="col-auto">
+          <q-btn outline rounded @click="deleteWallet">OK</q-btn>
+        </div>
+      </div>
+    </q-modal>
   </div>
 </template>
 
@@ -219,6 +245,14 @@ export default {
         vertoPasswordEmpty: false,
         vertoPassword: ''
       },
+      deleteWalletInfo: {
+        showModal: false,
+        wallet: {},
+        password: '',
+        vertoPasswordEmpty: false,
+        defaultWallet: false, // this is in case someone tries to delete the default wallet.
+        vertoPassword: ''
+      },
       associations: {
         showModal: false,
         walletToShow: {}
@@ -226,9 +260,12 @@ export default {
     }
   },
   mounted () {
-    this.tableData = this.$store.state.currentwallet.config.keys
+    this.loadTableData()
   },
   methods: {
+    async loadTableData () {
+      this.tableData = this.$store.state.currentwallet.config.keys
+    },
     ok: function () {
       this.associations.walletToShow = {}
       this.associations.showModal = false
@@ -260,17 +297,34 @@ export default {
       this.associations.walletToShow = row
       this.associations.showModal = true
     },
-    viewAssociations: function (row) {
-      console.log('associations ' + JSON.stringify(row))
-    },
     changeDefault: function (row) {
-      console.log('Coolll ' + JSON.stringify(row))
       row.defaultKey = false
       this.changeDefaultInfo.showModal = true
       this.changeDefaultInfo.keyToMakeDefault = row
     },
-    deleteWallet: function (row) {
-      console.log('Deletenig row: ' + row)
+    deleteWalletOpen: function (row) {
+      this.deleteWalletInfo.wallet = row
+      this.deleteWalletInfo.showModal = true
+      this.deleteWalletInfo.vertoPasswordEmpty = false
+    },
+    deleteWallet: function () {
+      this.deleteWalletInfo.vertoPasswordEmpty = false
+      this.deleteWalletInfo.defaultWallet = false
+      const result = this.$configManager.deleteWallet(this.deleteWalletInfo.vertoPassword, this.deleteWalletInfo.wallet)
+      if (result.success) {
+        this.deleteWalletInfo.vertoPasswordEmpty = false
+        this.deleteWalletInfo.defaultWallet = false
+        this.deleteWalletInfo.walletNameEmpty = false
+        this.deleteWalletInfo.wallet = {}
+        this.loadTableData()
+        this.deleteWalletInfo.showModal = false
+      } else {
+        if (result.message === 'cannot_delete_default') {
+          this.deleteWalletInfo.defaultWallet = true
+        } else {
+          this.deleteWalletInfo.vertoPasswordEmpty = true
+        }
+      }
     },
     createWallet: function () {
       this.$router.push('/keep-your-key-safe')

@@ -77,6 +77,56 @@ class ConfigManager {
       return {success: false, message: 'no_default_key'}
     }
 
+    deleteWallet (password, wallet) {
+      if (wallet.defaultKey) {
+        return {success: false, message: 'cannot_delete_default'}
+      }
+      const configInfo = this.getConfig(password)
+      if (!configInfo.success) {
+        return configInfo
+      }
+      let currentWallet = store.state.currentwallet.wallet
+      // we are deleting the current wallet (not the default)
+      // so we need to get the default and make it the current wallet.
+      if (currentWallet.key === wallet.key) {
+        const currentWallets = configInfo.config.keys.filter(function (value, index, arr) {
+          return value.defaultKey
+        })
+        currentWallet = currentWallets[0]
+      }
+      const keys = configInfo.config.keys.filter(function (value, index, arr) {
+        return value.key !== wallet.key
+      })
+      configInfo.config.keys = keys
+      this.saveConfig(password, currentWallet, configInfo.config)
+      return {success: true}
+    }
+
+    /*
+    removeKey (removeKey, keys) {
+      const filteredKeys = []
+      let i = 0
+      for (i = 0; i < keys.length; i++) {
+        const key = keys[i]
+        if (removeKey.key !== key.key) {
+          filteredKeys.push(key)
+        }
+      }
+      return filteredKeys
+    }
+
+    getDefault (keys) {
+      let i = 0
+      for (i = 0; i < keys.length; i++) {
+        const key = keys[i]
+        if (key.defaultKey) {
+          return key
+        }
+      }
+      return null
+    }
+    */
+
     changeToDefault (newDefaultWallet, password) {
       const configInfo = this.getConfig(password)
       if (!configInfo.success) {

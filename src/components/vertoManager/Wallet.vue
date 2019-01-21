@@ -177,6 +177,7 @@ export default {
           this.currentBtcValue = ((+results.data.crowdsale.current_price * +this.balance) / 100000000) || 0
         }
       } catch (error) {
+        // TODO: Exception handling
         console.log(error)
         console.log("Can't retrieve the balance")
       }
