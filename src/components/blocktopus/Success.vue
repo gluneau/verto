@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-center text-center">
+  <div class="fixed-center text-center bg-primary">
     <p>
       <img
         src="~assets/img/congrats.png"

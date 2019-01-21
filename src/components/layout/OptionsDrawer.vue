@@ -17,7 +17,7 @@
         <q-icon name="add_shopping_cart" size="2rem"/>
         <div>KYC</div>
       </div>
-      <div class="q-pa-lg" @click="route('beginGetVtx')">
+      <div class="q-pa-lg" @click="minimizedAssociateModal = !minimizedAssociateModal">
         <q-icon name="compare_arrows" size="2rem"/>
         <div>Associate Wallet</div>
 
@@ -46,6 +46,18 @@
         </div>
       </div>
     </q-modal>
+    <q-modal v-model="minimizedAssociateModal" minimized ref="modalRef">
+      <div style="padding: 50px" class="text-center">
+        <div class="q-display-1 q-mb-md">Associate Wallet</div>
+        <p></p>
+        <div class="q-pa-md" v-if="!alreadyAssociated('Venue')">
+          <q-btn outline rounded color="primary" v-close-overlay label="Associate To Venue" @click="route('AssociateVenue')"/>
+        </div>
+        <div class="q-pa-sm" v-if="!alreadyAssociated('Blocktopus')">
+          <q-btn outline rounded  color="primary" v-close-overlay label="Associate To Blocktopus Account" @click="route('blocktopusAssociate')"/>
+        </div>
+      </div>
+    </q-modal>
   </div>
 </template>
 
@@ -61,7 +73,8 @@ export default {
       showWalletManager: false,
       getvtxmessage: '',
       showGetVtx: true,
-      minimizedModal: false
+      minimizedModal: false,
+      minimizedAssociateModal: false
     }
   },
   mounted () {
@@ -115,6 +128,19 @@ export default {
         this.showWalletManager = false
       }
       this.$router.push({path: route})
+    },
+    alreadyAssociated: function (associationName) {
+      const wallet = this.$store.state.currentwallet.wallet
+      if (!wallet.associations || wallet.associations.length < 1) {
+        return false
+      }
+      let i = 0
+      for (i = 0; i < wallet.associations.length; i++) {
+        if (wallet.associations[i].name === associationName) {
+          return true
+        }
+      }
+      return false
     },
     logout: function () {
       console.log('Logout')

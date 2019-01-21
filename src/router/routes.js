@@ -31,6 +31,13 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/associateVenue',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/AssociateVenue.vue') }
+    ]
+  },
   // {
   //   path: '/createPassword',
   //   component: () => import('layouts/NoWallet.vue'),
@@ -124,7 +131,7 @@ const routes = [
   },
   {
     path: '/blocktopusSuccess',
-    component: () => import('layouts/Default.vue'),
+    component: () => import('layouts/NoWallet.vue'),
     children: [
       { path: '', component: () => import('components/blocktopus/Success.vue') }
     ]
