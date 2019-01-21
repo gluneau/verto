@@ -1,3 +1,5 @@
+//import configManager from './src/plugins/configManager';
+
 // Configuration for your app
 const path = require('path')
 const envparser = require('./src/util/envparser')
@@ -8,7 +10,8 @@ module.exports = function (ctx) {
     plugins: [
       'i18n',
       'axios',
-      'clipboard'
+      'clipboard',
+      'configManager'
     ],
     css: [
       'app.styl'

@@ -24,7 +24,7 @@
       </div>
       </div>
       <div>
-      <div class="q-pa-lg">
+      <div class="q-pa-lg" @click="$router.push({path: 'changePassword'})">
         <q-icon name="security" size="2rem"/>
         <div>Password</div>
       </div>

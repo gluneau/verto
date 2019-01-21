@@ -8,11 +8,6 @@ class ConfigManager {
     currentConfig
     currentWallet
 
-    /*
-     *
-     * Private methods start
-     *
-     */
     getConfig (password) {
       let filePath = path.join(electron.remote.app.getPath('userData'), '/verto.config')
       const databack = fs.readFileSync(filePath, 'utf-8')
@@ -32,11 +27,6 @@ class ConfigManager {
       store.commit('currentwallet/updateConfig', config)
       return {success: true}
     }
-    /*
-     *
-     * Private methods end
-     *
-     */
 
     updateCurrentWallet (wallet) {
       this.currentWallet = wallet
@@ -54,6 +44,14 @@ class ConfigManager {
           resolve(true)
         })
       })
+    }
+
+    changeVertoPassword (currentPassword, newPassword) {
+      const result = this.getConfig(currentPassword)
+      if (!result.success) {
+        return result
+      }
+      return this.saveConfig(newPassword, store.state.currentwallet.wallet, result.config)
     }
 
     login (password) {
