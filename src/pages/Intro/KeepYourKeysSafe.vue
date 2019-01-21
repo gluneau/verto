@@ -38,7 +38,7 @@
       </div>
       <div class="q-pa-sm">
         <div class="q-py-sm">
-          <q-select dark color="white" separator v-model="select" :options="options" />
+          <q-select dark color="white" separator v-model="createtype" :options="options" />
         </div>
         <div class="text-right q-pa-lg">
           <q-btn color="yellow" outline rounded @click="submit">{{ $t('SaveYourKeys.create') }}</q-btn>
@@ -63,7 +63,6 @@ export default {
       createtype: 'FILE',
       buttonsAreDisabled: true,
       quizOptions: 0,
-      select: 'FILE',
       options: [
         {
           label: 'Save To File',
@@ -88,9 +87,8 @@ export default {
       if (this.createtype === 'FILE') {
         this.$router.push('save-to-file')
       } else {
-        this.$router.push('/writeItDown')
+        this.$router.push('writeItDown')
       }
-      // }
     }
   }
 }

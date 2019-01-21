@@ -114,7 +114,6 @@ export default {
       }
     },
     submit: function () {
-      console.log('Submitting')
       this.resetErrors()
       if (this.hasError()) {
         return

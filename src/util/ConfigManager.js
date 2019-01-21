@@ -190,7 +190,9 @@ class ConfigManager {
         this.currentWallet = key
       }
       const privateWallet = JSON.stringify({name: keyname, publickey: publicAddress, privatekey: privateAddress})
-      fs.writeFileSync(savePath, sjcl.encrypt(privateKeyPassword, privateWallet), 'utf-8')
+      if (savePath && privateKeyPassword) {
+        fs.writeFileSync(savePath, sjcl.encrypt(privateKeyPassword, privateWallet), 'utf-8')
+      }
       fs.writeFileSync(filePath, sjcl.encrypt(vertoPassword, JSON.stringify(config)), 'utf-8')
       store.commit('currentwallet/updateCurrentWallet', key)
       store.commit('currentwallet/updateConfig', config)

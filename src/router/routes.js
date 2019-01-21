@@ -38,6 +38,13 @@ const routes = [
       { path: '', component: () => import('components/vertoManager/AssociateVenue.vue') }
     ]
   },
+  {
+    path: '/writeItDown',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/WriteItDown.vue') }
+    ]
+  },
   // {
   //   path: '/createPassword',
   //   component: () => import('layouts/NoWallet.vue'),
@@ -66,13 +73,6 @@ const routes = [
   //     { path: '', component: () => import('components/createwallet/SaveToFile.vue') }
   //   ]
   // },
-  {
-    path: '/writeItDown',
-    component: () => import('layouts/Default.vue'),
-    children: [
-      { path: '', component: () => import('components/createwallet/WriteItDown.vue') }
-    ]
-  },
   {
     path: '/wallet',
     component: () => import('layouts/Default.vue'),

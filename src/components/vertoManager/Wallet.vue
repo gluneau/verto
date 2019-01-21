@@ -172,10 +172,8 @@ export default {
         },
         'vltxtgevtxtr')
         this.balance = parseFloat(balance.amount).toFixed(2)
-        console.log('Balance ' + this.balance)
         if (this.balance > 0) {
           let results = await this.$axios.get(process.env.CROWDFUND_URL + '/public/api/summary/')
-          console.log(' RESULTS: ' + JSON.stringify(results.data.crowdsale.current_price))
           this.currentBtcValue = ((+results.data.crowdsale.current_price * +this.balance) / 100000000) || 0
         }
       } catch (error) {
