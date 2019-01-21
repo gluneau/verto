@@ -81,6 +81,13 @@ const routes = [
     ]
   },
   {
+    path: '/changePassword',
+    component: () => import('layouts/Default.vue'),
+    children: [
+      { path: '', component: () => import('components/vertoManager/ChangePassword.vue') }
+    ]
+  },
+  {
     path: '/vertomanager',
     component: () => import('layouts/Default.vue'),
     children: [

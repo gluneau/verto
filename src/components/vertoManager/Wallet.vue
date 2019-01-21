@@ -42,10 +42,10 @@
               </div>
               <div v-if="col.name === 'vtx'" class="text-center">
                 <div v-if="col.value === 'SEND'">
-                  - {{ col.value }} VTX
+                  - {{ props.row.amount }} VTX
                 </div>
                 <div v-else>
-                  + {{ col.value }} VTX
+                  + {{ props.row.amount }} VTX
                 </div>
 
               </div>
