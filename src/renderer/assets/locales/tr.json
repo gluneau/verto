@@ -123,7 +123,7 @@
     "SettingsView": {
         "settings": "Ayarlar",
         "updates": "Güncellemeleri kontrol et",
-        "whitelist": "Beyazliste",
+        "whitelist": "Beyaz Liste",
         "blocktopus": "Blocktopus ile Bağdaştır",
         "manager": "Cüzdan Yöneticisi",
         "change": "Şifre",
@@ -139,7 +139,7 @@
         "current_wallet": "Mevcut Cüzdan"
     },
     "AssociateView": {
-        "username": "Blocktopus Kullanıcıadı",
+        "username": "Blocktopus Kullanıcı Adı",
         "password": "Blocktopus Şifre"
     },
     "GetVtx": {
@@ -153,7 +153,7 @@
         "getvtx": "Şunla VTX Al",
         "native_chain_address": "Yerli Zincir Adresi",
         "available_for": "Adres Şuna Kadar Geçerlidir",
-        "native_chain_header": "Yerli Zincir Adresi"
+        "native_chain_header": "Yerel Zincir Adresi"
     },
     "ChangeVertoPassword": {
         "header": "Şifreyi Değiştir",
@@ -164,7 +164,7 @@
         "change": "Verto Şifresini Değiştir",
         "recommended": "Şifreyi değiştirmeden önce mevcut Verto yapılandırmasını yedeklemeniz önerilir. Verto'yu yedekleyebilirsiniz ",
         "here": "burada",
-        "access": "Verto'ya erişmek için şifreyi değiştirir. Seşildikten sonra, tüm yapılandırma yeni şifre kullanılarak şifrelenir."
+        "access": "Verto'ya erişmek için şifreyi değiştirir. Seçildikten sonra, tüm yapılandırma yeni şifre kullanılarak şifrelenir."
     },
     "BackupWallet": {
         "folder": "Dosya Seç",
@@ -181,7 +181,7 @@
         "confirm": "Cüzdan şifresini onayla",
         "storeext": "Harici bir sürücüde, cüzdanda veya USB anahtarında saklayın.",
         "storeloc": "Bilgisayarınızın yerel sürücüsünde depolayın.",
-        "emailit": "Epostalayın.",
+        "emailit": "E-postalayın.",
         "cloud": "Bulut'ta depolayın.",
         "save": "Kaydet"
     },
