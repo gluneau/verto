@@ -13,7 +13,7 @@
     "CreateVertoPassword": {
         "header": "Ṣẹda Ọrọ igbaniwọle Verto",
         "important": "PATAKI",
-        "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
+        "important_warning": "Jọwọ farabalẹ ka. Ọrọ igbaniwọle yii ko se gba pada. Ti o ba gbagbe tabi padanu ọrọ igbaniwọle rẹ o ma padanu awọn apo owo rẹ titi lailai.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
         "confirm": "Confirm Verto password",
