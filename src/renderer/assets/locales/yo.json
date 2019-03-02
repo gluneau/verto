@@ -65,7 +65,7 @@
     },
     "DisplayKey": {
         "header": "Kọ Silẹ",
-        "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
+        "understand": "O ye mi pe kọkọrọ ikọkọ ko si ni ipamọ ninu Verto ati pe ko le se gba pada.",
         "showPrivate": "Show Private",
         "hidePrivate": "Hide Private",
         "showPublic": "Show Public",
@@ -94,11 +94,11 @@
         "continue": "Continue"
     },
     "Main": {
-        "address": "Wallet address",
+        "address": "Adirẹsi apo owo",
         "loading": "Loading data",
         "history": "Transaction History",
         "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
+        "getvtx": "Gba VTX",
         "number": "N<sup>o</sup>",
         "copied": "Copied"
     },
