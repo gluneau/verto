@@ -54,8 +54,8 @@
     },
     "SaveYourKeys": {
         "strategy": "Ṣeto ilana ibi ipamọ afojuri ti kọkọrọ ikọkọ rẹ. Igbesẹ ipamọ yii gbọdọ ni ero igba pipẹ, pẹlu:",
-        "physical": "<b>Physical Security:</b> Vaults of any kind that provide the protection you are seeking. Think of somewhere you know is safe from theft as well as the elements. some examples are a home or bank safe, or lawyer. you may choose to protect your keys by storing copies in multiple places.",
-        "legacy": "<b>Legacy:</b> Things happen. Life ends. You need to plan for the transference of your wallet to someone else. In some cases that may be a will, please consider your options carefully. The choice is yours.",
+        "physical": "<b>Aabo Afojuri:</b> Awọn irufẹ eyikeyi ibi ipamọ ti o n pese aabo ti o n wa. Ronu ibi ti o mọ pe o ni aabo lori ole ati awọn eroja rẹ. apẹẹrẹ diẹ jẹ ibi ipamọ ti ile tabi ti banki, tabi agbẹjọro. o le yan lati dabobo awọn kọkọrọ rẹ nipa fifi adakọ pamọ ni awọn aaye pupọ.",
+        "legacy": "<b>Ijogun:</b> Nkan n ṣẹlẹ. Aye n dopin. O nilo lati gbero gbigbe apo owo rẹ fun ẹlomiiran. Ni awọn igba miiran ti o le jẹ iwe ogun pinpin, jọwọ ṣe ayẹwo awọn aṣayan rẹ daradara. Ipinnu jẹ tirẹ.",
         "agree": "I agree with the Terms & Conditions",
         "responsible": "I am entirely responsible for the security managment of my private key",
         "access": "I understand that Volentix and/or partners never have access to my private key",
