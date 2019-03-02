@@ -36,11 +36,11 @@
         "used": "Orukọ naa tabi apo owo naa ti jẹ lilo tẹlẹ.",
         "both": "O gbọdọ pese orukọ kan ati kọkọrọ gbangba fun apo owo naa.",
         "submit": "Fi silẹ",
-        "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
-        "cancel": "Cancel",
+        "cannotrecover": "Verto ko le gba apo owo naa pada lẹhin ti o ba ti jẹ pipaarẹ. Tẹ bọtini paarẹ lẹẹkansi fun pipari iparẹ.",
+        "cancel": "Fagilee",
         "delete": "Paarẹ",
-        "keyhere": "Wallet Public Key Here",
-        "header": "Wallet Manager",
+        "keyhere": "Kọkọrọ Gbangba Apo owo Nibi",
+        "header": "Oluṣakoso Apo owo",
         "wallets": "Awọn apo owo"
     },
     "KeepYourKeysSafe": {
@@ -60,7 +60,7 @@
         "responsible": "I am entirely responsible for the security managment of my private key",
         "access": "I understand that Volentix and/or partners never have access to my private key",
         "wifi": "I understand WIFI will be disabled temporarily during the generation of keys",
-        "create": "Create",
+        "create": "Ṣẹda",
         "save_keys": "Save File"
     },
     "DisplayKey": {
