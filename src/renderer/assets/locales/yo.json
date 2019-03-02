@@ -48,9 +48,9 @@
         "before": "Ṣaaju ki o to tẹsiwaju, o ṣe pataki lati ṣe akiyesi pe ojuse rẹ ni gbogbo isakoso, ipamọ, Idabobo, ati gbigba kọkọrọ ikọkọ rẹ pada. Ko kin se ẹlomiiran ti o fi mọ awọn alabasepọ ti awujọ eto Volentix.",
         "choices": "O ni awọn aṣayan meji lori abojuto kọkọrọ ikọkọ rẹ. Awọn ọna mejeeji jẹ ṣiṣe pẹlu ilana lati rii daju pe kọkọrọ ikọkọ rẹ wa ni ipamọ ailewu.",
         "first": "Kọ kọkọrọ rẹ silẹ.",
-        "second": "Or, encrypt your key in a password protected file.",
+        "second": "Tabi, daabobo kọkọrọ rẹ sinu faili idaabobo ti o ni ọrọ igbaniwọle.",
         "next": "Èyí tó kàn",
-        "back": "Back"
+        "back": "Pada"
     },
     "SaveYourKeys": {
         "strategy": "Plan a strategy for the physical storage of your private key. This storage strategy should include long term thinking, including:",
@@ -70,8 +70,8 @@
         "hidePrivate": "Hide Private",
         "showPublic": "Show Public",
         "hidePublic": "Hide Public",
-        "already": "The name or the key has already been used.",
-        "mustname": "You must provide a name for your key.",
+        "already": "Orukọ naa tabi apo owo naa ti jẹ lilo tẹlẹ.",
+        "mustname": "O gbọdọ pese orukọ kan fun kọkọrọ rẹ.",
         "walletname": "Give Wallet Name: ie Savings",
         "writedown": "Write down your keys.",
         "privkey": "Private key",
