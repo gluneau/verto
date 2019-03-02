@@ -108,7 +108,7 @@
         "amount": "Iye",
         "ratio": "Ilana ipin Iyipada",
         "confirmation": "Ijẹrisi",
-        "transid": "Ledger Trans. ID",
+        "transid": "Trans. ID Lẹja",
         "pre": "Ẹbun Isaaju",
         "phase": "Ẹbun Ipele",
         "additional": "Ẹbun Alafikun",
@@ -123,11 +123,11 @@
     "SettingsView": {
         "settings": "Ètò",
         "updates": "Ṣe àyẹ̀wò fún awọn ìmúdójúìwọ̀n",
-        "whitelist": "Whitelist",
+        "whitelist": "Akojọ funfun",
         "blocktopus": "Associate with Blocktopus",
         "manager": "Oluṣakoso Apo owo",
         "change": "Ọrọ igbaniwọle",
-        "backup": "Backup Wallet",
+        "backup": "Ẹ̀dà àbọ̀ ábá Apo owo",
         "gettrans": "Gba Itan Isowo VTX",
         "logout": "Jade kuro",
         "telegram": "Telegram",
@@ -135,12 +135,12 @@
         "language": "Ede",
         "help": "Iranwọ",
         "optionsdd": " Awọn asaayan",
-        "vespucci_open": "Vespucci Open",
+        "vespucci_open": "Vespucci Ṣii",
         "current_wallet": "Apo owo Lọwọlọwọ"
     },
     "AssociateView": {
-        "username": "Blocktopus Username",
-        "password": "Blocktopus Password"
+        "username": "Orukọ olumulo Blocktopus",
+        "password": "Ọrọ igbaniwọle Blocktopus"
     },
     "GetVtx": {
         "vtxsold": "VTX Sold",
@@ -197,7 +197,7 @@
         "third_p": "3. You are only able to request one native chain address per hour.",
         "access": "I understand and agree",
         "select_currency": "Select A Native Chain",
-        "time_remaining": "Available In"
+        "time_remaining": "Ṣetan Ni"
     },
     "NotWhitelisted": {
         "header": "Gba VTX",
