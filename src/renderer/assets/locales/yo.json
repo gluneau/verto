@@ -162,8 +162,8 @@
         "confirm": "Se ijẹri ọrọ igbaniwọle Verto tuntun",
         "required": "All fields are required.",
         "change": "Paarọ Ọrọ igbaniwọle Verto",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
+        "recommended": "A gba niyanju pe ki o kọkọ ṣe ẹ̀dà àbọ̀-ábá iṣeto ti lọwọlọwọ yii ti Verto ṣaaju ki o to se iyipada ọrọ igbaniwọle naa. O le ṣe ẹ̀dà àbọ̀-ábáVerto ",
+        "here": "nibi",
         "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
     },
     "BackupWallet": {
