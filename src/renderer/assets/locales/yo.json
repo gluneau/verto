@@ -103,15 +103,15 @@
         "copied": "Ti jẹ didakọ"
     },
     "TransactionHistory": {
-        "history": "Get VTX History",
+        "history": "Gba Itan VTX",
         "native": "Owo Ibilẹ",
         "amount": "Iye",
-        "ratio": "Conversion Ratio",
+        "ratio": "Ilana ipin Iyipada",
         "confirmation": "Ijẹrisi",
         "transid": "Ledger Trans. ID",
-        "pre": "Pre Bonus",
-        "phase": "Phase Bonus",
-        "additional": "Additional Bonus",
+        "pre": "Ẹbun Isaaju",
+        "phase": "Ẹbun Ipele",
+        "additional": "Ẹbun Alafikun",
         "total": "Apapọ",
         "received": "Ti gba",
         "converted": "Converted",
@@ -121,7 +121,7 @@
         "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
-        "settings": "Settings",
+        "settings": "Ètò",
         "updates": "Ṣe àyẹ̀wò fún awọn ìmúdójúìwọ̀n",
         "whitelist": "Whitelist",
         "blocktopus": "Associate with Blocktopus",
@@ -131,12 +131,12 @@
         "gettrans": "Gba Itan Isowo VTX",
         "logout": "Jade kuro",
         "telegram": "Telegram",
-        "sendmail": "Send Mail",
+        "sendmail": "Fi Meeli ranṣẹ",
         "language": "Ede",
-        "help": "Help",
-        "optionsdd": " Options",
+        "help": "Iranwọ",
+        "optionsdd": " Awọn asaayan",
         "vespucci_open": "Vespucci Open",
-        "current_wallet": "Current Wallet"
+        "current_wallet": "Apo owo Lọwọlọwọ"
     },
     "AssociateView": {
         "username": "Blocktopus Username",
@@ -147,12 +147,12 @@
         "round": "Bonus Round",
         "amount": "Bonus Amount",
         "current": "Current VTX Price",
-        "additional": "Additional Bonuses",
-        "bonus": "Bonus",
+        "additional": "Ẹbun Alafikun",
+        "bonus": "Ẹbun",
         "soon": "Nbọ laipẹ",
-        "getvtx": "Get VTX With",
+        "getvtx": "Gba VTX Pẹlu",
         "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
+        "available_for": "Adirẹẹsi Wa Titi di",
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
@@ -200,7 +200,7 @@
         "time_remaining": "Available In"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "Gba VTX",
         "kyc": "KYC",
         "whitelist": "White List",
         "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
