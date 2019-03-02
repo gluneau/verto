@@ -25,29 +25,29 @@
         "createwallet": "Ṣẹda Apo owo",
         "createkey": "Ṣẹda kọkọrọ onimeji gbangba/ikọkọ fun apo owo tuntun kan. Kiyesi pe <b> NIKAN </b> kọkọrọ gbangba jẹ fifipamọ sinu Verto. Ojuse rẹ ni imojuto kọkọrọ ikọkọ ara rẹ, ipamọ rẹ, ati aabo.",
         "wallets": "Awọn apo owo",
-        "choose": "Choose to open a wallet by simply clicking on its name.",
+        "choose": "Piinu lati ṣii apo owo nipa nini kan tẹ asaayan lori orukọ rẹ.",
         "delete": "Pa Apo owo rẹ́",
         "trash": "Click on the 'Trash' icon",
-        "enter": "Enter your password.",
-        "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets.",
+        "enter": "Tẹ ọrọ igbaniwọle rẹ sii.",
+        "note": "<b>AKIYESI:</b> Verto ko ni anfani lati ri awọn apo owo ti o ti jẹ pipaarẹ gba pada.",
         "save": "Fipamọ"
     },
     "WalletManager": {
-        "used": "The name or the wallet has already been used.",
-        "both": "You must supply both a name and the public key for the wallet.",
-        "submit": "Submit",
+        "used": "Orukọ naa tabi apo owo naa ti jẹ lilo tẹlẹ.",
+        "both": "O gbọdọ pese orukọ kan ati kọkọrọ gbangba fun apo owo naa.",
+        "submit": "Fi silẹ",
         "cannotrecover": "Verto cannot recover the wallet once deleted. Press the delete button again for final deletion.",
         "cancel": "Cancel",
-        "delete": "Delete",
+        "delete": "Paarẹ",
         "keyhere": "Wallet Public Key Here",
         "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "wallets": "Awọn apo owo"
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Keep Your Keys Safe",
         "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
+        "first": "Kọ kọkọrọ rẹ silẹ.",
         "second": "Or, encrypt your key in a password protected file.",
         "next": "Next",
         "back": "Back"
