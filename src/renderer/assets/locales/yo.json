@@ -26,11 +26,11 @@
         "createkey": "Ṣẹda kọkọrọ onimeji gbangba/ikọkọ fun apo owo tuntun kan. Kiyesi pe <b> NIKAN </b> kọkọrọ gbangba jẹ fifipamọ sinu Verto. Ojuse rẹ ni imojuto kọkọrọ ikọkọ ara rẹ, ipamọ rẹ, ati aabo.",
         "wallets": "Awọn apo owo",
         "choose": "Choose to open a wallet by simply clicking on its name.",
-        "delete": "Delete Wallet",
+        "delete": "Pa Apo owo rẹ́",
         "trash": "Click on the 'Trash' icon",
         "enter": "Enter your password.",
         "note": "<b>NOTE:</b> Verto is unable to recover deleted wallets.",
-        "save": "Save"
+        "save": "Fipamọ"
     },
     "WalletManager": {
         "used": "The name or the wallet has already been used.",
