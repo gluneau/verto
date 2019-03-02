@@ -209,7 +209,7 @@
         "link_kyc": "Begin KYC Process",
         "assign_verto_to_venue": "Assign  Verto To Venue",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
-        "click_venue": "Venue"
+        "click_venue": "Ibi"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Already Allocated",
@@ -220,8 +220,8 @@
     },
     "Countdown": {
         "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "mins": "Iṣẹju",
+        "seconds": "ìṣẹ́jú àáyá"
     },
     "VenueAssignAddress": {
         "header": "Venue Assign Address",
@@ -231,6 +231,6 @@
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
         "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "user_deactivated": "Olumulo yii ko si mọ."
     }
 }
