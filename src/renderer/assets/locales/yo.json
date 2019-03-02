@@ -88,19 +88,19 @@
         "share": "Pin pẹlu ẹnikẹni.",
         "picture": "Ya aworan pẹlu foonu rẹ.",
         "screenshot": "Ya àwòrán ojú àwòrán.",
-        "copied": "Key copied"
+        "copied": "Kọkọrọ ti jẹ didakọ"
     },
     "CongratsScreen": {
         "continue": "Tẹsiwaju"
     },
     "Main": {
         "address": "Adirẹsi apo owo",
-        "loading": "Loading data",
+        "loading": "N sakojọpọ data",
         "history": "Itan Isowo",
         "transactions": "O ko ni awọn iṣowo kankan",
         "getvtx": "Gba VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "Ti jẹ didakọ"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
@@ -116,23 +116,23 @@
         "received": "Ti gba",
         "converted": "Converted",
         "pending": "Pending",
-        "confirmed": "Confirmed",
+        "confirmed": "Ti ni ijẹrisi",
         "approved": "Approved",
         "number_of_approved_blocks": "/6 Confirmed Blocks"
     },
     "SettingsView": {
         "settings": "Settings",
-        "updates": "Check for Updates",
+        "updates": "Ṣe àyẹ̀wò fún awọn ìmúdójúìwọ̀n",
         "whitelist": "Whitelist",
         "blocktopus": "Associate with Blocktopus",
-        "manager": "Wallet Manager",
-        "change": "Password",
+        "manager": "Oluṣakoso Apo owo",
+        "change": "Ọrọ igbaniwọle",
         "backup": "Backup Wallet",
-        "gettrans": "Get VTX Transaction History",
-        "logout": "Logout",
+        "gettrans": "Gba Itan Isowo VTX",
+        "logout": "Jade kuro",
         "telegram": "Telegram",
         "sendmail": "Send Mail",
-        "language": "Language",
+        "language": "Ede",
         "help": "Help",
         "optionsdd": " Options",
         "vespucci_open": "Vespucci Open",
@@ -149,7 +149,7 @@
         "current": "Current VTX Price",
         "additional": "Additional Bonuses",
         "bonus": "Bonus",
-        "soon": "Coming Soon",
+        "soon": "Nbọ laipẹ",
         "getvtx": "Get VTX With",
         "native_chain_address": "Native Chain Address",
         "available_for": "Address Available Until",
@@ -158,10 +158,10 @@
     "ChangeVertoPassword": {
         "header": "Change Password",
         "current": "Current Verto Password",
-        "new": "New Verto Password",
-        "confirm": "Confirm New Verto Password",
+        "new": "Ọrọ igbaniwọle Verto tuntun",
+        "confirm": "Se ijẹri ọrọ igbaniwọle Verto tuntun",
         "required": "All fields are required.",
-        "change": "Change Verto Password",
+        "change": "Paarọ Ọrọ igbaniwọle Verto",
         "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
         "here": "here",
         "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
@@ -183,7 +183,7 @@
         "storeloc": "Store it on your computers local drive.",
         "emailit": "Email it.",
         "cloud": "Store on the cloud.",
-        "save": "Save"
+        "save": "Fipamọ"
     },
     "RequestNativeChainAddress": {
         "header": "Request Address",
