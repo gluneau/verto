@@ -114,7 +114,7 @@
         "additional": "Ẹbun Alafikun",
         "total": "Apapọ",
         "received": "Ti gba",
-        "converted": "Converted",
+        "converted": "Ti yipada",
         "pending": "Pending",
         "confirmed": "Ti ni ijẹrisi",
         "approved": "Approved",
@@ -156,8 +156,8 @@
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
+        "header": "Paarọ Ọrọ igbaniwọle",
+        "current": "Ọrọ igbaniwọle Verto Lọwọlọwọ",
         "new": "Ọrọ igbaniwọle Verto tuntun",
         "confirm": "Se ijẹri ọrọ igbaniwọle Verto tuntun",
         "required": "All fields are required.",
@@ -175,10 +175,10 @@
         "select": "Select 'Backup Wallet'"
     },
     "ChoosePassword": {
-        "header": "Save File",
-        "file": "Choose file",
-        "choose": "Choose Wallet Password",
-        "confirm": "Confirm Wallet password",
+        "header": "Fi Faili pamọ",
+        "file": "Yan faili",
+        "choose": "Yan Ọrọ igbaniwọle Apo owo",
+        "confirm": "Se ijẹri ọrọ igbaniwọle Apo owo",
         "storeext": "Store on an external drive, wallet, or USB key.",
         "storeloc": "Store it on your computers local drive.",
         "emailit": "Email it.",
