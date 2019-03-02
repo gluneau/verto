@@ -164,11 +164,11 @@
         "change": "Paarọ Ọrọ igbaniwọle Verto",
         "recommended": "A gba niyanju pe ki o kọkọ ṣe ẹ̀dà àbọ̀-ábá iṣeto ti lọwọlọwọ yii ti Verto ṣaaju ki o to se iyipada ọrọ igbaniwọle naa. O le ṣe ẹ̀dà àbọ̀-ábáVerto ",
         "here": "nibi",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "access": "N se ayipada ọrọ igbaniwọle naa lati wọle si Verto. Lọgan ti o jẹ yiyan, gbogbo iṣeto wa ni atipa nipa lilo ọrọ igbaniwọle titun."
     },
     "BackupWallet": {
-        "folder": "Select Folder",
-        "backup": "Backup",
+        "folder": "Yan Fódà",
+        "backup": "Ẹ̀dà àbọ̀-ábá",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
         "directory": "Select a directory to back up the wallet to.",
         "willbackup": "Verto yoo ṣe ẹ̀dà àbọ̀-ábá apo owo pẹlu orukọ 'verto' + ọjọ naa + '.config'",
@@ -188,10 +188,10 @@
     "RequestNativeChainAddress": {
         "header": "Request Address",
         "button": "Allocate Address",
-        "err_noAddressAvailable": "No address available for that chain. Please try again.",
+        "err_noAddressAvailable": "Ko si adirẹẹsi fun asopọ naa. Jọwọ gbiyanju lẹẹkansi.",
         "err_pendingTransactionsExist": "Pending transactions exist",
-        "err_investor_must_wait": "You must wait an hour between before requesting a new address.",
-        "first_p": "The following rules apply:",
+        "err_investor_must_wait": "O gbọdọ duro wakati kan ṣaaju ki o to beere adirẹsi titun.",
+        "first_p": "Awọn ofin wọnyi lo de:",
         "second_p": "1. The address you receive is only valid for a limited period of time.",
         "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
         "third_p": "3. You are only able to request one native chain address per hour.",
@@ -230,7 +230,7 @@
         "bad_credentials": "The credentials provided are invalid.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
+        "verto_address_not_unique": "Adirẹẹsi naa ti wa fun olumulo miiran tẹlẹ.",
         "user_deactivated": "Olumulo yii ko si mọ."
     }
 }
