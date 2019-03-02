@@ -44,9 +44,9 @@
         "wallets": "Awọn apo owo"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
+        "keepsafe": "Fi Awọn kọkọrọ Rẹ Pamọ",
         "before": "Ṣaaju ki o to tẹsiwaju, o ṣe pataki lati ṣe akiyesi pe ojuse rẹ ni gbogbo isakoso, ipamọ, Idabobo, ati gbigba kọkọrọ ikọkọ rẹ pada. Ko kin se ẹlomiiran ti o fi mọ awọn alabasepọ ti awujọ eto Volentix.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
+        "choices": "O ni awọn aṣayan meji lori abojuto kọkọrọ ikọkọ rẹ. Awọn ọna mejeeji jẹ ṣiṣe pẹlu ilana lati rii daju pe kọkọrọ ikọkọ rẹ wa ni ipamọ ailewu.",
         "first": "Kọ kọkọrọ rẹ silẹ.",
         "second": "Or, encrypt your key in a password protected file.",
         "next": "Èyí tó kàn",
@@ -91,29 +91,29 @@
         "copied": "Key copied"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "Tẹsiwaju"
     },
     "Main": {
         "address": "Adirẹsi apo owo",
         "loading": "Loading data",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
+        "history": "Itan Isowo",
+        "transactions": "O ko ni awọn iṣowo kankan",
         "getvtx": "Gba VTX",
         "number": "N<sup>o</sup>",
         "copied": "Copied"
     },
     "TransactionHistory": {
         "history": "Get VTX History",
-        "native": "Native Currency",
-        "amount": "Amount",
+        "native": "Owo Ibilẹ",
+        "amount": "Iye",
         "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "confirmation": "Ijẹrisi",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
         "phase": "Phase Bonus",
         "additional": "Additional Bonus",
-        "total": "Total",
-        "received": "Received",
+        "total": "Apapọ",
+        "received": "Ti gba",
         "converted": "Converted",
         "pending": "Pending",
         "confirmed": "Confirmed",
