@@ -45,11 +45,11 @@
     },
     "KeepYourKeysSafe": {
         "keepsafe": "Keep Your Keys Safe",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
+        "before": "Ṣaaju ki o to tẹsiwaju, o ṣe pataki lati ṣe akiyesi pe ojuse rẹ ni gbogbo isakoso, ipamọ, Idabobo, ati gbigba kọkọrọ ikọkọ rẹ pada. Ko kin se ẹlomiiran ti o fi mọ awọn alabasepọ ti awujọ eto Volentix.",
         "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
         "first": "Kọ kọkọrọ rẹ silẹ.",
         "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
+        "next": "Èyí tó kàn",
         "back": "Back"
     },
     "SaveYourKeys": {
@@ -64,7 +64,7 @@
         "save_keys": "Save File"
     },
     "DisplayKey": {
-        "header": "Write It Down",
+        "header": "Kọ Silẹ",
         "understand": "I understand that the private key is not stored in Verto and cannot be recovered.",
         "showPrivate": "Show Private",
         "hidePrivate": "Hide Private",
