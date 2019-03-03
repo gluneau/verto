@@ -192,9 +192,9 @@
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "O gbọdọ duro wakati kan ṣaaju ki o to beere adirẹsi titun.",
         "first_p": "Awọn ofin wọnyi lo de:",
-        "second_p": "1. The address you receive is only valid for a limited period of time.",
-        "second_p_point_1": "2. Any transaction you send after the allocation period may be lost.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "second_p": "1. Adirẹẹsi ti o gba wulo fun akoko diẹ ki o to dopin.",
+        "second_p_point_1": "2. Eyikeyi isowo ti o ba firanṣẹ lẹhin igbati akoko ti a fun ọ na ti dopin le sọnu.",
+        "third_p": "3. O le beere fun adirẹẹsi asopọ ibilẹ kan pere laarin wakati kọọkan.",
         "access": "O ye mi mo si faramọ",
         "select_currency": "Yan Asopọ Ibilẹ Kan",
         "time_remaining": "Ṣetan Ni"
@@ -207,8 +207,8 @@
         "link_associate": "Ti se KYC tẹlẹ",
         "second_p": "Ti o ba ti se KYC tẹlẹ, amọ, o ko ti so apo owo rẹ pẹ pẹlu àkọọlẹ rẹ, jọwọ wọle si olupese KYC lati ṣe bẹ. A nilo igbesẹ yii ṣaaju ki o to ni anfani lati gba VTX. Kiyesi pe ti o ba se KYC tẹlẹ ninu apo owo naa o ko ni nilo lati ṣe igbesẹ yii.",
         "link_kyc": "Bẹrẹ Ilana KYC",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "assign_verto_to_venue": "Pin Verto Si Ibugbe",
+        "assign_verto_to_venue_desc": "Ti o ba jẹ ọmọ ẹgbẹ ti Ibugbe, iwọ yoo nilo lati ṣe asopọ apo owo kan lati le gba VTX rẹ. Kiyesi pe o tun nilo lati pari ilana KYC. Lọgan ti awọn iṣẹ mejeji ba pari, VTX rẹ yoo jẹ fifiransẹ si apo owo yi.",
         "click_venue": "Ibugbe"
     },
     "KycAlreadyAssociated": {
