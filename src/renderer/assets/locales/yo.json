@@ -182,14 +182,14 @@
         "storeext": "Tọju si ori external drive, apo owo, tabi ọpa USB.",
         "storeloc": "Ṣe itọju rẹ si ori ẹrọ kọmputa rẹ.",
         "emailit": "Email it.",
-        "cloud": "Store on the cloud.",
+        "cloud": "Tọju si ori ipamọ ayelujara.",
         "save": "Fipamọ"
     },
     "RequestNativeChainAddress": {
         "header": "Beere Adirẹẹsi",
         "button": "Pin Adirẹẹsi",
         "err_noAddressAvailable": "Ko si adirẹẹsi fun asopọ naa. Jọwọ gbiyanju lẹẹkansi.",
-        "err_pendingTransactionsExist": "Pending transactions exist",
+        "err_pendingTransactionsExist": "Awọn isowo kan wa ni asorọ lọwọ",
         "err_investor_must_wait": "O gbọdọ duro wakati kan ṣaaju ki o to beere adirẹsi titun.",
         "first_p": "Awọn ofin wọnyi lo de:",
         "second_p": "1. Adirẹẹsi ti o gba wulo fun akoko diẹ ki o to dopin.",
@@ -212,11 +212,11 @@
         "click_venue": "Ibugbe"
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "header": "KYC ti jẹ Pinpin Tẹlẹ",
+        "first_p": "Akọọlẹ ti KYC rẹ jẹ sise ti jẹ pinpin tẹlẹ fun Adirẹẹsi Gbangba ti Verto kan."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "N ṣayẹwo ipo apowo"
     },
     "Countdown": {
         "time_remaining": "Akoko ti o ku",
@@ -227,7 +227,7 @@
         "header": "Venue Assign Address",
         "venue_username": "Venue User Name",
         "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
+        "bad_credentials": "Awọn iwe aṣẹ ti o jẹ pipese ko fẹsẹmulẹ.",
         "important_info": "Alaye yii ko si ni ipamọ Verto.",
         "email_verification_required": "O gbọdọ kọkọ ṣe ijẹrisi imeeli rẹ pẹlu Ibugbe ṣaaju ki o to ṣe asọpọ apo owo naa.",
         "verto_address_not_unique": "Adirẹẹsi naa ti wa fun olumulo miiran tẹlẹ.",
