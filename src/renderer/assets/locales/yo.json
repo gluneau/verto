@@ -181,7 +181,7 @@
         "confirm": "Se ijẹri ọrọ igbaniwọle Apo owo",
         "storeext": "Tọju si ori external drive, apo owo, tabi ọpa USB.",
         "storeloc": "Ṣe itọju rẹ si ori ẹrọ kọmputa rẹ.",
-        "emailit": "Email it.",
+        "emailit": "Imeeli rẹ.",
         "cloud": "Tọju si ori ipamọ ayelujara.",
         "save": "Fipamọ"
     },
@@ -224,9 +224,9 @@
         "seconds": "ìṣẹ́jú àáyá"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
+        "header": "Adirẹẹsi ti o jẹ Yiyan fun Ibugbe",
+        "venue_username": "Orukọ olumulo Ibugbe",
+        "venue_password": "Ọrọ igbaniwọle Ibugbe",
         "bad_credentials": "Awọn iwe aṣẹ ti o jẹ pipese ko fẹsẹmulẹ.",
         "important_info": "Alaye yii ko si ni ipamọ Verto.",
         "email_verification_required": "O gbọdọ kọkọ ṣe ijẹrisi imeeli rẹ pẹlu Ibugbe ṣaaju ki o to ṣe asọpọ apo owo naa.",
