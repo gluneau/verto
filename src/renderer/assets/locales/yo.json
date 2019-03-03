@@ -169,8 +169,8 @@
     "BackupWallet": {
         "folder": "Yan Fódà",
         "backup": "Ẹ̀dà àbọ̀-ábá",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
+        "simple": "Irinṣẹ irọrun lati ṣe ẹ̀dà àbọ̀-ábá apo owo rẹ lati le se amupada tabi ṣi lori ẹrọ miiran. Nìkan",
+        "directory": "Yan ọna atiṣe ẹ̀dà àbọ̀-ábá apo owo naa si.",
         "willbackup": "Verto yoo ṣe ẹ̀dà àbọ̀-ábá apo owo pẹlu orukọ 'verto' + ọjọ naa + '.config'",
         "select": "Yan 'Ẹ̀dà àbọ̀ ábá Apo owo'"
     },
@@ -179,15 +179,15 @@
         "file": "Yan faili",
         "choose": "Yan Ọrọ igbaniwọle Apo owo",
         "confirm": "Se ijẹri ọrọ igbaniwọle Apo owo",
-        "storeext": "Store on an external drive, wallet, or USB key.",
-        "storeloc": "Store it on your computers local drive.",
+        "storeext": "Tọju si ori external drive, apo owo, tabi ọpa USB.",
+        "storeloc": "Ṣe itọju rẹ si ori ẹrọ kọmputa rẹ.",
         "emailit": "Email it.",
         "cloud": "Store on the cloud.",
         "save": "Fipamọ"
     },
     "RequestNativeChainAddress": {
-        "header": "Request Address",
-        "button": "Allocate Address",
+        "header": "Beere Adirẹẹsi",
+        "button": "Pin Adirẹẹsi",
         "err_noAddressAvailable": "Ko si adirẹẹsi fun asopọ naa. Jọwọ gbiyanju lẹẹkansi.",
         "err_pendingTransactionsExist": "Pending transactions exist",
         "err_investor_must_wait": "O gbọdọ duro wakati kan ṣaaju ki o to beere adirẹsi titun.",
