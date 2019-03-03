@@ -151,16 +151,16 @@
         "bonus": "Ẹbun",
         "soon": "Nbọ laipẹ",
         "getvtx": "Gba VTX Pẹlu",
-        "native_chain_address": "Native Chain Address",
+        "native_chain_address": "Adirẹẹsi Asopọ Ibilẹ",
         "available_for": "Adirẹẹsi Wa Titi di",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_header": "Adirẹẹsi Asopọ Ibilẹ"
     },
     "ChangeVertoPassword": {
         "header": "Paarọ Ọrọ igbaniwọle",
         "current": "Ọrọ igbaniwọle Verto Lọwọlọwọ",
         "new": "Ọrọ igbaniwọle Verto tuntun",
         "confirm": "Se ijẹri ọrọ igbaniwọle Verto tuntun",
-        "required": "All fields are required.",
+        "required": "Gbogbo awọn aaye ni a nilo.",
         "change": "Paarọ Ọrọ igbaniwọle Verto",
         "recommended": "A gba niyanju pe ki o kọkọ ṣe ẹ̀dà àbọ̀-ábá iṣeto ti lọwọlọwọ yii ti Verto ṣaaju ki o to se iyipada ọrọ igbaniwọle naa. O le ṣe ẹ̀dà àbọ̀-ábáVerto ",
         "here": "nibi",
@@ -205,11 +205,11 @@
         "whitelist": "Akojọ funfun",
         "kyc_1": "Lati gba VTX, awọn oludokoowo gbọdọ se KYC (Mọ Onibara rẹ) pẹlu ọkan ninu awọn alabaṣepọ wa ti a gbẹkẹle. Ilana yii ni o wa lati rii daju pe a wa ni ibamu pẹlu awọn olutọsọna ni agbegbe rẹ. Kiyesi pe ilana yii gbọdọ jẹ pipari lẹẹkan saaju ki a to gba ọ bi olulọwọsi. Kiyesi pe yiyan yi yoo ṣo apo owo rẹ pọ mọ yii pẹlu ibẹwẹ KYC rẹ.",
         "link_associate": "Ti se KYC tẹlẹ",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
+        "second_p": "Ti o ba ti se KYC tẹlẹ, amọ, o ko ti so apo owo rẹ pẹ pẹlu àkọọlẹ rẹ, jọwọ wọle si olupese KYC lati ṣe bẹ. A nilo igbesẹ yii ṣaaju ki o to ni anfani lati gba VTX. Kiyesi pe ti o ba se KYC tẹlẹ ninu apo owo naa o ko ni nilo lati ṣe igbesẹ yii.",
+        "link_kyc": "Bẹrẹ Ilana KYC",
         "assign_verto_to_venue": "Assign  Verto To Venue",
         "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
-        "click_venue": "Ibi"
+        "click_venue": "Ibugbe"
     },
     "KycAlreadyAssociated": {
         "header": "KYC Already Allocated",
@@ -219,7 +219,7 @@
         "header": "Checking Wallet Status"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
+        "time_remaining": "Akoko ti o ku",
         "mins": "Iṣẹju",
         "seconds": "ìṣẹ́jú àáyá"
     },
@@ -228,8 +228,8 @@
         "venue_username": "Venue User Name",
         "venue_password": "Venue Password",
         "bad_credentials": "The credentials provided are invalid.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
+        "important_info": "Alaye yii ko si ni ipamọ Verto.",
+        "email_verification_required": "O gbọdọ kọkọ ṣe ijẹrisi imeeli rẹ pẹlu Ibugbe ṣaaju ki o to ṣe asọpọ apo owo naa.",
         "verto_address_not_unique": "Adirẹẹsi naa ti wa fun olumulo miiran tẹlẹ.",
         "user_deactivated": "Olumulo yii ko si mọ."
     }
