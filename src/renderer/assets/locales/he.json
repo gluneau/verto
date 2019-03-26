@@ -216,21 +216,21 @@
         "first_p": "The KYC'd account has already been allocated a Verto Public Address."
     },
     "BeginGetVtx": {
-        "header": "Checking Wallet Status"
+        "header": "בודק סטטוס ארנק"
     },
     "Countdown": {
-        "time_remaining": "Time Remaining",
-        "mins": "Minutes",
-        "seconds": "seconds"
+        "time_remaining": "הזמן שנותר",
+        "mins": "דקות",
+        "seconds": "שניות"
     },
     "VenueAssignAddress": {
         "header": "Venue Assign Address",
         "venue_username": "Venue User Name",
         "venue_password": "Venue Password",
-        "bad_credentials": "The credentials provided are invalid.",
+        "bad_credentials": "האישורים שסופקו אינם תקינים.",
         "important_info": "This information is never stored within Verto.",
         "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
         "verto_address_not_unique": "The address is already assigned to another user.",
-        "user_deactivated": "This user is no longer active."
+        "user_deactivated": "משתמש זה אינו פעיל יותר."
     }
 }
