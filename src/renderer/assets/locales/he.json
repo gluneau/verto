@@ -30,7 +30,7 @@
         "trash": "לחצ/י על אייקון ה'אשפה'",
         "enter": "הכנס/י את סיסמתך.",
         "note": "<b>הערה:</b> Verto אינו יכול לשחזר ארנקים שנמחקו.",
-        "save": "Save"
+        "save": "שמר/י"
     },
     "WalletManager": {
         "used": "The name or the wallet has already been used.",
@@ -156,22 +156,22 @@
         "native_chain_header": "Native Chain Address"
     },
     "ChangeVertoPassword": {
-        "header": "Change Password",
-        "current": "Current Verto Password",
-        "new": "New Verto Password",
-        "confirm": "Confirm New Verto Password",
-        "required": "All fields are required.",
-        "change": "Change Verto Password",
-        "recommended": "It is recommended that you first backup the current configuration of Verto before changing the password. You can back up Verto ",
-        "here": "here",
-        "access": "Changes the password to access Verto. Once selected, all configuration is encrypted using the new password."
+        "header": "שנה/י סיסמה",
+        "current": "סיסמת Verto נוכחית",
+        "new": "סיסמת Verto חדשה",
+        "confirm": "אשר/י סיסמת Verto חדשה",
+        "required": "כל השדות נדרשים.",
+        "change": "שנה/י סיסמת Verto",
+        "recommended": "זה מומלץ שתחילה תגבה/י את התצורה הנוכחית של Verto לפני שינוי הסיסמה. את/ה יכול/ה לגבות Verto ",
+        "here": "כאן",
+        "access": "משנה את הסיסמה בכדי לתת גישה ל Verto. ברגע שנבחר, כל תצורה מוצפנת עם שימוש בסיסמה החדשה."
     },
     "BackupWallet": {
-        "folder": "Select Folder",
-        "backup": "Backup",
+        "folder": "בחר/י תיקייה",
+        "backup": "גבה/י",
         "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
-        "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
+        "directory": "בחר/י מדריך כדי לגבות את הארנק.",
+        "willbackup": "Verto יגבה את הארנק עם השם 'Verto' + התאריך + 'config'",
         "select": "Select 'Backup Wallet'"
     },
     "ChoosePassword": {
@@ -224,13 +224,13 @@
         "seconds": "שניות"
     },
     "VenueAssignAddress": {
-        "header": "Venue Assign Address",
-        "venue_username": "Venue User Name",
-        "venue_password": "Venue Password",
+        "header": "כתובת מוקצית לVenue",
+        "venue_username": "שם משתמש הVenue",
+        "venue_password": "סיסמת הVenue",
         "bad_credentials": "האישורים שסופקו אינם תקינים.",
-        "important_info": "This information is never stored within Verto.",
-        "email_verification_required": "You must first verify your email with Venue before associating the wallet.",
-        "verto_address_not_unique": "The address is already assigned to another user.",
+        "important_info": "מידע זה לעולם אינו מאוחסן בתוך Verto.",
+        "email_verification_required": "עליך תחילה לוודא את כתובת הדוא''ל שלך עם Venue לפני צירוף הארנק.",
+        "verto_address_not_unique": "הכתובת כבר מוקצית למשתמש אחר.",
         "user_deactivated": "משתמש זה אינו פעיל יותר."
     }
 }
