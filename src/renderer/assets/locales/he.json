@@ -151,9 +151,9 @@
         "bonus": "Bonus",
         "soon": "Coming Soon",
         "getvtx": "Get VTX With",
-        "native_chain_address": "Native Chain Address",
-        "available_for": "Address Available Until",
-        "native_chain_header": "Native Chain Address"
+        "native_chain_address": "כתובת רשת מקומית",
+        "available_for": "כתובת זמינה עד",
+        "native_chain_header": "כתובת רשת מקומית"
     },
     "ChangeVertoPassword": {
         "header": "שנה/י סיסמה",
@@ -169,7 +169,7 @@
     "BackupWallet": {
         "folder": "בחר/י תיקייה",
         "backup": "גבה/י",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
+        "simple": "שימוש באמצעים פשוטים בכדי לגבות את הארנק שלך, ועל מנת לאחסן או לפתוח נתונים על מכשיר אחר",
         "directory": "בחר/י מדריך כדי לגבות את הארנק.",
         "willbackup": "Verto יגבה את הארנק עם השם 'Verto' + התאריך + 'config'",
         "select": "בחר/י ' גיבוי ארנק'"
@@ -194,21 +194,21 @@
         "first_p": "הכללים הבאים חלים:",
         "second_p": "1. הכתובת שתקבל/י תקף לתקופת זמן מוגבלת.",
         "second_p_point_1": "2. כל העברה שתשלח/י לאחר תקופת הקצאה עלולה להאבד.",
-        "third_p": "3. You are only able to request one native chain address per hour.",
+        "third_p": "3. באפשרותך לבקש אך ורק רשת מקומית אחת כל שעה.",
         "access": "אני מבינ/ה ומסכימ/ה",
-        "select_currency": "Select A Native Chain",
-        "time_remaining": "Available In"
+        "select_currency": "בחר רשת מקומית",
+        "time_remaining": "זמין ב"
     },
     "NotWhitelisted": {
-        "header": "Get VTX",
+        "header": "השג/י VTX",
         "kyc": "KYC",
         "whitelist": "White List",
-        "kyc_1": "To get VTX, investors must KYC (Know Your Customer) with one of our trusted partners. This process is to ensure we remain in complience with regulators in your region. Note that this process must only be completed once before being accepted as a potential contributor. Note that this selection will associate this wallet with your KYC application.",
-        "link_associate": "Already KYC'd",
+        "kyc_1": "כדי להשיג VTX, משקיעים חייבים להיות KYC ( להכיר לקוח שלך) עם אחד מהשותפים המוסמכים שלנו. \nתהליך זה נועד בכדי לוודא שנישאר מותאמים עם הרגולטורים באזורך. רשום שתהליך זה יכול להתאפשר אך ורק ברגע שאחד מתקבל בתור משקיע פוטנציאלי. שים לב גם כי בחירה זו תתקשר לארנקך בתוך אפליקציית ה KYC.",
+        "link_associate": "כבר בוצע KYC",
         "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
-        "link_kyc": "Begin KYC Process",
-        "assign_verto_to_venue": "Assign  Verto To Venue",
-        "assign_verto_to_venue_desc": "If you are a member of Venue, you will need to associate a wallet in order to claim your VTX. Note that you will also need to complete the KYC process. Once both actions are complete, your VTX will be allocated to this wallet.",
+        "link_kyc": "החל/י תהליך KYC",
+        "assign_verto_to_venue": "צרף Verto ל Venue",
+        "assign_verto_to_venue_desc": "אם הינך חבר/ה של Venue, יהיה עליך לשייך ארנק על מנת לדרוש את ה VTX שלך. רשום בצד כי תצטרך בנוסף להשלים את תהליך ה KYC. בעת ששני פעולות אלה בוצעו במלואן, ה VTX שלך יתקבל לארנק בחשבון.",
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
