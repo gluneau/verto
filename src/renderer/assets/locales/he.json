@@ -91,23 +91,23 @@
         "copied": "Key copied"
     },
     "CongratsScreen": {
-        "continue": "Continue"
+        "continue": "המשכ/י"
     },
     "Main": {
-        "address": "Wallet address",
-        "loading": "Loading data",
-        "history": "Transaction History",
-        "transactions": "You have no transactions",
-        "getvtx": "Get VTX",
+        "address": "כתובת ארנק",
+        "loading": "טוען נתוני מידע",
+        "history": "היסטוריית העברות",
+        "transactions": "אין לך שום העברות",
+        "getvtx": "השג/י VTX",
         "number": "N<sup>o</sup>",
-        "copied": "Copied"
+        "copied": "הועתק"
     },
     "TransactionHistory": {
-        "history": "Get VTX History",
-        "native": "Native Currency",
-        "amount": "Amount",
-        "ratio": "Conversion Ratio",
-        "confirmation": "Confirmation",
+        "history": "קבל/י היסטוריית VTX",
+        "native": "מטבע מקומי",
+        "amount": "כמות",
+        "ratio": "יחס השיחה",
+        "confirmation": "אימות",
         "transid": "Ledger Trans. ID",
         "pre": "Pre Bonus",
         "phase": "Phase Bonus",
@@ -205,7 +205,7 @@
         "whitelist": "White List",
         "kyc_1": "כדי להשיג VTX, משקיעים חייבים להיות KYC ( להכיר לקוח שלך) עם אחד מהשותפים המוסמכים שלנו. \nתהליך זה נועד בכדי לוודא שנישאר מותאמים עם הרגולטורים באזורך. רשום שתהליך זה יכול להתאפשר אך ורק ברגע שאחד מתקבל בתור משקיע פוטנציאלי. שים לב גם כי בחירה זו תתקשר לארנקך בתוך אפליקציית ה KYC.",
         "link_associate": "כבר בוצע KYC",
-        "second_p": "If you have already KYC'd, however, have not associated this wallet with your account, please log into the KYC provider to do so. This step is required before you are able to get VTX. Note that if you KYC'd within the wallet you will not be required to do this step.",
+        "second_p": "אם כבר ביצעת את תהליך ה KYC, אך עדיין לא צירפת ארנק זה לחשבון שלך, אנא התחבר לתוך ספק ה KYC בכדי לעשות זאת. מהלך זה נדרש לפני שבאפשרותך לקבל VTX. זכור שאם ביצעת את תהליך ה KYC בתוך הארנק, לא תידרשנה לבצע מהלך זה.",
         "link_kyc": "החל/י תהליך KYC",
         "assign_verto_to_venue": "צרף Verto ל Venue",
         "assign_verto_to_venue_desc": "אם הינך חבר/ה של Venue, יהיה עליך לשייך ארנק על מנת לדרוש את ה VTX שלך. רשום בצד כי תצטרך בנוסף להשלים את תהליך ה KYC. בעת ששני פעולות אלה בוצעו במלואן, ה VTX שלך יתקבל לארנק בחשבון.",
@@ -213,7 +213,7 @@
     },
     "KycAlreadyAssociated": {
         "header": "KYC כבר הוקצב",
-        "first_p": "The KYC'd account has already been allocated a Verto Public Address."
+        "first_p": "חשבון ה KYC כבר שויך ככתובת Verto ציבורית."
     },
     "BeginGetVtx": {
         "header": "בודק סטטוס ארנק"
