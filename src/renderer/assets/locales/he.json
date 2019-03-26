@@ -212,7 +212,7 @@
         "click_venue": "Venue"
     },
     "KycAlreadyAssociated": {
-        "header": "KYC Already Allocated",
+        "header": "KYC כבר הוקצב",
         "first_p": "The KYC'd account has already been allocated a Verto Public Address."
     },
     "BeginGetVtx": {
