@@ -38,18 +38,18 @@
         "submit": "שלח/י",
         "cannotrecover": "Verto אינו יכול לשחזר ארנק שנמחק. לחצ/י על כפתור המחיקה שוב בכדי לאשר הסרה סופית.",
         "cancel": "ביטול",
-        "delete": "Delete",
-        "keyhere": "Wallet Public Key Here",
-        "header": "Wallet Manager",
-        "wallets": "Wallets"
+        "delete": "מחק/י",
+        "keyhere": "מפתח ארנק ציבורי כאן",
+        "header": "מנהל ארנק",
+        "wallets": "ארנקים"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Keep Your Keys Safe",
-        "before": "Before continuing, it is important to note that you are entirely responsible for the management, safety, protection, and recovery of your private key. No one else including partners of the Volentix ecosystem.",
-        "choices": "You have 2 choices on persisting your private key. Both methods are designed to ensure your private key remains safe.",
-        "first": "Write your key down.",
-        "second": "Or, encrypt your key in a password protected file.",
-        "next": "Next",
+        "keepsafe": "שמור/י על המפתחות שלך",
+        "before": "לפני שתמשיכ/י, חשוב לציין שהינך אחראי/ת לגמרי על הניהול, אבטחה, והשחזור של המפתח הפרטי שלך. אף אחד אחר, כולל שותפים במערכת ה Volentix האקולוגית.",
+        "choices": "יש באפשרותך שתי אופציות על שמירת עמידות המפתח הפרטי שלך. אופציות אלה נועדו להבטיח את בטיחותו של מפתח זה.",
+        "first": "רשום/י את המפתח שלך.",
+        "second": "או, הצפנ/י את המפתח שלך בקובץ המוגן על ידי סיסמה.",
+        "next": "הבא",
         "back": "Back"
     },
     "SaveYourKeys": {
