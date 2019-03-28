@@ -2,12 +2,12 @@
     "Welcome": {
         "welcometo": "ברוכ/ה הבא/ה ל",
         "welcomeback": "ברוך שובך!",
-        "password": "סיסמא",
-        "nopassword": "לא הוגדר סיסמה בעבור הארנק. אנא צור/י ראשית סיסמה.",
+        "password": "סיסמה",
+        "nopassword": "לא הוגדרה סיסמה עבור הארנק. אנא צור/י תחילה סיסמה.",
         "incorrect": "סיסמת ה Verto אינה נכונה.",
         "login": "התחבר/י",
         "create": "התחל/י",
-        "subtitle_message": "Verto הוא השער שלך לVolentix.",
+        "subtitle_message": "Verto הוא השער שלך לתוך Volentix.",
         "join_message": "אנו שמחים שהצטרפת אלינו."
     },
     "CreateVertoPassword": {
