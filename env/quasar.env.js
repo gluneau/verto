@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   'mainnet': {
     'CHAIN_ID': 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
     'EOS_ENDPOINTS': 'https://api.main.alohaeos.com:443,https://api.cypherglass.com:443,https://api.eosnewyork.io',
@@ -23,4 +23,9 @@ module.exports = {
     'EOS_TRANSACTION_EXPLORER': 'https://kylin.eosx.io/tx/',
     'READ_THE_DOCS': 'https://vertohowto.readthedocs.io/en/latest/tutorial/'
   }
+}
+
+module.exports = {
+  development: config,
+  production: config
 }

@@ -46,7 +46,10 @@
         </q-card-section>
         <q-card style="width: 23rem; border-style: solid;" class="justify-center q-pa-sm q-mb-sm" flat>
           <q-item class="full-width">
-            <q-item-section style="padding-right: 20px;" avatar="statics/img/btc.png" />
+            <q-item-section style="padding-right: 20px;" avatar/>
+            <q-avatar>
+              <img src="statics/img/btc.png"/>
+            </q-avatar>
             <div class="verticalLine full-width">
               <q-item-label class="full-width">
                 <q-item-tile label>Pay with Bitcoin</q-item-tile>
@@ -60,7 +63,10 @@
         </q-card>
         <q-card style="width: 23rem; border-style: solid;" class="justify-center q-pa-sm q-mb-sm" flat>
           <q-item class="full-width">
-            <q-item-section style="padding-right: 20px;" avatar="statics/img/crypto-coins-2.png" />
+            <q-item-section style="padding-right: 20px;" avatar/>
+            <q-avatar>
+              <img src="statics/img/crypto-coins-2.png"/>
+            </q-avatar>
             <div class="verticalLine full-width">
               <q-item-label class="full-width">
                 <q-item-tile label>Pay with</q-item-tile>

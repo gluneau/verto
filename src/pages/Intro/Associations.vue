@@ -16,16 +16,16 @@
             <div class="q-pa-md" style='border-style: solid;'>
               <div class="text-h4" v-show="venueStatus.found && !venueStatus.toggle">
                 <span class="float-left" v-show="venueStatus.associated">
-                  <q-item-section icon="thumb_up" color="green"/>
+                  <q-icon name="thumb_up" color="green"/>
                 </span>
                 <span class="float-left" v-show="!venueStatus.associated">
-                  <q-item-section icon="thumb_down" color="red"/>
+                  <q-icon name="thumb_down" color="red"/>
                 </span>
                 <span class="float-center text-h6">
                   Link with Venue for Bounties
                 </span>
                 <span class="float-right" v-show="!venueStatus.toggle && !venueStatus.associated" @click="venueStatus.toggle = !venueStatus.toggle">
-                  <q-item-section icon="edit" color="green"/>
+                  <q-icon name="edit" color="green"/>
                 </span>
               </div>
               <div v-show="venueStatus.toggle">
@@ -33,7 +33,7 @@
                   Link with Venue for Bounties
                 </span>
                 <span class="float-right" v-show="venueStatus.found" @click="venueStatus.toggle = !venueStatus.toggle">
-                  <q-item-section icon="close" color="red"/>
+                  <q-icon name="close" color="red"/>
                 </span>
                  <div class="q-pa-lg">
                    <span class="q-pa-md">
@@ -49,16 +49,16 @@
             <div class="q-pa-md" style='border-style: solid;'>
               <div class="text-h4" v-show="blocktopusStatus.found && !blocktopusStatus.toggle">
                 <span class="float-left" v-show="blocktopusStatus.associated">
-                  <q-item-section icon="thumb_up" color="green"/>
+                  <q-icon name="thumb_up" color="green"/>
                 </span>
                 <span class="float-left" v-show="!blocktopusStatus.associated">
-                  <q-item-section icon="thumb_down" color="red"/>
+                  <q-icon name="thumb_down" color="red"/>
                 </span>
                 <span class="float-center text-h6">
                   KYC to pay with Bitcoin on Blocktopus
                 </span>
                 <span class="float-right" v-show="!blocktopusStatus.toggle && !blocktopusStatus.associated" @click="blocktopusStatus.toggle = !blocktopusStatus.toggle">
-                  <q-item-section icon="edit" color="green"/>
+                  <q-icon name="edit" color="green"/>
                 </span>
               </div>
               <div v-show="blocktopusStatus.toggle">
@@ -66,7 +66,7 @@
                   KYC to pay with Bitcoin on Blocktopus
                 </span>
                 <span class="float-right" v-show="blocktopusStatus.found" @click="blocktopusStatus.toggle = !blocktopusStatus.toggle">
-                  <q-item-section icon="close" color="red"/>
+                  <q-icon name="close" color="red"/>
                 </span>
                 <div class="q-pa-lg">
                   <span class="q-pa-md">
@@ -87,16 +87,16 @@
             <div class="q-pa-md" style='border-style: solid;'>
               <div class="text-h4" v-show="zixipayStatus.found && !zixipayStatus.toggle">
                 <span class="float-left" v-show="zixipayStatus.associated">
-                  <q-item-section icon="thumb_up" color="green"/>
+                  <q-icon name="thumb_up" color="green"/>
                 </span>
                 <span class="float-left" v-show="!zixipayStatus.associated">
-                  <q-item-section icon="thumb_down" color="red"/>
+                  <q-icon name="thumb_down" color="red"/>
                 </span>
                 <span class="float-center text-h6">
                   KYC to pay with USD, EURO, GEL, USDT or ETH
                 </span>
                 <span class="float-right" v-show="!zixipayStatus.toggle && !zixipayStatus.associated" @click="zixipayStatus.toggle = !zixipayStatus.toggle">
-                  <q-item-section icon="edit" color="green"/>
+                  <q-icon name="edit" color="green"/>
                 </span>
               </div>
               <div v-show="zixipayStatus.toggle">
@@ -104,7 +104,7 @@
                   KYC to pay with USD, EURO, GEL, USDT or ETH
                 </span>
                 <span class="float-right" v-show="zixipayStatus.found" @click="zixipayStatus.toggle = !zixipayStatus.toggle">
-                  <q-item-section icon="close" color="red"/>
+                  <q-icon name="close" color="red"/>
                 </span>
                  <div class="q-pa-lg">
                    <span  class="q-pa-md">

@@ -1,32 +1,34 @@
 <template>
-  <q-page class="flex flex-center text-white bg-black">
-    <q-card flat>
+  <q-page class="column flex-center text-white bg-black">
+    <q-card flat class="bg-black" style="width: 100%; max-width: 700px;">
+      <q-card-section class="text-weight-bold text-center flex justify-between">
+        <q-icon name="help_outline" size="2.5rem" color="white" @click.native="$documentationManger.openDocumentation('wallet/makepayment')">
+          <q-tooltip>{{ $t('SettingsView.help') }}</q-tooltip>
+        </q-icon>
+        <big class="titillium text-uppercase col">Make Payment</big>
+        <q-icon name="close" size="2.5rem" color="white" @click.native="$router.push('/wallet')"/>
+      </q-card-section>
+    </q-card>
+    <q-card flat class="bg-black" style="width: 100%; max-width: 700px;">
       <q-inner-loading :visible="spinnervisible">
         <q-spinner size="50px" color="primary" />
       </q-inner-loading>
-      <q-card-section class="text-weight-bold text-center">
-        <q-icon class="float-left" name="help_outline" size="2.5rem" color="white" @click.native="$documentationManger.openDocumentation('wallet/makepayment')">
-          <q-tooltip>{{ $t('SettingsView.help') }}</q-tooltip>
-        </q-icon>
-        <big class="titillium text-uppercase">Make Payment</big>
-        <q-icon class="float-right" name="close" size="2.5rem" color="white" @click.native="$router.push('/wallet')"/>
-      </q-card-section>
-      <q-stepper dark color="green bg-white" ref="stepper" alternative-labels :contractable="contractable">
+      <q-stepper done-color="green" ref="stepper" alternative-labels v-model="step">
         <!--
           1. Paid to
         -->
-        <q-step default name="first" title="Paid To" class=" bg-black workflow-step">
+        <q-step default :name="1" :done="step>1" title="Paid To" class=" bg-black workflow-step">
           <q-card-section>
           <div class="text-center text-white text-uppercase">
-            <q-item>
-              <q-item-section>
+            <q-item class="flex-center">
+              <q-item-section class="col-auto">
                 <q-chip v-show="!navigationButtons.to" dense color="red" class="shadow-1">&nbsp;</q-chip>
                 <q-chip v-show="navigationButtons.to" dense color="green" class="shadow-1">&nbsp;</q-chip>
               </q-item-section>
-              <q-item-label label="12 Digit Eos Account Name" />
+              <q-item-label>12 Digit Eos Account Name</q-item-label>
             </q-item>
             <div class="q-pa-md">
-                <q-field>
+
                   <q-input
                     v-model="sendTo"
                     dark
@@ -35,10 +37,10 @@
                     @input="checkTo"
                     @keyup.enter="goToMemo()"
                   />
-                </q-field>
+
               </div>
               <div class="q-pa-md">
-                <q-field>
+
                   <q-input
                     v-model="sendMemo"
                     dark
@@ -46,7 +48,7 @@
                     label="Memo"
                     @keyup.enter="$refs.stepper.next()"
                   />
-                </q-field>
+
               </div>
               <div class="q-pa-sm" v-show="navigationButtons.to" @click="goToMemo()" >
                 <q-icon name="navigate_next" size="3.2rem" color="green"   >
@@ -59,7 +61,7 @@
         <!--
           2. Amount
         -->
-        <q-step name="fourth" title="Amount" class=" bg-black workflow-step">
+        <q-step :name="2" :done="step>2" title="Amount" class=" bg-black workflow-step">
           <q-card-section>
           <div class="text-center text-white text-uppercase">
             <div v-show="tokenSymbol === 'VTX'">
@@ -79,7 +81,7 @@
               </span>
             </div>
             <div>
-                <q-field>
+
                   <q-input
                     type="number"
                     v-model="sendAmount"
@@ -89,7 +91,7 @@
                     @input="checkAmount"
                     @keyup.enter="showSummary"
                   />
-                </q-field>
+
               </div>
               <div class="q-pa-sm" v-show="navigationButtons.amount" @click="showSummary()" >
                 <q-icon name="navigate_next" size="3.2rem" color="green"   >
@@ -103,19 +105,19 @@
         <!--
           3. Key Password
         -->
-        <q-step name="second" title="Key Password" class=" bg-black workflow-step">
+        <q-step :name="3" :done="step>3" title="Key Password" class=" bg-black workflow-step">
           <q-card-section>
           <div class="text-center text-white text-uppercase"  v-show="hasPrivateKeyInWallet">
             <div>
-              <q-item>
-              <q-item-section>
+            <q-item class="flex-center">
+              <q-item-section class="col-auto">
                 <q-chip dense color="amber" class="shadow-1">&nbsp;</q-chip>
               </q-item-section>
-              <q-item-label label="Private Key Password" />
+              <q-item-label>Private Key Password</q-item-label>
             </q-item>
             </div>
             <div>
-                <q-field>
+
                   <q-input
                     type="password"
                     v-model="privateKeyPassword"
@@ -125,7 +127,7 @@
                     @input="checkPrivateKeyPassword"
                     @keyup.enter="toSummary"
                   />
-                </q-field>
+
               </div>
               <!--
               <div class="q-pa-lg q-subtitle">
@@ -162,7 +164,7 @@
           </div>
           </q-card-section>
         </q-step>
-        <q-step name="fifth" title="Submit" class=" bg-black workflow-step">
+        <q-step :name="4" :done="step>4" title="Submit" class=" bg-black workflow-step">
           <q-card-section>
           <div class="text-center text-white text-uppercase"  v-show="!navigation.paymentSuccessful">
             <table style="width:100%;">
@@ -264,7 +266,7 @@
       </q-stepper>
       </q-card>
     <q-dialog v-model="navigation.showSendModal">
-      <div>
+      <q-card class="bg-black text-white q-pa-lg">
         <div class="text-center">
           <div>
             <div class="text-h5 qr-wallet-title">Sending Transaction</div>
@@ -273,7 +275,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </q-card>
     </q-dialog>
   </q-page>
 </template>
@@ -295,7 +297,7 @@ export default {
       invalidEosName: false,
       eosbalance: 0,
       vtxbalance: 0,
-      contractable: true,
+      step: 1,
       spinnervisible: false,
       navigation: {
         mainpage: true,
