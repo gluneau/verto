@@ -5,14 +5,14 @@
         "password": "Senha",
         "nopassword": "Nenhuma senha foi definida para a carteira. Por favor, crie uma senha primeiro.",
         "incorrect": "A senha Verto está incorreta.",
-        "login": "Login",
-        "create": "Begin",
-        "subtitle_message": "Verto is your gateway into Volentix.",
-        "join_message": "We're glad you've joined us."
+        "login": "Entrar",
+        "create": "Começar",
+        "subtitle_message": "Verto é o seu portal para a Volentix.",
+        "join_message": "Estamos felizes por você ter se unido a nós."
     },
     "CreateVertoPassword": {
-        "header": "Create Verto Password",
-        "important": "IMPORTANT",
+        "header": "Criar Senha Verto",
+        "important": "IMPORTANTE",
         "important_warning": "Please read carefully. This password cannot be recovered. If you forget or lose your password you will lose your wallets forever.",
         "vertopassword": "Verto MainPassword",
         "i_understand": "I understand",
