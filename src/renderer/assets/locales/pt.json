@@ -169,7 +169,7 @@
     "BackupWallet": {
         "folder": "Selecionar Pasta",
         "backup": "Backup",
-        "simple": "Simple tooling to back up your wallet in order to restore or open on another device. Simply",
+        "simple": "Uma ferramenta simples para fazer o backup da sua carteira de forma a restaurar ou abrir em outro dispositivo. Simplesmente",
         "directory": "Select a directory to back up the wallet to.",
         "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
         "select": "Select 'Backup Wallet'"
