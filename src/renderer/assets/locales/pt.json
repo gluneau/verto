@@ -170,19 +170,19 @@
         "folder": "Selecionar Pasta",
         "backup": "Backup",
         "simple": "Uma ferramenta simples para fazer o backup da sua carteira de forma a restaurar ou abrir em outro dispositivo. Simplesmente",
-        "directory": "Select a directory to back up the wallet to.",
-        "willbackup": "Verto will back up the wallet with the name 'verto' + the date + '.config'",
-        "select": "Select 'Backup Wallet'"
+        "directory": "Selecione um diretório para fazer o backup da carteira.",
+        "willbackup": "Verto fará o backup da carteira com o nome 'verto' + a data + '.config'",
+        "select": "Selecione \"Carteira Backup\""
     },
     "ChoosePassword": {
-        "header": "Save File",
-        "file": "Choose file",
-        "choose": "Choose Wallet Password",
-        "confirm": "Confirm Wallet password",
-        "storeext": "Store on an external drive, wallet, or USB key.",
-        "storeloc": "Store it on your computers local drive.",
-        "emailit": "Email it.",
-        "cloud": "Store on the cloud.",
+        "header": "Salvar Arquivo",
+        "file": "Escolher arquivo",
+        "choose": "Escolha a Senha da Carteira",
+        "confirm": "Confirme a Senha da Carteira",
+        "storeext": "Armazene em uma unidade externa, carteira ou dispositivo USB.",
+        "storeloc": "Guarde-a no disco local do seu computador.",
+        "emailit": "Enviar por E-mail.",
+        "cloud": "Armazenar na nuvem.",
         "save": "Save"
     },
     "RequestNativeChainAddress": {
