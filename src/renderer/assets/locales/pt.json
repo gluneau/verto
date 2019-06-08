@@ -26,7 +26,7 @@
         "createkey": "Crie pares de chaves públicas/privadas para uma nova carteira. Note que <b>APENAS</b> a chave pública é armazenada na Verto. Você é responsável pelo gerenciamento de sua própria chave privada, seu armazenamento e segurança.",
         "wallets": "Carteiras",
         "choose": "Opte por abrir uma carteira simplesmente clicando em seu nome.",
-        "delete": "Deletar Carteira",
+        "delete": "Eliminar Carteira",
         "trash": "Clique no ícone de 'Lixeira'",
         "enter": "Insira sua senha.",
         "note": "<b>NOTA:</b> Verto é incapaz de recuperar carteiras deletadas.",
@@ -38,7 +38,7 @@
         "submit": "Submeter",
         "cannotrecover": "Verto não pode recuperar a carteira depois de excluída. Pressione o botão 'deletar' novamente para uma exclusão definitiva.\n",
         "cancel": "Cancelar",
-        "delete": "Deletar",
+        "delete": "Eliminar",
         "keyhere": "Chave Pública da Carteira Aqui",
         "header": "Gerenciador de Carteiras",
         "wallets": "Carteiras"
