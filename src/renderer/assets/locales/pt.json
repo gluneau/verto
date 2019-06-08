@@ -44,7 +44,7 @@
         "wallets": "Carteiras"
     },
     "KeepYourKeysSafe": {
-        "keepsafe": "Matenha Suas Chaves Seguras",
+        "keepsafe": "Mantenha Suas Chaves Seguras",
         "before": "Antes de continuar, é importante observar que você é inteiramente responsável pelo gerenciamento, segurança, proteção e recuperação de sua chave privada. Ninguém mais, incluindo parceiros do ecossistema Volentix.",
         "choices": "Você tem duas opções para manter sua chave privada. Ambos os métodos são projetados para garantir que sua chave privada permaneça segura.",
         "first": "Escreva sua chave em algum lugar seguro.",
