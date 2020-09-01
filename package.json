@@ -111,7 +111,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.1",
     "@xkeshi/vue-qrcode": "^1.0.0",
     "axios": "^0.18.0",
-    "buefy": "^0.6.7",
+    "buefy": "^0.7.2",
     "dateformat": "^3.0.3",
     "dotenv-webpack": "^1.5.7",
     "electron-log": "^2.2.17",
